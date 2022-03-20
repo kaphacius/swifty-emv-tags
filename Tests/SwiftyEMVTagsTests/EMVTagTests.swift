@@ -10,6 +10,7 @@ final class EMVTagTests: XCTestCase {
         
         let sut = EMVTag(tlv: tlv)
         
+        XCTAssertEqual(sut.tag, tlv.tag)
         XCTAssertEqual(sut.isConstructed, tlv.isConstructed)
         XCTAssertEqual(sut.value, tlv.value)
         XCTAssertEqual(sut.subtags.count, tlv.subTags.count)
@@ -24,11 +25,13 @@ final class EMVTagTests: XCTestCase {
         
         let sut = EMVTag(tlv: tlv)
         
+        XCTAssertEqual(sut.tag, tlv.tag)
         XCTAssertEqual(sut.isConstructed, tlv.isConstructed)
         XCTAssertEqual(sut.value, tlv.value)
         XCTAssertEqual(sut.subtags.count, tlv.subTags.count)
         
         let sutSubTag = try XCTUnwrap(sut.subtags.first)
+        XCTAssertEqual(sutSubTag.tag, subTlv.tag)
         XCTAssertEqual(sutSubTag.isConstructed, subTlv.isConstructed)
         XCTAssertEqual(sutSubTag.value, subTlv.value)
         XCTAssertEqual(sutSubTag.subtags.count, subTlv.subTags.count)
@@ -56,11 +59,13 @@ final class EMVTagTests: XCTestCase {
         
         let sut = EMVTag(tlv: tlv, scheme: .discover)
         
+        XCTAssertEqual(sut.tag, tlv.tag)
         XCTAssertEqual(sut.isConstructed, tlv.isConstructed)
         XCTAssertEqual(sut.value, tlv.value)
         XCTAssertEqual(sut.subtags.count, tlv.subTags.count)
         
         let sutSubTag = try XCTUnwrap(sut.subtags.first)
+        XCTAssertEqual(sutSubTag.tag, subTlv.tag)
         XCTAssertEqual(sutSubTag.isConstructed, subTlv.isConstructed)
         XCTAssertEqual(sutSubTag.value, subTlv.value)
         XCTAssertEqual(sutSubTag.subtags.count, subTlv.subTags.count)

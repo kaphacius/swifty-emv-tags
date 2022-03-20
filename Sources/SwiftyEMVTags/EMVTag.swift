@@ -9,6 +9,7 @@ import SwiftyBERTLV
 
 public struct EMVTag {
     
+    public let tag: UInt64
     public let name: String
     public let description: String
     public let source: Source
@@ -23,6 +24,7 @@ public struct EMVTag {
         
         let info: Info = .info(for: tlv.tag, scheme: scheme)
         
+        self.tag = tlv.tag
         self.name = info.name
         self.description = info.description
         self.source = info.source
