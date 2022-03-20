@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftyBERTLV",
+        "repositoryURL": "https://github.com/kaphacius/swifty-ber-tlv",
+        "state": {
+          "branch": "develop",
+          "revision": "42d97bc3fb87d1e083fae7b0f544f0a4796622e9",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
