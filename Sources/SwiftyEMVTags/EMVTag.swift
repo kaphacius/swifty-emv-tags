@@ -113,7 +113,7 @@ extension EMVTag {
     
     public struct DecodedByte {
         
-        let bitList: [BitMeaning]
+        public let bitList: [BitMeaning]
         
     }
     
