@@ -7,7 +7,7 @@
 
 import SwiftyBERTLV
 
-public struct EMVTag {
+public struct EMVTag: Equatable {
     
     public let tag: UInt64
     public let name: String
@@ -56,7 +56,7 @@ public struct EMVTag {
 
 extension EMVTag {
     
-    public enum Source {
+    public enum Source: Equatable {
         case unknown
         case kernel
         case terminal
@@ -65,14 +65,14 @@ extension EMVTag {
         case issuer
     }
     
-    public enum Format {
+    public enum Format: Equatable {
         case unknown
         case binary
         case BCD
         case date
     }
     
-    public struct Kernel: OptionSet, Hashable, CaseIterable, Codable {
+    public struct Kernel: Equatable, OptionSet, Hashable, CaseIterable {
         
         public static let allCases: [EMVTag.Kernel] = [
             .kernel1, .kernel2, .kernel3, .kernel4, .kernel5, .kernel6, .kernel7
@@ -99,7 +99,7 @@ extension EMVTag {
         
     }
     
-    public struct BitMeaning {
+    public struct BitMeaning: Equatable {
         
         public let meaning: String
         public let isSet: Bool
@@ -111,7 +111,7 @@ extension EMVTag {
         
     }
     
-    public struct DecodedByte {
+    public struct DecodedByte: Equatable {
         
         public let bitList: [BitMeaning]
         
