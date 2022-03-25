@@ -16,7 +16,7 @@ public protocol AnyEMVTagInfoSource {
 extension EMVTag {
     
     public struct Info: Equatable {
-        
+
         public let tag: UInt64
         public let name: String
         public let description: String
@@ -26,6 +26,27 @@ extension EMVTag {
         public let minLength: String
         public let maxLength: String
         public let byteMeaningList: [[String]]
+        
+        public init(
+            tag: UInt64,
+            name: String,
+            description: String,
+            source: Source,
+            format: Format,
+            kernel: Kernel, minLength: String,
+            maxLength: String,
+            byteMeaningList: [[String]]
+        ) {
+            self.tag = tag
+            self.name = name
+            self.description = description
+            self.source = source
+            self.format = format
+            self.kernel = kernel
+            self.minLength = minLength
+            self.maxLength = maxLength
+            self.byteMeaningList = byteMeaningList
+        }
         
         public static func unknown(tag: UInt64) -> Info {
             Info(
