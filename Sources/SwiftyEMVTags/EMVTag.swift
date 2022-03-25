@@ -59,23 +59,31 @@ public struct EMVTag: Equatable, Identifiable {
 
 extension EMVTag {
     
-    public enum Source: Equatable {
+    public enum Source: String, Equatable, CustomStringConvertible, Codable {
         case unknown
         case kernel
         case terminal
         case card
         case config
         case issuer
+        
+        public var description: String {
+            rawValue.capitalized
+        }
     }
     
-    public enum Format: Equatable {
+    public enum Format: String, Equatable, CustomStringConvertible, Codable {
         case unknown
         case binary
         case BCD
         case date
+        
+        public var description: String {
+            rawValue.capitalized
+        }
     }
     
-    public struct Kernel: Equatable, OptionSet, Hashable, CaseIterable {
+    public struct Kernel: Equatable, OptionSet, Hashable, CaseIterable, CustomStringConvertible, Codable {
         
         public static let allCases: [EMVTag.Kernel] = [
             .kernel1, .kernel2, .kernel3, .kernel4, .kernel5, .kernel6, .kernel7
@@ -98,6 +106,16 @@ extension EMVTag {
         
         public init(rawValue: UInt64) {
             self.rawValue = rawValue
+        }
+        
+        public var description: String {
+            if self == .all {
+                return "All"
+            }
+            
+            let kernelNumber = self.rawValue.bitWidth - self.rawValue.leadingZeroBitCount
+            
+            return "\(kernelNumber)"
         }
         
     }
