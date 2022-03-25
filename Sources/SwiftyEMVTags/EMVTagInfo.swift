@@ -9,7 +9,7 @@ import Foundation
 
 public protocol AnyEMVTagInfoSource {
     
-    func info(for tag: UInt64, scheme: EMVTag.Scheme) -> EMVTag.Info
+    func info(for tag: UInt64, kernel: EMVTag.Kernel) -> EMVTag.Info
     
 }
 
@@ -22,55 +22,46 @@ extension EMVTag {
         internal let description: String
         internal let source: Source
         internal let format: Format
-        internal let scheme: Scheme
+        internal let kernel: Kernel
         internal let minLength: String
         internal let maxLength: String
         internal let byteMeaningList: [[String]]
         
-        internal static func unknown(tag: UInt64, scheme: Scheme) -> Info {
+        internal static func unknown(tag: UInt64) -> Info {
             Info(
                 tag: tag,
                 name: "Unknown tag",
                 description: "Unknown description",
                 source: .unknown,
                 format: .unknown,
-                scheme: scheme,
+                kernel: .all,
                 minLength: "",
                 maxLength: "",
                 byteMeaningList: [[]]
             )
         }
-        
-        internal static func info(
-            for tag: UInt64,
-            scheme: Scheme,
-            infoSource: AnyEMVTagInfoSource = defaultInfoSource
-        ) -> Info {
-            infoSource.info(for: tag, scheme: scheme)
-        }
-        
     }
     
-    fileprivate static let defaultInfoSource = EMVTagInfoSource()
+    internal static let defaultInfoSource = InfoSource()
     
-    fileprivate struct EMVTagInfoSource: AnyEMVTagInfoSource {
+    internal struct InfoSource: AnyEMVTagInfoSource {
         
         private let infoSource: [EMVTag.Info] = []
         
         private struct Locator: Hashable {
             let tag: UInt64
-            let scheme: Scheme
+            let kernel: Kernel
             
             func hash(into hasher: inout Hasher) {
                 hasher.combine(tag)
-                hasher.combine(scheme)
+                hasher.combine(kernel)
             }
         }
         
-        func info(for tag: UInt64, scheme: EMVTag.Scheme) -> EMVTag.Info {
+        func info(for tag: UInt64, kernel: Kernel) -> EMVTag.Info {
             infoSource.first(
-                where: { $0.tag == tag && $0.scheme.contains(scheme) }
-            ) ?? .unknown(tag: tag, scheme: scheme)
+                where: { $0.tag == tag && $0.kernel.contains(kernel) }
+            ) ?? .unknown(tag: tag)
         }
         
     }

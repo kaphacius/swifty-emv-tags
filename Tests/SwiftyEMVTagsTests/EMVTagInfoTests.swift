@@ -4,48 +4,27 @@ import SwiftyBERTLV
 
 final class EMVTagInfoTests: XCTestCase {
     
-    func testProduceUnknownTagInfoAllSchemes() throws {
-        
-        let sut = EMVTag.Info.info(for: 0x00, scheme: .all)
-        
-        XCTAssertEqual(sut, .unknown(tag: 0x00, scheme: .all))
-        
-    }
-    
-    func testProduceUnknownTagInfoSpecificSchemes() throws {
-        
-        let sut = EMVTag.Info.info(for: 0x00, scheme: .jcb)
-        
-        XCTAssertEqual(sut, .unknown(tag: 0x00, scheme: .jcb))
-        
-    }
-    
     func testUsesProvidedDataSource() throws {
         
         let expectedTag: UInt64 = 0x5A
-        let expectedScheme = EMVTag.Scheme.visa
+        let expectedKernel = EMVTag.Kernel.kernel1
         
         let expectation = expectation(description: "Expect info to be requested")
         
         var mockSource = infoSourceMock
-        mockSource.onInfo = { (tag, scheme) in
+        mockSource.onInfo = { (tag, kernel) in
             XCTAssertEqual(tag, expectedTag)
-            XCTAssertEqual(scheme, expectedScheme)
+            XCTAssertEqual(kernel, expectedKernel)
             
             expectation.fulfill()
             
-            return EMVTag.Info.unknown(tag: tag, scheme: scheme)
+            return EMVTag.Info.unknown(tag: tag)
         }
         
-        let sut = EMVTag.Info.info(
-            for: expectedTag,
-               scheme: expectedScheme,
-               infoSource: mockSource
-        )
-        
-        XCTAssertEqual(
-            sut,
-            EMVTag.Info.unknown(tag: expectedTag, scheme: expectedScheme)
+        _ = EMVTag(
+            tlv: try .parse(bytes: [UInt8(expectedTag), 0x00]).first!,
+            kernel: expectedKernel,
+            infoSource: mockSource
         )
         
         waitForExpectations(timeout: 0.0, handler: nil)
