@@ -37,7 +37,7 @@ extension EMVTag {
                 kernel: .all,
                 minLength: "",
                 maxLength: "",
-                byteMeaningList: [[]]
+                byteMeaningList: []
             )
         }
     }
