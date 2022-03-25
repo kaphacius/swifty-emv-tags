@@ -6,8 +6,11 @@
 //
 
 import SwiftyBERTLV
+import Foundation
 
-public struct EMVTag: Equatable {
+public struct EMVTag: Equatable, Identifiable {
+    
+    public let id = UUID()
     
     public let tag: UInt64
     public let name: String
