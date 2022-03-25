@@ -22,7 +22,7 @@ public struct EMVTag: Equatable {
     
     public let decodedMeaningList: [DecodedByte]
     
-    init(
+    public init(
         tlv: BERTLV,
         kernel: Kernel = .all,
         infoSource: AnyEMVTagInfoSource = defaultInfoSource

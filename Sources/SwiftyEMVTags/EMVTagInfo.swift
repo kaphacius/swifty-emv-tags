@@ -42,7 +42,7 @@ extension EMVTag {
         }
     }
     
-    internal static let defaultInfoSource = InfoSource()
+    public static let defaultInfoSource = InfoSource()
     
     internal struct InfoSource: AnyEMVTagInfoSource {
         
