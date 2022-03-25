@@ -17,15 +17,15 @@ extension EMVTag {
     
     public struct Info: Equatable {
         
-        internal let tag: UInt64
-        internal let name: String
-        internal let description: String
-        internal let source: Source
-        internal let format: Format
-        internal let kernel: Kernel
-        internal let minLength: String
-        internal let maxLength: String
-        internal let byteMeaningList: [[String]]
+        public let tag: UInt64
+        public let name: String
+        public let description: String
+        public let source: Source
+        public let format: Format
+        public let kernel: Kernel
+        public let minLength: String
+        public let maxLength: String
+        public let byteMeaningList: [[String]]
         
         public static func unknown(tag: UInt64) -> Info {
             Info(

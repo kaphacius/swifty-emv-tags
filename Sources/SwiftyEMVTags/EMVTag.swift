@@ -107,7 +107,7 @@ extension EMVTag {
         public let meaning: String
         public let isSet: Bool
         
-        init(meaning: String, byte: UInt8, bitIdx: Int) {
+        internal init(meaning: String, byte: UInt8, bitIdx: Int) {
             self.meaning = meaning
             self.isSet = ((byte >> bitIdx) & 0x01) == 0x01
         }
