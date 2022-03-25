@@ -27,11 +27,11 @@ extension EMVTag {
         internal let maxLength: String
         internal let byteMeaningList: [[String]]
         
-        internal static func unknown(tag: UInt64) -> Info {
+        public static func unknown(tag: UInt64) -> Info {
             Info(
                 tag: tag,
                 name: "Unknown tag",
-                description: "Unknown description",
+                description: "",
                 source: .unknown,
                 format: .unknown,
                 kernel: .all,
