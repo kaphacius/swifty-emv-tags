@@ -50,7 +50,7 @@ public struct EMVTag: Equatable, Identifiable {
         
         self.decodedMeaningList = zip(value, info.byteMeaningList)
             .map { (byte, byteMeaningList) in
-                zip(0..<byte.bitWidth, byteMeaningList)
+                zip((0..<byte.bitWidth).reversed(), byteMeaningList)
                     .map { BitMeaning(meaning: $1, byte: byte, bitIdx: $0) }
             }.map(DecodedByte.init(bitList:))
     }

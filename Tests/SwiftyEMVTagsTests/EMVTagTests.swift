@@ -105,7 +105,7 @@ final class EMVTagTests: XCTestCase {
     
     func testBytesDecoding() throws {
         
-        let value: [UInt8] = [0xFF, 0xAA, 0xBB]
+        let value: [UInt8] = [0xF0, 0x0F, 0xAA]
         let tag = try BERTLV.parse(bytes: [0x5A, 0x03] + value).first!
         
         var mockSource = infoSourceMock
@@ -119,9 +119,9 @@ final class EMVTagTests: XCTestCase {
                 kernel: .all,
                 minLength: "",
                 maxLength: "", byteMeaningList: [
-                    (0..<UInt8.bitWidth).map(\.description),
-                    (0..<UInt8.bitWidth).map(\.description),
-                    (0..<UInt8.bitWidth).map(\.description)
+                    (0..<UInt8.bitWidth).reversed().map { $0 + 1 }.map(\.description),
+                    (0..<UInt8.bitWidth).reversed().map { $0 + 1 }.map(\.description),
+                    (0..<UInt8.bitWidth).reversed().map { $0 + 1 }.map(\.description)
                 ]
             )
         }
@@ -131,8 +131,8 @@ final class EMVTagTests: XCTestCase {
         _ = sut.decodedMeaningList.enumerated().map { (byteIdx, byte) in
             byte.bitList.enumerated().map { (bitIdx, bit) in
                 (0..<UInt8.bitWidth).map { i in
-                    XCTAssertEqual((value[byteIdx] >> bitIdx & 0x01 == 0x01), bit.isSet)
-                    XCTAssertEqual(bitIdx.description, bit.meaning)
+                    XCTAssertEqual((value[byteIdx] << bitIdx & 0x80 == 0x80), bit.isSet)
+                    XCTAssertEqual((UInt8.bitWidth - bitIdx).description, bit.meaning)
                 }
             }
         }
