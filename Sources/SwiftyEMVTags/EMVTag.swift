@@ -16,7 +16,7 @@ public struct EMVTag: Equatable, Identifiable {
     public let name: String
     public let description: String
     public let source: Source
-    public let format: Format
+    public let format: String
     public let kernel: Kernel
     
     public let isConstructed: Bool
@@ -74,17 +74,6 @@ extension EMVTag {
         case card
         case config
         case issuer
-        
-        public var description: String {
-            rawValue.capitalized
-        }
-    }
-    
-    public enum Format: String, Equatable, CustomStringConvertible, Codable {
-        case unknown
-        case binary
-        case BCD
-        case date
         
         public var description: String {
             rawValue.capitalized

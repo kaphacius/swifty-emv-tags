@@ -22,7 +22,7 @@ extension EMVTag.Info {
             name: "",
             description: "",
             source: .kernel,
-            format: .unknown,
+            format: "",
             kernel: kernel,
             minLength: "",
             maxLength: "", byteMeaningList: [

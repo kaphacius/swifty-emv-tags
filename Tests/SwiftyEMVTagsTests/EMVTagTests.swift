@@ -115,7 +115,7 @@ final class EMVTagTests: XCTestCase {
                 name: "",
                 description: "",
                 source: .kernel,
-                format: .unknown,
+                format: "",
                 kernel: .all,
                 minLength: "",
                 maxLength: "", byteMeaningList: [

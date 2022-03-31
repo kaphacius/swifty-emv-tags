@@ -21,7 +21,7 @@ extension EMVTag {
         public let name: String
         public let description: String
         public let source: Source
-        public let format: Format
+        public let format: String
         public let kernel: Kernel
         public let minLength: String
         public let maxLength: String
@@ -32,7 +32,7 @@ extension EMVTag {
             name: String,
             description: String,
             source: Source,
-            format: Format,
+            format: String,
             kernel: Kernel, minLength: String,
             maxLength: String,
             byteMeaningList: [[String]]
@@ -54,7 +54,7 @@ extension EMVTag {
                 name: "Unknown tag",
                 description: "",
                 source: .unknown,
-                format: .unknown,
+                format: "",
                 kernel: .all,
                 minLength: "",
                 maxLength: "",
