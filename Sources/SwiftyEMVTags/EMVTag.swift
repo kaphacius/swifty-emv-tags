@@ -92,7 +92,7 @@ extension EMVTag {
         public static let kernel4 = Kernel(rawValue: 1 << 3)
         public static let kernel5 = Kernel(rawValue: 1 << 4)
         public static let kernel6 = Kernel(rawValue: 1 << 5)
-        public static let kernel7 = Kernel(rawValue: 1 << 5)
+        public static let kernel7 = Kernel(rawValue: 1 << 6)
         public static let all = Kernel(
             rawValue: Self.allCases
                 .map(\.rawValue)
