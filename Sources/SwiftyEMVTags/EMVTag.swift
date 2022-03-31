@@ -32,7 +32,18 @@ public struct EMVTag: Equatable, Identifiable {
     ) {
         
         let info: Info = infoSource.info(for: tlv.tag, kernel: kernel)
+        let subtags: [EMVTag]
         
+        if tlv.isConstructed {
+            subtags = tlv.subTags.map { .init(tlv: $0, kernel: kernel, infoSource: infoSource) }
+        } else {
+            subtags = []
+        }
+        
+        self.init(tlv: tlv, info: info, subtags: subtags)
+    }
+    
+    public init(tlv: BERTLV, info: EMVTag.Info, subtags: [EMVTag]) {
         self.tag = tlv.tag
         self.name = info.name
         self.description = info.description
@@ -42,11 +53,8 @@ public struct EMVTag: Equatable, Identifiable {
         
         self.isConstructed = tlv.isConstructed
         self.value = tlv.value
-        if self.isConstructed {
-            self.subtags = tlv.subTags.map { .init(tlv: $0, kernel: kernel, infoSource: infoSource) }
-        } else {
-            self.subtags = []
-        }
+        
+        self.subtags = subtags
         
         self.decodedMeaningList = zip(value, info.byteMeaningList)
             .map { (byte, byteMeaningList) in
