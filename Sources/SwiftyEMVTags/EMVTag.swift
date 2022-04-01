@@ -28,7 +28,7 @@ public struct EMVTag: Equatable, Identifiable {
     public init(
         tlv: BERTLV,
         kernel: Kernel = .general,
-        infoSource: AnyEMVTagInfoSource = defaultInfoSource
+        infoSource: AnyEMVTagInfoSource
     ) {
         
         let info: Info = infoSource.info(for: tlv.tag, kernel: kernel)

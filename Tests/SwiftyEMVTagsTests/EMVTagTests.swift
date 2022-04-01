@@ -8,7 +8,7 @@ final class EMVTagTests: XCTestCase {
         
         let tlv = try XCTUnwrap(BERTLV.parse(bytes: [0x5A, 0x01, 0xBB]).first)
         
-        let sut = EMVTag(tlv: tlv)
+        let sut = EMVTag(tlv: tlv, infoSource: infoSourceMock)
         
         XCTAssertEqual(sut.tag, tlv.tag)
         XCTAssertEqual(sut.isConstructed, tlv.isConstructed)
@@ -23,7 +23,7 @@ final class EMVTagTests: XCTestCase {
         let subTlv = try XCTUnwrap(BERTLV.parse(bytes: [0x5A, 0x01, 0xFF]).first)
         let tlv = try XCTUnwrap(BERTLV.parse(bytes: [0xE1, 0x03, 0x5A, 0x01, 0xFF]).first)
         
-        let sut = EMVTag(tlv: tlv)
+        let sut = EMVTag(tlv: tlv, infoSource: infoSourceMock)
         
         XCTAssertEqual(sut.tag, tlv.tag)
         XCTAssertEqual(sut.isConstructed, tlv.isConstructed)

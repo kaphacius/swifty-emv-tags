@@ -63,28 +63,4 @@ extension EMVTag {
         }
     }
     
-    public static let defaultInfoSource: AnyEMVTagInfoSource = InfoSource()
-    
-    internal struct InfoSource: AnyEMVTagInfoSource {
-        
-        private let infoSource: [EMVTag.Info] = []
-        
-        private struct Locator: Hashable {
-            let tag: UInt64
-            let kernel: Kernel
-            
-            func hash(into hasher: inout Hasher) {
-                hasher.combine(tag)
-                hasher.combine(kernel)
-            }
-        }
-        
-        func info(for tag: UInt64, kernel: Kernel) -> EMVTag.Info {
-            infoSource.first(
-                where: { $0.tag == tag && $0.kernel.matches(kernel) }
-            ) ?? .unknown(tag: tag)
-        }
-        
-    }
-    
 }
