@@ -80,7 +80,7 @@ extension EMVTag {
         }
     }
     
-    public enum Kernel: String, Equatable, Codable {
+    public enum Kernel: String, Equatable, Codable, CustomStringConvertible {
         case general
         case kernel1
         case kernel2
@@ -94,6 +94,10 @@ extension EMVTag {
             self == other ||
             self == .general ||
             other == .general
+        }
+        
+        public var description: String {
+            rawValue.capitalized
         }
         
     }
