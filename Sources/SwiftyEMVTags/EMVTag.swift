@@ -27,7 +27,7 @@ public struct EMVTag: Equatable, Identifiable {
     
     public init(
         tlv: BERTLV,
-        kernel: Kernel = .all,
+        kernel: Kernel = .general,
         infoSource: AnyEMVTagInfoSource = defaultInfoSource
     ) {
         
@@ -80,39 +80,20 @@ extension EMVTag {
         }
     }
     
-    public struct Kernel: Equatable, OptionSet, Hashable, CaseIterable, CustomStringConvertible, Codable {
+    public enum Kernel: String, Equatable, Codable {
+        case general
+        case kernel1
+        case kernel2
+        case kernel3
+        case kernel4
+        case kernel5
+        case kernel6
+        case kernel7
         
-        public static let allCases: [EMVTag.Kernel] = [
-            .kernel1, .kernel2, .kernel3, .kernel4, .kernel5, .kernel6, .kernel7
-        ]
-        
-        public static let kernel1 = Kernel(rawValue: 1 << 0)
-        public static let kernel2 = Kernel(rawValue: 1 << 1)
-        public static let kernel3 = Kernel(rawValue: 1 << 2)
-        public static let kernel4 = Kernel(rawValue: 1 << 3)
-        public static let kernel5 = Kernel(rawValue: 1 << 4)
-        public static let kernel6 = Kernel(rawValue: 1 << 5)
-        public static let kernel7 = Kernel(rawValue: 1 << 6)
-        public static let all = Kernel(
-            rawValue: Self.allCases
-                .map(\.rawValue)
-                .reduce(0, |)
-        )
-        
-        public let rawValue: UInt64
-        
-        public init(rawValue: UInt64) {
-            self.rawValue = rawValue
-        }
-        
-        public var description: String {
-            if self == .all {
-                return "All"
-            }
-            
-            let kernelNumber = self.rawValue.bitWidth - self.rawValue.leadingZeroBitCount
-            
-            return "\(kernelNumber)"
+        public func matches(_ other: Kernel) -> Bool {
+            self == other ||
+            self == .general ||
+            other == .general
         }
         
     }

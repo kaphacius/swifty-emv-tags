@@ -55,7 +55,7 @@ extension EMVTag {
                 description: "",
                 source: .unknown,
                 format: "",
-                kernel: .all,
+                kernel: .general,
                 minLength: "",
                 maxLength: "",
                 byteMeaningList: []
@@ -81,7 +81,7 @@ extension EMVTag {
         
         func info(for tag: UInt64, kernel: Kernel) -> EMVTag.Info {
             infoSource.first(
-                where: { $0.tag == tag && $0.kernel.contains(kernel) }
+                where: { $0.tag == tag && $0.kernel.matches(kernel) }
             ) ?? .unknown(tag: tag)
         }
         

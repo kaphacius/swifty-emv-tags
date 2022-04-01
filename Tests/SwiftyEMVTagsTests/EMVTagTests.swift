@@ -14,7 +14,7 @@ final class EMVTagTests: XCTestCase {
         XCTAssertEqual(sut.isConstructed, tlv.isConstructed)
         XCTAssertEqual(sut.value, tlv.value)
         XCTAssertEqual(sut.subtags.count, tlv.subTags.count)
-        XCTAssertEqual(sut.kernel, .all)
+        XCTAssertEqual(sut.kernel, .general)
         
     }
     
@@ -35,7 +35,7 @@ final class EMVTagTests: XCTestCase {
         XCTAssertEqual(sutSubTag.isConstructed, subTlv.isConstructed)
         XCTAssertEqual(sutSubTag.value, subTlv.value)
         XCTAssertEqual(sutSubTag.subtags.count, subTlv.subTags.count)
-        XCTAssertEqual(sutSubTag.kernel, .all)
+        XCTAssertEqual(sutSubTag.kernel, .general)
         
     }
     
@@ -116,7 +116,7 @@ final class EMVTagTests: XCTestCase {
                 description: "",
                 source: .kernel,
                 format: "",
-                kernel: .all,
+                kernel: .general,
                 minLength: "",
                 maxLength: "", byteMeaningList: [
                     (0..<UInt8.bitWidth).reversed().map { $0 + 1 }.map(\.description),
