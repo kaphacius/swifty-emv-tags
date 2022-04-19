@@ -10,7 +10,7 @@ import Foundation
 
 public struct EMVTag: Equatable, Identifiable {
     
-    public let id = UUID()
+    public let id: UUID
     
     public let tag: UInt64
     public let name: String
@@ -44,6 +44,7 @@ public struct EMVTag: Equatable, Identifiable {
     }
     
     public init(tlv: BERTLV, info: EMVTag.Info, subtags: [EMVTag]) {
+        self.id = UUID()
         self.tag = tlv.tag
         self.name = info.name
         self.description = info.description
@@ -61,6 +62,32 @@ public struct EMVTag: Equatable, Identifiable {
                 zip((0..<byte.bitWidth).reversed(), byteMeaningList)
                     .map { BitMeaning(meaning: $1, byte: byte, bitIdx: $0) }
             }.map(DecodedByte.init(bitList:))
+    }
+    
+    public init(
+        id: UUID,
+        tag: UInt64,
+        name: String,
+        description: String,
+        source: EMVTag.Source,
+        format: String,
+        kernel: EMVTag.Kernel,
+        isConstructed: Bool,
+        value: [UInt8],
+        subtags: [EMVTag],
+        decodedMeaningList: [EMVTag.DecodedByte]
+    ) {
+        self.id = id
+        self.tag = tag
+        self.name = name
+        self.description = description
+        self.source = source
+        self.format = format
+        self.kernel = kernel
+        self.isConstructed = isConstructed
+        self.value = value
+        self.subtags = subtags
+        self.decodedMeaningList = decodedMeaningList
     }
     
 }
