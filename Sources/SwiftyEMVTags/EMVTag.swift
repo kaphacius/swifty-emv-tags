@@ -21,6 +21,7 @@ public struct EMVTag: Equatable, Identifiable {
     
     public let isConstructed: Bool
     public let value: [UInt8]
+    public let lengthBytes: [UInt8]
     public let subtags: [EMVTag]
     
     public let decodedMeaningList: [DecodedByte]
@@ -54,6 +55,7 @@ public struct EMVTag: Equatable, Identifiable {
         
         self.isConstructed = tlv.isConstructed
         self.value = tlv.value
+        self.lengthBytes = tlv.lengthBytes
         
         self.subtags = subtags
         
@@ -74,6 +76,7 @@ public struct EMVTag: Equatable, Identifiable {
         kernel: EMVTag.Kernel,
         isConstructed: Bool,
         value: [UInt8],
+        lengthBytes: [UInt8],
         subtags: [EMVTag],
         decodedMeaningList: [EMVTag.DecodedByte]
     ) {
@@ -86,8 +89,17 @@ public struct EMVTag: Equatable, Identifiable {
         self.kernel = kernel
         self.isConstructed = isConstructed
         self.value = value
+        self.lengthBytes = lengthBytes
         self.subtags = subtags
         self.decodedMeaningList = decodedMeaningList
+    }
+    
+    public var hexString: String {
+        [
+            tag.hexString,
+            lengthBytes.map(\.hexString).joined(),
+            value.map(\.hexString).joined()
+        ].joined()
     }
     
 }
