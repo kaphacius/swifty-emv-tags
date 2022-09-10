@@ -7,59 +7,48 @@
 
 import Foundation
 
-public protocol AnyEMVTagInfoSource {
+/// Represents information about an EMV tag
+public struct Info: Decodable {
     
-    func info(for tag: UInt64, kernel: EMVTag.Kernel) -> EMVTag.Info
+    /// Tag value
+    public let tag: UInt64
+    
+    /// Name of the tag
+    public let name: String
+    
+    /// Description of the tag
+    public let description: String
+    
+    /// Source of the tag
+    public let source: Source
+    
+    /// Format of the tag
+    public let format: String
+    
+    /// Kernel that describes the tag
+    /// This value contains `general` in case the tag is common for all kernels
+    public let kernel: String
+    
+    /// Minimal length of the tag value
+    public let minLength: String
+    
+    /// Maximum length of the tag value
+    public let maxLength: String
     
 }
 
-extension EMVTag {
+extension Info {
     
-    public struct Info: Equatable {
-
-        public let tag: UInt64
-        public let name: String
-        public let description: String
-        public let source: Source
-        public let format: String
-        public let kernel: Kernel
-        public let minLength: String
-        public let maxLength: String
-        public let byteMeaningList: [[String]]
+    public enum Source: String, Equatable, CustomStringConvertible, Codable {
+        case unknown
+        case kernel
+        case terminal
+        case card
+        case config
+        case issuer
         
-        public init(
-            tag: UInt64,
-            name: String,
-            description: String,
-            source: Source,
-            format: String,
-            kernel: Kernel, minLength: String,
-            maxLength: String,
-            byteMeaningList: [[String]]
-        ) {
-            self.tag = tag
-            self.name = name
-            self.description = description
-            self.source = source
-            self.format = format
-            self.kernel = kernel
-            self.minLength = minLength
-            self.maxLength = maxLength
-            self.byteMeaningList = byteMeaningList
-        }
-        
-        public static func unknown(tag: UInt64) -> Info {
-            Info(
-                tag: tag,
-                name: "Unknown tag",
-                description: "",
-                source: .unknown,
-                format: "",
-                kernel: .general,
-                minLength: "",
-                maxLength: "",
-                byteMeaningList: []
-            )
+        public var description: String {
+            rawValue.capitalized
         }
     }
     
