@@ -1,0 +1,111 @@
+{
+  "name": "general",
+  "description": "Tags that are present in all EMV kernels",
+  "tags": [
+    {
+      "info": {
+        "description": "Indicates the card data input, CVM, and security capabilities of the Terminal and Reader. The CVM capability (Byte 2) is instantiated with values depending on the transaction amount. The Terminal Capabilities is coded according to Annex A.2 of [EMV Book 4].",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Terminal Capabilities",
+        "source": "terminal",
+        "tag": "9F33"
+      },
+      "bytes": [
+        {
+          "name": "Card Data Input Capability",
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Manual key entry",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Magnetic stripe",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "IC with contacts",
+              "type": "bool"
+            },
+            {
+              "pattern": "00011111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "name": "CVM Capability",
+          "groups": [
+            {
+              "name": "Plaintext PIN for ICC verification",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "Enciphered PIN for online verification",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "name": "Signature (paper)",
+              "pattern": "00100000",
+              "type": "bool"
+            },
+            {
+              "name": "Enciphered PIN for offline verification",
+              "pattern": "00010000",
+              "type": "bool"
+            },
+            {
+              "name": "No CVM Required",
+              "pattern": "00001000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "name": "CVM Capability",
+          "groups": [
+            {
+              "name": "SDA",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "DDA",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "name": "Card capture",
+              "pattern": "00100000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "type": "RFU"
+            },
+            {
+              "name": "CDA",
+              "pattern": "00001000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
