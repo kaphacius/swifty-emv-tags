@@ -22,7 +22,7 @@ final class TagDecodingInfoTests: XCTestCase {
         XCTAssertEqual(tagDecodingInfo.bytes.count, try tagDecodingInfoDict.value(of: [Any].self, for: "bytes").count)
         
         let tagInfo = tagDecodingInfo.info
-        let infoDict = try tagDecodingInfoDict.value(of: [String: Any].self, for: "info")
+        let infoDict = try tagDecodingInfoDict.value(of: JSONDictionary.self, for: "info")
         
         try XCTAssertEqual(tagInfo.tag.hexString, infoDict.value(for: "tag"))
         try XCTAssertEqual(tagInfo.name, infoDict.value(for: "name"))

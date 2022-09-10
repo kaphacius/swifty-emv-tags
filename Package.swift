@@ -28,6 +28,10 @@ let package = Package(
             dependencies: ["SwiftyBERTLV"]),
         .testTarget(
             name: "SwiftyEMVTagsTests",
-            dependencies: ["SwiftyEMVTags"]),
+            dependencies: ["SwiftyEMVTags"],
+            resources: [
+                .process("Resources")
+            ]
+        ),
     ]
 )

@@ -2,35 +2,28 @@ import XCTest
 @testable import SwiftyEMVTags
 import SwiftyBERTLV
 
-var infoSourceMock = MockInfoSource()
+enum TestError: Error {
+    
+    case unableToFindValue(type: String, key: String)
+    
+}
 
-internal struct MockInfoSource: AnyEMVTagInfoSource {
+extension Dictionary where Key == String, Value == Any {
     
-    internal var onInfo: ((UInt64, EMVTag.Kernel) -> EMVTag.Info)?
+    func value<T>(for key: String) throws -> T {
+        guard let value = self[key] as? T else {
+            throw TestError.unableToFindValue(type: "\(T.self)", key: key)
+        }
+        
+        return value
+    }
     
-    internal func info(for tag: UInt64, kernel: EMVTag.Kernel) -> EMVTag.Info {
-        onInfo?(tag, kernel) ?? .unknown(tag: tag)
+    func value<T>(of type: T.Type, for key: String) throws -> T {
+        try self.value(for: key)
     }
     
 }
 
-extension EMVTag.Info {
-    
-    internal static func mockInfo(with kernel: EMVTag.Kernel) -> EMVTag.Info {
-        EMVTag.Info(
-            tag: 0x5A,
-            name: "",
-            description: "",
-            source: .kernel,
-            format: "",
-            kernel: kernel,
-            minLength: "",
-            maxLength: "", byteMeaningList: [
-                (0..<UInt8.bitWidth).map { _ in "" },
-                (0..<UInt8.bitWidth).map { _ in "" },
-                (0..<UInt8.bitWidth).map { _ in "" }
-            ]
-        )
-    }
+typealias JSONDictionary = Dictionary<String, Any>
 
 }

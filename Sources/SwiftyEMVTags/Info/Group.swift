@@ -114,7 +114,17 @@ extension ByteInfo.Group.MappingType {
         }
     }
     
-    fileprivate enum RawType: String, Decodable {
+    internal var stringValue: String {
+        switch self {
+        case .bool: return RawType.bool.rawValue
+        case .bcd: return RawType.bcd.rawValue
+        case .hex: return RawType.hex.rawValue
+        case .bitmap: return RawType.bitmap.rawValue
+        case .RFU: return RawType.RFU.rawValue
+        }
+    }
+    
+    internal enum RawType: String, Decodable {
         case bitmap
         case bcd
         case hex
