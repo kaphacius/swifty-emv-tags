@@ -45,4 +45,8 @@ extension UInt8 {
         String(repeating: "0", count: self.leadingZeroBitCount) + String(self, radix: 2)
     }
     
+    var binaryCodedDecimal: UInt8 {
+        (self >> 4) * 10 + (self & 0b00001111)
+    }
+    
 }

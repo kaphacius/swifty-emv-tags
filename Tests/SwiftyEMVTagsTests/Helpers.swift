@@ -2,6 +2,13 @@ import XCTest
 @testable import SwiftyEMVTags
 import SwiftyBERTLV
 
+func mockTagData() throws -> Data {
+    let url = URL(
+        fileURLWithPath: Bundle.module.path(forResource: "tag_mock", ofType: "json")!
+    )
+    return try Data(contentsOf: url)
+}
+
 enum TestError: Error {
     
     case unableToFindValue(type: String, key: String)

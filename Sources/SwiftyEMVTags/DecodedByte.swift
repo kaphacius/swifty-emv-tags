@@ -73,8 +73,8 @@ extension EMVTag.DecodedByte {
         
         public enum GroupType {
             case bitmap(MappingResult)
-            case hex(Int)
-            case bcd(Int)
+            case hex(UInt8)
+            case bcd(UInt8)
             case bool(Bool)
             case RFU
             
@@ -83,9 +83,9 @@ extension EMVTag.DecodedByte {
                 case .bool:
                     self = .bool(shiftedBits.matches(pattern: group.pattern))
                 case .hex:
-                    self = .hex(Int(shiftedBits))
+                    self = .hex(shiftedBits)
                 case .bcd:
-                    self = .bcd(Int(shiftedBits))
+                    self = .bcd(shiftedBits.binaryCodedDecimal)
                 case .RFU:
                     self = .RFU
                 case .bitmap(let mappings):

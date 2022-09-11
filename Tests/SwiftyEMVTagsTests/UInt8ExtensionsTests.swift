@@ -83,5 +83,19 @@ final class UInt8ExtensionsTests: XCTestCase {
         )
         
     }
+    
+    func testBinaryCodedValue() throws {
+        [
+            (0b10010001, 91),
+            (0b10100100, 104),
+            (0b11111011, 161),
+            (0b00110011, 33),
+            (0b00011111, 25)
+        ].map { (bcd: UInt8, dec: UInt8) in
+            (bcd.binaryCodedDecimal, dec)
+        }.forEach { (sut: UInt8, dec: UInt8) in
+            XCTAssertEqual(sut, dec)
+        }
+    }
 
 }
