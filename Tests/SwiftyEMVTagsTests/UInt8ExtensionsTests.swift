@@ -27,7 +27,7 @@ final class UInt8ExtensionsTests: XCTestCase {
             .map { ($0.pattern, $0.byte.extractingBits(with: $0.pattern), $0.expectedResult) }
             .forEach { arg0 in
                 let (pattern, sut, expectedResult) = arg0
-                XCTAssertEqual(sut.patternLength, pattern.nonzeroBitCount)
+                XCTAssertEqual(sut.patternWidth, pattern.nonzeroBitCount)
                 XCTAssertEqual(sut.extracted, expectedResult)
             }
     }

@@ -10,7 +10,7 @@ import Foundation
 internal struct BitExtractionResult {
     
     let extracted: UInt8
-    let patternLength: Int
+    let patternWidth: Int
     
 }
 
@@ -33,7 +33,7 @@ extension UInt8 {
         let shift = pattern.bitWidth - pattern.leadingZeroBitCount - pattern.nonzeroBitCount
         return .init(
             extracted: (self & pattern) >> shift,
-            patternLength: pattern.nonzeroBitCount
+            patternWidth: pattern.nonzeroBitCount
         )
     }
     
