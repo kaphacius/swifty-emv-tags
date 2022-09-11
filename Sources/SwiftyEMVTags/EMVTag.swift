@@ -8,22 +8,25 @@
 import SwiftyBERTLV
 import Foundation
 
-public struct EMVTag: Equatable, Identifiable {
+public struct EMVTag {
     
-    public let id: UUID
+    public enum DecodingResult {
+        case uknown
+        case error(Error)
+        case singleKernel(DecodedTag)
+        case multipleKernels([DecodedTag])
+    }
+            
+    public struct DecodedTag {
+        public let kernelInfo: KernelInfo
+        public let tagInfo: TagInfo
+        public let decodedBytes: [DecodedByte]
+    }
     
     public let tag: UInt64
-    public let name: String
-    public let description: String
-    public let source: Source
-    public let format: String
-    public let kernel: Kernel
-    
     public let isConstructed: Bool
     public let value: [UInt8]
-    public let lengthBytes: [UInt8]
     public let subtags: [EMVTag]
-    
     public let decodedMeaningList: [DecodedByte]
     
     public init(
@@ -158,5 +161,7 @@ extension EMVTag {
         public let bitList: [BitMeaning]
         
     }
+
+    public let decodingResult: DecodingResult
     
 }

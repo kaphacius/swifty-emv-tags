@@ -1,5 +1,5 @@
 //
-//  Info.swift
+//  TagInfo.swift
 //  
 //
 //  Created by Yurii Zadoianchuk on 16/03/2022.
@@ -8,7 +8,7 @@
 import Foundation
 
 /// Represents information about an EMV tag
-public struct Info: Decodable {
+public struct TagInfo: Decodable {
     
     private enum CodingKeys: String, CodingKey {
         case tag
@@ -61,7 +61,7 @@ public struct Info: Decodable {
     
 }
 
-extension Info {
+extension TagInfo {
     
     public enum Source: String, Equatable, CustomStringConvertible, Decodable {
         case unknown

@@ -24,7 +24,7 @@ public struct KernelInfo: Decodable {
 public struct TagDecodingInfo: Decodable {
     
     /// General tag information
-    public let info: Info
+    public let info: TagInfo
     
     /// Rules for decoding tag value bytes
     public let bytes: [ByteInfo]
