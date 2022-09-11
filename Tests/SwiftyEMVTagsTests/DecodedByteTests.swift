@@ -6,9 +6,66 @@
 //
 
 import XCTest
+@testable
+import SwiftyEMVTags
 
-class DecodedByteTests: XCTestCase {
+final class DecodedByteTests: XCTestCase {
 
+    func testByteDecoding() throws {
+        let mockTagData = try mockTagData()
+        let tagDecodingInfo = try JSONDecoder().decode(TagDecodingInfo.self, from: mockTagData)
+        
+        let bytesInfo = tagDecodingInfo.bytes
+        
+        let mockBytes: [UInt8] = [
+            0b10001001,
+            0b01000000,
+            0b10101000
+        ]
+        
+        try zip(mockBytes, bytesInfo)
+            .map { try (EMVTag.DecodedByte(byte: $0.0, info: $0.1), $0.1) }
+            .forEach { assertDecodedByte($0.0, byteInfo: $0.1) }
+    }
+
+    func assertDecodedByte(_ sut: EMVTag.DecodedByte, byteInfo: ByteInfo) {
+        XCTAssertEqual(sut.name, byteInfo.name)
+        XCTAssertEqual(sut.groups.count, byteInfo.groups.count)
+        
+        zip(sut.groups, byteInfo.groups)
+            .forEach { assertDecodedGroup($0.0, infoGroup: $0.1) }
+    }
     
+    func assertDecodedGroup(
+        _ sut: EMVTag.DecodedByte.Group,
+        infoGroup: ByteInfo.Group
+    ) {
+        XCTAssertEqual(sut.name, infoGroup.name)
+        XCTAssertEqual(sut.width, infoGroup.pattern.nonzeroBitCount)
+        
+        switch (sut.type, infoGroup.type) {
+        case (.RFU, .RFU):
+            XCTAssertEqual(sut.name, ByteInfo.Group.MappingType.RFU.stringValue)
+        case (.bool(let isSet), .bool):
+            XCTAssertTrue((sut.pattern == 1) == isSet)
+        case (.hex(let hexValue), .hex):
+            XCTAssertEqual(sut.pattern, hexValue)
+        case (.bcd(let decValue), .bcd):
+            XCTAssertEqual(sut.pattern.binaryCodedDecimal, decValue)
+        case (.bitmap(let mappingResult), .bitmap(let infoMappings)):
+            if let matchIndex = infoMappings.firstIndex(where: { $0.pattern == sut.pattern }) {
+                XCTAssertEqual(mappingResult.matchIndex, matchIndex)
+                zip(mappingResult.mappings, infoMappings)
+                    .forEach { (decodedMapping, infoMapping) in
+                        XCTAssertEqual(decodedMapping.pattern, infoMapping.pattern)
+                        XCTAssertEqual(decodedMapping.meaning, infoMapping.meaning)
+                    }
+            } else {
+                XCTFail("Unable to match bitmap patterns")
+            }
+        default:
+            XCTFail("Group types don't match")
+        }
+    }
 
 }

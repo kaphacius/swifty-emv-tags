@@ -81,7 +81,7 @@ extension EMVTag.DecodedByte {
             init?(group: ByteInfo.Group, shiftedBits: UInt8) {
                 switch group.type {
                 case .bool:
-                    self = .bool(shiftedBits.matches(pattern: group.pattern))
+                    self = .bool(shiftedBits == 1)
                 case .hex:
                     self = .hex(shiftedBits)
                 case .bcd:
