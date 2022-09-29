@@ -33,4 +33,33 @@ extension Dictionary where Key == String, Value == Any {
 
 typealias JSONDictionary = Dictionary<String, Any>
 
+extension EMVTag.DecodedTag {
+
+    static let mockResult: Self = .init(
+        kernelName: "Mock kernel",
+        tagInfo: .mockInfo,
+        decodedBytes: []
+    )
+
+}
+
+extension TagInfo {
+    
+    static let mockInfo: Self = try! JSONDecoder().decode(
+        TagInfo.self, from: mockJson.data(using: .utf8)!
+    )
+    
+    static let mockJson = """
+    {
+        "description": "This is a very special tag with all sorts of patters and encodings",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Very special tag",
+        "source": "card",
+        "tag": "9F0A"
+    }
+    """
+    
 }
