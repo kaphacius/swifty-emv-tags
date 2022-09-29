@@ -8,7 +8,7 @@
 import Foundation
 
 /// Represents information about an EMV tag
-public struct TagInfo: Decodable {
+public struct TagInfo: Decodable, Equatable {
     
     private enum CodingKeys: String, CodingKey {
         case tag

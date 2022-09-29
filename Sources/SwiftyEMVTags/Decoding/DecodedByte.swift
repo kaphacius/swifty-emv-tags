@@ -9,12 +9,14 @@ import Foundation
 
 public enum EMVTagError: Error {
     case unableToDecodeGroup(byte: UInt8, groupName: String)
+    case kernelInfoAlreadyExists(name: String)
+    case byteCountNotEqual
 }
 
 extension EMVTag {
     
     /// Represents a decoded byte
-    public struct DecodedByte {
+    public struct DecodedByte: Equatable {
         
         /// The name of the byte, if applicable
         public let name: String?
@@ -40,7 +42,7 @@ extension EMVTag {
 extension EMVTag.DecodedByte {
     
     /// Represents one decoded group within a byte
-    public struct Group {
+    public struct Group: Equatable {
         
         /// Name of the group
         public let name: String
@@ -71,7 +73,7 @@ extension EMVTag.DecodedByte {
             self.name = group.name
         }
         
-        public enum GroupType {
+        public enum GroupType: Equatable {
             case bitmap(MappingResult)
             case hex(UInt8)
             case bcd(UInt8)
@@ -100,7 +102,7 @@ extension EMVTag.DecodedByte {
             }
         }
         
-        public struct MappingResult {
+        public struct MappingResult: Equatable {
             public let mappings: [SingleMapping]
             public let matchIndex: Int
             
@@ -109,7 +111,7 @@ extension EMVTag.DecodedByte {
                 self.matchIndex = matchIndex
             }
             
-            public struct SingleMapping {
+            public struct SingleMapping: Equatable {
                 public let pattern: UInt8
                 public let meaning: String
                 

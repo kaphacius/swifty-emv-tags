@@ -11,21 +11,24 @@ import Foundation
 public struct EMVTag {
     
     public enum DecodingResult {
-        case uknown
+        case unknown
         case error(Error)
         case singleKernel(DecodedTag)
         case multipleKernels([DecodedTag])
     }
-            
+    
     public struct DecodedTag {
-        public let kernelInfo: KernelInfo
+        public let kernelName: String
         public let tagInfo: TagInfo
         public let decodedBytes: [DecodedByte]
     }
     
-    public let tag: UInt64
-    public let isConstructed: Bool
-    public let value: [UInt8]
+    public struct DecodedSubtag {
+        public let result: DecodingResult
+        public let subtags: [DecodedSubtag]
+    }
+    
+    public let tag: BERTLV
     public let subtags: [EMVTag]
     public let decodedMeaningList: [DecodedByte]
     
@@ -163,5 +166,62 @@ extension EMVTag {
     }
 
     public let decodingResult: DecodingResult
+    
+    public init(
+        bertlv: BERTLV,
+        decodingResult: DecodingResult,
+        subtags: [DecodedSubtag]
+    ) {
+        self.tag = bertlv
+        self.decodingResult = decodingResult
+        
+        guard bertlv.isConstructed else {
+            self.subtags = []
+            return
+        }
+        
+        self.subtags = zip(bertlv.subTags, subtags)
+            .map { (bertlvSubtag, decodedSubtag) in
+                .init(
+                    bertlv: bertlvSubtag,
+                    decodingResult: decodedSubtag.result,
+                    subtags: decodedSubtag.subtags
+                )
+            }
+    }
+    
+    public init(
+        bertlv: BERTLV,
+        decodingResult: DecodingResult
+    ) {
+        self.tag = bertlv
+        self.decodingResult = decodingResult
+        self.subtags = []
+    }
+    
+    public static func unknownTag(bertlv: BERTLV) -> EMVTag {
+        .init(bertlv: bertlv, decodingResult: .unknown)
+    }
+    
+}
+
+extension EMVTag.DecodedTag: Equatable {}
+
+extension EMVTag.DecodingResult: Equatable {
+    
+    static public func == (lhs: Self, rhs: Self) -> Bool {
+        switch(lhs, rhs) {
+        case (.unknown, .unknown):
+            return true
+        case (.error(let lerror), .error(let rerror)):
+            return areEqual(lerror, rerror)
+        case (.singleKernel(let llhs), .singleKernel(let rrhs)):
+            return llhs == rrhs
+        case (.multipleKernels(let llhs), .multipleKernels(let rrhs)):
+            return llhs == rrhs
+        default:
+            return false
+        }
+    }
     
 }

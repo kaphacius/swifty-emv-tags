@@ -31,3 +31,15 @@ extension FixedWidthInteger {
     }
     
 }
+
+internal func areEqual<T: Swift.Error>(_ lhs: T, _ rhs: T) -> Bool {
+    // Swifty check
+    guard String(describing: lhs) == String(describing: rhs) else {
+        return false
+    }
+    
+    // Sanity check
+    let nsl = lhs as NSError
+    let nsr = rhs as NSError
+    return nsl.isEqual(nsr)
+}
