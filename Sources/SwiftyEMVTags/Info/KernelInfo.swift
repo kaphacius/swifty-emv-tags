@@ -11,8 +11,20 @@ import SwiftyBERTLV
 /// Represents information about kernel and associated tags
 public struct KernelInfo: Decodable {
     
+    /// Category of the kernel
+    public enum Category: String, Decodable {
+        /// Kernel describing scheme-specific tags
+        case scheme
+        
+        /// Kernel describing vendor-specifig tags
+        case vendor
+    }
+    
     /// Name of the kernel
     public let name: String
+    
+    /// Category of the kernel
+    public let category: Category
     
     /// Description of the kernel
     public let description: String

@@ -1,5 +1,6 @@
 {
   "name": "general",
+  "category": "scheme",
   "description": "Tags that are present in all EMV kernels",
   "tags": [
     {
