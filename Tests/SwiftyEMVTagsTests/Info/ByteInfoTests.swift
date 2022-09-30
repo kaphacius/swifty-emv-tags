@@ -52,7 +52,7 @@ final class ByteInfoTests: XCTestCase {
             try zip(mappings, dict.value(of: [JSONDictionary].self, for: "mappings")).forEach {
                 try assertMapping($0.0, dict: $0.1)
             }
-        case .bcd, .hex, .bool:
+        case .hex, .bool:
             break
         }
     }

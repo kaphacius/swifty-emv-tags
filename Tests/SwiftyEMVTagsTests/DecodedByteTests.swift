@@ -50,8 +50,6 @@ final class DecodedByteTests: XCTestCase {
             XCTAssertTrue((sut.pattern == 1) == isSet)
         case (.hex(let hexValue), .hex):
             XCTAssertEqual(sut.pattern, hexValue)
-        case (.bcd(let decValue), .bcd):
-            XCTAssertEqual(sut.pattern.binaryCodedDecimal, decValue)
         case (.bitmap(let mappingResult), .bitmap(let infoMappings)):
             if let matchIndex = infoMappings.firstIndex(where: { $0.pattern == sut.pattern }) {
                 XCTAssertEqual(mappingResult.matchIndex, matchIndex)

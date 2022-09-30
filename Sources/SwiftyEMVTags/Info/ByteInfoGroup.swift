@@ -19,9 +19,6 @@ extension ByteInfo {
             /// Actual mapping is described within ``ByteInfo/Group/Mapping`` struct
             case bitmap([Mapping])
             
-            /// Group representes a Binary-Coded Decimal (BCD) value
-            case bcd
-            
             /// Group represens a hex value
             case hex
             
@@ -79,7 +76,7 @@ extension ByteInfo {
             switch type {
             case .RFU:
                 self.name = MappingType.RawType.RFU.rawValue
-            case .bool, .hex, .bcd, .bitmap:
+            case .bool, .hex, .bitmap:
                 self.name = try container.decode(String.self, forKey: .name)
             }
             
@@ -103,8 +100,6 @@ extension ByteInfo.Group.MappingType {
         switch try container.decode(RawType.self, forKey: .type) {
         case .bitmap:
             self = .bitmap(try container.decode([ByteInfo.Group.Mapping].self, forKey: .mappings))
-        case .bcd:
-            self = .bcd
         case .hex:
             self = .hex
         case .bool:
@@ -117,7 +112,6 @@ extension ByteInfo.Group.MappingType {
     internal var stringValue: String {
         switch self {
         case .bool: return RawType.bool.rawValue
-        case .bcd: return RawType.bcd.rawValue
         case .hex: return RawType.hex.rawValue
         case .bitmap: return RawType.bitmap.rawValue
         case .RFU: return RawType.RFU.rawValue
@@ -126,7 +120,6 @@ extension ByteInfo.Group.MappingType {
     
     internal enum RawType: String, Decodable {
         case bitmap
-        case bcd
         case hex
         case bool
         case RFU

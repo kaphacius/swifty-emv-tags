@@ -86,8 +86,6 @@ extension EMVTag.DecodedByte {
                     self = .bool(shiftedBits == 1)
                 case .hex:
                     self = .hex(shiftedBits)
-                case .bcd:
-                    self = .bcd(shiftedBits.binaryCodedDecimal)
                 case .RFU:
                     self = .RFU
                 case .bitmap(let mappings):

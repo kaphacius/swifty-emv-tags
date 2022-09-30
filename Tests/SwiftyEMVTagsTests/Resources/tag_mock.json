@@ -28,8 +28,8 @@
         },
         {
           "pattern": "00001100",
-          "name": "some BCD value",
-          "type": "bcd"
+          "name": "some hex value",
+          "type": "hex"
         },
         {
           "pattern": "00000011",
