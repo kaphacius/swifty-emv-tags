@@ -38,7 +38,13 @@ extension EMVTag.DecodedTag {
     static let mockResult: Self = .init(
         kernelName: "Mock kernel",
         tagInfo: .mockInfo,
-        decodedBytes: []
+        result: .success([])
+    )
+    
+    static let mockErrorResult: Self = .init(
+        kernelName: "Mock kernel",
+        tagInfo: .mockInfo,
+        result: .failure(EMVTagError.byteCountNotEqual)
     )
 
 }

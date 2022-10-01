@@ -17,7 +17,6 @@ public struct EMVTag {
     
     public enum DecodingResult {
         case unknown
-        case error(Error)
         case singleKernel(DecodedTag)
         case multipleKernels([DecodedTag])
     }
@@ -25,7 +24,7 @@ public struct EMVTag {
     public struct DecodedTag {
         public let kernelName: String
         public let tagInfo: TagInfo
-        public let decodedBytes: [DecodedByte]
+        public let result: Result<[DecodedByte], Error>
     }
     
     public struct DecodedSubtag {
@@ -86,20 +85,35 @@ public struct EMVTag {
     
 }
 
-extension EMVTag.DecodedTag: Equatable {}
-
 extension EMVTag.DecodingResult: Equatable {
     
     static public func == (lhs: Self, rhs: Self) -> Bool {
         switch(lhs, rhs) {
         case (.unknown, .unknown):
             return true
-        case (.error(let lerror), .error(let rerror)):
-            return areEqual(lerror, rerror)
         case (.singleKernel(let llhs), .singleKernel(let rrhs)):
             return llhs == rrhs
         case (.multipleKernels(let llhs), .multipleKernels(let rrhs)):
             return llhs == rrhs
+        default:
+            return false
+        }
+    }
+    
+}
+
+extension EMVTag.DecodedTag: Equatable {
+    
+    static public func == (lhs: Self, rhs: Self) -> Bool {
+        guard lhs.kernelName == rhs.kernelName && lhs.tagInfo == rhs.tagInfo else {
+            return false
+        }
+        
+        switch (lhs.result, rhs.result) {
+        case (.success(let llhs), .success(let rrhs)):
+            return llhs == rrhs
+        case (.failure(let llhs), .failure(let rrhs)):
+            return areEqual(llhs, rrhs)
         default:
             return false
         }

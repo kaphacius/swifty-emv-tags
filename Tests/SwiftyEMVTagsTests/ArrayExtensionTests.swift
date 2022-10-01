@@ -25,7 +25,7 @@ final class ArrayExtensionTests: XCTestCase {
         let resultss: [[EMVTag.DecodingResult]] = [
             [.unknown],
             [.singleKernel(.mockResult)],
-            [.error(EMVTagError.byteCountNotEqual)]
+            [.singleKernel(.mockErrorResult)]
         ]
         
         let suts = resultss.map { $0.flattenDecodingResults() }
@@ -49,20 +49,24 @@ final class ArrayExtensionTests: XCTestCase {
     
     func testAllErrors() {
         let results: [EMVTag.DecodingResult] = [
-            .error(EMVTagError.byteCountNotEqual),
-            .error(EMVTagError.byteCountNotEqual),
-            .error(EMVTagError.byteCountNotEqual)
+            .singleKernel(.mockErrorResult),
+            .singleKernel(.mockErrorResult),
+            .singleKernel(.mockErrorResult)
         ]
         
         let sut = results.flattenDecodingResults()
         
-        XCTAssertEqual(sut, results.first!)
+        if case let EMVTag.DecodingResult.multipleKernels(decodedTags) = sut {
+            XCTAssertEqual(decodedTags.count, results.count)
+        } else {
+            XCTFail()
+        }
     }
     
     func testSingleToMultiple() {
         let mockDecodedTags: [EMVTag.DecodedTag] = [
             .mockResult,
-            .mockResult,
+            .mockErrorResult,
             .mockResult
         ]
         let results: [EMVTag.DecodingResult] = mockDecodedTags

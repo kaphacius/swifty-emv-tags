@@ -48,12 +48,8 @@ public final class TagDecoder: AnyTagDecoder {
         kernelsInfo
             .values
             .compactMap { kernel -> EMVTag.DecodingResult? in
-                do {
-                    return try kernel.decodeTag(bertlv)
-                        .map(EMVTag.DecodingResult.singleKernel)
-                } catch {
-                    return .error(error)
-                }
+                kernel.decodeTag(bertlv)
+                    .map(EMVTag.DecodingResult.singleKernel)
             }.flattenDecodingResults()
     }
     
@@ -84,7 +80,7 @@ extension Array where Element == EMVTag.DecodingResult {
             // If there are multiple results, group them
             let flattened: [EMVTag.DecodedTag] = self.reduce([]) { (result, current) in
                 switch current {
-                case .unknown, .error, .multipleKernels:
+                case .unknown, .multipleKernels:
                     return result
                 case .singleKernel(let decodedTag):
                     return result + [decodedTag]
