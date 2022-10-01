@@ -46,6 +46,10 @@ public struct KernelInfo: Decodable {
     }
     
     private func decodeBytes(_ bytes: [UInt8], bytesInfo: [ByteInfo]) throws -> [EMVTag.DecodedByte] {
+        guard bytesInfo.isEmpty == false else {
+            return []
+        }
+        
         guard bytes.count == bytesInfo.count else {
             throw EMVTagError.byteCountNotEqual
         }
@@ -64,5 +68,16 @@ public struct TagDecodingInfo: Decodable {
     
     /// Rules for decoding tag value bytes
     public let bytes: [ByteInfo]
+    
+    public enum CodingKeys: CodingKey {
+        case info
+        case bytes
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.info = try container.decode(TagInfo.self, forKey: .info)
+        self.bytes = try container.decodeIfPresent([ByteInfo].self, forKey: .bytes) ?? []
+    }
     
 }

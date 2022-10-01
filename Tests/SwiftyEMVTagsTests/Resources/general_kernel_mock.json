@@ -107,6 +107,18 @@
           ]
         }
       ]
+    },
+    {
+        "info": {
+            "description": "Some tag without byte decoding info",
+            "format": "binary",
+            "kernel": "general",
+            "maxLength": "3",
+            "minLength": "3",
+            "name": "Terminal Capabilities",
+            "source": "terminal",
+            "tag": "9F34"
+        }
     }
   ]
 }
