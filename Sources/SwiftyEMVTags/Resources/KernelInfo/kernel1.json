@@ -1,0 +1,31 @@
+ {
+  "category" : "scheme",
+  "description" : "Some cards with JCB AIDs and some cards with Visa AIDs",
+  "name" : "kernel1",
+  "tags" : [
+    {
+      "info" : {
+        "description" : "A Visa proprietary data element containing a code indicating that the transaction was an approved VLP transaction. If present indicates offline approval from card.",
+        "format" : "a 6",
+        "kernel" : "kernel1",
+        "maxLength" : "6",
+        "minLength" : "6",
+        "name" : "VLP Issuer Authorisation Code",
+        "source" : "card",
+        "tag" : "9F74"
+      }
+    },
+    {
+      "info" : {
+        "description" : "If present indicates offline and/or online support. If absent indicates online only support",
+        "format" : "n 1",
+        "kernel" : "kernel1",
+        "maxLength" : "1",
+        "minLength" : "1",
+        "name" : "VLP Terminal Support Indicator",
+        "source" : "terminal",
+        "tag" : "9F7A"
+      }
+    }
+  ]
+}

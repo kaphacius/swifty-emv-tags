@@ -1,0 +1,67 @@
+ {
+  "category" : "scheme",
+  "description" : "American Express AIDs",
+  "name" : "kernel4",
+  "tags" : [
+    {
+      "info" : {
+        "description" : "Image of magnetic stripe Track 2. (For Kernel 4, Track 2 Equivalent Data may not be an exact image of magnetic stripe Track 2.)",
+        "format" : "cn",
+        "kernel" : "kernel4",
+        "maxLength" : "19",
+        "minLength" : "0",
+        "name" : "Track 2 Equivalent Data",
+        "source" : "card",
+        "tag" : "57"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Card Number. The Primary Account Number must be maintained as the same value for both the Kernel 4 mag-stripe mode and the EMV mode.",
+        "format" : "cn variable up to 19",
+        "kernel" : "kernel4",
+        "maxLength" : "var. up to 10",
+        "minLength" : "var. up to 10",
+        "name" : "Application Primary Account Number (PAN)",
+        "source" : "card",
+        "tag" : "5A"
+      }
+    },
+    {
+      "info" : {
+        "description" : "A proprietary data element with bits 8, 7, and 4 only used to indicate a terminal's capability to support Kernel 4 mag-stripe or EMV contactless. This data element is OR'd with Terminal Type, Tag '9F35', resulting in a modified Tag '9F35', which is passed to the card when requested.",
+        "format" : "n 2",
+        "kernel" : "kernel4",
+        "maxLength" : "1",
+        "minLength" : "1",
+        "name" : "Kernel 4 Reader Capabilities",
+        "source" : "terminal",
+        "tag" : "9F6D"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Data element indicating other interfaces supported by the device.",
+        "format" : "binary 16",
+        "kernel" : "kernel4",
+        "maxLength" : "2",
+        "minLength" : "2",
+        "name" : "Card Interface Capabilities",
+        "source" : "card",
+        "tag" : "9F70"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Proprietary data element returned from the Card in the GET PROCESSING OPTIONS response, indicating the status of Mobile CVM entry.",
+        "format" : "binary 32",
+        "kernel" : "kernel4",
+        "maxLength" : "4",
+        "minLength" : "4",
+        "name" : "Mobile CVM Results",
+        "source" : "card",
+        "tag" : "9F71"
+      }
+    }
+  ]
+}

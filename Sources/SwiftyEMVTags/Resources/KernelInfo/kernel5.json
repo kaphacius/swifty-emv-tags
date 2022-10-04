@@ -1,0 +1,91 @@
+ {
+  "category" : "scheme",
+  "description" : "JCB AIDs",
+  "name" : "kernel5",
+  "tags" : [
+    {
+      "info" : {
+        "description" : "Indicates the currency code of the transaction according to ISO 4217. Requested in CDOL1.",
+        "format" : "n 3",
+        "kernel" : "kernel5",
+        "maxLength" : "2",
+        "minLength" : "2",
+        "name" : "Transaction Currency Code",
+        "source" : "unknown",
+        "tag" : "5F2A"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Indicates the CVM choice (already done or to be subsequently applied) for the transaction. Choice is made dynamically by card based on transaction context and card risk management configuration.",
+        "format" : "binary",
+        "kernel" : "kernel5",
+        "maxLength" : "1",
+        "minLength" : "1",
+        "name" : "Cardholder Verification Status",
+        "source" : "card",
+        "tag" : "9F50"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Indicates to the card the transaction modes (EMV, Magstripe) supported by the Kernel",
+        "format" : "binary",
+        "kernel" : "kernel5",
+        "maxLength" : "1",
+        "minLength" : "1",
+        "name" : "Terminal Compatibility Indicator",
+        "source" : "unknown",
+        "tag" : "9F52"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Defines the reader CVM requirement and capabilities, as well as other reader capabilities (online capability, contact EMV capability) for the Transaction",
+        "format" : "binary",
+        "kernel" : "kernel5",
+        "maxLength" : "3",
+        "minLength" : "3",
+        "name" : "Terminal Interchange Profile (dynamic)",
+        "source" : "unknown",
+        "tag" : "9F53"
+      }
+    },
+    {
+      "info" : {
+        "description" : "List of data objects (tag and length) to be passed to the card in the GET MAGSTRIPE DATA command.",
+        "format" : "binary",
+        "kernel" : "kernel5",
+        "maxLength" : "var. up to 252",
+        "minLength" : "var. up to 252",
+        "name" : "Magstripe Data Object List (MDOL)",
+        "source" : "card",
+        "tag" : "9F5C"
+      }
+    },
+    {
+      "info" : {
+        "description" : "In the case of a prepaid card, represents the value stored in card. May be returned in the GENERATE AC response.",
+        "format" : "n 12",
+        "kernel" : "kernel5",
+        "maxLength" : "6",
+        "minLength" : "6",
+        "name" : "Offline Balance",
+        "source" : "card",
+        "tag" : "9F5F"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Parameter from the ICC to indicate the behaviour/ergonomics (e.g. “present-and-hold” or “two presentments” or none) for processing the results of the online authorisation request.",
+        "format" : "binary",
+        "kernel" : "kernel5",
+        "maxLength" : "1",
+        "minLength" : "1",
+        "name" : "Issuer Update Parameter",
+        "source" : "card",
+        "tag" : "9F60"
+      }
+    }
+  ]
+}

@@ -8,6 +8,7 @@
 import Foundation
 
 public enum EMVTagError: Error {
+    case unableToFindDefaultKernelInfos
     case unableToDecodeGroup(byte: UInt8, groupName: String)
     case kernelInfoAlreadyExists(name: String)
     case byteCountNotEqual

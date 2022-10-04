@@ -20,9 +20,19 @@ public final class TagDecoder: AnyTagDecoder {
     
     internal (set) public var kernels: [String]
     
-    internal init() {
-        self.kernelsInfo = [:]
-        self.kernels = []
+    internal init(kernelInfoList: [KernelInfo]) {
+        self.kernels = kernelInfoList.map(\.name)
+        self.kernelsInfo = .init(
+            uniqueKeysWithValues: kernelInfoList.map { ($0.name, $0) }
+        )
+    }
+    
+    public static func defaultDecoder() throws -> TagDecoder {
+        let decoder = JSONDecoder()
+        let kernelInfoList = try KernelInfo.defaultURLs()
+            .map { try Data(contentsOf: $0) }
+            .map { try decoder.decode(KernelInfo.self, from: $0) }
+        return .init(kernelInfoList: kernelInfoList)
     }
     
     public func addKernelInfo(data: Data) throws {
@@ -65,6 +75,24 @@ public final class TagDecoder: AnyTagDecoder {
     }
     
 }
+
+extension KernelInfo {
+    
+    internal static let defaultKernelInfoCount = 6
+    
+    internal static func defaultURLs() throws -> [URL] {
+        guard let urls = Bundle.module.urls(
+            forResourcesWithExtension: "json",
+            subdirectory: nil
+        ) else {
+            throw EMVTagError.unableToFindDefaultKernelInfos
+        }
+        
+        return urls
+    }
+    
+}
+
 
 extension Array where Element == EMVTag.DecodingResult {
     

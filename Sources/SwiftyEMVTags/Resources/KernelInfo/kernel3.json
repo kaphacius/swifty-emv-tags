@@ -1,0 +1,151 @@
+ {
+  "category" : "scheme",
+  "description" : "Visa AIDs",
+  "name" : "kernel3",
+  "tags" : [
+    {
+      "info" : {
+        "description" : "The ADF Name identifies the application as described in [ISO 7816-5]. The AID is made up of the Registered Application Provider Identifier (RID) and the Proprietary Identifier Extension (PIX).",
+        "format" : "binary 40-128",
+        "kernel" : "kernel3",
+        "maxLength" : "16",
+        "minLength" : "5",
+        "name" : "Application Identifier (ADF Name)",
+        "source" : "card",
+        "tag" : "4F"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Date after which the card application expires. For transactions where Offline Data Authentication is performed, the Application Expiration Date is returned. For transactions where Offline Data Authentication is not performed, the Application Expiration Date does not need to be returned.",
+        "format" : "n 6 (YYMMDD)",
+        "kernel" : "kernel3",
+        "maxLength" : "3",
+        "minLength" : "3",
+        "name" : "Application Expiration Date",
+        "source" : "card",
+        "tag" : "5F24"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Indicates the currency code of the transaction according to [ISO 4217]. The implied exponent is indicated by the minor unit of currency associated with the Transaction Currency Code in [ISO 4217].",
+        "format" : "n 3",
+        "kernel" : "kernel3",
+        "maxLength" : "2",
+        "minLength" : "2",
+        "name" : "Transaction Currency Code",
+        "source" : "terminal",
+        "tag" : "5F2A"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Portion of the Issuer Public Key Modulus which does not fit into the Issuer PK Certificate.",
+        "format" : "binary",
+        "kernel" : "kernel3",
+        "maxLength" : "var. (NI - NCA + 36)",
+        "minLength" : "var. (NI - NCA + 36)",
+        "name" : "Issuer Public Key Remainder",
+        "source" : "card",
+        "tag" : "92"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Visa proprietary data element specifying the maximum total amount of offline transactions in the designated currency or designated and secondary currency allowed for the card application before a transaction is declined after an online transaction is unable to be performed.",
+        "format" : "n 12",
+        "kernel" : "kernel3",
+        "maxLength" : "6",
+        "minLength" : "6",
+        "name" : "Cumulative Total Transaction Amount Upper Limit (CTTAUL)",
+        "source" : "card",
+        "tag" : "9F5C"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Kernel 3 proprietary data element indicating the remaining amount available to be spent offline. The AOSA is a calculated field used to allow the reader to print or display the amount of offline spend that is available on the card.",
+        "format" : "n 12",
+        "kernel" : "kernel3",
+        "maxLength" : "6",
+        "minLength" : "6",
+        "name" : "Available Offline Spending Amount (AOSA)",
+        "source" : "card",
+        "tag" : "9F5D"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Indicates reader capabilities, requirements, and preferences to the card. TTQ byte 2 bits 8-7 are transient values, and reset to zero at the beginning of the transaction. All other TTQ bits are static values, and not modified based on transaction conditions. TTQ byte 3 bit 7 shall be set by the acquirer-merchant to 1b.",
+        "format" : "binary 32",
+        "kernel" : "kernel3",
+        "maxLength" : "4",
+        "minLength" : "4",
+        "name" : "Terminal Transaction Qualifiers (TTQ)",
+        "source" : "terminal",
+        "tag" : "9F66"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Contains the fDDA Version Number, Card Unpredictable Number, and Card Transaction Qualifiers. For transactions where fDDA is performed, the Card Authentication Related Data is returned in the last record specified by the Application File Locator for that transaction.",
+        "format" : "binary",
+        "kernel" : "kernel3",
+        "maxLength" : "16",
+        "minLength" : "5",
+        "name" : "Card Authentication Related Data",
+        "source" : "card",
+        "tag" : "9F69"
+      }
+    },
+    {
+      "info" : {
+        "description" : "In this version of the specification, used to indicate to the device the card CVM requirements, issuer preferences, and card capabilities.",
+        "format" : "binary 16",
+        "kernel" : "kernel3",
+        "maxLength" : "2",
+        "minLength" : "2",
+        "name" : "Card Transaction Qualifiers (CTQ)",
+        "source" : "card",
+        "tag" : "9F6C"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Indicates the form factor of the consumer payment device and the type of contactless interface over which the transaction was conducted. This information is made available to the issuer host.",
+        "format" : "binary 32",
+        "kernel" : "kernel3",
+        "maxLength" : "4",
+        "minLength" : "4",
+        "name" : "Form Factor Indicator (FFI)",
+        "source" : "unknown",
+        "tag" : "9F6E"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Contains data for transmission to the issuer.",
+        "format" : "binary",
+        "kernel" : "kernel3",
+        "maxLength" : "var. up to 32",
+        "minLength" : "var. up to 32",
+        "name" : "Customer Exclusive Data (CED)",
+        "source" : "card",
+        "tag" : "9F7C"
+      }
+    },
+    {
+      "info" : {
+        "description" : "Part of the command data for the EXTENDED GET PROCESSING OPTIONS command. The IDS Record Update Template contains data to be updated in one or more IDS Records.",
+        "format" : "binary",
+        "kernel" : "kernel3",
+        "maxLength" : "var.",
+        "minLength" : "var.",
+        "name" : "Integrated Data Storage Record Update Template",
+        "source" : "unknown",
+        "tag" : "BF60"
+      }
+    }
+  ]
+}

@@ -23,5 +23,17 @@ final class KernelInfoTests: XCTestCase {
         XCTAssertEqual(kernelInfo.description, try plainData.value(for: "description"))
         XCTAssertEqual(kernelInfo.tags.count, try plainData.value(of: [Any].self, for: "tags").count)
     }
+    
+    func testDefaultInfo() throws {
+        let defaultURLs = try KernelInfo.defaultURLs()
+        
+        XCTAssertEqual(defaultURLs.count, KernelInfo.defaultKernelInfoCount)
+        
+        try defaultURLs.map { url in
+            try Data(contentsOf: url)
+        }.forEach { data in
+            _ = try JSONDecoder().decode(KernelInfo.self, from: data)
+        }
+    }
 
 }
