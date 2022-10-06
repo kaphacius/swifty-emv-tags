@@ -5,9 +5,9 @@
         "package": "SwiftyBERTLV",
         "repositoryURL": "https://github.com/kaphacius/swifty-ber-tlv",
         "state": {
-          "branch": "develop",
-          "revision": "f6bfae69c31e49af1a3c34513e225a4083e54b26",
-          "version": null
+          "branch": null,
+          "revision": "155b021bbf97dd0abc6d7397a5e4e9ccc101581b",
+          "version": "0.3.0"
         }
       }
     ]
