@@ -9,6 +9,13 @@ func mockTagData() throws -> Data {
     return try Data(contentsOf: url)
 }
 
+func mockTagMappingData() throws -> Data {
+    let url = URL(
+        fileURLWithPath: Bundle.module.path(forResource: "tag_mapping_mock", ofType: "json")!
+    )
+    return try Data(contentsOf: url)
+}
+
 enum TestError: Error {
     
     case unableToFindValue(type: String, key: String)
@@ -38,13 +45,15 @@ extension EMVTag.DecodedTag {
     static let mockResult: Self = .init(
         kernelName: "Mock kernel",
         tagInfo: .mockInfo,
-        result: .success([])
+        result: .success([]),
+        extendedDescription: nil
     )
     
     static let mockErrorResult: Self = .init(
         kernelName: "Mock kernel",
         tagInfo: .mockInfo,
-        result: .failure(EMVTagError.byteCountNotEqual)
+        result: .failure(EMVTagError.byteCountNotEqual),
+        extendedDescription: nil
     )
 
 }

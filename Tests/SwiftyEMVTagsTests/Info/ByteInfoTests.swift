@@ -13,7 +13,7 @@ final class ByteInfoTests: XCTestCase {
 
     func testParsing() throws {
         let mockTagData = try mockTagData()
-        let tagDecodingInfoDict = try JSONSerialization.jsonObject(with: mockTagData) as! Dictionary<String, Any>
+        let tagDecodingInfoDict = try JSONSerialization.jsonObject(with: mockTagData) as! JSONDictionary
         let tagDecodingInfo = try JSONDecoder().decode(TagDecodingInfo.self, from: mockTagData)
         
         let bytesInfo = tagDecodingInfo.bytes

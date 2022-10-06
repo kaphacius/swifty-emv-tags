@@ -1,0 +1,17 @@
+{
+    "tag": "9f39",
+    "values": [
+        {
+            "value": "00",
+            "meaning": "unknown"
+        },
+        {
+            "value": "01",
+            "meaning": "Manual"
+        },
+        {
+            "value": "02",
+            "meaning": "Magnetic stripe"
+        }
+    ]
+}

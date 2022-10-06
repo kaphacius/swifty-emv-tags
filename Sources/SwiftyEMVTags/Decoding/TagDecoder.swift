@@ -16,15 +16,21 @@ public protocol AnyTagDecoder {
 
 public final class TagDecoder: AnyTagDecoder {
     
+    public let tagMapper: TagMapper
+    
     private var kernelsInfo: [String: KernelInfo]
     
     internal (set) public var kernels: [String]
     
-    internal init(kernelInfoList: [KernelInfo]) {
+    internal init(
+        kernelInfoList: [KernelInfo],
+        tagMapper: TagMapper
+    ) {
         self.kernels = kernelInfoList.map(\.name)
         self.kernelsInfo = .init(
             uniqueKeysWithValues: kernelInfoList.map { ($0.name, $0) }
         )
+        self.tagMapper = tagMapper
     }
     
     public static func defaultDecoder() throws -> TagDecoder {
@@ -32,7 +38,11 @@ public final class TagDecoder: AnyTagDecoder {
         let kernelInfoList = try KernelInfo.defaultURLs()
             .map { try Data(contentsOf: $0) }
             .map { try decoder.decode(KernelInfo.self, from: $0) }
-        return .init(kernelInfoList: kernelInfoList)
+        let mapper = try TagMapper.defaultMapper()
+        return .init(
+            kernelInfoList: kernelInfoList,
+            tagMapper: mapper
+        )
     }
     
     public func addKernelInfo(data: Data) throws {
@@ -58,7 +68,10 @@ public final class TagDecoder: AnyTagDecoder {
         kernelsInfo
             .values
             .compactMap { kernel -> EMVTag.DecodingResult? in
-                kernel.decodeTag(bertlv)
+                kernel.decodeTag(
+                    bertlv,
+                    tagMapper: tagMapper
+                )
                     .map(EMVTag.DecodingResult.singleKernel)
             }.flattenDecodingResults()
     }
@@ -81,14 +94,7 @@ extension KernelInfo {
     internal static let defaultKernelInfoCount = 6
     
     internal static func defaultURLs() throws -> [URL] {
-        guard let urls = Bundle.module.urls(
-            forResourcesWithExtension: "json",
-            subdirectory: nil
-        ) else {
-            throw EMVTagError.unableToFindDefaultKernelInfos
-        }
-        
-        return urls
+        try defaultJSONResources(with: "ki_")
     }
     
 }

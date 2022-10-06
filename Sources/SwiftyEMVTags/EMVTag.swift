@@ -25,6 +25,7 @@ public struct EMVTag {
         public let kernelName: String
         public let tagInfo: TagInfo
         public let result: Result<[DecodedByte], Error>
+        public let extendedDescription: String?
     }
     
     public struct DecodedSubtag {

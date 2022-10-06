@@ -32,7 +32,10 @@ public struct KernelInfo: Decodable {
     /// Tag decoding information
     public let tags: [TagDecodingInfo]
     
-    internal func decodeTag(_ bertlv: BERTLV) -> EMVTag.DecodedTag? {
+    internal func decodeTag(
+        _ bertlv: BERTLV,
+        tagMapper: AnyTagMapper
+    ) -> EMVTag.DecodedTag? {
         tags.first(where: { $0.info.tag == bertlv.tag })
             .map { tagInfo in
                 .init(
@@ -40,6 +43,10 @@ public struct KernelInfo: Decodable {
                     tagInfo: tagInfo.info,
                     result: .init(
                         catching: { try decodeBytes(bertlv.value, bytesInfo: tagInfo.bytes) }
+                    ),
+                    extendedDescription: tagMapper.extentedDescription(
+                        for: tagInfo.info,
+                        value: bertlv.value
                     )
                 )
             }

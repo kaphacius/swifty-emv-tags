@@ -43,3 +43,14 @@ internal func areEqual<T: Swift.Error>(_ lhs: T, _ rhs: T) -> Bool {
     let nsr = rhs as NSError
     return nsl.isEqual(nsr)
 }
+
+func defaultJSONResources(with prefix: String) throws -> [URL] {
+    guard let urls = Bundle.module.urls(
+        forResourcesWithExtension: "json",
+        subdirectory: nil
+    ) else {
+        throw EMVTagError.unableToLoadResources(prefix: prefix)
+    }
+    
+    return urls.filter { $0.lastPathComponent.hasPrefix(prefix) }
+}

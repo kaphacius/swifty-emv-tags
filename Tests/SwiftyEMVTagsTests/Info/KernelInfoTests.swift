@@ -16,7 +16,7 @@ final class KernelInfoTests: XCTestCase {
             fileURLWithPath: Bundle.module.path(forResource: "general_kernel_mock", ofType: "json")!
         )
         let data = try Data(contentsOf: url)
-        let plainData = try JSONSerialization.jsonObject(with: data) as! Dictionary<String, Any>
+        let plainData = try JSONSerialization.jsonObject(with: data) as! JSONDictionary
         let kernelInfo = try JSONDecoder().decode(KernelInfo.self, from: data)
         
         XCTAssertEqual(kernelInfo.name, try plainData.value(for: "name"))
