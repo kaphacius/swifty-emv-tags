@@ -1,0 +1,77 @@
+{
+    "tag" : "9F35",
+    "values" : [
+        {
+            "meaning" : "Financial Institution, Attended – Online Only",
+            "value" : "11"
+        },
+        {
+            "meaning" : "Financial Institution, Attended – Offline with Online Capability",
+            "value" : "12"
+        },
+        {
+            "meaning" : "Financial Institution, Attended – Offline Only",
+            "value" : "13"
+        },
+        {
+            "meaning" : "Financial Institution, Unattended – Online Only",
+            "value" : "14"
+        },
+        {
+            "meaning" : "Financial Institution, Unattended – Offline with Online Capability",
+            "value" : "15"
+        },
+        {
+            "meaning" : "Unattended – Offline Only",
+            "value" : "16"
+        },
+        {
+            "meaning" : "Merchant, Attended – Online Only",
+            "value" : "21"
+        },
+        {
+            "meaning" : "Merchant, Attended – Offline with Online Capability",
+            "value" : "22"
+        },
+        {
+            "meaning" : "Merchant, Attended – Offline Only",
+            "value" : "23"
+        },
+        {
+            "meaning" : "Merchant, Unattended – Online Only",
+            "value" : "24"
+        },
+        {
+            "meaning" : "Merchant, Unattended – Offline with Online Capability",
+            "value" : "25"
+        },
+        {
+            "meaning" : "Merchant, Unattended – Offline Only",
+            "value" : "26"
+        },
+        {
+            "meaning" : "Cardholder, Attended – Online Only",
+            "value" : "31"
+        },
+        {
+            "meaning" : "Cardholder, Attended – Offline with Online Capability",
+            "value" : "32"
+        },
+        {
+            "meaning" : "Cardholder, Attended – Offline Only",
+            "value" : "33"
+        },
+        {
+            "meaning" : "Cardholder, Unattended – Online Only",
+            "value" : "34"
+        },
+        {
+            "meaning" : "Cardholder, Unattended – Offline with Online Capability",
+            "value" : "35"
+        },
+        {
+            "meaning" : "Cardholder, Unattended – Offline Only",
+            "value" : "36"
+        }
+    ]
+}

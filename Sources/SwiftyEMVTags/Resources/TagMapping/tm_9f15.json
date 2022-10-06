@@ -1,0 +1,3929 @@
+{
+  "tag" : "9F15",
+  "values" : [
+    {
+      "meaning" : "Veterinary Services",
+      "value" : "0742"
+    },
+    {
+      "meaning" : "Agricultural Co-operatives",
+      "value" : "0763"
+    },
+    {
+      "meaning" : "Horticultural Services, Landscaping Services",
+      "value" : "0780"
+    },
+    {
+      "meaning" : "General Contractors-Residential and Commercial",
+      "value" : "1520"
+    },
+    {
+      "meaning" : "Air Conditioning Contractors – Sales and Installation, Heating Contractors – Sales, Service, Installation",
+      "value" : "1711"
+    },
+    {
+      "meaning" : "Electrical Contractors",
+      "value" : "1731"
+    },
+    {
+      "meaning" : "Insulation – Contractors, Masonry, Stonework Contractors, Plastering Contractors, Stonework and Masonry Contractors, Tile Settings Contractors",
+      "value" : "1740"
+    },
+    {
+      "meaning" : "Carpentry Contractors",
+      "value" : "1750"
+    },
+    {
+      "meaning" : "Roofing – Contractors, Sheet Metal Work – Contractors, Siding – Contractors",
+      "value" : "1761"
+    },
+    {
+      "meaning" : "Contractors – Concrete Work",
+      "value" : "1771"
+    },
+    {
+      "meaning" : "Contractors – Special Trade, Not Elsewhere Classified",
+      "value" : "1799"
+    },
+    {
+      "meaning" : "Miscellaneous Publishing and Printing",
+      "value" : "2741"
+    },
+    {
+      "meaning" : "Typesetting, Plate Making, & Related Services",
+      "value" : "2791"
+    },
+    {
+      "meaning" : "Specialty Cleaning, Polishing, and Sanitation Preparations",
+      "value" : "2842"
+    },
+    {
+      "meaning" : "UNITED AIRLINES",
+      "value" : "3000"
+    },
+    {
+      "meaning" : "AMERICAN AIRLINES",
+      "value" : "3001"
+    },
+    {
+      "meaning" : "PAN AMERICAN",
+      "value" : "3002"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3003"
+    },
+    {
+      "meaning" : "TRANS WORLD AIRLINES",
+      "value" : "3004"
+    },
+    {
+      "meaning" : "BRITISH AIRWAYS",
+      "value" : "3005"
+    },
+    {
+      "meaning" : "JAPAN AIRLINES",
+      "value" : "3006"
+    },
+    {
+      "meaning" : "AIR FRANCE",
+      "value" : "3007"
+    },
+    {
+      "meaning" : "LUFTHANSA",
+      "value" : "3008"
+    },
+    {
+      "meaning" : "AIR CANADA",
+      "value" : "3009"
+    },
+    {
+      "meaning" : "KLM (ROYAL DUTCH AIRLINES)",
+      "value" : "3010"
+    },
+    {
+      "meaning" : "AEORFLOT",
+      "value" : "3011"
+    },
+    {
+      "meaning" : "QANTAS",
+      "value" : "3012"
+    },
+    {
+      "meaning" : "ALITALIA",
+      "value" : "3013"
+    },
+    {
+      "meaning" : "SAUDIA ARABIAN AIRLINES",
+      "value" : "3014"
+    },
+    {
+      "meaning" : "SWISSAIR",
+      "value" : "3015"
+    },
+    {
+      "meaning" : "SAS",
+      "value" : "3016"
+    },
+    {
+      "meaning" : "SOUTH AFRICAN AIRWAYS",
+      "value" : "3017"
+    },
+    {
+      "meaning" : "VARIG (BRAZIL)",
+      "value" : "3018"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3019"
+    },
+    {
+      "meaning" : "AIR-INDIA",
+      "value" : "3020"
+    },
+    {
+      "meaning" : "AIR ALGERIE",
+      "value" : "3021"
+    },
+    {
+      "meaning" : "PHILIPPINE AIRLINES",
+      "value" : "3022"
+    },
+    {
+      "meaning" : "MEXICANA",
+      "value" : "3023"
+    },
+    {
+      "meaning" : "PAKISTAN INTERNATIONAL",
+      "value" : "3024"
+    },
+    {
+      "meaning" : "AIR NEW ZEALAND",
+      "value" : "3025"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3026"
+    },
+    {
+      "meaning" : "UTA/INTERAIR",
+      "value" : "3027"
+    },
+    {
+      "meaning" : "AIR MALTA",
+      "value" : "3028"
+    },
+    {
+      "meaning" : "SABENA",
+      "value" : "3029"
+    },
+    {
+      "meaning" : "AEROLINEAS ARGENTINAS",
+      "value" : "3030"
+    },
+    {
+      "meaning" : "OLYMPIC AIRWAYS",
+      "value" : "3031"
+    },
+    {
+      "meaning" : "EL AL",
+      "value" : "3032"
+    },
+    {
+      "meaning" : "ANSETT AIRLINES",
+      "value" : "3033"
+    },
+    {
+      "meaning" : "AUSTRAINLIAN AIRLINES",
+      "value" : "3034"
+    },
+    {
+      "meaning" : "TAP (PORTUGAL)",
+      "value" : "3035"
+    },
+    {
+      "meaning" : "VASP (BRAZIL)",
+      "value" : "3036"
+    },
+    {
+      "meaning" : "EGYPTAIR",
+      "value" : "3037"
+    },
+    {
+      "meaning" : "KUWAIT AIRLINES",
+      "value" : "3038"
+    },
+    {
+      "meaning" : "AVIANCA",
+      "value" : "3039"
+    },
+    {
+      "meaning" : "GULF AIR (BAHRAIN)",
+      "value" : "3040"
+    },
+    {
+      "meaning" : "BALKAN-BULGARIAN AIRLINES",
+      "value" : "3041"
+    },
+    {
+      "meaning" : "FINNAIR",
+      "value" : "3042"
+    },
+    {
+      "meaning" : "AER LINGUS",
+      "value" : "3043"
+    },
+    {
+      "meaning" : "AIR LANKA",
+      "value" : "3044"
+    },
+    {
+      "meaning" : "NIGERIA AIRWAYS",
+      "value" : "3045"
+    },
+    {
+      "meaning" : "CRUZEIRO DO SUL (BRAZIJ)",
+      "value" : "3046"
+    },
+    {
+      "meaning" : "THY (TURKEY)",
+      "value" : "3047"
+    },
+    {
+      "meaning" : "ROYAL AIR MAROC",
+      "value" : "3048"
+    },
+    {
+      "meaning" : "TUNIS AIR",
+      "value" : "3049"
+    },
+    {
+      "meaning" : "ICELANDAIR",
+      "value" : "3050"
+    },
+    {
+      "meaning" : "AUSTRIAN AIRLINES",
+      "value" : "3051"
+    },
+    {
+      "meaning" : "LANCHILE",
+      "value" : "3052"
+    },
+    {
+      "meaning" : "AVIACO (SPAIN)",
+      "value" : "3053"
+    },
+    {
+      "meaning" : "LADECO (CHILE)",
+      "value" : "3054"
+    },
+    {
+      "meaning" : "LAB (BOLIVIA)",
+      "value" : "3055"
+    },
+    {
+      "meaning" : "QUEBECAIRE",
+      "value" : "3056"
+    },
+    {
+      "meaning" : "EASTWEST AIRLINES (AUSTRALIA)",
+      "value" : "3057"
+    },
+    {
+      "meaning" : "DELTA",
+      "value" : "3058"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3059"
+    },
+    {
+      "meaning" : "NORTHWEST",
+      "value" : "3060"
+    },
+    {
+      "meaning" : "CONTINENTAL",
+      "value" : "3061"
+    },
+    {
+      "meaning" : "WESTERN",
+      "value" : "3062"
+    },
+    {
+      "meaning" : "US AIR",
+      "value" : "3063"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3064"
+    },
+    {
+      "meaning" : "AIRINTER",
+      "value" : "3065"
+    },
+    {
+      "meaning" : "SOUTHWEST",
+      "value" : "3066"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3067"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3068"
+    },
+    {
+      "meaning" : "SUN COUNTRY AIRLINES",
+      "value" : "3069"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3070"
+    },
+    {
+      "meaning" : "AIR BRITISH COLUBIA",
+      "value" : "3071"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3072"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3073"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3074"
+    },
+    {
+      "meaning" : "SINGAPORE AIRLINES",
+      "value" : "3075"
+    },
+    {
+      "meaning" : "AEROMEXICO",
+      "value" : "3076"
+    },
+    {
+      "meaning" : "THAI AIRWAYS",
+      "value" : "3077"
+    },
+    {
+      "meaning" : "CHINA AIRLINES",
+      "value" : "3078"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3079"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3080"
+    },
+    {
+      "meaning" : "NORDAIR",
+      "value" : "3081"
+    },
+    {
+      "meaning" : "KOREAN AIRLINES",
+      "value" : "3082"
+    },
+    {
+      "meaning" : "AIR AFRIGUE",
+      "value" : "3083"
+    },
+    {
+      "meaning" : "EVA AIRLINES",
+      "value" : "3084"
+    },
+    {
+      "meaning" : "MIDWEST EXPRESS AIRLINES, INC.",
+      "value" : "3085"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3086"
+    },
+    {
+      "meaning" : "METRO AIRLINES",
+      "value" : "3087"
+    },
+    {
+      "meaning" : "CROATIA AIRLINES",
+      "value" : "3088"
+    },
+    {
+      "meaning" : "TRANSAERO",
+      "value" : "3089"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3090"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3091"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3092"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3093"
+    },
+    {
+      "meaning" : "ZAMBIA AIRWAYS",
+      "value" : "3094"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3095"
+    },
+    {
+      "meaning" : "AIR ZIMBABWE",
+      "value" : "3096"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3097"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3098"
+    },
+    {
+      "meaning" : "CATHAY PACIFIC",
+      "value" : "3099"
+    },
+    {
+      "meaning" : "MALAYSIAN AIRLINE SYSTEM",
+      "value" : "3100"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3101"
+    },
+    {
+      "meaning" : "IBERIA",
+      "value" : "3102"
+    },
+    {
+      "meaning" : "GARUDA (INDONESIA)",
+      "value" : "3103"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3104"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3105"
+    },
+    {
+      "meaning" : "BRAATHENS S.A.F.E. (NORWAY)",
+      "value" : "3106"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3107"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3108"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3109"
+    },
+    {
+      "meaning" : "WINGS AIRWAYS",
+      "value" : "3110"
+    },
+    {
+      "meaning" : "BRITISH MIDLAND",
+      "value" : "3111"
+    },
+    {
+      "meaning" : "WINDWARD ISLAND",
+      "value" : "3112"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3113"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3114"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3115"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3116"
+    },
+    {
+      "meaning" : "VIASA",
+      "value" : "3117"
+    },
+    {
+      "meaning" : "VALLEY AIRLINES",
+      "value" : "3118"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3119"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3120"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3121"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3122"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3123"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3124"
+    },
+    {
+      "meaning" : "TAN",
+      "value" : "3125"
+    },
+    {
+      "meaning" : "TALAIR",
+      "value" : "3126"
+    },
+    {
+      "meaning" : "TACA INTERNATIONAL",
+      "value" : "3127"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3128"
+    },
+    {
+      "meaning" : "SURINAM AIRWAYS",
+      "value" : "3129"
+    },
+    {
+      "meaning" : "SUN WORLD INTERNATIONAL",
+      "value" : "3130"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3131"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3132"
+    },
+    {
+      "meaning" : "SUNBELT AIRLINES",
+      "value" : "3133"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3134"
+    },
+    {
+      "meaning" : "SUDAN AIRWAYS",
+      "value" : "3135"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3136"
+    },
+    {
+      "meaning" : "SINGLETON",
+      "value" : "3137"
+    },
+    {
+      "meaning" : "SIMMONS AIRLINES",
+      "value" : "3138"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3139"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3140"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3141"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3142"
+    },
+    {
+      "meaning" : "SCENIC AIRLINES",
+      "value" : "3143"
+    },
+    {
+      "meaning" : "VIRGIN ATLANTIC",
+      "value" : "3144"
+    },
+    {
+      "meaning" : "SAN JUAN AIRLINES",
+      "value" : "3145"
+    },
+    {
+      "meaning" : "LUXAIR",
+      "value" : "3146"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3147"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3148"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3149"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3150"
+    },
+    {
+      "meaning" : "AIR ZAIRE",
+      "value" : "3151"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3152"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3153"
+    },
+    {
+      "meaning" : "PRINCEVILLE",
+      "value" : "3154"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3155"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3156"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3157"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3158"
+    },
+    {
+      "meaning" : "PBA",
+      "value" : "3159"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3160"
+    },
+    {
+      "meaning" : "ALL NIPPON AIRWAYS",
+      "value" : "3161"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3162"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3163"
+    },
+    {
+      "meaning" : "NORONTAIR",
+      "value" : "3164"
+    },
+    {
+      "meaning" : "NEW YORK HELICOPTER",
+      "value" : "3165"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3166"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3167"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3168"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3169"
+    },
+    {
+      "meaning" : "NOUNT COOK",
+      "value" : "3170"
+    },
+    {
+      "meaning" : "CANADIAN AIRLINES INTERNATIONAL",
+      "value" : "3171"
+    },
+    {
+      "meaning" : "NATIONAIR",
+      "value" : "3172"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3173"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3174"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3175"
+    },
+    {
+      "meaning" : "METROFLIGHT AIRLINES",
+      "value" : "3176"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3177"
+    },
+    {
+      "meaning" : "MESA AIR",
+      "value" : "3178"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3179"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3180"
+    },
+    {
+      "meaning" : "MALEV",
+      "value" : "3181"
+    },
+    {
+      "meaning" : "LOT (POLAND)",
+      "value" : "3182"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3183"
+    },
+    {
+      "meaning" : "LIAT",
+      "value" : "3184"
+    },
+    {
+      "meaning" : "LAV (VENEZUELA)",
+      "value" : "3185"
+    },
+    {
+      "meaning" : "LAP (PARAGUAY)",
+      "value" : "3186"
+    },
+    {
+      "meaning" : "LACSA (COSTA RICA)",
+      "value" : "3187"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3188"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3189"
+    },
+    {
+      "meaning" : "JUGOSLAV AIR",
+      "value" : "3190"
+    },
+    {
+      "meaning" : "ISLAND AIRLINES",
+      "value" : "3191"
+    },
+    {
+      "meaning" : "IRAN AIR",
+      "value" : "3192"
+    },
+    {
+      "meaning" : "INDIAN AIRLINES",
+      "value" : "3193"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3194"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3195"
+    },
+    {
+      "meaning" : "HAWAIIAN AIR",
+      "value" : "3196"
+    },
+    {
+      "meaning" : "HAVASU AIRLINES",
+      "value" : "3197"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3198"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3199"
+    },
+    {
+      "meaning" : "FUYANA AIRWAYS",
+      "value" : "3200"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3201"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3202"
+    },
+    {
+      "meaning" : "GOLDEN PACIFIC AIR",
+      "value" : "3203"
+    },
+    {
+      "meaning" : "FREEDOM AIR",
+      "value" : "3204"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3205"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3206"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3207"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3208"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3209"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3210"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3211"
+    },
+    {
+      "meaning" : "DOMINICANA",
+      "value" : "3212"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3213"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3214"
+    },
+    {
+      "meaning" : "DAN AIR SERVICES",
+      "value" : "3215"
+    },
+    {
+      "meaning" : "CUMBERLAND AIRLINES",
+      "value" : "3216"
+    },
+    {
+      "meaning" : "CSA",
+      "value" : "3217"
+    },
+    {
+      "meaning" : "CROWN AIR",
+      "value" : "3218"
+    },
+    {
+      "meaning" : "COPA",
+      "value" : "3219"
+    },
+    {
+      "meaning" : "COMPANIA FAUCETT",
+      "value" : "3220"
+    },
+    {
+      "meaning" : "TRANSPORTES AEROS MILITARES ECCUATORANOS",
+      "value" : "3221"
+    },
+    {
+      "meaning" : "COMMAND AIRWAYS",
+      "value" : "3222"
+    },
+    {
+      "meaning" : "COMAIR",
+      "value" : "3223"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3224"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3225"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3226"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3227"
+    },
+    {
+      "meaning" : "CAYMAN AIRWAYS",
+      "value" : "3228"
+    },
+    {
+      "meaning" : "SAETA SOCIAEDAD ECUATORIANOS DE TRANSPORTES AEREOS",
+      "value" : "3229"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3230"
+    },
+    {
+      "meaning" : "SASHA SERVICIO AERO DE HONDURAS",
+      "value" : "3231"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3232"
+    },
+    {
+      "meaning" : "CAPITOL AIR",
+      "value" : "3233"
+    },
+    {
+      "meaning" : "BWIA",
+      "value" : "3234"
+    },
+    {
+      "meaning" : "BROKWAY AIR",
+      "value" : "3235"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3236"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3237"
+    },
+    {
+      "meaning" : "BEMIDJI AIRLINES",
+      "value" : "3238"
+    },
+    {
+      "meaning" : "BAR HARBOR AIRLINES",
+      "value" : "3239"
+    },
+    {
+      "meaning" : "BAHAMASAIR",
+      "value" : "3240"
+    },
+    {
+      "meaning" : "AVIATECA (GUATEMALA)",
+      "value" : "3241"
+    },
+    {
+      "meaning" : "AVENSA",
+      "value" : "3242"
+    },
+    {
+      "meaning" : "AUSTRIAN AIR SERVICE",
+      "value" : "3243"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3244"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3245"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3246"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3247"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3248"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3249"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3250"
+    },
+    {
+      "meaning" : "ALOHA AIRLINES",
+      "value" : "3251"
+    },
+    {
+      "meaning" : "ALM",
+      "value" : "3252"
+    },
+    {
+      "meaning" : "AMERICA WEST",
+      "value" : "3253"
+    },
+    {
+      "meaning" : "TRUMP AIRLINE",
+      "value" : "3254"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3255"
+    },
+    {
+      "meaning" : "ALASKA AIRLINES",
+      "value" : "3256"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3257"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3258"
+    },
+    {
+      "meaning" : "AMERICAN TRANS AIR",
+      "value" : "3259"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3260"
+    },
+    {
+      "meaning" : "AIR CHINA",
+      "value" : "3261"
+    },
+    {
+      "meaning" : "RENO AIR, INC.",
+      "value" : "3262"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3263"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3264"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3265"
+    },
+    {
+      "meaning" : "AIR SEYCHELLES",
+      "value" : "3266"
+    },
+    {
+      "meaning" : "AIR PANAMA",
+      "value" : "3267"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3268"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3269"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3270"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3271"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3272"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3273"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3274"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3275"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3276"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3277"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3278"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3279"
+    },
+    {
+      "meaning" : "AIR JAMAICA",
+      "value" : "3280"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3281"
+    },
+    {
+      "meaning" : "AIR DJIBOUTI",
+      "value" : "3282"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3283"
+    },
+    {
+      "meaning" : "AERO VIRGIN ISLANDS",
+      "value" : "3284"
+    },
+    {
+      "meaning" : "AERO PERU",
+      "value" : "3285"
+    },
+    {
+      "meaning" : "AEROLINEAS NICARAGUENSIS",
+      "value" : "3286"
+    },
+    {
+      "meaning" : "AERO COACH AVAIATION",
+      "value" : "3287"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3288"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3289"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3290"
+    },
+    {
+      "meaning" : "ARIANA AFGHAN",
+      "value" : "3291"
+    },
+    {
+      "meaning" : "CYPRUS AIRWAYS",
+      "value" : "3292"
+    },
+    {
+      "meaning" : "ECUATORIANA",
+      "value" : "3293"
+    },
+    {
+      "meaning" : "ETHIOPIAN AIRLINES",
+      "value" : "3294"
+    },
+    {
+      "meaning" : "KENYA AIRLINES",
+      "value" : "3295"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3296"
+    },
+    {
+      "meaning" : "Airlines",
+      "value" : "3297"
+    },
+    {
+      "meaning" : "AIR MAURITIUS",
+      "value" : "3298"
+    },
+    {
+      "meaning" : "WIDERO’S FLYVESELSKAP",
+      "value" : "3299"
+    },
+    {
+      "meaning" : "AFFILIATED AUTO RENTAL",
+      "value" : "3351"
+    },
+    {
+      "meaning" : "AMERICAN INTL RENT-A-CAR",
+      "value" : "3352"
+    },
+    {
+      "meaning" : "BROOKS RENT-A-CAR",
+      "value" : "3353"
+    },
+    {
+      "meaning" : "ACTION AUTO RENTAL",
+      "value" : "3354"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3355"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3356"
+    },
+    {
+      "meaning" : "HERTZ RENT-A-CAR",
+      "value" : "3357"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3358"
+    },
+    {
+      "meaning" : "PAYLESS CAR RENTAL",
+      "value" : "3359"
+    },
+    {
+      "meaning" : "SNAPPY CAR RENTAL",
+      "value" : "3360"
+    },
+    {
+      "meaning" : "AIRWAYS RENT-A-CAR",
+      "value" : "3361"
+    },
+    {
+      "meaning" : "ALTRA AUTO RENTAL",
+      "value" : "3362"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3363"
+    },
+    {
+      "meaning" : "AGENCY RENT-A-CAR",
+      "value" : "3364"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3365"
+    },
+    {
+      "meaning" : "BUDGET RENT-A-CAR",
+      "value" : "3366"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3367"
+    },
+    {
+      "meaning" : "HOLIDAY RENT-A-WRECK",
+      "value" : "3368"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3369"
+    },
+    {
+      "meaning" : "RENT-A-WRECK",
+      "value" : "3370"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3371"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3372"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3373"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3374"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3375"
+    },
+    {
+      "meaning" : "AJAX RENT-A-CAR",
+      "value" : "3376"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3377"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3378"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3379"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3380"
+    },
+    {
+      "meaning" : "EUROP CAR",
+      "value" : "3381"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3382"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3383"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3384"
+    },
+    {
+      "meaning" : "TROPICAL RENT-A-CAR",
+      "value" : "3385"
+    },
+    {
+      "meaning" : "SHOWCASE RENTAL CARS",
+      "value" : "3386"
+    },
+    {
+      "meaning" : "ALAMO RENT-A-CAR",
+      "value" : "3387"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3388"
+    },
+    {
+      "meaning" : "AVIS RENT-A-CAR",
+      "value" : "3389"
+    },
+    {
+      "meaning" : "DOLLAR RENT-A-CAR",
+      "value" : "3390"
+    },
+    {
+      "meaning" : "EUROPE BY CAR",
+      "value" : "3391"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3392"
+    },
+    {
+      "meaning" : "NATIONAL CAR RENTAL",
+      "value" : "3393"
+    },
+    {
+      "meaning" : "KEMWELL GROUP RENT-A-CAR",
+      "value" : "3394"
+    },
+    {
+      "meaning" : "THRIFTY RENT-A-CAR",
+      "value" : "3395"
+    },
+    {
+      "meaning" : "TILDEN TENT-A-CAR",
+      "value" : "3396"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3397"
+    },
+    {
+      "meaning" : "ECONO-CAR RENT-A-CAR",
+      "value" : "3398"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3399"
+    },
+    {
+      "meaning" : "AUTO HOST COST CAR RENTALS",
+      "value" : "3400"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3401"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3402"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3403"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3404"
+    },
+    {
+      "meaning" : "ENTERPRISE RENT-A-CAR",
+      "value" : "3405"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3406"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3407"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3408"
+    },
+    {
+      "meaning" : "GENERAL RENT-A-CAR",
+      "value" : "3409"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3410"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3411"
+    },
+    {
+      "meaning" : "A-1 RENT-A-CAR",
+      "value" : "3412"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3413"
+    },
+    {
+      "meaning" : "GODFREY NATL RENT-A-CAR",
+      "value" : "3414"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3415"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3416"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3417"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3418"
+    },
+    {
+      "meaning" : "ALPHA RENT-A-CAR",
+      "value" : "3419"
+    },
+    {
+      "meaning" : "ANSA INTL RENT-A-CAR",
+      "value" : "3420"
+    },
+    {
+      "meaning" : "ALLSTAE RENT-A-CAR",
+      "value" : "3421"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3422"
+    },
+    {
+      "meaning" : "AVCAR RENT-A-CAR",
+      "value" : "3423"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3424"
+    },
+    {
+      "meaning" : "AUTOMATE RENT-A-CAR",
+      "value" : "3425"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3426"
+    },
+    {
+      "meaning" : "AVON RENT-A-CAR",
+      "value" : "3427"
+    },
+    {
+      "meaning" : "CAREY RENT-A-CAR",
+      "value" : "3428"
+    },
+    {
+      "meaning" : "INSURANCE RENT-A-CAR",
+      "value" : "3429"
+    },
+    {
+      "meaning" : "MAJOR RENT-A-CAR",
+      "value" : "3430"
+    },
+    {
+      "meaning" : "REPLACEMENT RENT-A-CAR",
+      "value" : "3431"
+    },
+    {
+      "meaning" : "RESERVE RENT-A-CAR",
+      "value" : "3432"
+    },
+    {
+      "meaning" : "UGLY DUCKLING RENT-A-CAR",
+      "value" : "3433"
+    },
+    {
+      "meaning" : "USA RENT-A-CAR",
+      "value" : "3434"
+    },
+    {
+      "meaning" : "VALUE RENT-A-CAR",
+      "value" : "3435"
+    },
+    {
+      "meaning" : "AUTOHANSA RENT-A-CAR",
+      "value" : "3436"
+    },
+    {
+      "meaning" : "CITE RENT-A-CAR",
+      "value" : "3437"
+    },
+    {
+      "meaning" : "INTERENT RENT-A-CAR",
+      "value" : "3438"
+    },
+    {
+      "meaning" : "MILLEVILLE RENT-A-CAR",
+      "value" : "3439"
+    },
+    {
+      "meaning" : "VIA ROUTE RENT-A-CAR",
+      "value" : "3440"
+    },
+    {
+      "meaning" : "Car Rental",
+      "value" : "3441"
+    },
+    {
+      "meaning" : "HOLIDAY INNS, HOLIDAY INN EXPRESS",
+      "value" : "3501"
+    },
+    {
+      "meaning" : "BEST WESTERN HOTELS",
+      "value" : "3502"
+    },
+    {
+      "meaning" : "SHERATON HOTELS",
+      "value" : "3503"
+    },
+    {
+      "meaning" : "HILTON HOTELS",
+      "value" : "3504"
+    },
+    {
+      "meaning" : "FORTE HOTELS",
+      "value" : "3505"
+    },
+    {
+      "meaning" : "GOLDEN TULIP HOTELS",
+      "value" : "3506"
+    },
+    {
+      "meaning" : "FRIENDSHIP INNS",
+      "value" : "3507"
+    },
+    {
+      "meaning" : "QUALITY INNS, QUALITY SUITES",
+      "value" : "3508"
+    },
+    {
+      "meaning" : "MARRIOTT HOTELS",
+      "value" : "3509"
+    },
+    {
+      "meaning" : "DAYS INN, DAYSTOP",
+      "value" : "3510"
+    },
+    {
+      "meaning" : "ARABELLA HOTELS",
+      "value" : "3511"
+    },
+    {
+      "meaning" : "INTER-CONTINENTAL HOTELS",
+      "value" : "3512"
+    },
+    {
+      "meaning" : "WESTIN HOTELS",
+      "value" : "3513"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3514"
+    },
+    {
+      "meaning" : "RODEWAY INNS",
+      "value" : "3515"
+    },
+    {
+      "meaning" : "LA QUINTA MOTOR INNS",
+      "value" : "3516"
+    },
+    {
+      "meaning" : "AMERICANA HOTELS",
+      "value" : "3517"
+    },
+    {
+      "meaning" : "SOL HOTELS",
+      "value" : "3518"
+    },
+    {
+      "meaning" : "PULLMAN INTERNATIONAL HOTELS",
+      "value" : "3519"
+    },
+    {
+      "meaning" : "MERIDIEN HOTELS",
+      "value" : "3520"
+    },
+    {
+      "meaning" : "CREST HOTELS (see FORTE HOTELS)",
+      "value" : "3521"
+    },
+    {
+      "meaning" : "TOKYO HOTEL",
+      "value" : "3522"
+    },
+    {
+      "meaning" : "PENNSULA HOTEL",
+      "value" : "3523"
+    },
+    {
+      "meaning" : "WELCOMGROUP HOTELS",
+      "value" : "3524"
+    },
+    {
+      "meaning" : "DUNFEY HOTELS",
+      "value" : "3525"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3526"
+    },
+    {
+      "meaning" : "DOWNTOWNER-PASSPORT HOTEL",
+      "value" : "3527"
+    },
+    {
+      "meaning" : "RED LION HOTELS, RED LION INNS",
+      "value" : "3528"
+    },
+    {
+      "meaning" : "CP HOTELS",
+      "value" : "3529"
+    },
+    {
+      "meaning" : "RENAISSANCE HOTELS, STOUFFER HOTELS",
+      "value" : "3530"
+    },
+    {
+      "meaning" : "ASTIR HOTELS",
+      "value" : "3531"
+    },
+    {
+      "meaning" : "SUN ROUTE HOTELS",
+      "value" : "3532"
+    },
+    {
+      "meaning" : "HOTEL IBIS",
+      "value" : "3533"
+    },
+    {
+      "meaning" : "SOUTHERN PACIFIC HOTELS",
+      "value" : "3534"
+    },
+    {
+      "meaning" : "HILTON INTERNATIONAL",
+      "value" : "3535"
+    },
+    {
+      "meaning" : "AMFAC HOTELS",
+      "value" : "3536"
+    },
+    {
+      "meaning" : "ANA HOTEL",
+      "value" : "3537"
+    },
+    {
+      "meaning" : "CONCORDE HOTELS",
+      "value" : "3538"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3539"
+    },
+    {
+      "meaning" : "IBEROTEL HOTELS",
+      "value" : "3540"
+    },
+    {
+      "meaning" : "HOTEL OKURA",
+      "value" : "3541"
+    },
+    {
+      "meaning" : "ROYAL HOTELS",
+      "value" : "3542"
+    },
+    {
+      "meaning" : "FOUR SEASONS HOTELS",
+      "value" : "3543"
+    },
+    {
+      "meaning" : "CIGA HOTELS",
+      "value" : "3544"
+    },
+    {
+      "meaning" : "SHANGRI-LA INTERNATIONAL",
+      "value" : "3545"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3546"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3547"
+    },
+    {
+      "meaning" : "HOTELES MELIA",
+      "value" : "3548"
+    },
+    {
+      "meaning" : "AUBERGE DES GOVERNEURS",
+      "value" : "3549"
+    },
+    {
+      "meaning" : "REGAL 8 INNS",
+      "value" : "3550"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3551"
+    },
+    {
+      "meaning" : "COAST HOTELS",
+      "value" : "3552"
+    },
+    {
+      "meaning" : "PARK INNS INTERNATIONAL",
+      "value" : "3553"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3554"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3555"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3556"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3557"
+    },
+    {
+      "meaning" : "JOLLY HOTELS",
+      "value" : "3558"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3559"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3560"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3561"
+    },
+    {
+      "meaning" : "COMFORT INNS",
+      "value" : "3562"
+    },
+    {
+      "meaning" : "JOURNEY’S END MOTLS",
+      "value" : "3563"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3564"
+    },
+    {
+      "meaning" : "RELAX INNS",
+      "value" : "3565"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3566"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3567"
+    },
+    {
+      "meaning" : "LADBROKE HOTELS",
+      "value" : "3568"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3569"
+    },
+    {
+      "meaning" : "FORUM HOTELS",
+      "value" : "3570"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3571"
+    },
+    {
+      "meaning" : "MIYAKO HOTELS",
+      "value" : "3572"
+    },
+    {
+      "meaning" : "SANDMAN HOTELS",
+      "value" : "3573"
+    },
+    {
+      "meaning" : "VENTURE INNS",
+      "value" : "3574"
+    },
+    {
+      "meaning" : "VAGABOND HOTELS",
+      "value" : "3575"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3576"
+    },
+    {
+      "meaning" : "MANDARIN ORIENTAL HOTEL",
+      "value" : "3577"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3578"
+    },
+    {
+      "meaning" : "HOTEL MERCURE",
+      "value" : "3579"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3580"
+    },
+    {
+      "meaning" : "DELTA HOTEL",
+      "value" : "3581"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3582"
+    },
+    {
+      "meaning" : "SAS HOTELS",
+      "value" : "3583"
+    },
+    {
+      "meaning" : "PRINCESS HOTELS INTERNATIONAL",
+      "value" : "3584"
+    },
+    {
+      "meaning" : "HUNGAR HOTELS",
+      "value" : "3585"
+    },
+    {
+      "meaning" : "SOKOS HOTELS",
+      "value" : "3586"
+    },
+    {
+      "meaning" : "DORAL HOTELS",
+      "value" : "3587"
+    },
+    {
+      "meaning" : "HELMSLEY HOTELS",
+      "value" : "3588"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3589"
+    },
+    {
+      "meaning" : "FAIRMONT HOTELS",
+      "value" : "3590"
+    },
+    {
+      "meaning" : "SONESTA HOTELS",
+      "value" : "3591"
+    },
+    {
+      "meaning" : "OMNI HOTELS",
+      "value" : "3592"
+    },
+    {
+      "meaning" : "CUNARD HOTELS",
+      "value" : "3593"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3594"
+    },
+    {
+      "meaning" : "HOSPITALITY INTERNATIONAL",
+      "value" : "3595"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3596"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3597"
+    },
+    {
+      "meaning" : "REGENT INTERNATIONAL HOTELS",
+      "value" : "3598"
+    },
+    {
+      "meaning" : "PANNONIA HOTELS",
+      "value" : "3599"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3600"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3601"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3602"
+    },
+    {
+      "meaning" : "NOAH’S HOTELS",
+      "value" : "3603"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3604"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3605"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3606"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3607"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3608"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3609"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3610"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3611"
+    },
+    {
+      "meaning" : "MOVENPICK HOTELS",
+      "value" : "3612"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3613"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3614"
+    },
+    {
+      "meaning" : "TRAVELODGE",
+      "value" : "3615"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3616"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3617"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3618"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3619"
+    },
+    {
+      "meaning" : "TELFORD INTERNATIONAL",
+      "value" : "3620"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3621"
+    },
+    {
+      "meaning" : "MERLIN HOTELS",
+      "value" : "3622"
+    },
+    {
+      "meaning" : "DORINT HOTELS",
+      "value" : "3623"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3624"
+    },
+    {
+      "meaning" : "HOTLE UNIVERSALE",
+      "value" : "3625"
+    },
+    {
+      "meaning" : "PRINCE HOTELS",
+      "value" : "3626"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3627"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3628"
+    },
+    {
+      "meaning" : "DAN HOTELS",
+      "value" : "3629"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3630"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3631"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3632"
+    },
+    {
+      "meaning" : "RANK HOTELS",
+      "value" : "3633"
+    },
+    {
+      "meaning" : "SWISSOTEL",
+      "value" : "3634"
+    },
+    {
+      "meaning" : "RESO HOTELS",
+      "value" : "3635"
+    },
+    {
+      "meaning" : "SAROVA HOTELS",
+      "value" : "3636"
+    },
+    {
+      "meaning" : "RAMADA INNS, RAMADA LIMITED",
+      "value" : "3637"
+    },
+    {
+      "meaning" : "HO JO INN, HOWARD JOHNSON",
+      "value" : "3638"
+    },
+    {
+      "meaning" : "MOUNT CHARLOTTE THISTLE",
+      "value" : "3639"
+    },
+    {
+      "meaning" : "HYATT HOTEL",
+      "value" : "3640"
+    },
+    {
+      "meaning" : "SOFITEL HOTELS",
+      "value" : "3641"
+    },
+    {
+      "meaning" : "NOVOTEL HOTELS",
+      "value" : "3642"
+    },
+    {
+      "meaning" : "STEIGENBERGER HOTELS",
+      "value" : "3643"
+    },
+    {
+      "meaning" : "ECONO LODGES",
+      "value" : "3644"
+    },
+    {
+      "meaning" : "QUEENS MOAT HOUSES",
+      "value" : "3645"
+    },
+    {
+      "meaning" : "SWALLOW HOTELS",
+      "value" : "3646"
+    },
+    {
+      "meaning" : "HUSA HOTELS",
+      "value" : "3647"
+    },
+    {
+      "meaning" : "DE VERE HOTELS",
+      "value" : "3648"
+    },
+    {
+      "meaning" : "RADISSON HOTELS",
+      "value" : "3649"
+    },
+    {
+      "meaning" : "RED ROOK INNS",
+      "value" : "3650"
+    },
+    {
+      "meaning" : "IMPERIAL LONDON HOTEL",
+      "value" : "3651"
+    },
+    {
+      "meaning" : "EMBASSY HOTELS",
+      "value" : "3652"
+    },
+    {
+      "meaning" : "PENTA HOTELS",
+      "value" : "3653"
+    },
+    {
+      "meaning" : "LOEWS HOTELS",
+      "value" : "3654"
+    },
+    {
+      "meaning" : "SCANDIC HOTELS",
+      "value" : "3655"
+    },
+    {
+      "meaning" : "SARA HOTELS",
+      "value" : "3656"
+    },
+    {
+      "meaning" : "OBEROI HOTELS",
+      "value" : "3657"
+    },
+    {
+      "meaning" : "OTANI HOTELS",
+      "value" : "3658"
+    },
+    {
+      "meaning" : "TAJ HOTELS INTERNATIONAL",
+      "value" : "3659"
+    },
+    {
+      "meaning" : "KNIGHTS INNS",
+      "value" : "3660"
+    },
+    {
+      "meaning" : "METROPOLE HOTELS",
+      "value" : "3661"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3662"
+    },
+    {
+      "meaning" : "HOTELES EL PRESIDENTS",
+      "value" : "3663"
+    },
+    {
+      "meaning" : "FLAG INN",
+      "value" : "3664"
+    },
+    {
+      "meaning" : "HAMPTON INNS",
+      "value" : "3665"
+    },
+    {
+      "meaning" : "STAKIS HOTELS",
+      "value" : "3666"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3667"
+    },
+    {
+      "meaning" : "MARITIM HOTELS",
+      "value" : "3668"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3669"
+    },
+    {
+      "meaning" : "ARCARD HOTELS",
+      "value" : "3670"
+    },
+    {
+      "meaning" : "ARCTIA HOTELS",
+      "value" : "3671"
+    },
+    {
+      "meaning" : "CAMPANIEL HOTELS",
+      "value" : "3672"
+    },
+    {
+      "meaning" : "IBUSZ HOTELS",
+      "value" : "3673"
+    },
+    {
+      "meaning" : "RANTASIPI HOTELS",
+      "value" : "3674"
+    },
+    {
+      "meaning" : "INTERHOTEL CEDOK",
+      "value" : "3675"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3676"
+    },
+    {
+      "meaning" : "CLIMAT DE FRANCE HOTELS",
+      "value" : "3677"
+    },
+    {
+      "meaning" : "CUMULUS HOTELS",
+      "value" : "3678"
+    },
+    {
+      "meaning" : "DANUBIUS HOTEL",
+      "value" : "3679"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3680"
+    },
+    {
+      "meaning" : "ADAMS MARK HOTELS",
+      "value" : "3681"
+    },
+    {
+      "meaning" : "ALLSTAR INNS",
+      "value" : "3682"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3683"
+    },
+    {
+      "meaning" : "BUDGET HOST INNS",
+      "value" : "3684"
+    },
+    {
+      "meaning" : "BUDGETEL HOTELS",
+      "value" : "3685"
+    },
+    {
+      "meaning" : "SUISSE CHALETS",
+      "value" : "3686"
+    },
+    {
+      "meaning" : "CLARION HOTELS",
+      "value" : "3687"
+    },
+    {
+      "meaning" : "COMPRI HOTELS",
+      "value" : "3688"
+    },
+    {
+      "meaning" : "CONSORT HOTELS",
+      "value" : "3689"
+    },
+    {
+      "meaning" : "COURTYARD BY MARRIOTT",
+      "value" : "3690"
+    },
+    {
+      "meaning" : "DILLION INNS",
+      "value" : "3691"
+    },
+    {
+      "meaning" : "DOUBLETREE HOTELS",
+      "value" : "3692"
+    },
+    {
+      "meaning" : "DRURY INNS",
+      "value" : "3693"
+    },
+    {
+      "meaning" : "ECONOMY INNS OF AMERICA",
+      "value" : "3694"
+    },
+    {
+      "meaning" : "EMBASSY SUITES",
+      "value" : "3695"
+    },
+    {
+      "meaning" : "EXEL INNS",
+      "value" : "3696"
+    },
+    {
+      "meaning" : "FARFIELD HOTELS",
+      "value" : "3697"
+    },
+    {
+      "meaning" : "HARLEY HOTELS",
+      "value" : "3698"
+    },
+    {
+      "meaning" : "MIDWAY MOTOR LODGE",
+      "value" : "3699"
+    },
+    {
+      "meaning" : "MOTEL 6",
+      "value" : "3700"
+    },
+    {
+      "meaning" : "GUEST QUARTERS (Formally PICKETT SUITE HOTELS)",
+      "value" : "3701"
+    },
+    {
+      "meaning" : "THE REGISTRY HOTELS",
+      "value" : "3702"
+    },
+    {
+      "meaning" : "RESIDENCE INNS",
+      "value" : "3703"
+    },
+    {
+      "meaning" : "ROYCE HOTELS",
+      "value" : "3704"
+    },
+    {
+      "meaning" : "SANDMAN INNS",
+      "value" : "3705"
+    },
+    {
+      "meaning" : "SHILO INNS",
+      "value" : "3706"
+    },
+    {
+      "meaning" : "SHONEY’S INNS",
+      "value" : "3707"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3708"
+    },
+    {
+      "meaning" : "SUPER8 MOTELS",
+      "value" : "3709"
+    },
+    {
+      "meaning" : "THE RITZ CARLTON HOTELS",
+      "value" : "3710"
+    },
+    {
+      "meaning" : "FLAG INNS (AUSRALIA)",
+      "value" : "3711"
+    },
+    {
+      "meaning" : "GOLDEN CHAIN HOTEL",
+      "value" : "3712"
+    },
+    {
+      "meaning" : "QUALITY PACIFIC HOTEL",
+      "value" : "3713"
+    },
+    {
+      "meaning" : "FOUR SEASONS HOTEL (AUSTRALIA)",
+      "value" : "3714"
+    },
+    {
+      "meaning" : "FARIFIELD INN",
+      "value" : "3715"
+    },
+    {
+      "meaning" : "CARLTON HOTELS",
+      "value" : "3716"
+    },
+    {
+      "meaning" : "CITY LODGE HOTELS",
+      "value" : "3717"
+    },
+    {
+      "meaning" : "KAROS HOTELS",
+      "value" : "3718"
+    },
+    {
+      "meaning" : "PROTEA HOTELS",
+      "value" : "3719"
+    },
+    {
+      "meaning" : "SOUTHERN SUN HOTELS",
+      "value" : "3720"
+    },
+    {
+      "meaning" : "HILTON CONRAD",
+      "value" : "3721"
+    },
+    {
+      "meaning" : "WYNDHAM HOTEL AND RESORTS",
+      "value" : "3722"
+    },
+    {
+      "meaning" : "RICA HOTELS",
+      "value" : "3723"
+    },
+    {
+      "meaning" : "INER NOR HOTELS",
+      "value" : "3724"
+    },
+    {
+      "meaning" : "SEAINES PLANATION",
+      "value" : "3725"
+    },
+    {
+      "meaning" : "RIO SUITES",
+      "value" : "3726"
+    },
+    {
+      "meaning" : "BROADMOOR HOTEL",
+      "value" : "3727"
+    },
+    {
+      "meaning" : "BALLY’S HOTEL AND CASINO",
+      "value" : "3728"
+    },
+    {
+      "meaning" : "JOHN ASCUAGA’S NUGGET",
+      "value" : "3729"
+    },
+    {
+      "meaning" : "MGM GRAND HOTEL",
+      "value" : "3730"
+    },
+    {
+      "meaning" : "HARRAH’S HOTELS AND CASINOS",
+      "value" : "3731"
+    },
+    {
+      "meaning" : "OPRYLAND HOTEL",
+      "value" : "3732"
+    },
+    {
+      "meaning" : "BOCA RATON RESORT",
+      "value" : "3733"
+    },
+    {
+      "meaning" : "HARVEY/BRISTOL HOTELS",
+      "value" : "3734"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3735"
+    },
+    {
+      "meaning" : "COLORADO BELLE/EDGEWATER RESORT",
+      "value" : "3736"
+    },
+    {
+      "meaning" : "RIVIERA HOTEL AND CASINO",
+      "value" : "3737"
+    },
+    {
+      "meaning" : "TROPICANA RESORT AND CASINO",
+      "value" : "3738"
+    },
+    {
+      "meaning" : "WOODSIDE HOTELS AND RESORTS",
+      "value" : "3739"
+    },
+    {
+      "meaning" : "TOWNPLACE SUITES",
+      "value" : "3740"
+    },
+    {
+      "meaning" : "MILLENIUM BROADWAY HOTEL",
+      "value" : "3741"
+    },
+    {
+      "meaning" : "CLUB MED",
+      "value" : "3742"
+    },
+    {
+      "meaning" : "BILTMORE HOTEL AND SUITES",
+      "value" : "3743"
+    },
+    {
+      "meaning" : "CAREFREE RESORTS",
+      "value" : "3744"
+    },
+    {
+      "meaning" : "ST. REGIS HOTEL",
+      "value" : "3745"
+    },
+    {
+      "meaning" : "THE ELIOT HOTEL",
+      "value" : "3746"
+    },
+    {
+      "meaning" : "CLUBCORP/CLUB RESORTS",
+      "value" : "3747"
+    },
+    {
+      "meaning" : "WELESLEY INNS",
+      "value" : "3748"
+    },
+    {
+      "meaning" : "THE BEVERLY HILLS HOTEL",
+      "value" : "3749"
+    },
+    {
+      "meaning" : "CROWNE PLAZA HOTELS",
+      "value" : "3750"
+    },
+    {
+      "meaning" : "HOMEWOOD SUITES",
+      "value" : "3751"
+    },
+    {
+      "meaning" : "PEABODY HOTELS",
+      "value" : "3752"
+    },
+    {
+      "meaning" : "GREENBRIAH RESORTS",
+      "value" : "3753"
+    },
+    {
+      "meaning" : "AMELIA ISLAND PLANATION",
+      "value" : "3754"
+    },
+    {
+      "meaning" : "THE HOMESTEAD",
+      "value" : "3755"
+    },
+    {
+      "meaning" : "SOUTH SEAS RESORTS",
+      "value" : "3756"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3757"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3758"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3759"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3760"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3761"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3762"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3763"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3764"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3765"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3766"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3767"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3768"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3769"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3770"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3771"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3772"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3773"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3774"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3775"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3776"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3777"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3778"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3779"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3780"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3781"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3782"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3783"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3784"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3785"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3786"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3787"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3788"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3789"
+    },
+    {
+      "meaning" : "Hotels/Motels/Inns/Resorts",
+      "value" : "3790"
+    },
+    {
+      "meaning" : "Home2Suites",
+      "value" : "3816"
+    },
+    {
+      "meaning" : "* MASTERS ECONOMY INNS",
+      "value" : "3835"
+    },
+    {
+      "meaning" : "Railroads",
+      "value" : "4011"
+    },
+    {
+      "meaning" : "Local/Suburban Commuter Passenger Transportation – Railroads, Feries, Local Water Transportation.",
+      "value" : "4111"
+    },
+    {
+      "meaning" : "Passenger Railways",
+      "value" : "4112"
+    },
+    {
+      "meaning" : "Ambulance Services",
+      "value" : "4119"
+    },
+    {
+      "meaning" : "Taxicabs and Limousines",
+      "value" : "4121"
+    },
+    {
+      "meaning" : "Bus Lines, Including Charters, Tour Buses",
+      "value" : "4131"
+    },
+    {
+      "meaning" : "Motor Freight Carriers, Moving and Storage Companies, Trucking – Local/Long Distance, Delivery Services – Local",
+      "value" : "4214"
+    },
+    {
+      "meaning" : "Courier Services – Air or Ground, Freight forwarders",
+      "value" : "4215"
+    },
+    {
+      "meaning" : "Public warehousing, Storage",
+      "value" : "4225"
+    },
+    {
+      "meaning" : "Cruise and Steamship Lines",
+      "value" : "4411"
+    },
+    {
+      "meaning" : "Boat Rentals and Leases",
+      "value" : "4457"
+    },
+    {
+      "meaning" : "Marinas, Marine Service, and Supplies",
+      "value" : "4468"
+    },
+    {
+      "meaning" : "Airlines, Air Carriers (not listed elsewhere)",
+      "value" : "4511"
+    },
+    {
+      "meaning" : "Airports, Airport Terminals, Flying Fields",
+      "value" : "4582"
+    },
+    {
+      "meaning" : "Travel Agencies and Tour Operations",
+      "value" : "4722"
+    },
+    {
+      "meaning" : "Package Tour Operators (For use in Germany only)",
+      "value" : "4723"
+    },
+    {
+      "meaning" : "Toll and Bridge Fees",
+      "value" : "4784"
+    },
+    {
+      "meaning" : "Transportation Services, Not elsewhere classified)",
+      "value" : "4789"
+    },
+    {
+      "meaning" : "Telecommunications Equipment including telephone sales",
+      "value" : "4812"
+    },
+    {
+      "meaning" : "Fax services, Telecommunication Services",
+      "value" : "4814"
+    },
+    {
+      "meaning" : "VisaPhone",
+      "value" : "4815"
+    },
+    {
+      "meaning" : "Computer Network Services",
+      "value" : "4816"
+    },
+    {
+      "meaning" : "Telegraph services",
+      "value" : "4821"
+    },
+    {
+      "meaning" : "Money Orders – Wire Transfer",
+      "value" : "4829"
+    },
+    {
+      "meaning" : "Cable and other pay television (previously Cable Services)",
+      "value" : "4899"
+    },
+    {
+      "meaning" : "Electric, Gas, Sanitary and Water Utilities",
+      "value" : "4900"
+    },
+    {
+      "meaning" : "Motor vehicle supplies and new parts",
+      "value" : "5013"
+    },
+    {
+      "meaning" : "Office and Commercial Furniture",
+      "value" : "5021"
+    },
+    {
+      "meaning" : "Construction Materials, Not Elsewhere Classified",
+      "value" : "5039"
+    },
+    {
+      "meaning" : "Office, Photographic, Photocopy, and Microfilm Equipment",
+      "value" : "5044"
+    },
+    {
+      "meaning" : "Computers, Computer Peripheral Equipment, Software",
+      "value" : "5045"
+    },
+    {
+      "meaning" : "Commercial Equipment, Not Elsewhere Classified",
+      "value" : "5046"
+    },
+    {
+      "meaning" : "Medical, Dental Ophthalmic, Hospital Equipment and Supplies",
+      "value" : "5047"
+    },
+    {
+      "meaning" : "Metal Service Centers and Offices",
+      "value" : "5051"
+    },
+    {
+      "meaning" : "Electrical Parts and Equipment",
+      "value" : "5065"
+    },
+    {
+      "meaning" : "Hardware Equipment and Supplies",
+      "value" : "5072"
+    },
+    {
+      "meaning" : "Plumbing and Heating Equipment and Supplies",
+      "value" : "5074"
+    },
+    {
+      "meaning" : "Industrial Supplies, Not Elsewhere Classified",
+      "value" : "5085"
+    },
+    {
+      "meaning" : "Precious Stones and Metals, Watches and Jewelry",
+      "value" : "5094"
+    },
+    {
+      "meaning" : "Durable Goods, Not Elsewhere Classified",
+      "value" : "5099"
+    },
+    {
+      "meaning" : "Stationery, Office Supplies, Printing, and Writing Paper",
+      "value" : "5111"
+    },
+    {
+      "meaning" : "Drugs, Drug Proprietors, and Druggist’s Sundries",
+      "value" : "5122"
+    },
+    {
+      "meaning" : "Piece Goods, Notions, and Other Dry Goods",
+      "value" : "5131"
+    },
+    {
+      "meaning" : "Men’s Women’s and Children’s Uniforms and Commercial Clothing",
+      "value" : "5137"
+    },
+    {
+      "meaning" : "Commercial Footwear",
+      "value" : "5139"
+    },
+    {
+      "meaning" : "Chemicals and Allied Products, Not Elsewhere Classified",
+      "value" : "5169"
+    },
+    {
+      "meaning" : "Petroleum and Petroleum Products",
+      "value" : "5172"
+    },
+    {
+      "meaning" : "Books, Periodicals, and Newspapers",
+      "value" : "5192"
+    },
+    {
+      "meaning" : "Florists’ Supplies, Nursery Stock and Flowers",
+      "value" : "5193"
+    },
+    {
+      "meaning" : "Paints, Varnishes, and Supplies",
+      "value" : "5198"
+    },
+    {
+      "meaning" : "Non-durable Goods, Not Elsewhere Classified",
+      "value" : "5199"
+    },
+    {
+      "meaning" : "Home Supply Warehouse Stores",
+      "value" : "5200"
+    },
+    {
+      "meaning" : "Lumber and Building Materials Stores",
+      "value" : "5211"
+    },
+    {
+      "meaning" : "Glass, Paint, and Wallpaper Stores",
+      "value" : "5231"
+    },
+    {
+      "meaning" : "Hardware Stores",
+      "value" : "5251"
+    },
+    {
+      "meaning" : "Nurseries – Lawn and Garden Supply Store",
+      "value" : "5261"
+    },
+    {
+      "meaning" : "Mobile Home Dealers",
+      "value" : "5271"
+    },
+    {
+      "meaning" : "Wholesale Clubs",
+      "value" : "5300"
+    },
+    {
+      "meaning" : "Duty Free Store",
+      "value" : "5309"
+    },
+    {
+      "meaning" : "Discount Stores",
+      "value" : "5310"
+    },
+    {
+      "meaning" : "Department Stores",
+      "value" : "5311"
+    },
+    {
+      "meaning" : "Variety Stores",
+      "value" : "5331"
+    },
+    {
+      "meaning" : "Misc. General Merchandise",
+      "value" : "5399"
+    },
+    {
+      "meaning" : "Grocery Stores, Supermarkets",
+      "value" : "5411"
+    },
+    {
+      "meaning" : "Meat Provisioners – Freezer and Locker",
+      "value" : "5422"
+    },
+    {
+      "meaning" : "Candy, Nut, and Confectionery Stores",
+      "value" : "5441"
+    },
+    {
+      "meaning" : "Dairy Products Stores",
+      "value" : "5451"
+    },
+    {
+      "meaning" : "Bakeries",
+      "value" : "5462"
+    },
+    {
+      "meaning" : "Misc. Food Stores – Convenience Stores and Specialty Markets",
+      "value" : "5499"
+    },
+    {
+      "meaning" : "Car and Truck Dealers (New and Used) Sales, Service, Repairs, Parts, and Leasing",
+      "value" : "5511"
+    },
+    {
+      "meaning" : "Automobile and Truck Dealers (Used Only)",
+      "value" : "5521"
+    },
+    {
+      "meaning" : "Automobile Supply Stores",
+      "value" : "5531"
+    },
+    {
+      "meaning" : "Automotive Tire Stores",
+      "value" : "5532"
+    },
+    {
+      "meaning" : "Automotive Parts, Accessories Stores",
+      "value" : "5533"
+    },
+    {
+      "meaning" : "Service Stations (with or without ancillary services)",
+      "value" : "5541"
+    },
+    {
+      "meaning" : "Automated Fuel Dispensers",
+      "value" : "5542"
+    },
+    {
+      "meaning" : "Boat Dealers",
+      "value" : "5551"
+    },
+    {
+      "meaning" : "Recreational and Utility Trailers, Camp Dealers",
+      "value" : "5561"
+    },
+    {
+      "meaning" : "Motorcycle Dealers",
+      "value" : "5571"
+    },
+    {
+      "meaning" : "Motor Home Dealers",
+      "value" : "5592"
+    },
+    {
+      "meaning" : "Snowmobile Dealers",
+      "value" : "5598"
+    },
+    {
+      "meaning" : "Miscellaneous Auto Dealers ",
+      "value" : "5599"
+    },
+    {
+      "meaning" : "Men’s and Boy’s Clothing and Accessories Stores",
+      "value" : "5611"
+    },
+    {
+      "meaning" : "Women’s Ready-to-Wear Stores",
+      "value" : "5621"
+    },
+    {
+      "meaning" : "Women’s Accessory and Specialty Shops",
+      "value" : "5631"
+    },
+    {
+      "meaning" : "Children’s and Infant’s Wear Stores",
+      "value" : "5641"
+    },
+    {
+      "meaning" : "Family Clothing Stores",
+      "value" : "5651"
+    },
+    {
+      "meaning" : "Sports Apparel, Riding Apparel Stores",
+      "value" : "5655"
+    },
+    {
+      "meaning" : "Shoe Stores",
+      "value" : "5661"
+    },
+    {
+      "meaning" : "Furriers and Fur Shops",
+      "value" : "5681"
+    },
+    {
+      "meaning" : "Men’s and Women’s Clothing Stores",
+      "value" : "5691"
+    },
+    {
+      "meaning" : "Tailors, Seamstress, Mending, and Alterations",
+      "value" : "5697"
+    },
+    {
+      "meaning" : "Wig and Toupee Stores",
+      "value" : "5698"
+    },
+    {
+      "meaning" : "Miscellaneous Apparel and Accessory Shops",
+      "value" : "5699"
+    },
+    {
+      "meaning" : "Furniture, Home Furnishings, and Equipment Stores, ExceptAppliances",
+      "value" : "5712"
+    },
+    {
+      "meaning" : "Floor Covering Stores",
+      "value" : "5713"
+    },
+    {
+      "meaning" : "Drapery, Window Covering and Upholstery Stores",
+      "value" : "5714"
+    },
+    {
+      "meaning" : "Fireplace, Fireplace Screens, and Accessories Stores",
+      "value" : "5718"
+    },
+    {
+      "meaning" : "Miscellaneous Home Furnishing Specialty Stores",
+      "value" : "5719"
+    },
+    {
+      "meaning" : "Household Appliance Stores",
+      "value" : "5722"
+    },
+    {
+      "meaning" : "Electronic Sales",
+      "value" : "5732"
+    },
+    {
+      "meaning" : "Music Stores, Musical Instruments, Piano Sheet Music",
+      "value" : "5733"
+    },
+    {
+      "meaning" : "Computer Software Stores",
+      "value" : "5734"
+    },
+    {
+      "meaning" : "Record Shops",
+      "value" : "5735"
+    },
+    {
+      "meaning" : "Caterers",
+      "value" : "5811"
+    },
+    {
+      "meaning" : "Eating places and Restaurants",
+      "value" : "5812"
+    },
+    {
+      "meaning" : "Drinking Places (Alcoholic Beverages), Bars, Taverns, Cocktail lounges, Nightclubs and Discotheques",
+      "value" : "5813"
+    },
+    {
+      "meaning" : "Fast Food Restaurants",
+      "value" : "5814"
+    },
+    {
+      "meaning" : "Digital Goods: Media, Books, Movies, Music",
+      "value" : "5815"
+    },
+    {
+      "meaning" : "Digital Goods: Games",
+      "value" : "5816"
+    },
+    {
+      "meaning" : "Digital Goods: Applications (Excludes Games)",
+      "value" : "5817"
+    },
+    {
+      "meaning" : "Digital Goods: Large Digital Goods Merchant",
+      "value" : "5818"
+    },
+    {
+      "meaning" : "Antique Shops – Sales, Repairs, and Restoration Services",
+      "value" : "5832"
+    },
+    {
+      "meaning" : "Drug Stores and Pharmacies",
+      "value" : "5912"
+    },
+    {
+      "meaning" : "Package Stores – Beer, Wine, and Liquor",
+      "value" : "5921"
+    },
+    {
+      "meaning" : "Used Merchandise and Secondhand Stores",
+      "value" : "5931"
+    },
+    {
+      "meaning" : "Antique Shops",
+      "value" : "5932"
+    },
+    {
+      "meaning" : "Pawn Shops and Salvage Yards",
+      "value" : "5933"
+    },
+    {
+      "meaning" : "Wrecking and Salvage Yards",
+      "value" : "5935"
+    },
+    {
+      "meaning" : "Antique Reproductions",
+      "value" : "5937"
+    },
+    {
+      "meaning" : "Bicycle Shops – Sales and Service",
+      "value" : "5940"
+    },
+    {
+      "meaning" : "Sporting Goods Stores",
+      "value" : "5941"
+    },
+    {
+      "meaning" : "Book Stores",
+      "value" : "5942"
+    },
+    {
+      "meaning" : "Stationery Stores, Office and School Supply Stores",
+      "value" : "5943"
+    },
+    {
+      "meaning" : "Watch, Clock, Jewelry, and Silverware Stores",
+      "value" : "5944"
+    },
+    {
+      "meaning" : "Hobby, Toy, and Game Shops",
+      "value" : "5945"
+    },
+    {
+      "meaning" : "Camera and Photographic Supply Stores",
+      "value" : "5946"
+    },
+    {
+      "meaning" : "Card Shops, Gift, Novelty, and Souvenir Shops",
+      "value" : "5947"
+    },
+    {
+      "meaning" : "Leather Goods Stores",
+      "value" : "5948"
+    },
+    {
+      "meaning" : "Sewing, Needle, Fabric, and Price Goods Stores",
+      "value" : "5949"
+    },
+    {
+      "meaning" : "Glassware/Crystal Stores",
+      "value" : "5950"
+    },
+    {
+      "meaning" : "Direct Marketing- Insurance Service",
+      "value" : "5960"
+    },
+    {
+      "meaning" : "Mail Order Houses Including Catalog Order Stores, Book/Record Clubs (No longer permitted for U.S. original presentments)",
+      "value" : "5961"
+    },
+    {
+      "meaning" : "Direct Marketing – Travel Related Arrangements Services",
+      "value" : "5962"
+    },
+    {
+      "meaning" : "Door-to-Door Sales",
+      "value" : "5963"
+    },
+    {
+      "meaning" : "Direct Marketing – Catalog Merchant",
+      "value" : "5964"
+    },
+    {
+      "meaning" : "Direct Marketing – Catalog and Catalog and Retail Merchant",
+      "value" : "5965"
+    },
+    {
+      "meaning" : "Direct Marketing- Outbound Telemarketing Merchant",
+      "value" : "5966"
+    },
+    {
+      "meaning" : "Direct Marketing – Inbound Teleservices Merchant",
+      "value" : "5967"
+    },
+    {
+      "meaning" : "Direct Marketing – Continuity/Subscription Merchant",
+      "value" : "5968"
+    },
+    {
+      "meaning" : "Direct Marketing – Not Elsewhere Classified",
+      "value" : "5969"
+    },
+    {
+      "meaning" : "Artist’s Supply and Craft Shops",
+      "value" : "5970"
+    },
+    {
+      "meaning" : "Art Dealers and Galleries",
+      "value" : "5971"
+    },
+    {
+      "meaning" : "Stamp and Coin Stores – Philatelic and Numismatic Supplies",
+      "value" : "5972"
+    },
+    {
+      "meaning" : "Religious Goods Stores",
+      "value" : "5973"
+    },
+    {
+      "meaning" : "Hearing Aids – Sales, Service, and Supply Stores",
+      "value" : "5975"
+    },
+    {
+      "meaning" : "Orthopedic Goods Prosthetic Devices",
+      "value" : "5976"
+    },
+    {
+      "meaning" : "Cosmetic Stores",
+      "value" : "5977"
+    },
+    {
+      "meaning" : "Typewriter Stores – Sales, Rental, Service",
+      "value" : "5978"
+    },
+    {
+      "meaning" : "Fuel – Fuel Oil, Wood, Coal, Liquefied Petroleum",
+      "value" : "5983"
+    },
+    {
+      "meaning" : "Florists",
+      "value" : "5992"
+    },
+    {
+      "meaning" : "Cigar Stores and Stands",
+      "value" : "5993"
+    },
+    {
+      "meaning" : "News Dealers and Newsstands",
+      "value" : "5994"
+    },
+    {
+      "meaning" : "Pet Shops, Pet Foods, and Supplies Stores",
+      "value" : "5995"
+    },
+    {
+      "meaning" : "Swimming Pools – Sales, Service, and Supplies",
+      "value" : "5996"
+    },
+    {
+      "meaning" : "Electric Razor Stores – Sales and Service",
+      "value" : "5997"
+    },
+    {
+      "meaning" : "Tent and Awning Shops",
+      "value" : "5998"
+    },
+    {
+      "meaning" : "Miscellaneous and Specialty Retail Stores",
+      "value" : "5999"
+    },
+    {
+      "meaning" : "Financial Institutions – Manual Cash Disbursements",
+      "value" : "6010"
+    },
+    {
+      "meaning" : "Financial Institutions – Manual Cash Disbursements",
+      "value" : "6011"
+    },
+    {
+      "meaning" : "Financial Institutions – Merchandise and Services",
+      "value" : "6012"
+    },
+    {
+      "meaning" : "Non-Financial Institutions – Foreign Currency, Money Orders (not wire transfer) and Travelers Cheques",
+      "value" : "6051"
+    },
+    {
+      "meaning" : "Security Brokers/Dealers",
+      "value" : "6211"
+    },
+    {
+      "meaning" : "Insurance Sales, Underwriting, and Premiums",
+      "value" : "6300"
+    },
+    {
+      "meaning" : "Insurance Premiums, (no longer valid for first presentment work)",
+      "value" : "6381"
+    },
+    {
+      "meaning" : "Insurance, Not Elsewhere Classified (no longer valid forfirst presentment work)",
+      "value" : "6399"
+    },
+    {
+      "meaning" : "Real Estate Agents and Managers - Rentals",
+      "value" : "6513"
+    },
+    {
+      "meaning" : "Lodging – Hotels, Motels, Resorts, Central Reservation Services (not elsewhere classified)",
+      "value" : "7011"
+    },
+    {
+      "meaning" : "Timeshares",
+      "value" : "7012"
+    },
+    {
+      "meaning" : "Sporting and Recreational Camps",
+      "value" : "7032"
+    },
+    {
+      "meaning" : "Trailer Parks and Camp Grounds",
+      "value" : "7033"
+    },
+    {
+      "meaning" : "Laundry, Cleaning, and Garment Services",
+      "value" : "7210"
+    },
+    {
+      "meaning" : "Laundry – Family and Commercial",
+      "value" : "7211"
+    },
+    {
+      "meaning" : "Dry Cleaners",
+      "value" : "7216"
+    },
+    {
+      "meaning" : "Carpet and Upholstery Cleaning",
+      "value" : "7217"
+    },
+    {
+      "meaning" : "Photographic Studios",
+      "value" : "7221"
+    },
+    {
+      "meaning" : "Barber and Beauty Shops",
+      "value" : "7230"
+    },
+    {
+      "meaning" : "Shop Repair Shops and Shoe Shine Parlors, and Hat Cleaning Shops",
+      "value" : "7251"
+    },
+    {
+      "meaning" : "Funeral Service and Crematories",
+      "value" : "7261"
+    },
+    {
+      "meaning" : "Dating and Escort Services",
+      "value" : "7273"
+    },
+    {
+      "meaning" : "Tax Preparation Service",
+      "value" : "7276"
+    },
+    {
+      "meaning" : "Counseling Service – Debt, Marriage, Personal",
+      "value" : "7277"
+    },
+    {
+      "meaning" : "Buying/Shopping Services, Clubs",
+      "value" : "7278"
+    },
+    {
+      "meaning" : "Clothing Rental – Costumes, Formal Wear, Uniforms",
+      "value" : "7296"
+    },
+    {
+      "meaning" : "Massage Parlors",
+      "value" : "7297"
+    },
+    {
+      "meaning" : "Health and Beauty Shops",
+      "value" : "7298"
+    },
+    {
+      "meaning" : "Miscellaneous Personal Services (not elsewhere classifies)",
+      "value" : "7299"
+    },
+    {
+      "meaning" : "Advertising Services",
+      "value" : "7311"
+    },
+    {
+      "meaning" : "Consumer Credit Reporting Agencies",
+      "value" : "7321"
+    },
+    {
+      "meaning" : "Blueprinting and Photocopying Services",
+      "value" : "7332"
+    },
+    {
+      "meaning" : "Commercial Photography, Art and Graphics",
+      "value" : "7333"
+    },
+    {
+      "meaning" : "Quick Copy, Reproduction and Blueprinting Services",
+      "value" : "7338"
+    },
+    {
+      "meaning" : "Stenographic and Secretarial Support Services",
+      "value" : "7339"
+    },
+    {
+      "meaning" : "Exterminating and Disinfecting Services",
+      "value" : "7342"
+    },
+    {
+      "meaning" : "Cleaning and Maintenance, Janitorial Services",
+      "value" : "7349"
+    },
+    {
+      "meaning" : "Employment Agencies, Temporary Help Services",
+      "value" : "7361"
+    },
+    {
+      "meaning" : "Computer Programming, Integrated Systems Design and Data Processing Services",
+      "value" : "7372"
+    },
+    {
+      "meaning" : "Information Retrieval Services",
+      "value" : "7375"
+    },
+    {
+      "meaning" : "Computer Maintenance and Repair Services, Not Elsewhere Classified",
+      "value" : "7379"
+    },
+    {
+      "meaning" : "Management, Consulting, and Public Relations Services",
+      "value" : "7392"
+    },
+    {
+      "meaning" : "Protective and Security Services – Including Armored Carsand Guard Dogs",
+      "value" : "7393"
+    },
+    {
+      "meaning" : "Equipment Rental and Leasing Services, Tool Rental, Furniture Rental, and Appliance Rental",
+      "value" : "7394"
+    },
+    {
+      "meaning" : "Photofinishing Laboratories, Photo Developing",
+      "value" : "7395"
+    },
+    {
+      "meaning" : "Business Services, Not Elsewhere Classified",
+      "value" : "7399"
+    },
+    {
+      "meaning" : "Truck Stop",
+      "value" : "7511"
+    },
+    {
+      "meaning" : "Car Rental Companies (Not Listed Below)",
+      "value" : "7512"
+    },
+    {
+      "meaning" : "Truck and Utility Trailer Rentals",
+      "value" : "7513"
+    },
+    {
+      "meaning" : "Motor Home and Recreational Vehicle Rentals",
+      "value" : "7519"
+    },
+    {
+      "meaning" : "Automobile Parking Lots and Garages",
+      "value" : "7523"
+    },
+    {
+      "meaning" : "Automotive Body Repair Shops",
+      "value" : "7531"
+    },
+    {
+      "meaning" : "Tire Re-treading and Repair Shops",
+      "value" : "7534"
+    },
+    {
+      "meaning" : "Paint Shops – Automotive",
+      "value" : "7535"
+    },
+    {
+      "meaning" : "Automotive Service Shops",
+      "value" : "7538"
+    },
+    {
+      "meaning" : "Car Washes",
+      "value" : "7542"
+    },
+    {
+      "meaning" : "Towing Services",
+      "value" : "7549"
+    },
+    {
+      "meaning" : "Radio Repair Shops",
+      "value" : "7622"
+    },
+    {
+      "meaning" : "Air Conditioning and Refrigeration Repair Shops",
+      "value" : "7623"
+    },
+    {
+      "meaning" : "Electrical And Small Appliance Repair Shops",
+      "value" : "7629"
+    },
+    {
+      "meaning" : "Watch, Clock, and Jewelry Repair",
+      "value" : "7631"
+    },
+    {
+      "meaning" : "Furniture, Furniture Repair, and Furniture Refinishing",
+      "value" : "7641"
+    },
+    {
+      "meaning" : "Welding Repair",
+      "value" : "7692"
+    },
+    {
+      "meaning" : "Repair Shops and Related Services –Miscellaneous",
+      "value" : "7699"
+    },
+    {
+      "meaning" : "Government-Owned Lotteries",
+      "value" : "7800"
+    },
+    {
+      "meaning" : "Government-Licensed On-Line Casinos (On-Line Gambling)",
+      "value" : "7801"
+    },
+    {
+      "meaning" : "Government-Licensed Horse/Dog Racing",
+      "value" : "7802"
+    },
+    {
+      "meaning" : "Motion Pictures and Video Tape Production and Distribution",
+      "value" : "7829"
+    },
+    {
+      "meaning" : "Motion Picture Theaters",
+      "value" : "7832"
+    },
+    {
+      "meaning" : "Video Tape Rental Stores",
+      "value" : "7841"
+    },
+    {
+      "meaning" : "Dance Halls, Studios and Schools",
+      "value" : "7911"
+    },
+    {
+      "meaning" : "Theatrical Producers (Except Motion Pictures), Ticket Agencies",
+      "value" : "7922"
+    },
+    {
+      "meaning" : "Bands, Orchestras, and Miscellaneous Entertainers (Not Elsewhere Classified)",
+      "value" : "7929"
+    },
+    {
+      "meaning" : "Billiard and Pool Establishments",
+      "value" : "7932"
+    },
+    {
+      "meaning" : "Bowling Alleys",
+      "value" : "7933"
+    },
+    {
+      "meaning" : "Commercial Sports, Athletic Fields, Professional Sport Clubs, and Sport Promoters",
+      "value" : "7941"
+    },
+    {
+      "meaning" : "Tourist Attractions and Exhibits",
+      "value" : "7991"
+    },
+    {
+      "meaning" : "Golf Courses – Public",
+      "value" : "7992"
+    },
+    {
+      "meaning" : "Video Amusement Game Supplies",
+      "value" : "7993"
+    },
+    {
+      "meaning" : "Video Game Arcades/Establishments",
+      "value" : "7994"
+    },
+    {
+      "meaning" : "Betting (including Lottery Tickets, Casino Gaming Chips, Off-track Betting and Wagers at Race Tracks)",
+      "value" : "7995"
+    },
+    {
+      "meaning" : "Amusement Parks, Carnivals, Circuses, Fortune Tellers",
+      "value" : "7996"
+    },
+    {
+      "meaning" : "Membership Clubs (Sports, Recreation, Athletic), Country Clubs, and Private Golf Courses",
+      "value" : "7997"
+    },
+    {
+      "meaning" : "Aquariums, Sea-aquariums, Dolphinariums",
+      "value" : "7998"
+    },
+    {
+      "meaning" : "Recreation Services (Not Elsewhere Classified)",
+      "value" : "7999"
+    },
+    {
+      "meaning" : "Doctors and Physicians (Not Elsewhere Classified)",
+      "value" : "8011"
+    },
+    {
+      "meaning" : "Dentists and Orthodontists",
+      "value" : "8021"
+    },
+    {
+      "meaning" : "Osteopaths",
+      "value" : "8031"
+    },
+    {
+      "meaning" : "Chiropractors",
+      "value" : "8041"
+    },
+    {
+      "meaning" : "Optometrists and Ophthalmologists",
+      "value" : "8042"
+    },
+    {
+      "meaning" : "Opticians, Opticians Goods and Eyeglasses",
+      "value" : "8043"
+    },
+    {
+      "meaning" : "Opticians, Optical Goods, and Eyeglasses (no longer validfor first presentments)",
+      "value" : "8044"
+    },
+    {
+      "meaning" : "Podiatrists and Chiropodists",
+      "value" : "8049"
+    },
+    {
+      "meaning" : "Nursing and Personal Care Facilities",
+      "value" : "8050"
+    },
+    {
+      "meaning" : "Hospitals",
+      "value" : "8062"
+    },
+    {
+      "meaning" : "Medical and Dental Laboratories",
+      "value" : "8071"
+    },
+    {
+      "meaning" : "Medical Services and Health Practitioners (Not Elsewhere Classified)",
+      "value" : "8099"
+    },
+    {
+      "meaning" : "Legal Services and Attorneys",
+      "value" : "8111"
+    },
+    {
+      "meaning" : "Elementary and Secondary Schools",
+      "value" : "8211"
+    },
+    {
+      "meaning" : "Colleges, Junior Colleges, Universities, and ProfessionalSchools",
+      "value" : "8220"
+    },
+    {
+      "meaning" : "Correspondence Schools",
+      "value" : "8241"
+    },
+    {
+      "meaning" : "Business and Secretarial Schools",
+      "value" : "8244"
+    },
+    {
+      "meaning" : "Vocational Schools and Trade Schools",
+      "value" : "8249"
+    },
+    {
+      "meaning" : "Schools and Educational Services (Not Elsewhere Classified)",
+      "value" : "8299"
+    },
+    {
+      "meaning" : "Child Care Services",
+      "value" : "8351"
+    },
+    {
+      "meaning" : "Charitable and Social Service Organizations",
+      "value" : "8398"
+    },
+    {
+      "meaning" : "Civic, Fraternal, and Social Associations",
+      "value" : "8641"
+    },
+    {
+      "meaning" : "Political Organizations",
+      "value" : "8651"
+    },
+    {
+      "meaning" : "Religious Organizations",
+      "value" : "8661"
+    },
+    {
+      "meaning" : "Automobile Associations",
+      "value" : "8675"
+    },
+    {
+      "meaning" : "Membership Organizations (Not Elsewhere Classified)",
+      "value" : "8699"
+    },
+    {
+      "meaning" : "Testing Laboratories (non-medical)",
+      "value" : "8734"
+    },
+    {
+      "meaning" : "Architectural – Engineering and Surveying Services",
+      "value" : "8911"
+    },
+    {
+      "meaning" : "Accounting, Auditing, and Bookkeeping Services",
+      "value" : "8931"
+    },
+    {
+      "meaning" : "Professional Services (Not Elsewhere Defined)",
+      "value" : "8999"
+    },
+    {
+      "meaning" : "Court Costs, including Alimony and Child Support",
+      "value" : "9211"
+    },
+    {
+      "meaning" : "Fines",
+      "value" : "9222"
+    },
+    {
+      "meaning" : "Bail and Bond Payments",
+      "value" : "9223"
+    },
+    {
+      "meaning" : "Tax Payments",
+      "value" : "9311"
+    },
+    {
+      "meaning" : "Government Services (Not Elsewhere Classified)",
+      "value" : "9399"
+    },
+    {
+      "meaning" : "Postal Services – Government Only",
+      "value" : "9402"
+    },
+    {
+      "meaning" : "Intra – Government Transactions",
+      "value" : "9405"
+    },
+    {
+      "meaning" : "Automated Referral Service (For Visa Only)",
+      "value" : "9700"
+    },
+    {
+      "meaning" : "Visa Credential Service (For Visa Only)",
+      "value" : "9701"
+    },
+    {
+      "meaning" : "GCAS Emergency Services (For Visa Only)",
+      "value" : "9702"
+    },
+    {
+      "meaning" : "Intra – Company Purchases (For Visa Only)",
+      "value" : "9950"
+    }
+  ]
+}

@@ -94,7 +94,7 @@ extension KernelInfo {
     internal static let defaultKernelInfoCount = 6
     
     internal static func defaultURLs() throws -> [URL] {
-        try defaultJSONResources(with: "ki_")
+        try defaultJSONResources(.kernelInfo)
     }
     
 }

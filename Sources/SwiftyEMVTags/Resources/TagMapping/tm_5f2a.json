@@ -1,0 +1,713 @@
+{
+    "tag": "5F2A",
+    "values": [
+        {
+            "meaning": "ALL, Albanian lek",
+            "value": "0008"
+        },
+        {
+            "meaning": "DZD, Algerian dinar",
+            "value": "0012"
+        },
+        {
+            "meaning": "ARS, Argentine peso",
+            "value": "0032"
+        },
+        {
+            "meaning": "AUD, Australian dollar",
+            "value": "0036"
+        },
+        {
+            "meaning": "BSD, Bahamian dollar",
+            "value": "0044"
+        },
+        {
+            "meaning": "BHD, Bahraini dinar",
+            "value": "0048"
+        },
+        {
+            "meaning": "BDT, Bangladeshi taka",
+            "value": "0050"
+        },
+        {
+            "meaning": "AMD, Armenian dram",
+            "value": "0051"
+        },
+        {
+            "meaning": "BBD, Barbados dollar",
+            "value": "0052"
+        },
+        {
+            "meaning": "BMD, Bermudian dollar (customarily known as Bermuda dollar)",
+            "value": "0060"
+        },
+        {
+            "meaning": "BTN, Bhutanese ngultrum",
+            "value": "0064"
+        },
+        {
+            "meaning": "BOB, Boliviano",
+            "value": "0068"
+        },
+        {
+            "meaning": "BWP, Botswana pula",
+            "value": "0072"
+        },
+        {
+            "meaning": "BZD, Belize dollar",
+            "value": "0084"
+        },
+        {
+            "meaning": "SBD, Solomon Islands dollar",
+            "value": "0090"
+        },
+        {
+            "meaning": "BND, Brunei dollar",
+            "value": "0096"
+        },
+        {
+            "meaning": "MMK, Myanma kyat",
+            "value": "0104"
+        },
+        {
+            "meaning": "BIF, Burundian franc",
+            "value": "0108"
+        },
+        {
+            "meaning": "KHR, Cambodian riel",
+            "value": "0116"
+        },
+        {
+            "meaning": "CAD, Canadian dollar",
+            "value": "0124"
+        },
+        {
+            "meaning": "CVE, Cape Verde escudo",
+            "value": "0132"
+        },
+        {
+            "meaning": "KYD, Cayman Islands dollar",
+            "value": "0136"
+        },
+        {
+            "meaning": "LKR, Sri Lankan rupee",
+            "value": "0144"
+        },
+        {
+            "meaning": "CLP, Chilean peso",
+            "value": "0152"
+        },
+        {
+            "meaning": "CNY, Chinese yuan",
+            "value": "0156"
+        },
+        {
+            "meaning": "COP, Colombian peso",
+            "value": "0170"
+        },
+        {
+            "meaning": "KMF, Comoro franc",
+            "value": "0174"
+        },
+        {
+            "meaning": "CRC, Costa Rican colon",
+            "value": "0188"
+        },
+        {
+            "meaning": "HRK, Croatian kuna",
+            "value": "0191"
+        },
+        {
+            "meaning": "CUP, Cuban peso",
+            "value": "0192"
+        },
+        {
+            "meaning": "CZK, Czech koruna",
+            "value": "0203"
+        },
+        {
+            "meaning": "DKK, Danish krone",
+            "value": "0208"
+        },
+        {
+            "meaning": "DOP, Dominican peso",
+            "value": "0214"
+        },
+        {
+            "meaning": "ETB, Ethiopian birr",
+            "value": "0230"
+        },
+        {
+            "meaning": "ERN, Eritrean nakfa",
+            "value": "0232"
+        },
+        {
+            "meaning": "FKP, Falkland Islands pound",
+            "value": "0238"
+        },
+        {
+            "meaning": "FJD, Fiji dollar",
+            "value": "0242"
+        },
+        {
+            "meaning": "DJF, Djiboutian franc",
+            "value": "0262"
+        },
+        {
+            "meaning": "GMD, Gambian dalasi",
+            "value": "0270"
+        },
+        {
+            "meaning": "GIP, Gibraltar pound",
+            "value": "0292"
+        },
+        {
+            "meaning": "GTQ, Guatemalan quetzal",
+            "value": "0320"
+        },
+        {
+            "meaning": "GNF, Guinean franc",
+            "value": "0324"
+        },
+        {
+            "meaning": "GYD, Guyanese dollar",
+            "value": "0328"
+        },
+        {
+            "meaning": "HTG, Haitian gourde",
+            "value": "0332"
+        },
+        {
+            "meaning": "HNL, Honduran lempira",
+            "value": "0340"
+        },
+        {
+            "meaning": "HKD, Hong Kong dollar",
+            "value": "0344"
+        },
+        {
+            "meaning": "HUF, Hungarian forint",
+            "value": "0348"
+        },
+        {
+            "meaning": "ISK, Icelandic króna",
+            "value": "0352"
+        },
+        {
+            "meaning": "INR, Indian rupee",
+            "value": "0356"
+        },
+        {
+            "meaning": "IDR, Indonesian rupiah",
+            "value": "0360"
+        },
+        {
+            "meaning": "IRR, Iranian rial",
+            "value": "0364"
+        },
+        {
+            "meaning": "IQD, Iraqi dinar",
+            "value": "0368"
+        },
+        {
+            "meaning": "ILS, Israeli new shekel",
+            "value": "0376"
+        },
+        {
+            "meaning": "JMD, Jamaican dollar",
+            "value": "0388"
+        },
+        {
+            "meaning": "JPY, Japanese yen",
+            "value": "0392"
+        },
+        {
+            "meaning": "KZT, Kazakhstani tenge",
+            "value": "0398"
+        },
+        {
+            "meaning": "JOD, Jordanian dinar",
+            "value": "0400"
+        },
+        {
+            "meaning": "KES, Kenyan shilling",
+            "value": "0404"
+        },
+        {
+            "meaning": "KPW, North Korean won",
+            "value": "0408"
+        },
+        {
+            "meaning": "KRW, South Korean won",
+            "value": "0410"
+        },
+        {
+            "meaning": "KWD, Kuwaiti dinar",
+            "value": "0414"
+        },
+        {
+            "meaning": "KGS, Kyrgyzstani som",
+            "value": "0417"
+        },
+        {
+            "meaning": "LAK, Lao kip",
+            "value": "0418"
+        },
+        {
+            "meaning": "LBP, Lebanese pound",
+            "value": "0422"
+        },
+        {
+            "meaning": "LSL, Lesotho loti",
+            "value": "0426"
+        },
+        {
+            "meaning": "LVL, Latvian lats",
+            "value": "0428"
+        },
+        {
+            "meaning": "LRD, Liberian dollar",
+            "value": "0430"
+        },
+        {
+            "meaning": "LYD, Libyan dinar",
+            "value": "0434"
+        },
+        {
+            "meaning": "LTL, Lithuanian litas",
+            "value": "0440"
+        },
+        {
+            "meaning": "MOP, Macanese pataca",
+            "value": "0446"
+        },
+        {
+            "meaning": "MWK, Malawian kwacha",
+            "value": "0454"
+        },
+        {
+            "meaning": "MYR, Malaysian ringgit",
+            "value": "0458"
+        },
+        {
+            "meaning": "MVR, Maldivian rufiyaa",
+            "value": "0462"
+        },
+        {
+            "meaning": "MRO, Mauritanian ouguiya",
+            "value": "0478"
+        },
+        {
+            "meaning": "MUR, Mauritian rupee",
+            "value": "0480"
+        },
+        {
+            "meaning": "MXN, Mexican peso",
+            "value": "0484"
+        },
+        {
+            "meaning": "MNT, Mongolian tugrik",
+            "value": "0496"
+        },
+        {
+            "meaning": "MDL, Moldovan leu",
+            "value": "0498"
+        },
+        {
+            "meaning": "MAD, Moroccan dirham",
+            "value": "0504"
+        },
+        {
+            "meaning": "OMR, Omani rial",
+            "value": "0512"
+        },
+        {
+            "meaning": "NAD, Namibian dollar",
+            "value": "0516"
+        },
+        {
+            "meaning": "NPR, Nepalese rupee",
+            "value": "0524"
+        },
+        {
+            "meaning": "ANG, Netherlands Antillean guilder",
+            "value": "0532"
+        },
+        {
+            "meaning": "AWG, Aruban florin",
+            "value": "0533"
+        },
+        {
+            "meaning": "VUV, Vanuatu vatu",
+            "value": "0548"
+        },
+        {
+            "meaning": "NZD, New Zealand dollar",
+            "value": "0554"
+        },
+        {
+            "meaning": "NIO, Nicaraguan córdoba",
+            "value": "0558"
+        },
+        {
+            "meaning": "NGN, Nigerian naira",
+            "value": "0566"
+        },
+        {
+            "meaning": "NOK, Norwegian krone",
+            "value": "0578"
+        },
+        {
+            "meaning": "PKR, Pakistani rupee",
+            "value": "0586"
+        },
+        {
+            "meaning": "PAB, Panamanian balboa",
+            "value": "0590"
+        },
+        {
+            "meaning": "PGK, Papua New Guinean kina",
+            "value": "0598"
+        },
+        {
+            "meaning": "PYG, Paraguayan guaraní",
+            "value": "0600"
+        },
+        {
+            "meaning": "PEN, Peruvian nuevo sol",
+            "value": "0604"
+        },
+        {
+            "meaning": "PHP, Philippine peso",
+            "value": "0608"
+        },
+        {
+            "meaning": "QAR, Qatari riyal",
+            "value": "0634"
+        },
+        {
+            "meaning": "RUB, Russian rouble",
+            "value": "0643"
+        },
+        {
+            "meaning": "RWF, Rwandan franc",
+            "value": "0646"
+        },
+        {
+            "meaning": "SHP, Saint Helena pound",
+            "value": "0654"
+        },
+        {
+            "meaning": "STD, São Tomé and Príncipe dobra",
+            "value": "0678"
+        },
+        {
+            "meaning": "SAR, Saudi riyal",
+            "value": "0682"
+        },
+        {
+            "meaning": "SCR, Seychelles rupee",
+            "value": "0690"
+        },
+        {
+            "meaning": "SLL, Sierra Leonean leone",
+            "value": "0694"
+        },
+        {
+            "meaning": "SGD, Singapore dollar",
+            "value": "0702"
+        },
+        {
+            "meaning": "VND, Vietnamese dong",
+            "value": "0704"
+        },
+        {
+            "meaning": "SOS, Somali shilling",
+            "value": "0706"
+        },
+        {
+            "meaning": "ZAR, South African rand",
+            "value": "0710"
+        },
+        {
+            "meaning": "SSP, South Sudanese pound",
+            "value": "0728"
+        },
+        {
+            "meaning": "SZL, Swazi lilangeni",
+            "value": "0748"
+        },
+        {
+            "meaning": "SEK, Swedish krona/kronor",
+            "value": "0752"
+        },
+        {
+            "meaning": "CHF, Swiss franc",
+            "value": "0756"
+        },
+        {
+            "meaning": "SYP, Syrian pound",
+            "value": "0760"
+        },
+        {
+            "meaning": "THB, Thai baht",
+            "value": "0764"
+        },
+        {
+            "meaning": "TOP, Tongan paʻanga",
+            "value": "0776"
+        },
+        {
+            "meaning": "TTD, Trinidad and Tobago dollar",
+            "value": "0780"
+        },
+        {
+            "meaning": "AED, United Arab Emirates dirham",
+            "value": "0784"
+        },
+        {
+            "meaning": "TND, Tunisian dinar",
+            "value": "0788"
+        },
+        {
+            "meaning": "UGX, Ugandan shilling",
+            "value": "0800"
+        },
+        {
+            "meaning": "MKD, Macedonian denar",
+            "value": "0807"
+        },
+        {
+            "meaning": "EGP, Egyptian pound",
+            "value": "0818"
+        },
+        {
+            "meaning": "GBP, Pound sterling",
+            "value": "0826"
+        },
+        {
+            "meaning": "TZS, Tanzanian shilling",
+            "value": "0834"
+        },
+        {
+            "meaning": "USD, United States dollar",
+            "value": "0840"
+        },
+        {
+            "meaning": "UYU, Uruguayan peso",
+            "value": "0858"
+        },
+        {
+            "meaning": "UZS, Uzbekistan som",
+            "value": "0860"
+        },
+        {
+            "meaning": "WST, Samoan tala",
+            "value": "0882"
+        },
+        {
+            "meaning": "YER, Yemeni rial",
+            "value": "0886"
+        },
+        {
+            "meaning": "TWD, New Taiwan dollar",
+            "value": "0901"
+        },
+        {
+            "meaning": "CUC, Cuban convertible peso",
+            "value": "0931"
+        },
+        {
+            "meaning": "TMT, Turkmenistani manat",
+            "value": "0934"
+        },
+        {
+            "meaning": "GHS, Ghanaian cedi",
+            "value": "0936"
+        },
+        {
+            "meaning": "VEF, Venezuelan bolívar fuerte",
+            "value": "0937"
+        },
+        {
+            "meaning": "SDG, Sudanese pound",
+            "value": "0938"
+        },
+        {
+            "meaning": "UYI, Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)",
+            "value": "0940"
+        },
+        {
+            "meaning": "RSD, Serbian dinar",
+            "value": "0941"
+        },
+        {
+            "meaning": "MZN, Mozambican metical",
+            "value": "0943"
+        },
+        {
+            "meaning": "AZN, Azerbaijani manat",
+            "value": "0944"
+        },
+        {
+            "meaning": "RON, Romanian new leu",
+            "value": "0946"
+        },
+        {
+            "meaning": "CHE, WIR Euro (complementary currency)",
+            "value": "0947"
+        },
+        {
+            "meaning": "CHW, WIR Franc (complementary currency)",
+            "value": "0948"
+        },
+        {
+            "meaning": "TRY, Turkish lira",
+            "value": "0949"
+        },
+        {
+            "meaning": "XAF, CFA franc BEAC",
+            "value": "0950"
+        },
+        {
+            "meaning": "XCD, East Caribbean dollar",
+            "value": "0951"
+        },
+        {
+            "meaning": "XOF, CFA franc BCEAO",
+            "value": "0952"
+        },
+        {
+            "meaning": "XPF, CFP franc",
+            "value": "0953"
+        },
+        {
+            "meaning": "XBA, European Composite Unit (EURCO) (bond market unit)",
+            "value": "0955"
+        },
+        {
+            "meaning": "XBB, European Monetary Unit (E.M.U.-6) (bond market unit)",
+            "value": "0956"
+        },
+        {
+            "meaning": "XBC, European Unit of Account 9 (E.U.A.-9) (bond market unit)",
+            "value": "0957"
+        },
+        {
+            "meaning": "XBD, European Unit of Account 17 (E.U.A.-17) (bond market unit)",
+            "value": "0958"
+        },
+        {
+            "meaning": "XAU, Gold (one troy ounce)",
+            "value": "0959"
+        },
+        {
+            "meaning": "XDR, Special drawing rights",
+            "value": "0960"
+        },
+        {
+            "meaning": "XAG, Silver (one troy ounce)",
+            "value": "0961"
+        },
+        {
+            "meaning": "XPT, Platinum (one troy ounce)",
+            "value": "0962"
+        },
+        {
+            "meaning": "XTS, Code reserved for testing purposes",
+            "value": "0963"
+        },
+        {
+            "meaning": "XPD, Palladium (one troy ounce)",
+            "value": "0964"
+        },
+        {
+            "meaning": "ZMW, Zambian kwacha",
+            "value": "0967"
+        },
+        {
+            "meaning": "SRD, Surinamese dollar",
+            "value": "0968"
+        },
+        {
+            "meaning": "MGA, Malagasy ariary",
+            "value": "0969"
+        },
+        {
+            "meaning": "COU, Unidad de Valor Real",
+            "value": "0970"
+        },
+        {
+            "meaning": "AFN, Afghan afghani",
+            "value": "0971"
+        },
+        {
+            "meaning": "TJS, Tajikistani somoni",
+            "value": "0972"
+        },
+        {
+            "meaning": "AOA, Angolan kwanza",
+            "value": "0973"
+        },
+        {
+            "meaning": "BYR, Belarusian ruble",
+            "value": "0974"
+        },
+        {
+            "meaning": "BGN, Bulgarian lev",
+            "value": "0975"
+        },
+        {
+            "meaning": "CDF, Congolese franc",
+            "value": "0976"
+        },
+        {
+            "meaning": "BAM, Bosnia and Herzegovina convertible mark",
+            "value": "0977"
+        },
+        {
+            "meaning": "EUR, Euro",
+            "value": "0978"
+        },
+        {
+            "meaning": "MXV, Mexican Unidad de Inversion (UDI) (funds code)",
+            "value": "0979"
+        },
+        {
+            "meaning": "UAH, Ukrainian hryvnia",
+            "value": "0980"
+        },
+        {
+            "meaning": "GEL, Georgian lari",
+            "value": "0981"
+        },
+        {
+            "meaning": "BOV, Bolivian Mvdol (funds code)",
+            "value": "0984"
+        },
+        {
+            "meaning": "PLN, Polish złoty",
+            "value": "0985"
+        },
+        {
+            "meaning": "BRL, Brazilian real",
+            "value": "0986"
+        },
+        {
+            "meaning": "CLF, Unidad de Fomento (funds code)",
+            "value": "0990"
+        },
+        {
+            "meaning": "USN, United States dollar (next day) (funds code)",
+            "value": "0997"
+        },
+        {
+            "meaning": "USS, United States dollar (same day) (funds code) (one source[who?] claims it is no longer used, but it is still on the ISO 4217-MA list)",
+            "value": "0998"
+        },
+        {
+            "meaning": "XXX, No currency",
+            "value": "0999"
+        }
+    ]
+}

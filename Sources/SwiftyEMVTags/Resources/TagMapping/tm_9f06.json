@@ -1,0 +1,1069 @@
+{
+    "tag": "9F06",
+    "values": [
+        {
+            "meaning": "Visa Payment System Environment – PSE (1PAY.SYS.DDF01), Visa International",
+            "value": "315041592E5359532E4444463031"
+        },
+        {
+            "meaning": "Visa Proximity Payment System Environment – PPSE (2PAY.SYS.DDF01), Visa International",
+            "value": "325041592E5359532E4444463031"
+        },
+        {
+            "meaning": "DeviceFidelity In2Pay DFare applet, DeviceFidelity",
+            "value": "44464D46412E44466172653234313031"
+        },
+        {
+            "meaning": "MUSCLE Card Applet, PBS Danmønt A/S",
+            "value": "A00000000101"
+        },
+        {
+            "meaning": "(VISA) Card Manager, Visa International",
+            "value": "A000000003000000"
+        },
+        {
+            "meaning": "Bonuscard, Visa International",
+            "value": "A00000000300037561"
+        },
+        {
+            "meaning": "VISA ELO Credit, Visa International",
+            "value": "A00000000305076010"
+        },
+        {
+            "meaning": "VISA Debit/Credit (Classic), Visa International",
+            "value": "A0000000031010"
+        },
+        {
+            "meaning": "VISA Credit, Visa International",
+            "value": "A000000003101001"
+        },
+        {
+            "meaning": "VISA Debit, Visa International",
+            "value": "A000000003101002"
+        },
+        {
+            "meaning": "VISA Electron, Visa International",
+            "value": "A0000000032010"
+        },
+        {
+            "meaning": "VISA, Visa International",
+            "value": "A0000000032020"
+        },
+        {
+            "meaning": "VISA Interlink, Visa International",
+            "value": "A0000000033010"
+        },
+        {
+            "meaning": "VISA Specific, Visa International",
+            "value": "A0000000034010"
+        },
+        {
+            "meaning": "VISA Specific, Visa International",
+            "value": "A0000000035010"
+        },
+        {
+            "meaning": "Schlumberger Security Domain, Visa International",
+            "value": "A000000003534441"
+        },
+        {
+            "meaning": "Security Domain, Visa International",
+            "value": "A0000000035350"
+        },
+        {
+            "meaning": "Security Domain, Visa International",
+            "value": "A000000003535041"
+        },
+        {
+            "meaning": "Domestic Visa Cash Stored Value, Visa International",
+            "value": "A0000000036010"
+        },
+        {
+            "meaning": "International Visa Cash Stored Value, Visa International",
+            "value": "A0000000036020"
+        },
+        {
+            "meaning": "VISA Auth, VisaRemAuthen EMV-CAP (DPA), Visa International",
+            "value": "A0000000038002"
+        },
+        {
+            "meaning": "VISA Plus, Visa International",
+            "value": "A0000000038010"
+        },
+        {
+            "meaning": "VISA Loyalty, Visa International",
+            "value": "A0000000039010"
+        },
+        {
+            "meaning": "VISA Proprietary ATM, Visa International",
+            "value": "A000000003999910"
+        },
+        {
+            "meaning": "MasterCard Card Manager, Mastercard International",
+            "value": "A0000000040000"
+        },
+        {
+            "meaning": "MasterCard PayPass, Mastercard International",
+            "value": "A00000000401"
+        },
+        {
+            "meaning": "MasterCard Credit/Debit (Global), Mastercard International",
+            "value": "A0000000041010"
+        },
+        {
+            "meaning": "MasterCard Credit, Mastercard International",
+            "value": "A00000000410101213"
+        },
+        {
+            "meaning": "MasterCard Credit, Mastercard International",
+            "value": "A00000000410101215"
+        },
+        {
+            "meaning": "[UNKNOWN], Mastercard International",
+            "value": "A0000000041010BB5449435301"
+        },
+        {
+            "meaning": "MasterCard Specific, Mastercard International",
+            "value": "A0000000042010"
+        },
+        {
+            "meaning": "MasterCard Specific, Mastercard International",
+            "value": "A0000000042203"
+        },
+        {
+            "meaning": "MasterCard Specific, Mastercard International",
+            "value": "A0000000043010"
+        },
+        {
+            "meaning": "Maestro (Debit), Mastercard International",
+            "value": "A0000000043060"
+        },
+        {
+            "meaning": "Maestro (Debit), Mastercard International",
+            "value": "A000000004306001"
+        },
+        {
+            "meaning": "MasterCard Specific, Mastercard International",
+            "value": "A0000000044010"
+        },
+        {
+            "meaning": "MasterCard Specific, Mastercard International",
+            "value": "A0000000045010"
+        },
+        {
+            "meaning": "APDULogger, Mastercard International",
+            "value": "A0000000045555"
+        },
+        {
+            "meaning": "Cirrus, Mastercard International",
+            "value": "A0000000046000"
+        },
+        {
+            "meaning": "SecureCode Auth EMV-CAP, Mastercard International",
+            "value": "A0000000048002"
+        },
+        {
+            "meaning": "MasterCard PayPass??, Mastercard International",
+            "value": "A0000000049999"
+        },
+        {
+            "meaning": "Maestro UK, Switch Card Services Ltd.",
+            "value": "A0000000050001"
+        },
+        {
+            "meaning": "Solo, Switch Card Services Ltd.",
+            "value": "A0000000050002"
+        },
+        {
+            "meaning": "Orange, ETSI",
+            "value": "A0000000090001FF44FF1289"
+        },
+        {
+            "meaning": "Maestro-CH, Europay International",
+            "value": "A0000000101030"
+        },
+        {
+            "meaning": "Gemplus ?, GEMPLUS",
+            "value": "A00000001800"
+        },
+        {
+            "meaning": "com.gemplus.javacard.util packages, GEMPLUS",
+            "value": "A0000000181001"
+        },
+        {
+            "meaning": "Gemplus card manager, GEMPLUS",
+            "value": "A000000018434D"
+        },
+        {
+            "meaning": "Gemplus Security Domain, GEMPLUS",
+            "value": "A000000018434D00"
+        },
+        {
+            "meaning": "Self Service, Midland Bank Plc",
+            "value": "A00000002401"
+        },
+        {
+            "meaning": "American Express, American Express",
+            "value": "A000000025"
+        },
+        {
+            "meaning": "American Express, American Express",
+            "value": "A0000000250000"
+        },
+        {
+            "meaning": "American Express, American Express",
+            "value": "A00000002501"
+        },
+        {
+            "meaning": "American Express, American Express",
+            "value": "A000000025010104"
+        },
+        {
+            "meaning": "American Express, American Express",
+            "value": "A000000025010402"
+        },
+        {
+            "meaning": "ExpressPay, American Express",
+            "value": "A000000025010701"
+        },
+        {
+            "meaning": "American Express, American Express",
+            "value": "A000000025010801"
+        },
+        {
+            "meaning": "Link / American Express, LINK Interchange Network Ltd",
+            "value": "A0000000291010"
+        },
+        {
+            "meaning": "CO-OP, LINK Interchange Network Ltd",
+            "value": "A00000002945087510100000"
+        },
+        {
+            "meaning": "HSBC, LINK Interchange Network Ltd",
+            "value": "A00000002949034010100001"
+        },
+        {
+            "meaning": "Barclay, LINK Interchange Network Ltd",
+            "value": "A00000002949282010100000"
+        },
+        {
+            "meaning": "HAFX, LINK Interchange Network Ltd",
+            "value": "A000000029564182"
+        },
+        {
+            "meaning": "BelPIC (Belgian Personal Identity Card) JavaCard Applet, Schlumberger Industries Identif d’Encarteur PR050",
+            "value": "A00000003029057000AD13100101FF"
+        },
+        {
+            "meaning": "Gemalto .NET Card AID, Schlumberger Industries Identif d’Encarteur PR050",
+            "value": "A0000000308000000000280101"
+        },
+        {
+            "meaning": "Cartes Bancaire EMV Card, Groupement des Cartes Bancaires “CB”",
+            "value": "A0000000421010"
+        },
+        {
+            "meaning": "Groupement des Cartes Bancaires “CB”",
+            "value": "A0000000422010"
+        },
+        {
+            "meaning": "Groupement des Cartes Bancaires “CB”",
+            "value": "A0000000423010"
+        },
+        {
+            "meaning": "Groupement des Cartes Bancaires “CB”",
+            "value": "A0000000424010"
+        },
+        {
+            "meaning": "Groupement des Cartes Bancaires “CB”",
+            "value": "A0000000425010"
+        },
+        {
+            "meaning": "Contactless payment using Apple Pay, Groupement des Cartes Bancaires “CB”",
+            "value": "A0000000426010"
+        },
+        {
+            "meaning": "Girocard Electronic Cash, Zentraler Kreditausschuss (ZKA)",
+            "value": "A00000005945430100"
+        },
+        {
+            "meaning": "PKCS-15, RSA Laboratories",
+            "value": "A000000063504B43532D3135"
+        },
+        {
+            "meaning": "WAP-WIM, RSA Laboratories",
+            "value": "A0000000635741502D57494D"
+        },
+        {
+            "meaning": "JCB, JCB CO., LTD.",
+            "value": "A00000006510"
+        },
+        {
+            "meaning": "JCB J Smart Credit, JCB CO., LTD.",
+            "value": "A0000000651010"
+        },
+        {
+            "meaning": "Moneo, Société Européenne de Monnaie Electronique SEME",
+            "value": "A00000006900"
+        },
+        {
+            "meaning": "Visa AEPN, Oberthur Technologies",
+            "value": "A000000077010000021000000000003B"
+        },
+        {
+            "meaning": "CACv2 PKI ID, Activcard Europe S.A.",
+            "value": "A0000000790100"
+        },
+        {
+            "meaning": "CACv2 PKI Sign, Activcard Europe S.A.",
+            "value": "A0000000790101"
+        },
+        {
+            "meaning": "CACv2 PKI Enc, Activcard Europe S.A.",
+            "value": "A0000000790102"
+        },
+        {
+            "meaning": "CACv1 PKI Identity Key, Activcard Europe S.A.",
+            "value": "A00000007901F0"
+        },
+        {
+            "meaning": "CACv1 PKI Digital Signature Key, Activcard Europe S.A.",
+            "value": "A00000007901F1"
+        },
+        {
+            "meaning": "CACv1 PKI Key Management Key, Activcard Europe S.A.",
+            "value": "A00000007901F2"
+        },
+        {
+            "meaning": "CACv2 DoD Person, Activcard Europe S.A.",
+            "value": "A0000000790200"
+        },
+        {
+            "meaning": "CACv2 DoD Personnel, Activcard Europe S.A.",
+            "value": "A0000000790201"
+        },
+        {
+            "meaning": "CACv1 BC, Activcard Europe S.A.",
+            "value": "A00000007902FB"
+        },
+        {
+            "meaning": "CACv1 BC, Activcard Europe S.A.",
+            "value": "A00000007902FD"
+        },
+        {
+            "meaning": "CACv1 BC, Activcard Europe S.A.",
+            "value": "A00000007902FE"
+        },
+        {
+            "meaning": "CACv2 Access Control Applet, Activcard Europe S.A.",
+            "value": "A0000000790300"
+        },
+        {
+            "meaning": "CAC JDM, Activcard Europe S.A.",
+            "value": "A0000000791201"
+        },
+        {
+            "meaning": "CAC JDM, Activcard Europe S.A.",
+            "value": "A0000000791202"
+        },
+        {
+            "meaning": "Telenor USIM, Third Generation Partnership Project (3GPP)",
+            "value": "A0000000871002FF49FF0589"
+        },
+        {
+            "meaning": "BuyPass BIDA, Buypass AS",
+            "value": "A00000008810200105C100"
+        },
+        {
+            "meaning": "BuyPass BEID (BuyPass Electronic ID?), Buypass AS",
+            "value": "A000000088102201034221"
+        },
+        {
+            "meaning": "BuyPass BEID (BuyPass Electronic ID?), Buypass AS",
+            "value": "A000000088102201034321"
+        },
+        {
+            "meaning": "Proton World International Security Domain, Sa Proton World International N.V.",
+            "value": "A0000000960200"
+        },
+        {
+            "meaning": "Debit Card, Visa USA",
+            "value": "A000000098"
+        },
+        {
+            "meaning": "Visa Common Debit, Visa USA",
+            "value": "A0000000980840"
+        },
+        {
+            "meaning": "Debit Card, Visa USA",
+            "value": "A0000000980848"
+        },
+        {
+            "meaning": "Postcard, Die Post Postfinance",
+            "value": "A0000001110101"
+        },
+        {
+            "meaning": "PIV CHUID, GSA – TFCS",
+            "value": "A0000001160300"
+        },
+        {
+            "meaning": "PIV Fingerprints, GSA – TFCS",
+            "value": "A0000001166010"
+        },
+        {
+            "meaning": "PIV Facial Image, GSA – TFCS",
+            "value": "A0000001166030"
+        },
+        {
+            "meaning": "PIV Security Object, GSA – TFCS",
+            "value": "A0000001169000"
+        },
+        {
+            "meaning": "PIV Authentication Key, GSA – TFCS",
+            "value": "A000000116A001"
+        },
+        {
+            "meaning": "CCC, GSA – TFCS",
+            "value": "A000000116DB00"
+        },
+        {
+            "meaning": "DF_Verkehr, Austria Card",
+            "value": "A000000118010000"
+        },
+        {
+            "meaning": "DF_Partner, Austria Card",
+            "value": "A000000118020000"
+        },
+        {
+            "meaning": "DF_Schülerdaten, Austria Card",
+            "value": "A000000118030000"
+        },
+        {
+            "meaning": "DF_KEP_SIG, Austria Card",
+            "value": "A000000118040000"
+        },
+        {
+            "meaning": "Digital Signature (SSCA), Austria Card",
+            "value": "A0000001184543"
+        },
+        {
+            "meaning": "Encryption Application, Austria Card",
+            "value": "A000000118454E"
+        },
+        {
+            "meaning": "Dankort (VISA GEM Vision), PBS Danmark A/S",
+            "value": "A0000001211010"
+        },
+        {
+            "meaning": "org.javacardforum.javacard.biometry, Java Card Forum",
+            "value": "A0000001320001"
+        },
+        {
+            "meaning": "eCode, TDS TODOS DATA SYSTEM AB",
+            "value": "A0000001408001"
+        },
+        {
+            "meaning": "PagoBANCOMAT, Associazione Bancaria Italiana",
+            "value": "A0000001410001"
+        },
+        {
+            "meaning": "Global Platform Security Domain AID, GlobalPlatform, Inc.",
+            "value": "A0000001510000"
+        },
+        {
+            "meaning": "CASD_AID, GlobalPlatform, Inc.",
+            "value": "A00000015153504341534400"
+        },
+        {
+            "meaning": "Discover, Pulse D Pas, Diners Club International Ltd.",
+            "value": "A0000001523010"
+        },
+        {
+            "meaning": "Discover, Diners Club International Ltd.",
+            "value": "A0000001524010"
+        },
+        {
+            "meaning": "Banricompras Debito, Banrisul – Banco do Estado do Rio Grande do SUL – S.A.",
+            "value": "A0000001544442"
+        },
+        {
+            "meaning": "AMEX, Zühlke Engineering AG",
+            "value": "A0000001570010"
+        },
+        {
+            "meaning": "MasterCard, Zühlke Engineering AG",
+            "value": "A0000001570020"
+        },
+        {
+            "meaning": "Maestro, Zühlke Engineering AG",
+            "value": "A0000001570021"
+        },
+        {
+            "meaning": "Maestro, Zühlke Engineering AG",
+            "value": "A0000001570022"
+        },
+        {
+            "meaning": "CASH, Zühlke Engineering AG",
+            "value": "A0000001570023"
+        },
+        {
+            "meaning": "VISA, Zühlke Engineering AG",
+            "value": "A0000001570030"
+        },
+        {
+            "meaning": "VISA, Zühlke Engineering AG",
+            "value": "A0000001570031"
+        },
+        {
+            "meaning": "JCB, Zühlke Engineering AG",
+            "value": "A0000001570040"
+        },
+        {
+            "meaning": "Postcard, Zühlke Engineering AG",
+            "value": "A0000001570050"
+        },
+        {
+            "meaning": "Postcard, Zühlke Engineering AG",
+            "value": "A0000001570051"
+        },
+        {
+            "meaning": "MCard, Zühlke Engineering AG",
+            "value": "A0000001570100"
+        },
+        {
+            "meaning": "MyOne, Zühlke Engineering AG",
+            "value": "A0000001570104"
+        },
+        {
+            "meaning": "Mediamarkt Card, Zühlke Engineering AG",
+            "value": "A0000001570109"
+        },
+        {
+            "meaning": "Gift Card, Zühlke Engineering AG",
+            "value": "A000000157010A"
+        },
+        {
+            "meaning": "Bonuscard, Zühlke Engineering AG",
+            "value": "A000000157010B"
+        },
+        {
+            "meaning": "WIRCard, Zühlke Engineering AG",
+            "value": "A000000157010C"
+        },
+        {
+            "meaning": "Power Card, Zühlke Engineering AG",
+            "value": "A000000157010D"
+        },
+        {
+            "meaning": "DINERS CLUB, Zühlke Engineering AG",
+            "value": "A0000001574443"
+        },
+        {
+            "meaning": "Supercard Plus, Zühlke Engineering AG",
+            "value": "A0000001574444"
+        },
+        {
+            "meaning": "JCOP Identify Applet, IBM",
+            "value": "A000000167413000FF"
+        },
+        {
+            "meaning": "FIPS 140-2, IBM",
+            "value": "A000000167413001"
+        },
+        {
+            "meaning": "BAROC Financial Application Taiwan, Financial Information Service Co. Ltd.",
+            "value": "A000000172950001"
+        },
+        {
+            "meaning": "BelPIC (Belgian Personal Identity Card), Ministère de L’Intérieur",
+            "value": "A000000177504B43532D3135"
+        },
+        {
+            "meaning": "UK Post Office Account card, Post Office Limited",
+            "value": "A0000001850002"
+        },
+        {
+            "meaning": "DINERS CLUB, Diners Club Switzerland Ltd",
+            "value": "A0000001884443"
+        },
+        {
+            "meaning": "?, Association for Payment Clearing Services",
+            "value": "A0000002040000"
+        },
+        {
+            "meaning": "SPAN (M/Chip), Saudi Arabian Monetary Agency (SAMA)",
+            "value": "A0000002281010"
+        },
+        {
+            "meaning": "SPAN (VIS), Saudi Arabian Monetary Agency (SAMA)",
+            "value": "A0000002282010"
+        },
+        {
+            "meaning": "SPAN, Saudi Arabian Monetary Agency (SAMA)",
+            "value": "A00000022820101010"
+        },
+        {
+            "meaning": "Machine Readable Travel Documents (MRTD), ISO JTC1/SC17/WG3",
+            "value": "A0000002471001"
+        },
+        {
+            "meaning": "Machine Readable Travel Documents (MRTD), ISO JTC1/SC17/WG3",
+            "value": "A0000002472001"
+        },
+        {
+            "meaning": "INTERAC, Interac Association",
+            "value": "A0000002771010"
+        },
+        {
+            "meaning": "PC/SC Initial access data AID, PS/SC Workgroup",
+            "value": "A00000030600000000000000"
+        },
+        {
+            "meaning": "Personal Identity Verification (PIV) / ID-ONE PIV BIO, National Institute of Standards and Technology",
+            "value": "A000000308000010000100"
+        },
+        {
+            "meaning": "Currence PuC, Currence Holding/PIN BV",
+            "value": "A00000031510100528"
+        },
+        {
+            "meaning": "Chipknip, Currence Holding/PIN BV",
+            "value": "A0000003156020"
+        },
+        {
+            "meaning": "MUSCLE Applet Package, Identity Alliance",
+            "value": "A00000032301"
+        },
+        {
+            "meaning": "MUSCLE Applet Instance, Identity Alliance",
+            "value": "A0000003230101"
+        },
+        {
+            "meaning": "Discover Zip, Discover Financial Services LLC",
+            "value": "A0000003241010"
+        },
+        {
+            "meaning": "UnionPay Debit, China Unionpay Co. Ltd",
+            "value": "A000000333010101"
+        },
+        {
+            "meaning": "UnionPay Credit, China Unionpay Co. Ltd",
+            "value": "A000000333010102"
+        },
+        {
+            "meaning": "UnionPay Quasi Credit, China Unionpay Co. Ltd",
+            "value": "A000000333010103"
+        },
+        {
+            "meaning": "UnionPay Electronic Cash, China Unionpay Co. Ltd",
+            "value": "A000000333010106"
+        },
+        {
+            "meaning": "U.S. UnionPay Common Debit AID, China Unionpay Co. Ltd",
+            "value": "A000000333010108"
+        },
+        {
+            "meaning": "Standard, Groupment Interbancaire Monétique de l’ UEMOA",
+            "value": "A000000337101000"
+        },
+        {
+            "meaning": "Prepaye Online, Groupment Interbancaire Monétique de l’ UEMOA",
+            "value": "A000000337101001"
+        },
+        {
+            "meaning": "Classic, Groupment Interbancaire Monétique de l’ UEMOA",
+            "value": "A000000337102000"
+        },
+        {
+            "meaning": "Prepaye Possibile Offiline, Groupment Interbancaire Monétique de l’ UEMOA",
+            "value": "A000000337102001"
+        },
+        {
+            "meaning": "Retrait, Groupment Interbancaire Monétique de l’ UEMOA",
+            "value": "A000000337301000"
+        },
+        {
+            "meaning": "Porte Monnaie Electronique, Groupment Interbancaire Monétique de l’ UEMOA",
+            "value": "A000000337601001"
+        },
+        {
+            "meaning": "Unknown, Euro Alliance of Payment Schemes s.c.r.l. – EAPS",
+            "value": "A0000003591010"
+        },
+        {
+            "meaning": "Girocard EAPS, Euro Alliance of Payment Schemes s.c.r.l. – EAPS",
+            "value": "A0000003591010028001"
+        },
+        {
+            "meaning": "PagoBANCOMAT, Euro Alliance of Payment Schemes s.c.r.l. – EAPS",
+            "value": "A00000035910100380"
+        },
+        {
+            "meaning": "Postamat, Poste Italiane S.P.A",
+            "value": "A0000003660001"
+        },
+        {
+            "meaning": "Postamat VISA, Poste Italiane S.P.A",
+            "value": "A0000003660002"
+        },
+        {
+            "meaning": "InterSwitch Verve Card, Verve",
+            "value": "A0000003710001"
+        },
+        {
+            "meaning": "Savings (debit card), eftpos, Australian Payments Clearing Association Ltd",
+            "value": "A00000038410"
+        },
+        {
+            "meaning": "Cheque (debit card), eftpos, Australian Payments Clearing Association Ltd",
+            "value": "A00000038420"
+        },
+        {
+            "meaning": "MIFARE4MOBILE, NXP Semiconductors Germany GmbH",
+            "value": "A0000003964D66344D0002"
+        },
+        {
+            "meaning": "Microsoft IDMP AID, Microsoft Corporation",
+            "value": "A00000039742544659"
+        },
+        {
+            "meaning": "Microsoft PNP AID, Microsoft Corporation",
+            "value": "A0000003974349445F0100"
+        },
+        {
+            "meaning": "Hiperchip, Unibanco (Hipercard)",
+            "value": "A0000004271010"
+        },
+        {
+            "meaning": "Universal Electronic Card, ПРО100",
+            "value": "A0000004320001"
+        },
+        {
+            "meaning": "Ticket Restaurant, Edenred",
+            "value": "A0000004360100"
+        },
+        {
+            "meaning": "Exchange ATM card, ACCEL/Exchange",
+            "value": "A0000004391010"
+        },
+        {
+            "meaning": "Etranzact Genesis Card, eTranzact",
+            "value": "A0000004540010"
+        },
+        {
+            "meaning": "Etranzact Genesis Card 2, eTranzact",
+            "value": "A0000004540011"
+        },
+        {
+            "meaning": "GOOGLE_CONTROLLER_AID, Google",
+            "value": "A0000004762010"
+        },
+        {
+            "meaning": "GOOGLE_MIFARE_MANAGER_AID, Google",
+            "value": "A0000004763030"
+        },
+        {
+            "meaning": "GOOGLE_PAYMENT_AID, Google",
+            "value": "A0000004766C"
+        },
+        {
+            "meaning": "GSD_MANAGER_AID, Google",
+            "value": "A000000476A010"
+        },
+        {
+            "meaning": "GSD_MANAGER_AID, Google",
+            "value": "A000000476A110"
+        },
+        {
+            "meaning": "Softcard SmartTap, JVL Ventures, LLC (Softcard)",
+            "value": "A000000485"
+        },
+        {
+            "meaning": "RuPay, RuPay",
+            "value": "A0000005241010"
+        },
+        {
+            "meaning": "Yubikey NEO U2F Demo applet, Yubico",
+            "value": "A0000005271002"
+        },
+        {
+            "meaning": "Yubikey NEO Yubikey2 applet interface, Yubico",
+            "value": "A000000527200101"
+        },
+        {
+            "meaning": "Yubikey NEO OATH Applet, Yubico",
+            "value": "A000000527210101"
+        },
+        {
+            "meaning": "ISD-R Application. Used as TAR., GSMA (GSM Association)",
+            "value": "A0000005591010FFFFFFFF8900000100"
+        },
+        {
+            "meaning": "ECASD Application. Used as TAR., GSMA (GSM Association)",
+            "value": "A0000005591010FFFFFFFF8900000200"
+        },
+        {
+            "meaning": "ISD-P Executable Load File., GSMA (GSM Association)",
+            "value": "A0000005591010FFFFFFFF8900000D00"
+        },
+        {
+            "meaning": "ISD-P Executable Module., GSMA (GSM Association)",
+            "value": "A0000005591010FFFFFFFF8900000E00"
+        },
+        {
+            "meaning": "Reserved value for the Profile’s ISD-P, GSMA (GSM Association)",
+            "value": "A0000005591010FFFFFFFF8900000F00"
+        },
+        {
+            "meaning": "ISD-P Application (‘1010FFFFFFFF89000010’ to ‘1010FFFFFFFF8900FFFF’. Used as TAR. The value is allocated during the ‘Profile Download and Installation procedure’, GSMA (GSM Association)",
+            "value": "A0000005591010FFFFFFFF8900001000"
+        },
+        {
+            "meaning": "Fidesmo javacard, Fidesmo",
+            "value": "A00000061700"
+        },
+        {
+            "meaning": "Debit Network Alliance (DNA), Debit Network Alliance (DNA)",
+            "value": "A0000006200620"
+        },
+        {
+            "meaning": "SwissPass/SwissPass Plus, SwissPass",
+            "value": "A0000006260101010001"
+        },
+        {
+            "meaning": "Bancnet",
+            "value": "A0000006351010"
+        },
+        {
+            "meaning": "MIR Credit, MIR",
+            "value": "A0000006581010"
+        },
+        {
+            "meaning": "MIR Credit, MIR",
+            "value": "A0000006581011"
+        },
+        {
+            "meaning": "MIR Debit, MIR",
+            "value": "A0000006582010"
+        },
+        {
+            "meaning": "TROY chip credit card, TROY",
+            "value": "A0000006723010"
+        },
+        {
+            "meaning": "TROY chip debit card, TROY",
+            "value": "A0000006723020"
+        },
+        {
+            "meaning": "XTRAPOWER Fleet Card Program, Indian Oil Corporation Limited",
+            "value": "A0000007705850"
+        },
+        {
+            "meaning": "Zimswitch",
+            "value": "A0000007790000"
+        },
+        {
+            "meaning": "Maestro TEST, MasterCard International",
+            "value": "B012345678"
+        },
+        {
+            "meaning": "Paylife Quick (IEP). Preloaded Electronic Purse, Paylife",
+            "value": "D040000001000002"
+        },
+        {
+            "meaning": "RFU, Austria Card",
+            "value": "D040000002000002"
+        },
+        {
+            "meaning": "POS, Austria Card",
+            "value": "D040000003000002"
+        },
+        {
+            "meaning": "ATM, Austria Card",
+            "value": "D040000004000002"
+        },
+        {
+            "meaning": "Retail, Austria Card",
+            "value": "D04000000B000002"
+        },
+        {
+            "meaning": "Bank_Data, Austria Card",
+            "value": "D04000000C000002"
+        },
+        {
+            "meaning": "Shopping, Austria Card",
+            "value": "D04000000D000002"
+        },
+        {
+            "meaning": "DF_UNI_Kepler1, Austria Card",
+            "value": "D040000013000001"
+        },
+        {
+            "meaning": "DF_UNI_Kepler2, Austria Card",
+            "value": "D040000013000002"
+        },
+        {
+            "meaning": "DF_Mensa, Austria Card",
+            "value": "D040000014000001"
+        },
+        {
+            "meaning": "DF_UNI_Ausweis, Austria Card",
+            "value": "D040000015000001"
+        },
+        {
+            "meaning": "EMV ATM Maestro, Austria Card",
+            "value": "D0400000190001"
+        },
+        {
+            "meaning": "EMV POS Maestro, Austria Card",
+            "value": "D0400000190002"
+        },
+        {
+            "meaning": "EMV ATM MasterCard, Austria Card",
+            "value": "D0400000190003"
+        },
+        {
+            "meaning": "EMV POS MasterCard, Austria Card",
+            "value": "D0400000190004"
+        },
+        {
+            "meaning": "Digital ID, Austria Card",
+            "value": "D0400000190010"
+        },
+        {
+            "meaning": "Fiscal module application, Ministry of Finance of Georgia",
+            "value": "D268000001"
+        },
+        {
+            "meaning": "Giesecke & Devrient, Giesecke&Devrient",
+            "value": "D276000005"
+        },
+        {
+            "meaning": "G D App Nokia 6212, Giesecke&Devrient",
+            "value": "D276000005AA040360010410"
+        },
+        {
+            "meaning": "G D App Nokia 6212, Giesecke&Devrient",
+            "value": "D276000005AA0503E00401"
+        },
+        {
+            "meaning": "G D App Nokia 6212, Giesecke&Devrient",
+            "value": "D276000005AA0503E00501"
+        },
+        {
+            "meaning": "G D App Nokia 6212, Giesecke&Devrient",
+            "value": "D276000005AA0503E0050101"
+        },
+        {
+            "meaning": "G D App Nokia 6212, Giesecke&Devrient",
+            "value": "D276000005AB0503E0040101"
+        },
+        {
+            "meaning": "SCT LOYALTY, IBM Laboratories",
+            "value": "D27600002200000001"
+        },
+        {
+            "meaning": "BUSINESS CARD, IBM Laboratories",
+            "value": "D27600002200000002"
+        },
+        {
+            "meaning": "PKCS#11 Token, IBM Laboratories",
+            "value": "D27600002200000060"
+        },
+        {
+            "meaning": "Girocard, ZKA",
+            "value": "D276000025"
+        },
+        {
+            "meaning": "Unknown, ZKA",
+            "value": "D27600002545410100"
+        },
+        {
+            "meaning": "Girocard, ZKA",
+            "value": "D27600002545500100"
+        },
+        {
+            "meaning": "Girocard ATM, ZKA",
+            "value": "D27600002547410100"
+        },
+        {
+            "meaning": "Wolfgang Rankl",
+            "value": "D276000060"
+        },
+        {
+            "meaning": "NDEF Tag Application / Mifare DESFire Tag Application, NXP Semiconductors / NFC Forum",
+            "value": "D2760000850100"
+        },
+        {
+            "meaning": "NDEF Tag Application, NXP Semiconductors / NFC Forum",
+            "value": "D2760000850101"
+        },
+        {
+            "meaning": "Giesecke&Devrient Java Card Telecommunikation",
+            "value": "D276000118"
+        },
+        {
+            "meaning": "Giesecke &amp, Giesecke&Devrient Java Card Telecommunikation",
+            "value": "D2760001180101"
+        },
+        {
+            "meaning": "OpenPGP Card, fsfEurope",
+            "value": "D27600012401"
+        },
+        {
+            "meaning": "OpenPGP Card, fsfEurope",
+            "value": "D276000124010101FFFF000000010000"
+        },
+        {
+            "meaning": "OpenPGP Card, fsfEurope",
+            "value": "D2760001240102000000000000010000"
+        },
+        {
+            "meaning": "SmartChess, fsfEurope",
+            "value": "D27600012402"
+        },
+        {
+            "meaning": "SmartChess, fsfEurope",
+            "value": "D2760001240200010000000000000000"
+        },
+        {
+            "meaning": "Republic of Korea",
+            "value": "D4100000011010"
+        },
+        {
+            "meaning": "(Netherlands), The Netherlands",
+            "value": "D5280050218002"
+        },
+        {
+            "meaning": "Bankaxept, Bankaxept",
+            "value": "D5780000021010"
+        },
+        {
+            "meaning": "Reka Card, Swiss Travel Fund (Reka)",
+            "value": "D7560000010101"
+        },
+        {
+            "meaning": "M Budget, Migros (FCM, GE Money Bank and MasterCard)",
+            "value": "D7560000300101"
+        },
+        {
+            "meaning": "PROSTIR Card, PROSTIR",
+            "value": "D8040000013010"
+        },
+        {
+            "meaning": "German eID",
+            "value": "E80704007F00070302"
+        },
+        {
+            "meaning": "AlphaCard application",
+            "value": "E82881C11702"
+        },
+        {
+            "meaning": "Iso adoption of PKCS-15",
+            "value": "E828BD080F"
+        },
+        {
+            "meaning": "Brazilian Bank Banco Bradesco",
+            "value": "F0000000030001"
+        }
+    ]
+}

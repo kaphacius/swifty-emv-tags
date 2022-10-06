@@ -40,7 +40,7 @@ extension TagMapping {
     internal static let defaultMappingCount = 7
     
     internal static func defaultURLs() throws -> [URL] {
-        try defaultJSONResources(with: "tm_")
+        try defaultJSONResources(.tagMapping)
     }
     
 }

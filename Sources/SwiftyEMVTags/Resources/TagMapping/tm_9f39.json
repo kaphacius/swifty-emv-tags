@@ -1,0 +1,53 @@
+{
+    "tag": "9F39",
+    "values": [
+        {
+            "meaning": "Unknown",
+            "value": "00"
+        },
+        {
+            "meaning": "Manual",
+            "value": "01"
+        },
+        {
+            "meaning": "Magnetic stripe",
+            "value": "02"
+        },
+        {
+            "meaning": "Bar code",
+            "value": "03"
+        },
+        {
+            "meaning": "OCR",
+            "value": "04"
+        },
+        {
+            "meaning": "Integrated circuit card (ICC). CVV can be checked.",
+            "value": "05"
+        },
+        {
+            "meaning": "Auto entry via contactless EMV.",
+            "value": "07"
+        },
+        {
+            "meaning": "Fallback to Magnetic Stripe",
+            "value": "80"
+        },
+        {
+            "meaning": "Magnetic stripe as read from track 2. CVV can be checked.",
+            "value": "90"
+        },
+        {
+            "meaning": "Auto entry via contactless magnetic stripe",
+            "value": "91"
+        },
+        {
+            "meaning": "Integrated circuit card (ICC). CVV may not be checked.",
+            "value": "95"
+        },
+        {
+            "meaning": "Same as original transaction.",
+            "value": "99"
+        }
+    ]
+}

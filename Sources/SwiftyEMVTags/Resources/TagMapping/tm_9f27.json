@@ -1,0 +1,18 @@
+{
+    "tag" : "9F27",
+    "values" : [
+        {
+            "meaning" : "AAC, Application Authentication Cryptogram",
+            "value" : "00"
+        },
+        {
+            "meaning" : "TC, Transaction Certificate",
+            "value" : "40"
+        },
+        {
+            "meaning" : "ARQC, Authorisation Request Cryptogram",
+            "value" : "80"
+        }
+    ]
+}
+

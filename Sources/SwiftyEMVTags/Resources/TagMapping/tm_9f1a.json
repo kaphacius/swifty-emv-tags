@@ -1,0 +1,1001 @@
+{
+    "tag": "9F1A",
+    "values": [
+        {
+            "meaning": "Afghanistan",
+            "value": "0004"
+        },
+        {
+            "meaning": "Albania",
+            "value": "0008"
+        },
+        {
+            "meaning": "Antarctica",
+            "value": "0010"
+        },
+        {
+            "meaning": "Algeria",
+            "value": "0012"
+        },
+        {
+            "meaning": "American Samoa",
+            "value": "0016"
+        },
+        {
+            "meaning": "Andorra",
+            "value": "0020"
+        },
+        {
+            "meaning": "Angola",
+            "value": "0024"
+        },
+        {
+            "meaning": "Antigua and Barbuda",
+            "value": "0028"
+        },
+        {
+            "meaning": "Azerbaijan",
+            "value": "0031"
+        },
+        {
+            "meaning": "Argentina",
+            "value": "0032"
+        },
+        {
+            "meaning": "Australia",
+            "value": "0036"
+        },
+        {
+            "meaning": "Austria",
+            "value": "0040"
+        },
+        {
+            "meaning": "Bahamas",
+            "value": "0044"
+        },
+        {
+            "meaning": "Bahrain",
+            "value": "0048"
+        },
+        {
+            "meaning": "Bangladesh",
+            "value": "0050"
+        },
+        {
+            "meaning": "Armenia",
+            "value": "0051"
+        },
+        {
+            "meaning": "Barbados",
+            "value": "0052"
+        },
+        {
+            "meaning": "Belgium",
+            "value": "0056"
+        },
+        {
+            "meaning": "Bermuda",
+            "value": "0060"
+        },
+        {
+            "meaning": "Bhutan",
+            "value": "0064"
+        },
+        {
+            "meaning": "Bolivia (Plurinational State of)",
+            "value": "0068"
+        },
+        {
+            "meaning": "Bosnia and Herzegovina",
+            "value": "0070"
+        },
+        {
+            "meaning": "Botswana",
+            "value": "0072"
+        },
+        {
+            "meaning": "Bouvet Island",
+            "value": "0074"
+        },
+        {
+            "meaning": "Brazil",
+            "value": "0076"
+        },
+        {
+            "meaning": "Belize",
+            "value": "0084"
+        },
+        {
+            "meaning": "British Indian Ocean Territory",
+            "value": "0086"
+        },
+        {
+            "meaning": "Solomon Islands",
+            "value": "0090"
+        },
+        {
+            "meaning": "Virgin Islands (British)",
+            "value": "0092"
+        },
+        {
+            "meaning": "Brunei Darussalam",
+            "value": "0096"
+        },
+        {
+            "meaning": "Bulgaria",
+            "value": "0100"
+        },
+        {
+            "meaning": "Myanmar",
+            "value": "0104"
+        },
+        {
+            "meaning": "Burundi",
+            "value": "0108"
+        },
+        {
+            "meaning": "Belarus",
+            "value": "0112"
+        },
+        {
+            "meaning": "Cambodia",
+            "value": "0116"
+        },
+        {
+            "meaning": "Cameroon",
+            "value": "0120"
+        },
+        {
+            "meaning": "Canada",
+            "value": "0124"
+        },
+        {
+            "meaning": "Cabo Verde",
+            "value": "0132"
+        },
+        {
+            "meaning": "Cayman Islands",
+            "value": "0136"
+        },
+        {
+            "meaning": "Central African Republic",
+            "value": "0140"
+        },
+        {
+            "meaning": "Sri Lanka",
+            "value": "0144"
+        },
+        {
+            "meaning": "Chad",
+            "value": "0148"
+        },
+        {
+            "meaning": "Chile",
+            "value": "0152"
+        },
+        {
+            "meaning": "China",
+            "value": "0156"
+        },
+        {
+            "meaning": "Taiwan, Province of China",
+            "value": "0158"
+        },
+        {
+            "meaning": "Christmas Island",
+            "value": "0162"
+        },
+        {
+            "meaning": "Cocos (Keeling) Islands",
+            "value": "0166"
+        },
+        {
+            "meaning": "Colombia",
+            "value": "0170"
+        },
+        {
+            "meaning": "Comoros",
+            "value": "0174"
+        },
+        {
+            "meaning": "Mayotte",
+            "value": "0175"
+        },
+        {
+            "meaning": "Congo",
+            "value": "0178"
+        },
+        {
+            "meaning": "Congo, Democratic Republic of the",
+            "value": "0180"
+        },
+        {
+            "meaning": "Cook Islands",
+            "value": "0184"
+        },
+        {
+            "meaning": "Costa Rica",
+            "value": "0188"
+        },
+        {
+            "meaning": "Croatia",
+            "value": "0191"
+        },
+        {
+            "meaning": "Cuba",
+            "value": "0192"
+        },
+        {
+            "meaning": "Cyprus",
+            "value": "0196"
+        },
+        {
+            "meaning": "Czechia",
+            "value": "0203"
+        },
+        {
+            "meaning": "Benin",
+            "value": "0204"
+        },
+        {
+            "meaning": "Denmark",
+            "value": "0208"
+        },
+        {
+            "meaning": "Dominica",
+            "value": "0212"
+        },
+        {
+            "meaning": "Dominican Republic",
+            "value": "0214"
+        },
+        {
+            "meaning": "Ecuador",
+            "value": "0218"
+        },
+        {
+            "meaning": "El Salvador",
+            "value": "0222"
+        },
+        {
+            "meaning": "Equatorial Guinea",
+            "value": "0226"
+        },
+        {
+            "meaning": "Ethiopia",
+            "value": "0231"
+        },
+        {
+            "meaning": "Eritrea",
+            "value": "0232"
+        },
+        {
+            "meaning": "Estonia",
+            "value": "0233"
+        },
+        {
+            "meaning": "Faroe Islands",
+            "value": "0234"
+        },
+        {
+            "meaning": "Falkland Islands (Malvinas)",
+            "value": "0238"
+        },
+        {
+            "meaning": "South Georgia and the South Sandwich Islands",
+            "value": "0239"
+        },
+        {
+            "meaning": "Fiji",
+            "value": "0242"
+        },
+        {
+            "meaning": "Finland",
+            "value": "0246"
+        },
+        {
+            "meaning": "Åland Islands",
+            "value": "0248"
+        },
+        {
+            "meaning": "France",
+            "value": "0250"
+        },
+        {
+            "meaning": "French Guiana",
+            "value": "0254"
+        },
+        {
+            "meaning": "French Polynesia",
+            "value": "0258"
+        },
+        {
+            "meaning": "French Southern Territories",
+            "value": "0260"
+        },
+        {
+            "meaning": "Djibouti",
+            "value": "0262"
+        },
+        {
+            "meaning": "Gabon",
+            "value": "0266"
+        },
+        {
+            "meaning": "Georgia",
+            "value": "0268"
+        },
+        {
+            "meaning": "Gambia",
+            "value": "0270"
+        },
+        {
+            "meaning": "Palestine, State of",
+            "value": "0275"
+        },
+        {
+            "meaning": "Germany",
+            "value": "0276"
+        },
+        {
+            "meaning": "Ghana",
+            "value": "0288"
+        },
+        {
+            "meaning": "Gibraltar",
+            "value": "0292"
+        },
+        {
+            "meaning": "Kiribati",
+            "value": "0296"
+        },
+        {
+            "meaning": "Greece",
+            "value": "0300"
+        },
+        {
+            "meaning": "Greenland",
+            "value": "0304"
+        },
+        {
+            "meaning": "Grenada",
+            "value": "0308"
+        },
+        {
+            "meaning": "Guadeloupe",
+            "value": "0312"
+        },
+        {
+            "meaning": "Guam",
+            "value": "0316"
+        },
+        {
+            "meaning": "Guatemala",
+            "value": "0320"
+        },
+        {
+            "meaning": "Guinea",
+            "value": "0324"
+        },
+        {
+            "meaning": "Guyana",
+            "value": "0328"
+        },
+        {
+            "meaning": "Haiti",
+            "value": "0332"
+        },
+        {
+            "meaning": "Heard Island and McDonald Islands",
+            "value": "0334"
+        },
+        {
+            "meaning": "Holy See",
+            "value": "0336"
+        },
+        {
+            "meaning": "Honduras",
+            "value": "0340"
+        },
+        {
+            "meaning": "Hong Kong",
+            "value": "0344"
+        },
+        {
+            "meaning": "Hungary",
+            "value": "0348"
+        },
+        {
+            "meaning": "Iceland",
+            "value": "0352"
+        },
+        {
+            "meaning": "India",
+            "value": "0356"
+        },
+        {
+            "meaning": "Indonesia",
+            "value": "0360"
+        },
+        {
+            "meaning": "Iran (Islamic Republic of)",
+            "value": "0364"
+        },
+        {
+            "meaning": "Iraq",
+            "value": "0368"
+        },
+        {
+            "meaning": "Ireland",
+            "value": "0372"
+        },
+        {
+            "meaning": "Israel",
+            "value": "0376"
+        },
+        {
+            "meaning": "Italy",
+            "value": "0380"
+        },
+        {
+            "meaning": "Côte d'Ivoire",
+            "value": "0384"
+        },
+        {
+            "meaning": "Jamaica",
+            "value": "0388"
+        },
+        {
+            "meaning": "Japan",
+            "value": "0392"
+        },
+        {
+            "meaning": "Kazakhstan",
+            "value": "0398"
+        },
+        {
+            "meaning": "Jordan",
+            "value": "0400"
+        },
+        {
+            "meaning": "Kenya",
+            "value": "0404"
+        },
+        {
+            "meaning": "Korea (Democratic People's Republic of)",
+            "value": "0408"
+        },
+        {
+            "meaning": "Korea, Republic of",
+            "value": "0410"
+        },
+        {
+            "meaning": "Kuwait",
+            "value": "0414"
+        },
+        {
+            "meaning": "Kyrgyzstan",
+            "value": "0417"
+        },
+        {
+            "meaning": "Lao People's Democratic Republic",
+            "value": "0418"
+        },
+        {
+            "meaning": "Lebanon",
+            "value": "0422"
+        },
+        {
+            "meaning": "Lesotho",
+            "value": "0426"
+        },
+        {
+            "meaning": "Latvia",
+            "value": "0428"
+        },
+        {
+            "meaning": "Liberia",
+            "value": "0430"
+        },
+        {
+            "meaning": "Libya",
+            "value": "0434"
+        },
+        {
+            "meaning": "Liechtenstein",
+            "value": "0438"
+        },
+        {
+            "meaning": "Lithuania",
+            "value": "0440"
+        },
+        {
+            "meaning": "Luxembourg",
+            "value": "0442"
+        },
+        {
+            "meaning": "Macao",
+            "value": "0446"
+        },
+        {
+            "meaning": "Madagascar",
+            "value": "0450"
+        },
+        {
+            "meaning": "Malawi",
+            "value": "0454"
+        },
+        {
+            "meaning": "Malaysia",
+            "value": "0458"
+        },
+        {
+            "meaning": "Maldives",
+            "value": "0462"
+        },
+        {
+            "meaning": "Mali",
+            "value": "0466"
+        },
+        {
+            "meaning": "Malta",
+            "value": "0470"
+        },
+        {
+            "meaning": "Martinique",
+            "value": "0474"
+        },
+        {
+            "meaning": "Mauritania",
+            "value": "0478"
+        },
+        {
+            "meaning": "Mauritius",
+            "value": "0480"
+        },
+        {
+            "meaning": "Mexico",
+            "value": "0484"
+        },
+        {
+            "meaning": "Monaco",
+            "value": "0492"
+        },
+        {
+            "meaning": "Mongolia",
+            "value": "0496"
+        },
+        {
+            "meaning": "Moldova, Republic of",
+            "value": "0498"
+        },
+        {
+            "meaning": "Montenegro",
+            "value": "0499"
+        },
+        {
+            "meaning": "Montserrat",
+            "value": "0500"
+        },
+        {
+            "meaning": "Morocco",
+            "value": "0504"
+        },
+        {
+            "meaning": "Mozambique",
+            "value": "0508"
+        },
+        {
+            "meaning": "Oman",
+            "value": "0512"
+        },
+        {
+            "meaning": "Namibia",
+            "value": "0516"
+        },
+        {
+            "meaning": "Nauru",
+            "value": "0520"
+        },
+        {
+            "meaning": "Nepal",
+            "value": "0524"
+        },
+        {
+            "meaning": "Netherlands",
+            "value": "0528"
+        },
+        {
+            "meaning": "Curaçao",
+            "value": "0531"
+        },
+        {
+            "meaning": "Aruba",
+            "value": "0533"
+        },
+        {
+            "meaning": "Sint Maarten (Dutch part)",
+            "value": "0534"
+        },
+        {
+            "meaning": "Bonaire, Sint Eustatius and Saba",
+            "value": "0535"
+        },
+        {
+            "meaning": "New Caledonia",
+            "value": "0540"
+        },
+        {
+            "meaning": "Vanuatu",
+            "value": "0548"
+        },
+        {
+            "meaning": "New Zealand",
+            "value": "0554"
+        },
+        {
+            "meaning": "Nicaragua",
+            "value": "0558"
+        },
+        {
+            "meaning": "Niger",
+            "value": "0562"
+        },
+        {
+            "meaning": "Nigeria",
+            "value": "0566"
+        },
+        {
+            "meaning": "Niue",
+            "value": "0570"
+        },
+        {
+            "meaning": "Norfolk Island",
+            "value": "0574"
+        },
+        {
+            "meaning": "Norway",
+            "value": "0578"
+        },
+        {
+            "meaning": "Northern Mariana Islands",
+            "value": "0580"
+        },
+        {
+            "meaning": "United States Minor Outlying Islands",
+            "value": "0581"
+        },
+        {
+            "meaning": "Micronesia (Federated States of)",
+            "value": "0583"
+        },
+        {
+            "meaning": "Marshall Islands",
+            "value": "0584"
+        },
+        {
+            "meaning": "Palau",
+            "value": "0585"
+        },
+        {
+            "meaning": "Pakistan",
+            "value": "0586"
+        },
+        {
+            "meaning": "Panama",
+            "value": "0591"
+        },
+        {
+            "meaning": "Papua New Guinea",
+            "value": "0598"
+        },
+        {
+            "meaning": "Paraguay",
+            "value": "0600"
+        },
+        {
+            "meaning": "Peru",
+            "value": "0604"
+        },
+        {
+            "meaning": "Philippines",
+            "value": "0608"
+        },
+        {
+            "meaning": "Pitcairn",
+            "value": "0612"
+        },
+        {
+            "meaning": "Poland",
+            "value": "0616"
+        },
+        {
+            "meaning": "Portugal",
+            "value": "0620"
+        },
+        {
+            "meaning": "Guinea-Bissau",
+            "value": "0624"
+        },
+        {
+            "meaning": "Timor-Leste",
+            "value": "0626"
+        },
+        {
+            "meaning": "Puerto Rico",
+            "value": "0630"
+        },
+        {
+            "meaning": "Qatar",
+            "value": "0634"
+        },
+        {
+            "meaning": "Réunion",
+            "value": "0638"
+        },
+        {
+            "meaning": "Romania",
+            "value": "0642"
+        },
+        {
+            "meaning": "Russian Federation",
+            "value": "0643"
+        },
+        {
+            "meaning": "Rwanda",
+            "value": "0646"
+        },
+        {
+            "meaning": "Saint Barthélemy",
+            "value": "0652"
+        },
+        {
+            "meaning": "Saint Helena, Ascension and Tristan da Cunha",
+            "value": "0654"
+        },
+        {
+            "meaning": "Saint Kitts and Nevis",
+            "value": "0659"
+        },
+        {
+            "meaning": "Anguilla",
+            "value": "0660"
+        },
+        {
+            "meaning": "Saint Lucia",
+            "value": "0662"
+        },
+        {
+            "meaning": "Saint Martin (French part)",
+            "value": "0663"
+        },
+        {
+            "meaning": "Saint Pierre and Miquelon",
+            "value": "0666"
+        },
+        {
+            "meaning": "Saint Vincent and the Grenadines",
+            "value": "0670"
+        },
+        {
+            "meaning": "San Marino",
+            "value": "0674"
+        },
+        {
+            "meaning": "Sao Tome and Principe",
+            "value": "0678"
+        },
+        {
+            "meaning": "Saudi Arabia",
+            "value": "0682"
+        },
+        {
+            "meaning": "Senegal",
+            "value": "0686"
+        },
+        {
+            "meaning": "Serbia",
+            "value": "0688"
+        },
+        {
+            "meaning": "Seychelles",
+            "value": "0690"
+        },
+        {
+            "meaning": "Sierra Leone",
+            "value": "0694"
+        },
+        {
+            "meaning": "Singapore",
+            "value": "0702"
+        },
+        {
+            "meaning": "Slovakia",
+            "value": "0703"
+        },
+        {
+            "meaning": "Viet Nam",
+            "value": "0704"
+        },
+        {
+            "meaning": "Slovenia",
+            "value": "0705"
+        },
+        {
+            "meaning": "Somalia",
+            "value": "0706"
+        },
+        {
+            "meaning": "South Africa",
+            "value": "0710"
+        },
+        {
+            "meaning": "Zimbabwe",
+            "value": "0716"
+        },
+        {
+            "meaning": "Spain",
+            "value": "0724"
+        },
+        {
+            "meaning": "South Sudan",
+            "value": "0728"
+        },
+        {
+            "meaning": "Sudan",
+            "value": "0729"
+        },
+        {
+            "meaning": "Western Sahara",
+            "value": "0732"
+        },
+        {
+            "meaning": "Suriname",
+            "value": "0740"
+        },
+        {
+            "meaning": "Svalbard and Jan Mayen",
+            "value": "0744"
+        },
+        {
+            "meaning": "Eswatini",
+            "value": "0748"
+        },
+        {
+            "meaning": "Sweden",
+            "value": "0752"
+        },
+        {
+            "meaning": "Switzerland",
+            "value": "0756"
+        },
+        {
+            "meaning": "Syrian Arab Republic",
+            "value": "0760"
+        },
+        {
+            "meaning": "Tajikistan",
+            "value": "0762"
+        },
+        {
+            "meaning": "Thailand",
+            "value": "0764"
+        },
+        {
+            "meaning": "Togo",
+            "value": "0768"
+        },
+        {
+            "meaning": "Tokelau",
+            "value": "0772"
+        },
+        {
+            "meaning": "Tonga",
+            "value": "0776"
+        },
+        {
+            "meaning": "Trinidad and Tobago",
+            "value": "0780"
+        },
+        {
+            "meaning": "United Arab Emirates",
+            "value": "0784"
+        },
+        {
+            "meaning": "Tunisia",
+            "value": "0788"
+        },
+        {
+            "meaning": "Turkey",
+            "value": "0792"
+        },
+        {
+            "meaning": "Turkmenistan",
+            "value": "0795"
+        },
+        {
+            "meaning": "Turks and Caicos Islands",
+            "value": "0796"
+        },
+        {
+            "meaning": "Tuvalu",
+            "value": "0798"
+        },
+        {
+            "meaning": "Uganda",
+            "value": "0800"
+        },
+        {
+            "meaning": "Ukraine",
+            "value": "0804"
+        },
+        {
+            "meaning": "North Macedonia",
+            "value": "0807"
+        },
+        {
+            "meaning": "Egypt",
+            "value": "0818"
+        },
+        {
+            "meaning": "United Kingdom of Great Britain and Northern Ireland",
+            "value": "0826"
+        },
+        {
+            "meaning": "Guernsey",
+            "value": "0831"
+        },
+        {
+            "meaning": "Jersey",
+            "value": "0832"
+        },
+        {
+            "meaning": "Isle of Man",
+            "value": "0833"
+        },
+        {
+            "meaning": "Tanzania, United Republic of",
+            "value": "0834"
+        },
+        {
+            "meaning": "United States of America",
+            "value": "0840"
+        },
+        {
+            "meaning": "Virgin Islands (U.S.)",
+            "value": "0850"
+        },
+        {
+            "meaning": "Burkina Faso",
+            "value": "0854"
+        },
+        {
+            "meaning": "Uruguay",
+            "value": "0858"
+        },
+        {
+            "meaning": "Uzbekistan",
+            "value": "0860"
+        },
+        {
+            "meaning": "Venezuela (Bolivarian Republic of)",
+            "value": "0862"
+        },
+        {
+            "meaning": "Wallis and Futuna",
+            "value": "0876"
+        },
+        {
+            "meaning": "Samoa",
+            "value": "0882"
+        },
+        {
+            "meaning": "Yemen",
+            "value": "0887"
+        },
+        {
+            "meaning": "Zambia",
+            "value": "0894"
+        }
+    ]
+}
