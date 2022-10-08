@@ -8,7 +8,7 @@
 import SwiftyBERTLV
 import Foundation
 
-public struct EMVTag: Identifiable {
+public struct EMVTag: Identifiable, Equatable {
     
     public typealias ID = UUID
     

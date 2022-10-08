@@ -34,6 +34,21 @@ extension EMVTag {
     
 }
 
+extension EMVTag.Category: Equatable {
+    
+    static public func == (lhs: Self, rhs: Self) -> Bool {
+        switch(lhs, rhs) {
+        case (.plain, .plain):
+            return true
+        case (.constructed(let llhs), .constructed(let rrhs)):
+            return llhs == rrhs
+        default:
+            return false
+        }
+    }
+    
+}
+
 extension EMVTag.DecodingResult: Equatable {
     
     static public func == (lhs: Self, rhs: Self) -> Bool {
