@@ -78,7 +78,6 @@ extension EMVTag.DecodedByte {
         public enum GroupType: Equatable {
             case bitmap(MappingResult)
             case hex(UInt8)
-            case bcd(UInt8)
             case bool(Bool)
             case RFU
             
