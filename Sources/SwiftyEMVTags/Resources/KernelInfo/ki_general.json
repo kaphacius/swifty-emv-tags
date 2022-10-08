@@ -1,3162 +1,3255 @@
 {
-  "category" : "scheme",
-  "description" : "general",
-  "name" : "general",
-  "tags" : [
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Object Identifier (OID)",
-        "source" : "unknown",
-        "tag" : "06"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Country code and national data",
-        "source" : "unknown",
-        "tag" : "41"
-      }
-    },
-    {
-      "info" : {
-        "description" : "The number that identifies the major industry and the card issuer and that forms the first part of the Primary Account Number (PAN)",
-        "format" : "n 6",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Issuer Identification Number (IIN)",
-        "source" : "card",
-        "tag" : "42"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Card service data",
-        "source" : "unknown",
-        "tag" : "43"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Initial access data",
-        "source" : "unknown",
-        "tag" : "44"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Card issuer`s data",
-        "source" : "unknown",
-        "tag" : "45"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Pre-issuing data",
-        "source" : "unknown",
-        "tag" : "46"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Card capabilities",
-        "source" : "unknown",
-        "tag" : "47"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Status information",
-        "source" : "unknown",
-        "tag" : "48"
+  "category": "scheme",
+  "description": "general",
+  "name": "general",
+  "tags": [
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Object Identifier (OID)",
+        "source": "unknown",
+        "tag": "06"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Country code and national data",
+        "source": "unknown",
+        "tag": "41"
+      }
+    },
+    {
+      "info": {
+        "description": "The number that identifies the major industry and the card issuer and that forms the first part of the Primary Account Number (PAN)",
+        "format": "n 6",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Issuer Identification Number (IIN)",
+        "source": "card",
+        "tag": "42"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Card service data",
+        "source": "unknown",
+        "tag": "43"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Initial access data",
+        "source": "unknown",
+        "tag": "44"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Card issuer`s data",
+        "source": "unknown",
+        "tag": "45"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Pre-issuing data",
+        "source": "unknown",
+        "tag": "46"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Card capabilities",
+        "source": "unknown",
+        "tag": "47"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Status information",
+        "source": "unknown",
+        "tag": "48"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Extended header list",
-        "source" : "unknown",
-        "tag" : "4D"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Extended header list",
+        "source": "unknown",
+        "tag": "4D"
       }
     },
     {
-      "info" : {
-        "description" : "Mnemonic associated with AID according to [ISO 7816-5]. Used in application selection. Application Label is optional in the File Control Information (FCI) of an Application Definition File (ADF) and optional in an ADF directory entry.",
-        "format" : "ans 1-16 (special characters limited to spaces)",
-        "kernel" : "general",
-        "maxLength" : "16",
-        "minLength" : "1",
-        "name" : "Application Label",
-        "source" : "card",
-        "tag" : "50"
+      "info": {
+        "description": "Mnemonic associated with AID according to [ISO 7816-5]. Used in application selection. Application Label is optional in the File Control Information (FCI) of an Application Definition File (ADF) and optional in an ADF directory entry.",
+        "format": "ans 1-16 (special characters limited to spaces)",
+        "kernel": "general",
+        "maxLength": "16",
+        "minLength": "1",
+        "name": "Application Label",
+        "source": "card",
+        "tag": "50"
       }
     },
     {
-      "info" : {
-        "description" : "A path may reference any file. It is a concatenation of file identifiers. The path begins with the identifier of a DF (the MF for an absolute path or the current DF for a relative path) and ends with the identifier of the file itself.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Path",
-        "source" : "card",
-        "tag" : "51"
+      "info": {
+        "description": "A path may reference any file. It is a concatenation of file identifiers. The path begins with the identifier of a DF (the MF for an absolute path or the current DF for a relative path) and ends with the identifier of the file itself.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Path",
+        "source": "card",
+        "tag": "51"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "H",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Command to perform",
-        "source" : "card",
-        "tag" : "52"
+      "info": {
+        "description": "",
+        "format": "H",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Command to perform",
+        "source": "card",
+        "tag": "52"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Discretionary data, discretionary template",
-        "source" : "unknown",
-        "tag" : "53"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Discretionary data, discretionary template",
+        "source": "unknown",
+        "tag": "53"
       }
     },
     {
-      "info" : {
-        "description" : "Track 1 Data contains the data objects of the track 1 according to [ISO/IEC 7813] Structure B, excluding start sentinel, end sentinel and LRC. The Track 1 Data may be present in the file read using the READ RECORD command during a mag-stripe mode transaction.",
-        "format" : "ans",
-        "kernel" : "general",
-        "maxLength" : "76",
-        "minLength" : "0",
-        "name" : "Track 1 Data",
-        "source" : "unknown",
-        "tag" : "56"
+      "info": {
+        "description": "Track 1 Data contains the data objects of the track 1 according to [ISO/IEC 7813] Structure B, excluding start sentinel, end sentinel and LRC. The Track 1 Data may be present in the file read using the READ RECORD command during a mag-stripe mode transaction.",
+        "format": "ans",
+        "kernel": "general",
+        "maxLength": "76",
+        "minLength": "0",
+        "name": "Track 1 Data",
+        "source": "unknown",
+        "tag": "56"
       }
     },
     {
-      "info" : {
-        "description" : "Contains the data elements of track 2 according to ISO/IEC 7813, excluding start sentinel, end sentinel, and Longitudinal Redundancy Check (LRC), as follows:Primary Account NumberField Separator (Hex 'D')Expiration Date (YYMM)Service CodeDiscretionary Data (defined by individual payment systems)Pad with one Hex 'F' if needed to ensure whole bytes",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "19",
-        "minLength" : "0",
-        "name" : "Track 2 Equivalent Data",
-        "source" : "card",
-        "tag" : "57"
+      "info": {
+        "description": "Contains the data elements of track 2 according to ISO/IEC 7813, excluding start sentinel, end sentinel, and Longitudinal Redundancy Check (LRC), as follows:Primary Account NumberField Separator (Hex 'D')Expiration Date (YYMM)Service CodeDiscretionary Data (defined by individual payment systems)Pad with one Hex 'F' if needed to ensure whole bytes",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "19",
+        "minLength": "0",
+        "name": "Track 2 Equivalent Data",
+        "source": "card",
+        "tag": "57"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Track 3 Equivalent Data",
-        "source" : "card",
-        "tag" : "58"
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Track 3 Equivalent Data",
+        "source": "card",
+        "tag": "58"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Card expiration date",
-        "source" : "card",
-        "tag" : "59"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Card expiration date",
+        "source": "card",
+        "tag": "59"
       }
     },
     {
-      "info" : {
-        "description" : "Valid cardholder account number",
-        "format" : "cn variable up to 19",
-        "kernel" : "general",
-        "maxLength" : "var. up to 10",
-        "minLength" : "var. up to 10",
-        "name" : "Application Primary Account Number (PAN)",
-        "source" : "card",
-        "tag" : "5A"
+      "info": {
+        "description": "Valid cardholder account number",
+        "format": "cn variable up to 19",
+        "kernel": "general",
+        "maxLength": "var. up to 10",
+        "minLength": "var. up to 10",
+        "name": "Application Primary Account Number (PAN)",
+        "source": "card",
+        "tag": "5A"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Name of an individual",
-        "source" : "unknown",
-        "tag" : "5B"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Name of an individual",
+        "source": "unknown",
+        "tag": "5B"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Tag list",
-        "source" : "unknown",
-        "tag" : "5C"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Tag list",
+        "source": "unknown",
+        "tag": "5C"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates cardholder name according to ISO 7813",
-        "format" : "ans 2-26",
-        "kernel" : "general",
-        "maxLength" : "26",
-        "minLength" : "2",
-        "name" : "Cardholder Name",
-        "source" : "card",
-        "tag" : "5F20"
+      "info": {
+        "description": "Indicates cardholder name according to ISO 7813",
+        "format": "ans 2-26",
+        "kernel": "general",
+        "maxLength": "26",
+        "minLength": "2",
+        "name": "Cardholder Name",
+        "source": "card",
+        "tag": "5F20"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Track 1, identical to the data coded",
-        "source" : "card",
-        "tag" : "5F21"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Track 1, identical to the data coded",
+        "source": "card",
+        "tag": "5F21"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Track 2, identical to the data coded",
-        "source" : "card",
-        "tag" : "5F22"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Track 2, identical to the data coded",
+        "source": "card",
+        "tag": "5F22"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Track 3, identical to the data coded",
-        "source" : "card",
-        "tag" : "5F23"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Track 3, identical to the data coded",
+        "source": "card",
+        "tag": "5F23"
       }
     },
     {
-      "info" : {
-        "description" : "Date after which the card application expires.",
-        "format" : "n 6 (YYMMDD)",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Application Expiration Date",
-        "source" : "card",
-        "tag" : "5F24"
+      "info": {
+        "description": "Date after which the card application expires.",
+        "format": "n 6 (YYMMDD)",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Application Expiration Date",
+        "source": "card",
+        "tag": "5F24"
       }
     },
     {
-      "info" : {
-        "description" : "Date from which the application may be used. The date is expressed in the YYMMDD format.",
-        "format" : "n 6 (YYMMDD)",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Application Effective Date",
-        "source" : "card",
-        "tag" : "5F25"
+      "info": {
+        "description": "Date from which the application may be used. The date is expressed in the YYMMDD format.",
+        "format": "n 6 (YYMMDD)",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Application Effective Date",
+        "source": "card",
+        "tag": "5F25"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Date, Card Effective",
-        "source" : "unknown",
-        "tag" : "5F26"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Date, Card Effective",
+        "source": "unknown",
+        "tag": "5F26"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Interchange control",
-        "source" : "unknown",
-        "tag" : "5F27"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Interchange control",
+        "source": "unknown",
+        "tag": "5F27"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the country of the issuer according to ISO 3166-1",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Issuer Country Code",
-        "source" : "card",
-        "tag" : "5F28"
+      "info": {
+        "description": "Indicates the country of the issuer according to ISO 3166-1",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Issuer Country Code",
+        "source": "card",
+        "tag": "5F28"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Interchange profile",
-        "source" : "unknown",
-        "tag" : "5F29"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Interchange profile",
+        "source": "unknown",
+        "tag": "5F29"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the currency code of the transaction according to [ISO 4217]",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Transaction Currency Code",
-        "source" : "terminal",
-        "tag" : "5F2A"
+      "info": {
+        "description": "Indicates the currency code of the transaction according to [ISO 4217]",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Transaction Currency Code",
+        "source": "terminal",
+        "tag": "5F2A"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Date of birth",
-        "source" : "unknown",
-        "tag" : "5F2B"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Date of birth",
+        "source": "unknown",
+        "tag": "5F2B"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder nationality",
-        "source" : "unknown",
-        "tag" : "5F2C"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder nationality",
+        "source": "unknown",
+        "tag": "5F2C"
       }
     },
     {
-      "info" : {
-        "description" : "1-4 languages stored in order of preference, each represented by 2 lower case alphabetical characters according to ISO 639-1.",
-        "format" : "an 2",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "2",
-        "name" : "Language Preference",
-        "source" : "card",
-        "tag" : "5F2D"
+      "info": {
+        "description": "1-4 languages stored in order of preference, each represented by 2 lower case alphabetical characters according to ISO 639-1.",
+        "format": "an 2",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "2",
+        "name": "Language Preference",
+        "source": "card",
+        "tag": "5F2D"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder biometric data",
-        "source" : "unknown",
-        "tag" : "5F2E"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder biometric data",
+        "source": "unknown",
+        "tag": "5F2E"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "PIN usage policy",
-        "source" : "unknown",
-        "tag" : "5F2F"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "PIN usage policy",
+        "source": "unknown",
+        "tag": "5F2F"
       }
     },
     {
-      "info" : {
-        "description" : "Service code as defined in ISO/IEC 7813 for Track 1 and Track 2",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Service Code",
-        "source" : "card",
-        "tag" : "5F30"
+      "info": {
+        "description": "Service code as defined in ISO/IEC 7813 for Track 1 and Track 2",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Service Code",
+        "source": "card",
+        "tag": "5F30"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Transaction counter",
-        "source" : "unknown",
-        "tag" : "5F32"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Transaction counter",
+        "source": "unknown",
+        "tag": "5F32"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Date, Transaction",
-        "source" : "unknown",
-        "tag" : "5F33"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Date, Transaction",
+        "source": "unknown",
+        "tag": "5F33"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies and differentiates cards with the same PAN",
-        "format" : "n 2",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Application Primary Account Number (PAN) Sequence Number (PSN)",
-        "source" : "card",
-        "tag" : "5F34"
+      "info": {
+        "description": "Identifies and differentiates cards with the same PAN",
+        "format": "n 2",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Application Primary Account Number (PAN) Sequence Number (PSN)",
+        "source": "card",
+        "tag": "5F34"
       }
     },
     {
-      "info" : {
-        "description" : "Representation of human sexes through a language-neutral single-digit code (0 = not known, 1 = male, 2 = female, 9 = not applicable)",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Sex (ISO 5218)",
-        "source" : "unknown",
-        "tag" : "5F35"
+      "info": {
+        "description": "Representation of human sexes through a language-neutral single-digit code (0 = not known, 1 = male, 2 = female, 9 = not applicable)",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Sex (ISO 5218)",
+        "source": "unknown",
+        "tag": "5F35"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Static internal authentication (one-step)",
-        "source" : "unknown",
-        "tag" : "5F37"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Static internal authentication (one-step)",
+        "source": "unknown",
+        "tag": "5F37"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Static internal authentication - first associated data",
-        "source" : "unknown",
-        "tag" : "5F38"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Static internal authentication - first associated data",
+        "source": "unknown",
+        "tag": "5F38"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Static internal authentication - second associated data",
-        "source" : "unknown",
-        "tag" : "5F39"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Static internal authentication - second associated data",
+        "source": "unknown",
+        "tag": "5F39"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Dynamic internal authentication",
-        "source" : "unknown",
-        "tag" : "5F3A"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Dynamic internal authentication",
+        "source": "unknown",
+        "tag": "5F3A"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Dynamic external authentication",
-        "source" : "unknown",
-        "tag" : "5F3B"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Dynamic external authentication",
+        "source": "unknown",
+        "tag": "5F3B"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the common currency used by the terminal",
-        "format" : "binary 2",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Transaction Reference Currency Code",
-        "source" : "terminal",
-        "tag" : "5F3C"
+      "info": {
+        "description": "Identifies the common currency used by the terminal",
+        "format": "binary 2",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Transaction Reference Currency Code",
+        "source": "terminal",
+        "tag": "5F3C"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the decimal point position from the right of the terminal common currency",
-        "format" : "n 1",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Transaction Reference Currency Exponent",
-        "source" : "terminal",
-        "tag" : "5F3D"
+      "info": {
+        "description": "Identifies the decimal point position from the right of the terminal common currency",
+        "format": "n 1",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Transaction Reference Currency Exponent",
+        "source": "terminal",
+        "tag": "5F3D"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder portrait image",
-        "source" : "unknown",
-        "tag" : "5F40"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder portrait image",
+        "source": "unknown",
+        "tag": "5F40"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Element list",
-        "source" : "unknown",
-        "tag" : "5F41"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Element list",
+        "source": "unknown",
+        "tag": "5F41"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Address",
-        "source" : "unknown",
-        "tag" : "5F42"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Address",
+        "source": "unknown",
+        "tag": "5F42"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder handwritten signature image",
-        "source" : "unknown",
-        "tag" : "5F43"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder handwritten signature image",
+        "source": "unknown",
+        "tag": "5F43"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Application image",
-        "source" : "unknown",
-        "tag" : "5F44"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Application image",
+        "source": "unknown",
+        "tag": "5F44"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Display message",
-        "source" : "unknown",
-        "tag" : "5F45"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Display message",
+        "source": "unknown",
+        "tag": "5F45"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Timer",
-        "source" : "unknown",
-        "tag" : "5F46"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Timer",
+        "source": "unknown",
+        "tag": "5F46"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Message reference",
-        "source" : "unknown",
-        "tag" : "5F47"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Message reference",
+        "source": "unknown",
+        "tag": "5F47"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder private key",
-        "source" : "unknown",
-        "tag" : "5F48"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder private key",
+        "source": "unknown",
+        "tag": "5F48"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder public key",
-        "source" : "unknown",
-        "tag" : "5F49"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder public key",
+        "source": "unknown",
+        "tag": "5F49"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Public key of certification authority",
-        "source" : "unknown",
-        "tag" : "5F4A"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Public key of certification authority",
+        "source": "unknown",
+        "tag": "5F4A"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Certificate holder authorization",
-        "source" : "unknown",
-        "tag" : "5F4C"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Certificate holder authorization",
+        "source": "unknown",
+        "tag": "5F4C"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Integrated circuit manufacturer identifier",
-        "source" : "unknown",
-        "tag" : "5F4D"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Integrated circuit manufacturer identifier",
+        "source": "unknown",
+        "tag": "5F4D"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Certificate content",
-        "source" : "unknown",
-        "tag" : "5F4E"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Certificate content",
+        "source": "unknown",
+        "tag": "5F4E"
       }
     },
     {
-      "info" : {
-        "description" : "The URL provides the location of the Issuer's Library Server on the Internet.",
-        "format" : "ans",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Issuer Uniform resource locator (URL)",
-        "source" : "card",
-        "tag" : "5F50"
+      "info": {
+        "description": "The URL provides the location of the Issuer's Library Server on the Internet.",
+        "format": "ans",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Issuer Uniform resource locator (URL)",
+        "source": "card",
+        "tag": "5F50"
       }
     },
     {
-      "info" : {
-        "description" : "Uniquely identifies the account of a customer at a financial institution as defined in ISO 13616.",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "34",
-        "minLength" : "0",
-        "name" : "International Bank Account Number (IBAN)",
-        "source" : "card",
-        "tag" : "5F53"
+      "info": {
+        "description": "Uniquely identifies the account of a customer at a financial institution as defined in ISO 13616.",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "34",
+        "minLength": "0",
+        "name": "International Bank Account Number (IBAN)",
+        "source": "card",
+        "tag": "5F53"
       }
     },
     {
-      "info" : {
-        "description" : "Uniquely identifies a bank as defined in ISO 9362.",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "8 or 11",
-        "minLength" : "8 or 11",
-        "name" : "Bank Identifier Code (BIC)",
-        "source" : "card",
-        "tag" : "5F54"
+      "info": {
+        "description": "Uniquely identifies a bank as defined in ISO 9362.",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "8 or 11",
+        "minLength": "8 or 11",
+        "name": "Bank Identifier Code (BIC)",
+        "source": "card",
+        "tag": "5F54"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the country of the issuer as defined in ISO 3166 (using a 2 character alphabetic code)",
-        "format" : "a 2",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Issuer Country Code (alpha2 format)",
-        "source" : "card",
-        "tag" : "5F55"
+      "info": {
+        "description": "Indicates the country of the issuer as defined in ISO 3166 (using a 2 character alphabetic code)",
+        "format": "a 2",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Issuer Country Code (alpha2 format)",
+        "source": "card",
+        "tag": "5F55"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the country of the issuer as defined in ISO 3166 (using a 3 character alphabetic code)",
-        "format" : "a 3",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Issuer Country Code (alpha3 format)",
-        "source" : "card",
-        "tag" : "5F56"
+      "info": {
+        "description": "Indicates the country of the issuer as defined in ISO 3166 (using a 3 character alphabetic code)",
+        "format": "a 3",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Issuer Country Code (alpha3 format)",
+        "source": "card",
+        "tag": "5F56"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Dynamic Authentication",
-        "source" : "unknown",
-        "tag" : "60"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Dynamic Authentication",
+        "source": "unknown",
+        "tag": "60"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Commitment (e.g., a positive number less than the public RSA modulus in use)",
-        "source" : "unknown",
-        "tag" : "6080"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Commitment (e.g., a positive number less than the public RSA modulus in use)",
+        "source": "unknown",
+        "tag": "6080"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Challenge (e.g., a number, possibly zero, less than the public RSA exponent in use)",
-        "source" : "unknown",
-        "tag" : "6081"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Challenge (e.g., a number, possibly zero, less than the public RSA exponent in use)",
+        "source": "unknown",
+        "tag": "6081"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Response (e.g., a positive number less than the public RSA modulus in use)",
-        "source" : "unknown",
-        "tag" : "6082"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Response (e.g., a positive number less than the public RSA modulus in use)",
+        "source": "unknown",
+        "tag": "6082"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Committed challenge (e.g., the hash-code of a commitment data object)",
-        "source" : "unknown",
-        "tag" : "6083"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Committed challenge (e.g., the hash-code of a commitment data object)",
+        "source": "unknown",
+        "tag": "6083"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Authentication code (e.g., the hash-code of one or more data fields and a commitment data object)",
-        "source" : "unknown",
-        "tag" : "6084"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Authentication code (e.g., the hash-code of one or more data fields and a commitment data object)",
+        "source": "unknown",
+        "tag": "6084"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Exponential (e.g., a public positive number for establishing a session key by a DH method)",
-        "source" : "unknown",
-        "tag" : "6085"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Exponential (e.g., a public positive number for establishing a session key by a DH method)",
+        "source": "unknown",
+        "tag": "6085"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Identification data",
-        "source" : "unknown",
-        "tag" : "60A0"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Identification data",
+        "source": "unknown",
+        "tag": "60A0"
       }
     },
     {
-      "info" : {
-        "description" : "Template containing one or more data objects relevant to an application directory entry according to [ISO 7816-5].",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. up to 252",
-        "minLength" : "var. up to 252",
-        "name" : "Application Template/Directory Entry",
-        "source" : "card",
-        "tag" : "61"
+      "info": {
+        "description": "Template containing one or more data objects relevant to an application directory entry according to [ISO 7816-5].",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. up to 252",
+        "minLength": "var. up to 252",
+        "name": "Application Template/Directory Entry",
+        "source": "card",
+        "tag": "61"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the FCP template according to ISO/IEC 7816-4",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "var. up to 252",
-        "minLength" : "var. up to 252",
-        "name" : "File Control Parameters (FCP) Template",
-        "source" : "card",
-        "tag" : "62"
+      "info": {
+        "description": "Identifies the FCP template according to ISO/IEC 7816-4",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "var. up to 252",
+        "minLength": "var. up to 252",
+        "name": "File Control Parameters (FCP) Template",
+        "source": "card",
+        "tag": "62"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Number of data bytes in the file, excluding structural information",
-        "source" : "unknown",
-        "tag" : "6280"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Number of data bytes in the file, excluding structural information",
+        "source": "unknown",
+        "tag": "6280"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Number of data bytes in the file, including structural information if any",
-        "source" : "unknown",
-        "tag" : "6281"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Number of data bytes in the file, including structural information if any",
+        "source": "unknown",
+        "tag": "6281"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "File descriptor byte",
-        "source" : "unknown",
-        "tag" : "6282"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "File descriptor byte",
+        "source": "unknown",
+        "tag": "6282"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "File identifier",
-        "source" : "unknown",
-        "tag" : "6283"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "File identifier",
+        "source": "unknown",
+        "tag": "6283"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "DF name",
-        "source" : "unknown",
-        "tag" : "6284"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "DF name",
+        "source": "unknown",
+        "tag": "6284"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Proprietary information, primitive encoding (i.e., not coded in BER-TLV)",
-        "source" : "unknown",
-        "tag" : "6285"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Proprietary information, primitive encoding (i.e., not coded in BER-TLV)",
+        "source": "unknown",
+        "tag": "6285"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Security attribute in proprietary format",
-        "source" : "unknown",
-        "tag" : "6286"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Security attribute in proprietary format",
+        "source": "unknown",
+        "tag": "6286"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Identifier of an EF containing an extension of the file control information",
-        "source" : "unknown",
-        "tag" : "6287"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Identifier of an EF containing an extension of the file control information",
+        "source": "unknown",
+        "tag": "6287"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Short EF identifier",
-        "source" : "unknown",
-        "tag" : "6288"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Short EF identifier",
+        "source": "unknown",
+        "tag": "6288"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Life cycle status byte (LCS)",
-        "source" : "unknown",
-        "tag" : "628A"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Life cycle status byte (LCS)",
+        "source": "unknown",
+        "tag": "628A"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Security attribute referencing the expanded format",
-        "source" : "unknown",
-        "tag" : "628B"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Security attribute referencing the expanded format",
+        "source": "unknown",
+        "tag": "628B"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Security attribute in compact format",
-        "source" : "unknown",
-        "tag" : "628C"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Security attribute in compact format",
+        "source": "unknown",
+        "tag": "628C"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Identifier of an EF containing security environment templates",
-        "source" : "unknown",
-        "tag" : "628D"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Identifier of an EF containing security environment templates",
+        "source": "unknown",
+        "tag": "628D"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Security attribute for data objects",
-        "source" : "unknown",
-        "tag" : "62A0"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Security attribute for data objects",
+        "source": "unknown",
+        "tag": "62A0"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Security attribute for physical interfaces",
-        "source" : "unknown",
-        "tag" : "62A1"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Security attribute for physical interfaces",
+        "source": "unknown",
+        "tag": "62A1"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "One or more pairs of data objects, short EF identifier (tag 88) - absolute or relative path (tag 51)",
-        "source" : "unknown",
-        "tag" : "62A2"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "One or more pairs of data objects, short EF identifier (tag 88) - absolute or relative path (tag 51)",
+        "source": "unknown",
+        "tag": "62A2"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Proprietary information, constructed encoding",
-        "source" : "unknown",
-        "tag" : "62A5"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Proprietary information, constructed encoding",
+        "source": "unknown",
+        "tag": "62A5"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Security attribute in expanded format",
-        "source" : "unknown",
-        "tag" : "62AB"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Security attribute in expanded format",
+        "source": "unknown",
+        "tag": "62AB"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Identifier of a cryptographic mechanism",
-        "source" : "unknown",
-        "tag" : "62AC"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Identifier of a cryptographic mechanism",
+        "source": "unknown",
+        "tag": "62AC"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Wrapper",
-        "source" : "unknown",
-        "tag" : "63"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Wrapper",
+        "source": "unknown",
+        "tag": "63"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, File Management Data (FMD)",
-        "source" : "unknown",
-        "tag" : "64"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, File Management Data (FMD)",
+        "source": "unknown",
+        "tag": "64"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder related data",
-        "source" : "unknown",
-        "tag" : "65"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder related data",
+        "source": "unknown",
+        "tag": "65"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Card data",
-        "source" : "unknown",
-        "tag" : "66"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Card data",
+        "source": "unknown",
+        "tag": "66"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Authentication data",
-        "source" : "unknown",
-        "tag" : "67"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Authentication data",
+        "source": "unknown",
+        "tag": "67"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Special user requirements",
-        "source" : "unknown",
-        "tag" : "68"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Special user requirements",
+        "source": "unknown",
+        "tag": "68"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Login",
-        "source" : "unknown",
-        "tag" : "6A"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Login",
+        "source": "unknown",
+        "tag": "6A"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Qualifier",
-        "source" : "unknown",
-        "tag" : "6A80"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Qualifier",
+        "source": "unknown",
+        "tag": "6A80"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Telephone Number",
-        "source" : "unknown",
-        "tag" : "6A81"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Telephone Number",
+        "source": "unknown",
+        "tag": "6A81"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Text",
-        "source" : "unknown",
-        "tag" : "6A82"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Text",
+        "source": "unknown",
+        "tag": "6A82"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Delay indicators, for detecting an end of message",
-        "source" : "unknown",
-        "tag" : "6A83"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Delay indicators, for detecting an end of message",
+        "source": "unknown",
+        "tag": "6A83"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Delay indicators, for detecting an absence of response",
-        "source" : "unknown",
-        "tag" : "6A84"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Delay indicators, for detecting an absence of response",
+        "source": "unknown",
+        "tag": "6A84"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Qualified name",
-        "source" : "unknown",
-        "tag" : "6B"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Qualified name",
+        "source": "unknown",
+        "tag": "6B"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Qualified name",
-        "source" : "unknown",
-        "tag" : "6B06"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Qualified name",
+        "source": "unknown",
+        "tag": "6B06"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Name",
-        "source" : "unknown",
-        "tag" : "6B80"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Name",
+        "source": "unknown",
+        "tag": "6B80"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Name",
-        "source" : "unknown",
-        "tag" : "6BA0"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Name",
+        "source": "unknown",
+        "tag": "6BA0"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Cardholder image",
-        "source" : "unknown",
-        "tag" : "6C"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Cardholder image",
+        "source": "unknown",
+        "tag": "6C"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Application image",
-        "source" : "unknown",
-        "tag" : "6D"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Application image",
+        "source": "unknown",
+        "tag": "6D"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Application related data",
-        "source" : "unknown",
-        "tag" : "6E"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Application related data",
+        "source": "unknown",
+        "tag": "6E"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the FCI template according to ISO/IEC 7816-4",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "252",
-        "minLength" : "0",
-        "name" : "File Control Information (FCI) Template",
-        "source" : "card",
-        "tag" : "6F"
+      "info": {
+        "description": "Identifies the FCI template according to ISO/IEC 7816-4",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "252",
+        "minLength": "0",
+        "name": "File Control Information (FCI) Template",
+        "source": "card",
+        "tag": "6F"
       }
     },
     {
-      "info" : {
-        "description" : "Template containing the data objects returned by the Card in response to a READ RECORD command. Contains the contents of the record read. (Mandatory for SFIs 1-10. Response messages for SFIs 11-30 are outside the scope of EMV, but may use template '70')",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "255",
-        "minLength" : "0",
-        "name" : "READ RECORD Response Message Template",
-        "source" : "card",
-        "tag" : "70"
+      "info": {
+        "description": "Template containing the data objects returned by the Card in response to a READ RECORD command. Contains the contents of the record read. (Mandatory for SFIs 1-10. Response messages for SFIs 11-30 are outside the scope of EMV, but may use template '70')",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "255",
+        "minLength": "0",
+        "name": "READ RECORD Response Message Template",
+        "source": "card",
+        "tag": "70"
       }
     },
     {
-      "info" : {
-        "description" : "Contains proprietary issuer data for transmission to the ICC before the second GENERATE AC command",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Issuer Script Template 1",
-        "source" : "issuer",
-        "tag" : "71"
+      "info": {
+        "description": "Contains proprietary issuer data for transmission to the ICC before the second GENERATE AC command",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Issuer Script Template 1",
+        "source": "issuer",
+        "tag": "71"
       }
     },
     {
-      "info" : {
-        "description" : "Contains proprietary issuer data for transmission to the ICC after the second GENERATE AC command",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Issuer Script Template 2",
-        "source" : "issuer",
-        "tag" : "72"
+      "info": {
+        "description": "Contains proprietary issuer data for transmission to the ICC after the second GENERATE AC command",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Issuer Script Template 2",
+        "source": "issuer",
+        "tag": "72"
       }
     },
     {
-      "info" : {
-        "description" : "Issuer discretionary part of the directory according to ISO/IEC 7816-5",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "252",
-        "minLength" : "0",
-        "name" : "Directory Discretionary Template",
-        "source" : "card",
-        "tag" : "73"
+      "info": {
+        "description": "Issuer discretionary part of the directory according to ISO/IEC 7816-5",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "252",
+        "minLength": "0",
+        "name": "Directory Discretionary Template",
+        "source": "card",
+        "tag": "73"
       }
     },
     {
-      "info" : {
-        "description" : "Contains the data objects (with tags and lengths) returned by the ICC in response to a command",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Response Message Template Format 2",
-        "source" : "card",
-        "tag" : "77"
+      "info": {
+        "description": "Contains the data objects (with tags and lengths) returned by the ICC in response to a command",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Response Message Template Format 2",
+        "source": "card",
+        "tag": "77"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Compatible Tag Allocation Authority",
-        "source" : "unknown",
-        "tag" : "78"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Compatible Tag Allocation Authority",
+        "source": "unknown",
+        "tag": "78"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Coexistent Tag Allocation Authority",
-        "source" : "unknown",
-        "tag" : "79"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Coexistent Tag Allocation Authority",
+        "source": "unknown",
+        "tag": "79"
       }
     },
     {
-      "info" : {
-        "description" : "see 6.4",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Security Support (SS)",
-        "source" : "unknown",
-        "tag" : "7A"
+      "info": {
+        "description": "see 6.4",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Security Support (SS)",
+        "source": "unknown",
+        "tag": "7A"
       }
     },
     {
-      "info" : {
-        "description" : "see 6.5",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Security Environment (SE)",
-        "source" : "unknown",
-        "tag" : "7B"
+      "info": {
+        "description": "see 6.5",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Security Environment (SE)",
+        "source": "unknown",
+        "tag": "7B"
       }
     },
     {
-      "info" : {
-        "description" : "see 6",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Secure Messaging (SM)",
-        "source" : "unknown",
-        "tag" : "7D"
+      "info": {
+        "description": "see 6",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Secure Messaging (SM)",
+        "source": "unknown",
+        "tag": "7D"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Nesting Interindustry data objects",
-        "source" : "unknown",
-        "tag" : "7E"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Nesting Interindustry data objects",
+        "source": "unknown",
+        "tag": "7E"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Display control template",
-        "source" : "unknown",
-        "tag" : "7F20"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Display control template",
+        "source": "unknown",
+        "tag": "7F20"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Cardholder certificate",
-        "source" : "unknown",
-        "tag" : "7F21"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Cardholder certificate",
+        "source": "unknown",
+        "tag": "7F21"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Biometric data template",
-        "source" : "unknown",
-        "tag" : "7F2E"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Biometric data template",
+        "source": "unknown",
+        "tag": "7F2E"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Cardholder public key",
-        "source" : "unknown",
-        "tag" : "7F49"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Cardholder public key",
+        "source": "unknown",
+        "tag": "7F49"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Algorithm reference as used in control reference data objects for secure messaging",
-        "source" : "unknown",
-        "tag" : "7F4980"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Algorithm reference as used in control reference data objects for secure messaging",
+        "source": "unknown",
+        "tag": "7F4980"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "RSA Modulus (a number denoted as n coded on x bytes), or DSA First prime (a number denoted as p coded on y bytes), or ECDSA Prime (a number denoted as p coded on z bytes)",
-        "source" : "unknown",
-        "tag" : "7F4981"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "RSA Modulus (a number denoted as n coded on x bytes), or DSA First prime (a number denoted as p coded on y bytes), or ECDSA Prime (a number denoted as p coded on z bytes)",
+        "source": "unknown",
+        "tag": "7F4981"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "RSA Public exponent (a number denoted as v, e.g., 65537), or DSA Second prime (a number denoted as q dividing p-1, e.g., 20 bytes), or ECDSA First coefficient (a number denoted as a coded on z bytes)",
-        "source" : "unknown",
-        "tag" : "7F4982"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "RSA Public exponent (a number denoted as v, e.g., 65537), or DSA Second prime (a number denoted as q dividing p-1, e.g., 20 bytes), or ECDSA First coefficient (a number denoted as a coded on z bytes)",
+        "source": "unknown",
+        "tag": "7F4982"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "DSA Basis (a number denoted as g of order q coded on y bytes), or ECDSA Second coefficient (a number denoted as b coded on z bytes)",
-        "source" : "unknown",
-        "tag" : "7F4983"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "DSA Basis (a number denoted as g of order q coded on y bytes), or ECDSA Second coefficient (a number denoted as b coded on z bytes)",
+        "source": "unknown",
+        "tag": "7F4983"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "DSA Public key (a number denoted as y equal to g to the power x mod p where x is the private key coded on y bytes), or ECDSA Generator (a point denoted as PB on the curve, coded on 2z bytes)",
-        "source" : "unknown",
-        "tag" : "7F4984"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "DSA Public key (a number denoted as y equal to g to the power x mod p where x is the private key coded on y bytes), or ECDSA Generator (a point denoted as PB on the curve, coded on 2z bytes)",
+        "source": "unknown",
+        "tag": "7F4984"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "ECDSA Order (a prime number denoted as q, order of the generator PB, coded on z bytes)",
-        "source" : "unknown",
-        "tag" : "7F4985"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "ECDSA Order (a prime number denoted as q, order of the generator PB, coded on z bytes)",
+        "source": "unknown",
+        "tag": "7F4985"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "ECDSA Public key (a point denoted as PP on the curve, equal to x times PB where x is the private key, coded on 2z bytes)",
-        "source" : "unknown",
-        "tag" : "7F4986"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "ECDSA Public key (a point denoted as PP on the curve, equal to x times PB where x is the private key, coded on 2z bytes)",
+        "source": "unknown",
+        "tag": "7F4986"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Certificate Holder Authorization",
-        "source" : "unknown",
-        "tag" : "7F4C"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Certificate Holder Authorization",
+        "source": "unknown",
+        "tag": "7F4C"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Certificate Body",
-        "source" : "unknown",
-        "tag" : "7F4E"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Certificate Body",
+        "source": "unknown",
+        "tag": "7F4E"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Template, Biometric information",
-        "source" : "unknown",
-        "tag" : "7F60"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Template, Biometric information",
+        "source": "unknown",
+        "tag": "7F60"
       }
     },
     {
-      "info" : {
-        "description" : "Contains the data objects (without tags and lengths) returned by the ICC in response to a command",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Response Message Template Format 1",
-        "source" : "card",
-        "tag" : "80"
+      "info": {
+        "description": "Contains the data objects (without tags and lengths) returned by the ICC in response to a command",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Response Message Template Format 1",
+        "source": "card",
+        "tag": "80"
       }
     },
     {
-      "info" : {
-        "description" : "Authorised amount of the transaction (excluding adjustments)",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Amount, Authorised (Binary)",
-        "source" : "terminal",
-        "tag" : "81"
+      "info": {
+        "description": "Authorised amount of the transaction (excluding adjustments)",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Amount, Authorised (Binary)",
+        "source": "terminal",
+        "tag": "81"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the capabilities of the card to support specific functions in the application.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Application Interchange Profile (AIP)",
-        "source" : "card",
-        "tag" : "82"
+      "info": {
+        "description": "Indicates the capabilities of the card to support specific functions in the application.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Application Interchange Profile (AIP)",
+        "source": "card",
+        "tag": "82"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the data field of a command message",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Command Template",
-        "source" : "terminal",
-        "tag" : "83"
+      "info": {
+        "description": "Identifies the data field of a command message",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Command Template",
+        "source": "terminal",
+        "tag": "83"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the name of the DF as described in ISO/IEC 7816-4",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "16",
-        "minLength" : "5",
-        "name" : "Dedicated File (DF) Name",
-        "source" : "card",
-        "tag" : "84"
+      "info": {
+        "description": "Identifies the name of the DF as described in ISO/IEC 7816-4",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "16",
+        "minLength": "5",
+        "name": "Dedicated File (DF) Name",
+        "source": "card",
+        "tag": "84"
       }
     },
     {
-      "info" : {
-        "description" : "Contains a command for transmission to the ICC",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. up to 125",
-        "minLength" : "var. up to 125",
-        "name" : "Issuer Script Command",
-        "source" : "issuer",
-        "tag" : "86"
+      "info": {
+        "description": "Contains a command for transmission to the ICC",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. up to 125",
+        "minLength": "var. up to 125",
+        "name": "Issuer Script Command",
+        "source": "issuer",
+        "tag": "86"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the priority of a given application or group of applications in a directory",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Application Priority Indicator",
-        "source" : "card",
-        "tag" : "87"
+      "info": {
+        "description": "Indicates the priority of a given application or group of applications in a directory",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Application Priority Indicator",
+        "source": "card",
+        "tag": "87"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the AEF referenced in commands related to a given ADF or DDF. It is a binary data object having a value in the range 1 to 30 and with the three high order bits set to zero.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Short File Identifier (SFI)",
-        "source" : "card",
-        "tag" : "88"
+      "info": {
+        "description": "Identifies the AEF referenced in commands related to a given ADF or DDF. It is a binary data object having a value in the range 1 to 30 and with the three high order bits set to zero.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Short File Identifier (SFI)",
+        "source": "card",
+        "tag": "88"
       }
     },
     {
-      "info" : {
-        "description" : "Nonzero value generated by the issuer for an approved transaction.",
-        "format" : "ans 6 (special characters limited to spaces)",
-        "kernel" : "general",
-        "maxLength" : "6",
-        "minLength" : "6",
-        "name" : "Authorisation Code",
-        "source" : "issuer",
-        "tag" : "89"
+      "info": {
+        "description": "Nonzero value generated by the issuer for an approved transaction.",
+        "format": "ans 6 (special characters limited to spaces)",
+        "kernel": "general",
+        "maxLength": "6",
+        "minLength": "6",
+        "name": "Authorisation Code",
+        "source": "issuer",
+        "tag": "89"
       }
     },
     {
-      "info" : {
-        "description" : "Data element generated by the Issuer Host System or the Reader indicating the disposition of the transaction.",
-        "format" : "an 2",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Authorisation Response Code (ARC)",
-        "source" : "unknown",
-        "tag" : "8A"
+      "info": {
+        "description": "Data element generated by the Issuer Host System or the Reader indicating the disposition of the transaction.",
+        "format": "an 2",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Authorisation Response Code (ARC)",
+        "source": "unknown",
+        "tag": "8A"
       }
     },
     {
-      "info" : {
-        "description" : "List of data objects (tag and length) to be passed to the ICC in the first GENERATE AC command",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. up to 252",
-        "minLength" : "var. up to 252",
-        "name" : "Card Risk Management Data Object List 1 (CDOL1)",
-        "source" : "card",
-        "tag" : "8C"
+      "info": {
+        "description": "List of data objects (tag and length) to be passed to the ICC in the first GENERATE AC command",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. up to 252",
+        "minLength": "var. up to 252",
+        "name": "Card Risk Management Data Object List 1 (CDOL1)",
+        "source": "card",
+        "tag": "8C"
       }
     },
     {
-      "info" : {
-        "description" : "List of data objects (tag and length) to be passed to the ICC in the second GENERATE AC command",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. up to 252",
-        "minLength" : "var. up to 252",
-        "name" : "Card Risk Management Data Object List 2 (CDOL2)",
-        "source" : "card",
-        "tag" : "8D"
+      "info": {
+        "description": "List of data objects (tag and length) to be passed to the ICC in the second GENERATE AC command",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. up to 252",
+        "minLength": "var. up to 252",
+        "name": "Card Risk Management Data Object List 2 (CDOL2)",
+        "source": "card",
+        "tag": "8D"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies a prioritised list of methods of verification of the cardholder supported by the card application.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. up to 252",
-        "minLength" : "var. up to 252",
-        "name" : "Cardholder Verification Method (CVM) List",
-        "source" : "card",
-        "tag" : "8E"
+      "info": {
+        "description": "Identifies a prioritised list of methods of verification of the cardholder supported by the card application.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. up to 252",
+        "minLength": "var. up to 252",
+        "name": "Cardholder Verification Method (CVM) List",
+        "source": "card",
+        "tag": "8E"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the Certificate Authority's public key in conjunction with the RID for use in offline data authentication.",
-        "format" : "binary 8",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Certification Authority Public Key Index (PKI)",
-        "source" : "card",
-        "tag" : "8F"
+      "info": {
+        "description": "Identifies the Certificate Authority's public key in conjunction with the RID for use in offline data authentication.",
+        "format": "binary 8",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Certification Authority Public Key Index (PKI)",
+        "source": "card",
+        "tag": "8F"
       }
     },
     {
-      "info" : {
-        "description" : "Issuer's public key certified by a certificate authority for use in offline data authentication.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. (NCA)",
-        "minLength" : "var. (NCA)",
-        "name" : "Issuer Public Key Certificate",
-        "source" : "card",
-        "tag" : "90"
+      "info": {
+        "description": "Issuer's public key certified by a certificate authority for use in offline data authentication.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. (NCA)",
+        "minLength": "var. (NCA)",
+        "name": "Issuer Public Key Certificate",
+        "source": "card",
+        "tag": "90"
       }
     },
     {
-      "info" : {
-        "description" : "Issuer data transmitted to card for online Issuer authentication.",
-        "format" : "binary 64-128",
-        "kernel" : "general",
-        "maxLength" : "var. up to 16",
-        "minLength" : "var. up to 16",
-        "name" : "Issuer Authentication Data",
-        "source" : "issuer",
-        "tag" : "91"
+      "info": {
+        "description": "Issuer data transmitted to card for online Issuer authentication.",
+        "format": "binary 64-128",
+        "kernel": "general",
+        "maxLength": "var. up to 16",
+        "minLength": "var. up to 16",
+        "name": "Issuer Authentication Data",
+        "source": "issuer",
+        "tag": "91"
       }
     },
     {
-      "info" : {
-        "description" : "Digital signature on critical application parameters that is used in static data authentication (SDA).",
-        "format" : "binary 512-1984",
-        "kernel" : "general",
-        "maxLength" : "248",
-        "minLength" : "64",
-        "name" : "Signed Static Application Data (SAD)",
-        "source" : "card",
-        "tag" : "93"
+      "info": {
+        "description": "Digital signature on critical application parameters that is used in static data authentication (SDA).",
+        "format": "binary 512-1984",
+        "kernel": "general",
+        "maxLength": "248",
+        "minLength": "64",
+        "name": "Signed Static Application Data (SAD)",
+        "source": "card",
+        "tag": "93"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the location (SFI, range of records) of the AEFs related to a given application.",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "var. up to 252",
-        "minLength" : "var. up to 252",
-        "name" : "Application File Locator (AFL)",
-        "source" : "card",
-        "tag" : "94"
+      "info": {
+        "description": "Indicates the location (SFI, range of records) of the AEFs related to a given application.",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "var. up to 252",
+        "minLength": "var. up to 252",
+        "name": "Application File Locator (AFL)",
+        "source": "card",
+        "tag": "94"
       }
     },
     {
-      "info" : {
-        "description" : "Status of the different functions as seen from the terminal.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "5",
-        "minLength" : "5",
-        "name" : "Terminal Verification Results (TVR)",
-        "source" : "terminal",
-        "tag" : "95"
+      "info": {
+        "description": "Status of the different functions as seen from the terminal.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "5",
+        "minLength": "5",
+        "name": "Terminal Verification Results (TVR)",
+        "source": "terminal",
+        "tag": "95"
       }
     },
     {
-      "info" : {
-        "description" : "List of data objects (tag and length) to be used by the terminal in generating the TC Hash Value",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "252",
-        "minLength" : "0",
-        "name" : "Transaction Certificate Data Object List (TDOL)",
-        "source" : "card",
-        "tag" : "97"
+      "info": {
+        "description": "List of data objects (tag and length) to be used by the terminal in generating the TC Hash Value",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "252",
+        "minLength": "0",
+        "name": "Transaction Certificate Data Object List (TDOL)",
+        "source": "card",
+        "tag": "97"
       }
     },
     {
-      "info" : {
-        "description" : "Result of a hash function specified in Book 2, Annex B3.1",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "20",
-        "minLength" : "20",
-        "name" : "Transaction Certificate (TC) Hash Value",
-        "source" : "terminal",
-        "tag" : "98"
+      "info": {
+        "description": "Result of a hash function specified in Book 2, Annex B3.1",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "20",
+        "minLength": "20",
+        "name": "Transaction Certificate (TC) Hash Value",
+        "source": "terminal",
+        "tag": "98"
       }
     },
     {
-      "info" : {
-        "description" : "Data entered by the cardholder for the purpose of the PIN verification",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Transaction Personal Identification Number (PIN) Data",
-        "source" : "terminal",
-        "tag" : "99"
+      "info": {
+        "description": "Data entered by the cardholder for the purpose of the PIN verification",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Transaction Personal Identification Number (PIN) Data",
+        "source": "terminal",
+        "tag": "99"
       }
     },
     {
-      "info" : {
-        "description" : "Local date that the transaction was authorised",
-        "format" : "n 6 (YYMMDD)",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Transaction Date",
-        "source" : "terminal",
-        "tag" : "9A"
+      "info": {
+        "description": "Local date that the transaction was authorised",
+        "format": "n 6 (YYMMDD)",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Transaction Date",
+        "source": "terminal",
+        "tag": "9A"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the functions performed in a transaction",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Transaction Status Information (TSI)",
-        "source" : "terminal",
-        "tag" : "9B"
+      "info": {
+        "description": "Indicates the functions performed in a transaction",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Transaction Status Information (TSI)",
+        "source": "terminal",
+        "tag": "9B"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the type of financial transaction, represented by the first two digits of the ISO 8583:1987 Processing Code. The actual values to be used for the Transaction Type data element are defined by the relevant payment system",
-        "format" : "n 2",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Transaction Type",
-        "source" : "terminal",
-        "tag" : "9C"
+      "info": {
+        "description": "Indicates the type of financial transaction, represented by the first two digits of the ISO 8583:1987 Processing Code. The actual values to be used for the Transaction Type data element are defined by the relevant payment system",
+        "format": "n 2",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Transaction Type",
+        "source": "terminal",
+        "tag": "9C"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the name of a DF associated with a directory",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "16",
-        "minLength" : "5",
-        "name" : "Directory Definition File (DDF) Name",
-        "source" : "card",
-        "tag" : "9D"
+      "info": {
+        "description": "Identifies the name of a DF associated with a directory",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "16",
+        "minLength": "5",
+        "name": "Directory Definition File (DDF) Name",
+        "source": "card",
+        "tag": "9D"
       }
     },
     {
-      "info" : {
-        "description" : "Uniquely identifies the acquirer within each payment system",
-        "format" : "n 6-11",
-        "kernel" : "general",
-        "maxLength" : "11",
-        "minLength" : "6",
-        "name" : "Acquirer Identifier",
-        "source" : "terminal",
-        "tag" : "9F01"
+      "info": {
+        "description": "Uniquely identifies the acquirer within each payment system",
+        "format": "n 6-11",
+        "kernel": "general",
+        "maxLength": "11",
+        "minLength": "6",
+        "name": "Acquirer Identifier",
+        "source": "terminal",
+        "tag": "9F01"
       }
     },
     {
-      "info" : {
-        "description" : "",
-        "format" : "",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Acquirer Identifier",
-        "source" : "unknown",
-        "tag" : "9F01"
+      "info": {
+        "description": "",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Acquirer Identifier",
+        "source": "unknown",
+        "tag": "9F01"
       }
     },
     {
-      "info" : {
-        "description" : "Authorised amount of the transaction. Requested in CDOL1.",
-        "format" : "n 12",
-        "kernel" : "general",
-        "maxLength" : "6",
-        "minLength" : "6",
-        "name" : "Amount, Authorised (Numeric)",
-        "source" : "terminal",
-        "tag" : "9F02"
+      "info": {
+        "description": "Authorised amount of the transaction. Requested in CDOL1.",
+        "format": "n 12",
+        "kernel": "general",
+        "maxLength": "6",
+        "minLength": "6",
+        "name": "Amount, Authorised (Numeric)",
+        "source": "terminal",
+        "tag": "9F02"
       }
     },
     {
-      "info" : {
-        "description" : "Secondary amount associated with the transaction representing a cashback amount. Requested in CDOL1.",
-        "format" : "n 12",
-        "kernel" : "general",
-        "maxLength" : "6",
-        "minLength" : "6",
-        "name" : "Amount, Other (Numeric)",
-        "source" : "terminal",
-        "tag" : "9F03"
+      "info": {
+        "description": "Secondary amount associated with the transaction representing a cashback amount. Requested in CDOL1.",
+        "format": "n 12",
+        "kernel": "general",
+        "maxLength": "6",
+        "minLength": "6",
+        "name": "Amount, Other (Numeric)",
+        "source": "terminal",
+        "tag": "9F03"
       }
     },
     {
-      "info" : {
-        "description" : "Secondary amount associated with the transaction representing a cashback amount",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Amount, Other (Binary)",
-        "source" : "terminal",
-        "tag" : "9F04"
+      "info": {
+        "description": "Secondary amount associated with the transaction representing a cashback amount",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Amount, Other (Binary)",
+        "source": "terminal",
+        "tag": "9F04"
       }
     },
     {
-      "info" : {
-        "description" : "Issuer or payment system specified data relating to the application",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "32",
-        "minLength" : "1",
-        "name" : "Application Discretionary Data",
-        "source" : "card",
-        "tag" : "9F05"
+      "info": {
+        "description": "Issuer or payment system specified data relating to the application",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "32",
+        "minLength": "1",
+        "name": "Application Discretionary Data",
+        "source": "card",
+        "tag": "9F05"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the application as described in ISO/IEC 7816-5",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "16",
-        "minLength" : "5",
-        "name" : "Application Identifier (AID), Terminal",
-        "source" : "terminal",
-        "tag" : "9F06"
+      "info": {
+        "description": "Identifies the application as described in ISO/IEC 7816-5",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "16",
+        "minLength": "5",
+        "name": "Application Identifier (AID), Terminal",
+        "source": "terminal",
+        "tag": "9F06"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates issuer's specified restrictions on the geographic usage and services allowed for the application",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Application Usage Control (AUC)",
-        "source" : "card",
-        "tag" : "9F07"
+      "info": {
+        "description": "Indicates issuer's specified restrictions on the geographic usage and services allowed for the application",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Application Usage Control (AUC)",
+        "source": "card",
+        "tag": "9F07"
       }
     },
     {
-      "info" : {
-        "description" : "Version number assigned by the payment system for the application in the Card",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Application Version Number",
-        "source" : "card",
-        "tag" : "9F08"
+      "info": {
+        "description": "Version number assigned by the payment system for the application in the Card",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Application Version Number",
+        "source": "card",
+        "tag": "9F08"
       }
     },
     {
-      "info" : {
-        "description" : "Version number assigned by the payment system for the Kernel application",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Application Version Number",
-        "source" : "terminal",
-        "tag" : "9F09"
+      "info": {
+        "description": "Version number assigned by the payment system for the Kernel application",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Application Version Number",
+        "source": "terminal",
+        "tag": "9F09"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the whole cardholder name when greater than 26 characters using the same coding convention as in ISO 7813",
-        "format" : "ans 27-45",
-        "kernel" : "general",
-        "maxLength" : "45",
-        "minLength" : "27",
-        "name" : "Cardholder Name - Extended",
-        "source" : "card",
-        "tag" : "9F0B"
+      "info": {
+        "description": "Indicates the whole cardholder name when greater than 26 characters using the same coding convention as in ISO 7813",
+        "format": "ans 27-45",
+        "kernel": "general",
+        "maxLength": "45",
+        "minLength": "27",
+        "name": "Cardholder Name - Extended",
+        "source": "card",
+        "tag": "9F0B"
       }
     },
     {
-      "info" : {
-        "description" : "Specifies conditions that cause a transaction to be declined if it might have been approved online, but the Reader is unable to process the transaction online.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "5",
-        "minLength" : "5",
-        "name" : "Issuer Action Code - Default",
-        "source" : "card",
-        "tag" : "9F0D"
+      "info": {
+        "description": "Specifies conditions that cause a transaction to be declined if it might have been approved online, but the Reader is unable to process the transaction online.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "5",
+        "minLength": "5",
+        "name": "Issuer Action Code - Default",
+        "source": "card",
+        "tag": "9F0D"
       }
     },
     {
-      "info" : {
-        "description" : "Specifies the issuer's conditions that cause the denial of a transaction without attempt to go online",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "5",
-        "minLength" : "5",
-        "name" : "Issuer Action Code - Denial",
-        "source" : "card",
-        "tag" : "9F0E"
+      "info": {
+        "description": "Specifies the issuer's conditions that cause the denial of a transaction without attempt to go online",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "5",
+        "minLength": "5",
+        "name": "Issuer Action Code - Denial",
+        "source": "card",
+        "tag": "9F0E"
       }
     },
     {
-      "info" : {
-        "description" : "Specifies the issuer's conditions that cause a transaction to be transmitted online",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "5",
-        "minLength" : "5",
-        "name" : "Issuer Action Code - Online",
-        "source" : "card",
-        "tag" : "9F0F"
+      "info": {
+        "description": "Specifies the issuer's conditions that cause a transaction to be transmitted online",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "5",
+        "minLength": "5",
+        "name": "Issuer Action Code - Online",
+        "source": "card",
+        "tag": "9F0F"
       }
     },
     {
-      "info" : {
-        "description" : "Contains proprietary application data for transmission to the Issuer in an online transaction.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. up to 32",
-        "minLength" : "var. up to 32",
-        "name" : "Issuer Application Data (IAD)",
-        "source" : "card",
-        "tag" : "9F10"
+      "info": {
+        "description": "Contains proprietary application data for transmission to the Issuer in an online transaction.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. up to 32",
+        "minLength": "var. up to 32",
+        "name": "Issuer Application Data (IAD)",
+        "source": "card",
+        "tag": "9F10"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the code table according to ISO/IEC 8859 for displaying the Application Preferred Name",
-        "format" : "n 2",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Issuer Code Table Index",
-        "source" : "card",
-        "tag" : "9F11"
+      "info": {
+        "description": "Indicates the code table according to ISO/IEC 8859 for displaying the Application Preferred Name",
+        "format": "n 2",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Issuer Code Table Index",
+        "source": "card",
+        "tag": "9F11"
       }
     },
     {
-      "info" : {
-        "description" : "Preferred mnemonic associated with the AID",
-        "format" : "ans 1-16",
-        "kernel" : "general",
-        "maxLength" : "16",
-        "minLength" : "1",
-        "name" : "Application Preferred Name",
-        "source" : "card",
-        "tag" : "9F12"
+      "info": {
+        "description": "Preferred mnemonic associated with the AID",
+        "format": "ans 1-16",
+        "kernel": "general",
+        "maxLength": "16",
+        "minLength": "1",
+        "name": "Application Preferred Name",
+        "source": "card",
+        "tag": "9F12"
       }
     },
     {
-      "info" : {
-        "description" : "ATC value of the last transaction that went online",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Last Online Application Transaction Counter (ATC) Register",
-        "source" : "card",
-        "tag" : "9F13"
+      "info": {
+        "description": "ATC value of the last transaction that went online",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Last Online Application Transaction Counter (ATC) Register",
+        "source": "card",
+        "tag": "9F13"
       }
     },
     {
-      "info" : {
-        "description" : "Issuer-specified preference for the maximum number of consecutive offline transactions for this ICC application allowed in a terminal with online capability",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Lower Consecutive Offline Limit (LCOL)",
-        "source" : "card",
-        "tag" : "9F14"
+      "info": {
+        "description": "Issuer-specified preference for the maximum number of consecutive offline transactions for this ICC application allowed in a terminal with online capability",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Lower Consecutive Offline Limit (LCOL)",
+        "source": "card",
+        "tag": "9F14"
       }
     },
     {
-      "info" : {
-        "description" : "Classifies the type of business being done by the merchant, represented according to ISO 8583:1993 for Card Acceptor Business Code",
-        "format" : "n 4",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Merchant Category Code (MCC)",
-        "source" : "terminal",
-        "tag" : "9F15"
+      "info": {
+        "description": "Classifies the type of business being done by the merchant, represented according to ISO 8583:1993 for Card Acceptor Business Code",
+        "format": "n 4",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Merchant Category Code (MCC)",
+        "source": "terminal",
+        "tag": "9F15"
       }
     },
     {
-      "info" : {
-        "description" : "When concatenated with the Acquirer Identifier, uniquely identifies a given merchant",
-        "format" : "ans 15",
-        "kernel" : "general",
-        "maxLength" : "15",
-        "minLength" : "15",
-        "name" : "Merchant Identifier",
-        "source" : "terminal",
-        "tag" : "9F16"
+      "info": {
+        "description": "When concatenated with the Acquirer Identifier, uniquely identifies a given merchant",
+        "format": "ans 15",
+        "kernel": "general",
+        "maxLength": "15",
+        "minLength": "15",
+        "name": "Merchant Identifier",
+        "source": "terminal",
+        "tag": "9F16"
       }
     },
     {
-      "info" : {
-        "description" : "Number of PIN tries remaining",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Personal Identification Number (PIN) Try Counter",
-        "source" : "card",
-        "tag" : "9F17"
+      "info": {
+        "description": "Number of PIN tries remaining",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Personal Identification Number (PIN) Try Counter",
+        "source": "card",
+        "tag": "9F17"
       }
     },
     {
-      "info" : {
-        "description" : "Identification of the Issuer Script.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Issuer Script Identifier",
-        "source" : "issuer",
-        "tag" : "9F18"
+      "info": {
+        "description": "Identification of the Issuer Script.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Issuer Script Identifier",
+        "source": "issuer",
+        "tag": "9F18"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the country of the terminal, represented according to ISO 3166. Requested in CDOL1.",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Terminal Country Code",
-        "source" : "terminal",
-        "tag" : "9F1A"
+      "info": {
+        "description": "Indicates the country of the terminal, represented according to ISO 3166. Requested in CDOL1.",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Terminal Country Code",
+        "source": "terminal",
+        "tag": "9F1A"
       }
     },
     {
-      "info" : {
-        "description" : "Indicates the floor limit in the terminal in conjunction with the AID",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Terminal Floor Limit",
-        "source" : "terminal",
-        "tag" : "9F1B"
+      "info": {
+        "description": "Indicates the floor limit in the terminal in conjunction with the AID",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Terminal Floor Limit",
+        "source": "terminal",
+        "tag": "9F1B"
       }
     },
     {
-      "info" : {
-        "description" : "Designates the unique location of a Terminal at a merchant",
-        "format" : "an 8",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "8",
-        "name" : "Terminal Identification",
-        "source" : "terminal",
-        "tag" : "9F1C"
+      "info": {
+        "description": "Designates the unique location of a Terminal at a merchant",
+        "format": "an 8",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "8",
+        "name": "Terminal Identification",
+        "source": "terminal",
+        "tag": "9F1C"
       }
     },
     {
-      "info" : {
-        "description" : "Application-specific value used by the card for risk management purposes",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "1",
-        "name" : "Terminal Risk Management Data",
-        "source" : "terminal",
-        "tag" : "9F1D"
+      "info": {
+        "description": "Application-specific value used by the card for risk management purposes",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "1",
+        "name": "Terminal Risk Management Data",
+        "source": "terminal",
+        "tag": "9F1D"
       }
     },
     {
-      "info" : {
-        "description" : "Unique and permanent serial number assigned to the IFD by the manufacturer",
-        "format" : "an 8",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "8",
-        "name" : "Interface Device (IFD) Serial Number",
-        "source" : "terminal",
-        "tag" : "9F1E"
+      "info": {
+        "description": "Unique and permanent serial number assigned to the IFD by the manufacturer",
+        "format": "an 8",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "8",
+        "name": "Interface Device (IFD) Serial Number",
+        "source": "terminal",
+        "tag": "9F1E"
       }
     },
     {
-      "info" : {
-        "description" : "Discretionary part of track 1 according to ISO/IEC 7813",
-        "format" : "ans",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Track 1 Discretionary Data",
-        "source" : "card",
-        "tag" : "9F1F"
+      "info": {
+        "description": "Discretionary part of track 1 according to ISO/IEC 7813",
+        "format": "ans",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Track 1 Discretionary Data",
+        "source": "card",
+        "tag": "9F1F"
       }
     },
     {
-      "info" : {
-        "description" : "Discretionary part of track 2 according to ISO/IEC 7813",
-        "format" : "cn",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Track 2 Discretionary Data",
-        "source" : "card",
-        "tag" : "9F20"
+      "info": {
+        "description": "Discretionary part of track 2 according to ISO/IEC 7813",
+        "format": "cn",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Track 2 Discretionary Data",
+        "source": "card",
+        "tag": "9F20"
       }
     },
     {
-      "info" : {
-        "description" : "Local time at which the transaction was authorised.",
-        "format" : "n 6 (HHMMSS)",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Transaction Time",
-        "source" : "unknown",
-        "tag" : "9F21"
+      "info": {
+        "description": "Local time at which the transaction was authorised.",
+        "format": "n 6 (HHMMSS)",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Transaction Time",
+        "source": "unknown",
+        "tag": "9F21"
       }
     },
     {
-      "info" : {
-        "description" : "Identifies the Certificate Authority's public key in conjunction with the RID for use in offline static and dynamic data authentication.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Certification Authority Public Key Index (PKI)",
-        "source" : "terminal",
-        "tag" : "9F22"
+      "info": {
+        "description": "Identifies the Certificate Authority's public key in conjunction with the RID for use in offline static and dynamic data authentication.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Certification Authority Public Key Index (PKI)",
+        "source": "terminal",
+        "tag": "9F22"
       }
     },
     {
-      "info" : {
-        "description" : "Issuer-specified preference for the maximum number of consecutive offline transactions for this ICC application allowed in a terminal without online capability",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Upper Consecutive Offline Limit (UCOL)",
-        "source" : "card",
-        "tag" : "9F23"
+      "info": {
+        "description": "Issuer-specified preference for the maximum number of consecutive offline transactions for this ICC application allowed in a terminal without online capability",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Upper Consecutive Offline Limit (UCOL)",
+        "source": "card",
+        "tag": "9F23"
       }
     },
     {
-      "info" : {
-        "description" : "Payment Account Reference: EMV contact and contactless chip specifications products may support PAR by assigning a unique EMV tag (9F24) to represent PAR. PAR SHALL be required personalisation data for payment tokens but will be optional for terminals to read and transmit.",
-        "format" : "ans 24",
-        "kernel" : "general",
-        "maxLength" : "24",
-        "minLength" : "24",
-        "name" : "Payment Account Reference (PAR) generated or linked directly to the provision request in the token vault",
-        "source" : "card",
-        "tag" : "9F24"
+      "info": {
+        "description": "Payment Account Reference: EMV contact and contactless chip specifications products may support PAR by assigning a unique EMV tag (9F24) to represent PAR. PAR SHALL be required personalisation data for payment tokens but will be optional for terminals to read and transmit.",
+        "format": "ans 24",
+        "kernel": "general",
+        "maxLength": "24",
+        "minLength": "24",
+        "name": "Payment Account Reference (PAR) generated or linked directly to the provision request in the token vault",
+        "source": "card",
+        "tag": "9F24"
       }
     },
     {
-      "info" : {
-        "description" : "Cryptogram returned by the card in response of the GENERATE AC command.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "8",
-        "name" : "Application Cryptogram (AC)",
-        "source" : "card",
-        "tag" : "9F26"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the type of cryptogram and the actions to be performed by the terminal after the GENERATE AC command.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Cryptogram Information Data (CID)",
-        "source" : "card",
-        "tag" : "9F27"
-      }
-    },
-    {
-      "info" : {
-        "description" : "The value to be appended to the ADF Name in the data field of the SELECT command, if the Extended Selection Support flag is present and set to 1. Content is payment system proprietary.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Extended Selection",
-        "source" : "card",
-        "tag" : "9F29"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the card's preference for the kernel on which the contactless application can be processed.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Kernel Identifier",
-        "source" : "card",
-        "tag" : "9F2A"
-      }
-    },
-    {
-      "info" : {
-        "description" : "ICC PIN Encipherment Public Key certified by the issuer",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. (NI)",
-        "minLength" : "var. (NI)",
-        "name" : "Integrated Circuit Card (ICC) PIN Encipherment Public Key Certificate",
-        "source" : "card",
-        "tag" : "9F2D"
-      }
-    },
-    {
-      "info" : {
-        "description" : "ICC PIN Encipherment Public Key Exponent used for PIN encipherment",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1 or 3",
-        "minLength" : "1 or 3",
-        "name" : "Integrated Circuit Card (ICC) PIN Encipherment Public Key Exponent",
-        "source" : "card",
-        "tag" : "9F2E"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Remaining digits of the ICC PIN Encipherment Public Key Modulus",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. (NPE - NI + 42)",
-        "minLength" : "var. (NPE - NI + 42)",
-        "name" : "Integrated Circuit Card (ICC) PIN Encipherment Public Key Remainder",
-        "source" : "card",
-        "tag" : "9F2F"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Issuer public key exponent used for the verification of the Signed Static Application Data and the ICC Public Key Certificate",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "1",
-        "name" : "Issuer Public Key Exponent",
-        "source" : "card",
-        "tag" : "9F32"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the card data input, CVM, and security capabilities of the Terminal and Reader. The CVM capability (Byte 2) is instantiated with values depending on the transaction amount. The Terminal Capabilities is coded according to Annex A.2 of [EMV Book 4].",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Terminal Capabilities",
-        "source" : "terminal",
-        "tag" : "9F33"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the results of the last CVM performed",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Cardholder Verification Method (CVM) Results",
-        "source" : "terminal",
-        "tag" : "9F34"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the environment of the terminal, its communications capability, and its operational control",
-        "format" : "n 2",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Terminal Type",
-        "source" : "unknown",
-        "tag" : "9F35"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Counter maintained by the application in the card (incrementing the ATC is managed by the card).",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Application Transaction Counter (ATC)",
-        "source" : "card",
-        "tag" : "9F36"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Value to provide variability and uniqueness to the generation of the application cryptogram. Requested in CDOL1.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Unpredictable Number (UN)",
-        "source" : "terminal",
-        "tag" : "9F37"
-      }
-    },
-    {
-      "info" : {
-        "description" : "List of terminal/reader-related data objects (tags and lengths) requested by the card to be transmitted in the GET PROCESSING OPTIONS command.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Processing Options Data Object List (PDOL)",
-        "source" : "card",
-        "tag" : "9F38"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the method by which the PAN was entered, according to the first two digits of the ISO 8583:1987 POS Entry Mode",
-        "format" : "n 2",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Point-of-Service (POS) Entry Mode",
-        "source" : "terminal",
-        "tag" : "9F39"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Authorised amount expressed in the reference currency",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Amount, Reference Currency (Binary)",
-        "source" : "terminal",
-        "tag" : "9F3A"
-      }
-    },
-    {
-      "info" : {
-        "description" : "1-4 currency codes used between the terminal and the ICC when the Transaction Currency Code is different from the Application Currency Code; each code is 3 digits according to ISO 4217",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "2",
-        "name" : "Currency Code, Application Reference",
-        "source" : "card",
-        "tag" : "9F3B"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Code defining the common currency used by the terminal in case the Transaction Currency Code is different from the Application Currency Code",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Currency Code, Transaction Reference",
-        "source" : "terminal",
-        "tag" : "9F3C"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the implied position of the decimal point from the right of the transaction amount, with the Transaction Reference Currency Code represented according to ISO 4217",
-        "format" : "n 1",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Currency Exponent, Transaction Reference",
-        "source" : "terminal",
-        "tag" : "9F3D"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the data input and output capabilities of the Terminal and Reader. The Additional Terminal Capabilities is coded according to Annex A.3 of [EMV Book 4].",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "5",
-        "minLength" : "5",
-        "name" : "Additional Terminal Capabilities (ATC)",
-        "source" : "terminal",
-        "tag" : "9F40"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Counter maintained by the terminal that is incremented by one for each transaction",
-        "format" : "n 4-8",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "2",
-        "name" : "Transaction Sequence Counter",
-        "source" : "terminal",
-        "tag" : "9F41"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the currency in which the account is managed according to ISO 4217",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Currency Code, Application",
-        "source" : "card",
-        "tag" : "9F42"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the implied position of the decimal point from the right of the amount, for each of the 1-4 reference currencies represented according to ISO 4217",
-        "format" : "n 1",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "1",
-        "name" : "Currency Exponent, Application Reference",
-        "source" : "card",
-        "tag" : "9F43"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the implied position of the decimal point from the right of the amount represented according to ISO 4217",
-        "format" : "n 1",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Currency Exponent, Application",
-        "source" : "card",
-        "tag" : "9F44"
-      }
-    },
-    {
-      "info" : {
-        "description" : "An issuer assigned value that is retained by the terminal during the verification process of the Signed Static Application Data",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Data Authentication Code",
-        "source" : "card",
-        "tag" : "9F45"
-      }
-    },
-    {
-      "info" : {
-        "description" : "ICC Public Key certified by the issuer",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. (NI)",
-        "minLength" : "var. (NI)",
-        "name" : "Integrated Circuit Card (ICC) Public Key Certificate",
-        "source" : "card",
-        "tag" : "9F46"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Exponent ICC Public Key Exponent used for the verification of the Signed Dynamic Application Data",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "3",
-        "minLength" : "1",
-        "name" : "Integrated Circuit Card (ICC) Public Key Exponent",
-        "source" : "card",
-        "tag" : "9F47"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Digits of the ICC Public Key Modulus which do not fit within the ICC Public Key Certificate.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. (NIC - NI + 42)",
-        "minLength" : "var. (NIC - NI + 42)",
-        "name" : "Integrated Circuit Card (ICC) Public Key Remainder",
-        "source" : "card",
-        "tag" : "9F48"
-      }
-    },
-    {
-      "info" : {
-        "description" : "List of data objects (tag and length) to be passed to the ICC in the INTERNAL AUTHENTICATE command",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "252",
-        "minLength" : "0",
-        "name" : "Dynamic Data Authentication Data Object List (DDOL)",
-        "source" : "card",
-        "tag" : "9F49"
-      }
-    },
-    {
-      "info" : {
-        "description" : "List of tags of primitive data objects defined in this specification whose value fields are to be included in the Signed Static or Dynamic Application Data",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Static Data Authentication Tag List (SDA)",
-        "source" : "card",
-        "tag" : "9F4A"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Digital signature on critical application parameters for DDA or CDA",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var. (NIC)",
-        "minLength" : "var. (NIC)",
-        "name" : "Signed Dynamic Application Data (SDAD)",
-        "source" : "card",
-        "tag" : "9F4B"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Time-variant number generated by the ICC, to be captured by the terminal",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "8",
-        "minLength" : "2",
-        "name" : "ICC Dynamic Number",
-        "source" : "card",
-        "tag" : "9F4C"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Provides the SFI of the Transaction Log file and its number of records",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Log Entry",
-        "source" : "card",
-        "tag" : "9F4D"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the name and location of the merchant",
-        "format" : "ans",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Merchant Name and Location",
-        "source" : "unknown",
-        "tag" : "9F4E"
-      }
-    },
-    {
-      "info" : {
-        "description" : "List (in tag and length format) of data objects representing the logged data elements that are passed to the terminal when a transaction log record is read",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Log Format",
-        "source" : "card",
-        "tag" : "9F4F"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Issuer Authentication Flags",
-        "source" : "card",
-        "tag" : "9F55"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Issuer Proprietary Bitmap",
-        "source" : "card",
-        "tag" : "9F56"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Issuer Country Code",
-        "source" : "card",
-        "tag" : "9F57"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Consecutive Transaction Counter Limit (CTCL)",
-        "source" : "card",
-        "tag" : "9F58"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Consecutive Transaction Counter Upper Limit (CTCUL)",
-        "source" : "card",
-        "tag" : "9F59"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Payment system proprietary data element identifying the Application Program ID of the card application. When personalised, the Application Program ID is returned in the FCI Issuer Discretionary Data of the SELECT response (Tag ‘BF0C'). EMV mode readers that support Dynamic Reader Limits (DRL) functionality examine the Application Program ID to determine the Reader Limit Set to apply.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "16",
-        "minLength" : "1",
-        "name" : "Application Program Identifier (Program ID)",
-        "source" : "card",
-        "tag" : "9F5A"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates the results of Issuer Script processing. When the reader/terminal transmits this data element to the acquirer, in this version of Kernel 3, it is acceptable that only byte 1 is transmitted, although it is preferable for all five bytes to be transmitted.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Issuer Script Results",
-        "source" : "terminal",
-        "tag" : "9F5B"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Consecutive Transaction International Upper Limit (CTIUL)",
-        "source" : "card",
-        "tag" : "9F5E"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Offline Counter Initial Value",
-        "source" : "card",
-        "tag" : "9F63"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "MSD Offset",
-        "source" : "card",
-        "tag" : "9F67"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "Card Additional Processes",
-        "source" : "card",
-        "tag" : "9F68"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "VLP Reset Threshold",
-        "source" : "card",
-        "tag" : "9F6D"
-      }
-    },
-    {
-      "info" : {
-        "description" : "The Third Party Data contains various information, possibly including information from a third party. If present in the Card, the Third Party Data must be returned in a file read using the READ RECORD command or in the File Control Information Template. 'Device Type' is present when the most significant bit of byte 1 of 'Unique Identifier' is set to 0b. In this case, the maximum length of 'Proprietary Data' is 26 bytes. Otherwise it is 28 bytes.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "32",
-        "minLength" : "5",
-        "name" : "Third Party Data",
-        "source" : "card",
-        "tag" : "9F6E"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Visa proprietary data element specifying the maximum number of the consecutive offline international (those not in the country of issue) transactions allowed for that card application before a transaction goes online.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Consecutive Transaction Limit (International—Country)",
-        "source" : "card",
-        "tag" : "9F72"
-      }
-    },
-    {
-      "info" : {
-        "description" : "A decimal value used in a conversion algorithm to convert the Secondary Application Currency Code to the card's domestic (Application Currency Code). Issuer Script may be used to modify this data element.",
-        "format" : "n 8",
-        "kernel" : "general",
-        "maxLength" : "4",
-        "minLength" : "4",
-        "name" : "Currency Conversion Parameters",
-        "source" : "card",
-        "tag" : "9F73"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Visa proprietary data element specifying the upper limit of the total amount of offline domestic transactions in the designated currency (Application Currency Code) and a secondary currency (Secondary Application Currency Code) allowed for that card application before a transaction is forced to go online. This limit is in the designated currency.",
-        "format" : "n 12",
-        "kernel" : "general",
-        "maxLength" : "6",
-        "minLength" : "6",
-        "name" : "Cumulative Total Transaction Amount Limit-Dual Currency",
-        "source" : "card",
-        "tag" : "9F75"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Indicates a secondary currency to be converted to the designated currency in which the account is managed (Application Currency Code) according to ISO 4217.",
-        "format" : "n 3",
-        "kernel" : "general",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Secondary Application Currency Code",
-        "source" : "card",
-        "tag" : "9F76"
-      }
-    },
-    {
-      "info" : {
-        "description" : "A Visa proprietary data element, Issuer Limit for VLP available funds, is used to reset VLP Available Funds after an online approved transaction.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "VLP Funds Limit",
-        "source" : "card",
-        "tag" : "9F77"
-      }
-    },
-    {
-      "info" : {
-        "description" : "A Visa proprietary data element indicating the maximum amount allowed for single VLP transaction",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "VLP Single Transaction Limit",
-        "source" : "card",
-        "tag" : "9F78"
-      }
-    },
-    {
-      "info" : {
-        "description" : "A counter that is decremented by the Amount Authorized when a VLP transaction is approved.",
-        "format" : "binary",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "VLP Available Funds",
-        "source" : "card",
-        "tag" : "9F79"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "H",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "VLP Terminal Transaction Limit",
-        "source" : "terminal",
-        "tag" : "9F7B"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "H",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "VISA Applet Data",
-        "source" : "card",
-        "tag" : "9F7D"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "H",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Application life cycle data (8 first bytes)",
-        "source" : "card",
-        "tag" : "9F7E"
-      }
-    },
-    {
-      "info" : {
-        "description" : "",
-        "format" : "H",
-        "kernel" : "general",
-        "maxLength" : "",
-        "minLength" : "",
-        "name" : "Card Production Life Cycle (CPLC) Data",
-        "source" : "card",
-        "tag" : "9F7F"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Identifies the data object proprietary to this specification in the FCI template according to ISO/IEC 7816-4",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "var.",
-        "minLength" : "var.",
-        "name" : "File Control Information (FCI) Proprietary Template",
-        "source" : "card",
-        "tag" : "A5"
-      }
-    },
-    {
-      "info" : {
-        "description" : "Issuer discretionary part of the File Control Information Proprietary Template.",
-        "format" : "variable",
-        "kernel" : "general",
-        "maxLength" : "222",
-        "minLength" : "0",
-        "name" : "File Control Information (FCI) Issuer Discretionary Data",
-        "source" : "card",
-        "tag" : "BF0C"
+      "info": {
+        "description": "Cryptogram returned by the card in response of the GENERATE AC command.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "8",
+        "name": "Application Cryptogram (AC)",
+        "source": "card",
+        "tag": "9F26"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the type of cryptogram and the actions to be performed by the terminal after the GENERATE AC command.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Cryptogram Information Data (CID)",
+        "source": "card",
+        "tag": "9F27"
+      }
+    },
+    {
+      "info": {
+        "description": "The value to be appended to the ADF Name in the data field of the SELECT command, if the Extended Selection Support flag is present and set to 1. Content is payment system proprietary.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Extended Selection",
+        "source": "card",
+        "tag": "9F29"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the card's preference for the kernel on which the contactless application can be processed.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Kernel Identifier",
+        "source": "card",
+        "tag": "9F2A"
+      }
+    },
+    {
+      "info": {
+        "description": "ICC PIN Encipherment Public Key certified by the issuer",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. (NI)",
+        "minLength": "var. (NI)",
+        "name": "Integrated Circuit Card (ICC) PIN Encipherment Public Key Certificate",
+        "source": "card",
+        "tag": "9F2D"
+      }
+    },
+    {
+      "info": {
+        "description": "ICC PIN Encipherment Public Key Exponent used for PIN encipherment",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1 or 3",
+        "minLength": "1 or 3",
+        "name": "Integrated Circuit Card (ICC) PIN Encipherment Public Key Exponent",
+        "source": "card",
+        "tag": "9F2E"
+      }
+    },
+    {
+      "info": {
+        "description": "Remaining digits of the ICC PIN Encipherment Public Key Modulus",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. (NPE - NI + 42)",
+        "minLength": "var. (NPE - NI + 42)",
+        "name": "Integrated Circuit Card (ICC) PIN Encipherment Public Key Remainder",
+        "source": "card",
+        "tag": "9F2F"
+      }
+    },
+    {
+      "info": {
+        "description": "Issuer public key exponent used for the verification of the Signed Static Application Data and the ICC Public Key Certificate",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "1",
+        "name": "Issuer Public Key Exponent",
+        "source": "card",
+        "tag": "9F32"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the card data input, CVM, and security capabilities of the Terminal and Reader. The CVM capability (Byte 2) is instantiated with values depending on the transaction amount. The Terminal Capabilities is coded according to Annex A.2 of [EMV Book 4].",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Terminal Capabilities",
+        "source": "terminal",
+        "tag": "9F33"
+      },
+      "bytes": [
+        {
+          "name": "Card Data Input Capability",
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Manual key entry supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Magnetic stripe supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "IC with contacts supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00011111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "name": "CVM Capability",
+          "groups": [
+            {
+              "name": "Plaintext PIN for ICC verification",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "Enciphered PIN for online verification",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "name": "Signature (paper)",
+              "pattern": "00100000",
+              "type": "bool"
+            },
+            {
+              "name": "Enciphered PIN for offline verification",
+              "pattern": "00010000",
+              "type": "bool"
+            },
+            {
+              "name": "No CVM Required",
+              "pattern": "00001000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "name": "Security Capability",
+          "groups": [
+            {
+              "name": "SDA",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "DDA",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "name": "Card capture",
+              "pattern": "00100000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "type": "RFU"
+            },
+            {
+              "name": "CDA",
+              "pattern": "00001000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "description": "Indicates the results of the last CVM performed",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Cardholder Verification Method (CVM) Results",
+        "source": "terminal",
+        "tag": "9F34"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the environment of the terminal, its communications capability, and its operational control",
+        "format": "n 2",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Terminal Type",
+        "source": "unknown",
+        "tag": "9F35"
+      }
+    },
+    {
+      "info": {
+        "description": "Counter maintained by the application in the card (incrementing the ATC is managed by the card).",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Application Transaction Counter (ATC)",
+        "source": "card",
+        "tag": "9F36"
+      }
+    },
+    {
+      "info": {
+        "description": "Value to provide variability and uniqueness to the generation of the application cryptogram. Requested in CDOL1.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Unpredictable Number (UN)",
+        "source": "terminal",
+        "tag": "9F37"
+      }
+    },
+    {
+      "info": {
+        "description": "List of terminal/reader-related data objects (tags and lengths) requested by the card to be transmitted in the GET PROCESSING OPTIONS command.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Processing Options Data Object List (PDOL)",
+        "source": "card",
+        "tag": "9F38"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the method by which the PAN was entered, according to the first two digits of the ISO 8583:1987 POS Entry Mode",
+        "format": "n 2",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Point-of-Service (POS) Entry Mode",
+        "source": "terminal",
+        "tag": "9F39"
+      }
+    },
+    {
+      "info": {
+        "description": "Authorised amount expressed in the reference currency",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Amount, Reference Currency (Binary)",
+        "source": "terminal",
+        "tag": "9F3A"
+      }
+    },
+    {
+      "info": {
+        "description": "1-4 currency codes used between the terminal and the ICC when the Transaction Currency Code is different from the Application Currency Code; each code is 3 digits according to ISO 4217",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "2",
+        "name": "Currency Code, Application Reference",
+        "source": "card",
+        "tag": "9F3B"
+      }
+    },
+    {
+      "info": {
+        "description": "Code defining the common currency used by the terminal in case the Transaction Currency Code is different from the Application Currency Code",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Currency Code, Transaction Reference",
+        "source": "terminal",
+        "tag": "9F3C"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the implied position of the decimal point from the right of the transaction amount, with the Transaction Reference Currency Code represented according to ISO 4217",
+        "format": "n 1",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Currency Exponent, Transaction Reference",
+        "source": "terminal",
+        "tag": "9F3D"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the data input and output capabilities of the Terminal and Reader. The Additional Terminal Capabilities is coded according to Annex A.3 of [EMV Book 4].",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "5",
+        "minLength": "5",
+        "name": "Additional Terminal Capabilities (ATC)",
+        "source": "terminal",
+        "tag": "9F40"
+      }
+    },
+    {
+      "info": {
+        "description": "Counter maintained by the terminal that is incremented by one for each transaction",
+        "format": "n 4-8",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "2",
+        "name": "Transaction Sequence Counter",
+        "source": "terminal",
+        "tag": "9F41"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the currency in which the account is managed according to ISO 4217",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Currency Code, Application",
+        "source": "card",
+        "tag": "9F42"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the implied position of the decimal point from the right of the amount, for each of the 1-4 reference currencies represented according to ISO 4217",
+        "format": "n 1",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "1",
+        "name": "Currency Exponent, Application Reference",
+        "source": "card",
+        "tag": "9F43"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the implied position of the decimal point from the right of the amount represented according to ISO 4217",
+        "format": "n 1",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Currency Exponent, Application",
+        "source": "card",
+        "tag": "9F44"
+      }
+    },
+    {
+      "info": {
+        "description": "An issuer assigned value that is retained by the terminal during the verification process of the Signed Static Application Data",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Data Authentication Code",
+        "source": "card",
+        "tag": "9F45"
+      }
+    },
+    {
+      "info": {
+        "description": "ICC Public Key certified by the issuer",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. (NI)",
+        "minLength": "var. (NI)",
+        "name": "Integrated Circuit Card (ICC) Public Key Certificate",
+        "source": "card",
+        "tag": "9F46"
+      }
+    },
+    {
+      "info": {
+        "description": "Exponent ICC Public Key Exponent used for the verification of the Signed Dynamic Application Data",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "1",
+        "name": "Integrated Circuit Card (ICC) Public Key Exponent",
+        "source": "card",
+        "tag": "9F47"
+      }
+    },
+    {
+      "info": {
+        "description": "Digits of the ICC Public Key Modulus which do not fit within the ICC Public Key Certificate.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. (NIC - NI + 42)",
+        "minLength": "var. (NIC - NI + 42)",
+        "name": "Integrated Circuit Card (ICC) Public Key Remainder",
+        "source": "card",
+        "tag": "9F48"
+      }
+    },
+    {
+      "info": {
+        "description": "List of data objects (tag and length) to be passed to the ICC in the INTERNAL AUTHENTICATE command",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "252",
+        "minLength": "0",
+        "name": "Dynamic Data Authentication Data Object List (DDOL)",
+        "source": "card",
+        "tag": "9F49"
+      }
+    },
+    {
+      "info": {
+        "description": "List of tags of primitive data objects defined in this specification whose value fields are to be included in the Signed Static or Dynamic Application Data",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Static Data Authentication Tag List (SDA)",
+        "source": "card",
+        "tag": "9F4A"
+      }
+    },
+    {
+      "info": {
+        "description": "Digital signature on critical application parameters for DDA or CDA",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var. (NIC)",
+        "minLength": "var. (NIC)",
+        "name": "Signed Dynamic Application Data (SDAD)",
+        "source": "card",
+        "tag": "9F4B"
+      }
+    },
+    {
+      "info": {
+        "description": "Time-variant number generated by the ICC, to be captured by the terminal",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "8",
+        "minLength": "2",
+        "name": "ICC Dynamic Number",
+        "source": "card",
+        "tag": "9F4C"
+      }
+    },
+    {
+      "info": {
+        "description": "Provides the SFI of the Transaction Log file and its number of records",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Log Entry",
+        "source": "card",
+        "tag": "9F4D"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the name and location of the merchant",
+        "format": "ans",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Merchant Name and Location",
+        "source": "unknown",
+        "tag": "9F4E"
+      }
+    },
+    {
+      "info": {
+        "description": "List (in tag and length format) of data objects representing the logged data elements that are passed to the terminal when a transaction log record is read",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Log Format",
+        "source": "card",
+        "tag": "9F4F"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Issuer Authentication Flags",
+        "source": "card",
+        "tag": "9F55"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Issuer Proprietary Bitmap",
+        "source": "card",
+        "tag": "9F56"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Issuer Country Code",
+        "source": "card",
+        "tag": "9F57"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Consecutive Transaction Counter Limit (CTCL)",
+        "source": "card",
+        "tag": "9F58"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Consecutive Transaction Counter Upper Limit (CTCUL)",
+        "source": "card",
+        "tag": "9F59"
+      }
+    },
+    {
+      "info": {
+        "description": "Payment system proprietary data element identifying the Application Program ID of the card application. When personalised, the Application Program ID is returned in the FCI Issuer Discretionary Data of the SELECT response (Tag ‘BF0C'). EMV mode readers that support Dynamic Reader Limits (DRL) functionality examine the Application Program ID to determine the Reader Limit Set to apply.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "16",
+        "minLength": "1",
+        "name": "Application Program Identifier (Program ID)",
+        "source": "card",
+        "tag": "9F5A"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates the results of Issuer Script processing. When the reader/terminal transmits this data element to the acquirer, in this version of Kernel 3, it is acceptable that only byte 1 is transmitted, although it is preferable for all five bytes to be transmitted.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Issuer Script Results",
+        "source": "terminal",
+        "tag": "9F5B"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Consecutive Transaction International Upper Limit (CTIUL)",
+        "source": "card",
+        "tag": "9F5E"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Offline Counter Initial Value",
+        "source": "card",
+        "tag": "9F63"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "MSD Offset",
+        "source": "card",
+        "tag": "9F67"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "Card Additional Processes",
+        "source": "card",
+        "tag": "9F68"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "VLP Reset Threshold",
+        "source": "card",
+        "tag": "9F6D"
+      }
+    },
+    {
+      "info": {
+        "description": "The Third Party Data contains various information, possibly including information from a third party. If present in the Card, the Third Party Data must be returned in a file read using the READ RECORD command or in the File Control Information Template. 'Device Type' is present when the most significant bit of byte 1 of 'Unique Identifier' is set to 0b. In this case, the maximum length of 'Proprietary Data' is 26 bytes. Otherwise it is 28 bytes.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "32",
+        "minLength": "5",
+        "name": "Third Party Data",
+        "source": "card",
+        "tag": "9F6E"
+      }
+    },
+    {
+      "info": {
+        "description": "Visa proprietary data element specifying the maximum number of the consecutive offline international (those not in the country of issue) transactions allowed for that card application before a transaction goes online.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "1",
+        "minLength": "1",
+        "name": "Consecutive Transaction Limit (International—Country)",
+        "source": "card",
+        "tag": "9F72"
+      }
+    },
+    {
+      "info": {
+        "description": "A decimal value used in a conversion algorithm to convert the Secondary Application Currency Code to the card's domestic (Application Currency Code). Issuer Script may be used to modify this data element.",
+        "format": "n 8",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Currency Conversion Parameters",
+        "source": "card",
+        "tag": "9F73"
+      }
+    },
+    {
+      "info": {
+        "description": "Visa proprietary data element specifying the upper limit of the total amount of offline domestic transactions in the designated currency (Application Currency Code) and a secondary currency (Secondary Application Currency Code) allowed for that card application before a transaction is forced to go online. This limit is in the designated currency.",
+        "format": "n 12",
+        "kernel": "general",
+        "maxLength": "6",
+        "minLength": "6",
+        "name": "Cumulative Total Transaction Amount Limit-Dual Currency",
+        "source": "card",
+        "tag": "9F75"
+      }
+    },
+    {
+      "info": {
+        "description": "Indicates a secondary currency to be converted to the designated currency in which the account is managed (Application Currency Code) according to ISO 4217.",
+        "format": "n 3",
+        "kernel": "general",
+        "maxLength": "2",
+        "minLength": "2",
+        "name": "Secondary Application Currency Code",
+        "source": "card",
+        "tag": "9F76"
+      }
+    },
+    {
+      "info": {
+        "description": "A Visa proprietary data element, Issuer Limit for VLP available funds, is used to reset VLP Available Funds after an online approved transaction.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "VLP Funds Limit",
+        "source": "card",
+        "tag": "9F77"
+      }
+    },
+    {
+      "info": {
+        "description": "A Visa proprietary data element indicating the maximum amount allowed for single VLP transaction",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "VLP Single Transaction Limit",
+        "source": "card",
+        "tag": "9F78"
+      }
+    },
+    {
+      "info": {
+        "description": "A counter that is decremented by the Amount Authorized when a VLP transaction is approved.",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "VLP Available Funds",
+        "source": "card",
+        "tag": "9F79"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "H",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "VLP Terminal Transaction Limit",
+        "source": "terminal",
+        "tag": "9F7B"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "H",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "VISA Applet Data",
+        "source": "card",
+        "tag": "9F7D"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "H",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Application life cycle data (8 first bytes)",
+        "source": "card",
+        "tag": "9F7E"
+      }
+    },
+    {
+      "info": {
+        "description": "",
+        "format": "H",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Card Production Life Cycle (CPLC) Data",
+        "source": "card",
+        "tag": "9F7F"
+      }
+    },
+    {
+      "info": {
+        "description": "Identifies the data object proprietary to this specification in the FCI template according to ISO/IEC 7816-4",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "var.",
+        "minLength": "var.",
+        "name": "File Control Information (FCI) Proprietary Template",
+        "source": "card",
+        "tag": "A5"
+      }
+    },
+    {
+      "info": {
+        "description": "Issuer discretionary part of the File Control Information Proprietary Template.",
+        "format": "variable",
+        "kernel": "general",
+        "maxLength": "222",
+        "minLength": "0",
+        "name": "File Control Information (FCI) Issuer Discretionary Data",
+        "source": "card",
+        "tag": "BF0C"
       }
     }
   ]
