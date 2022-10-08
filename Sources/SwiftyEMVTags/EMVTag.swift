@@ -8,7 +8,9 @@
 import SwiftyBERTLV
 import Foundation
 
-public struct EMVTag {
+public struct EMVTag: Identifiable {
+    
+    public typealias ID = UUID
     
     public enum Category {
         case plain
@@ -33,6 +35,7 @@ public struct EMVTag {
         public let subtags: [DecodedSubtag]
     }
     
+    public let id: ID
     public let tag: BERTLV
     public let category: Category
     public let decodingResult: DecodingResult
@@ -40,7 +43,8 @@ public struct EMVTag {
     public init(
         bertlv: BERTLV,
         decodingResult: DecodingResult,
-        subtags: [DecodedSubtag]
+        subtags: [DecodedSubtag],
+        id: ID = .init()
     ) {
         self.tag = bertlv
         self.decodingResult = decodingResult
@@ -55,15 +59,19 @@ public struct EMVTag {
         } else {
             self.category = .plain
         }
+        
+        self.id = id
     }
     
     public init(
         bertlv: BERTLV,
-        decodingResult: DecodingResult
+        decodingResult: DecodingResult,
+        id: ID = .init()
     ) {
         self.tag = bertlv
         self.decodingResult = decodingResult
         self.category = .plain
+        self.id = id
     }
     
     public static func unknownTag(bertlv: BERTLV) -> EMVTag {
