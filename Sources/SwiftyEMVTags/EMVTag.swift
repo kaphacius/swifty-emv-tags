@@ -9,7 +9,7 @@ import SwiftyBERTLV
 import Foundation
 
 public struct EMVTag: Identifiable, Equatable {
-    
+
     public typealias ID = UUID
     
     public let id: ID
@@ -20,8 +20,7 @@ public struct EMVTag: Identifiable, Equatable {
     public init(
         bertlv: BERTLV,
         decodingResult: DecodingResult,
-        subtags: [DecodedSubtag],
-        id: ID = .init()
+        subtags: [DecodedSubtag]
     ) {
         self.tag = bertlv
         self.decodingResult = decodingResult
@@ -37,22 +36,28 @@ public struct EMVTag: Identifiable, Equatable {
             self.category = .plain
         }
         
-        self.id = id
+        self.id = .init()
     }
     
     public init(
-        bertlv: BERTLV,
-        decodingResult: DecodingResult,
-        id: ID = .init()
+        id: ID,
+        tag: BERTLV,
+        category: Category,
+        decodingResult: DecodingResult
     ) {
-        self.tag = bertlv
-        self.decodingResult = decodingResult
-        self.category = .plain
         self.id = id
+        self.tag = tag
+        self.category = category
+        self.decodingResult = decodingResult
     }
     
     public static func unknownTag(bertlv: BERTLV) -> EMVTag {
-        .init(bertlv: bertlv, decodingResult: .unknown)
+        .init(
+            id: .init(),
+            tag: bertlv,
+            category: .plain,
+            decodingResult: .unknown
+        )
     }
     
     private static func constructSubtags(
