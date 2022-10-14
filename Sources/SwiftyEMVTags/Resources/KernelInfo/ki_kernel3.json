@@ -29,18 +29,6 @@
     },
     {
       "info" : {
-        "description" : "Indicates the currency code of the transaction according to [ISO 4217]. The implied exponent is indicated by the minor unit of currency associated with the Transaction Currency Code in [ISO 4217].",
-        "format" : "n 3",
-        "kernel" : "kernel3",
-        "maxLength" : "2",
-        "minLength" : "2",
-        "name" : "Transaction Currency Code",
-        "source" : "terminal",
-        "tag" : "5F2A"
-      }
-    },
-    {
-      "info" : {
         "description" : "Portion of the Issuer Public Key Modulus which does not fit into the Issuer PK Certificate.",
         "format" : "binary",
         "kernel" : "kernel3",
