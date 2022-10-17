@@ -18,7 +18,7 @@ public final class TagDecoder: AnyTagDecoder {
     
     public let tagMapper: TagMapper
     
-    private var kernelsInfo: [String: KernelInfo]
+    private (set) public var kernelsInfo: [String: KernelInfo]
     
     internal (set) public var kernels: [String]
     
