@@ -17,7 +17,8 @@ final class TagMapperTests: XCTestCase {
         let sut = try TagMapper.defaultMapper()
         let existingMappingURL = try XCTUnwrap(TagMapping.defaultURLs().first)
         let existingMappingData = try Data(contentsOf: existingMappingURL)
-        XCTAssertThrowsError(try sut.addTagMapping(data: existingMappingData))
+        let existingMapping = try JSONDecoder().decode(TagMapping.self, from: existingMappingData)
+        XCTAssertThrowsError(try sut.addTagMapping(newMapping: existingMapping))
     }
     
     func testDecodesAsciiFormat() throws {

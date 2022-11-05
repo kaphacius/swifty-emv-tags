@@ -18,7 +18,8 @@ public protocol AnyTagMapper {
 
 public final class TagMapper: AnyTagMapper {
     
-    private var mappings: Dictionary<UInt64, TagMapping> = [:]
+    private (set) public var mappings: Dictionary<UInt64, TagMapping> = [:]
+    private (set) public var mappedTags: [String] = []
     
     public static func defaultMapper() throws -> TagMapper {
         let decoder = JSONDecoder()
@@ -29,19 +30,28 @@ public final class TagMapper: AnyTagMapper {
     }
     
     internal init(mappings: [TagMapping]) {
+        self.mappedTags = mappings.map(\.tag.hexString)
         self.mappings = .init(
             uniqueKeysWithValues: mappings.map { ($0.tag, $0) }
         )
     }
     
-    public func addTagMapping(data: Data) throws {
-        let newMapping = try JSONDecoder().decode(TagMapping.self, from: data)
-        
+    public func addTagMapping(newMapping: TagMapping) throws {
         guard mappings.keys.contains(newMapping.tag) == false else {
             throw EMVTagError.tagMappingAlreadyExists(tag: newMapping.tag)
         }
         
         mappings[newMapping.tag] = newMapping
+        mappedTags.append(newMapping.tag.hexString)
+    }
+    
+    public func removeTagMapping(tag: UInt64) throws {
+        guard let idx = mappedTags.firstIndex(of: tag.hexString) else {
+            return
+        }
+        
+        mappings.removeValue(forKey: tag)
+        mappedTags.remove(at: idx)
     }
     
     public func extentedDescription(
