@@ -56,6 +56,15 @@ public final class TagDecoder: AnyTagDecoder {
         kernelsInfo[newInfo.name] = newInfo
     }
     
+    public func removeKernelInfo(with name: String) {
+        guard let idx = kernels.firstIndex(of: name) else {
+            return
+        }
+        
+        kernels.remove(at: idx)
+        kernelsInfo.removeValue(forKey: name)
+    }
+    
     public func decodeBERTLV(_ bertlv: BERTLV) -> EMVTag {
         .init(
             bertlv: bertlv,
