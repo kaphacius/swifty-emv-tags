@@ -45,9 +45,7 @@ public final class TagDecoder: AnyTagDecoder {
         )
     }
     
-    public func addKernelInfo(data: Data) throws {
-        let newInfo = try JSONDecoder().decode(KernelInfo.self, from: data)
-        
+    public func addKernelInfo(newInfo: KernelInfo) throws {
         guard kernels.contains(newInfo.name) == false else {
             throw EMVTagError.kernelInfoAlreadyExists(name: newInfo.name)
         }
