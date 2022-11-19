@@ -1,0 +1,21 @@
+{
+    "tag": "9C",
+    "values": [
+        {
+            "meaning": "Purchase transaction",
+            "value": "00"
+        },
+        {
+            "meaning": "Cash advance transaction",
+            "value": "01"
+        },
+        {
+            "meaning": "Purchase with cashback",
+            "value": "09"
+        },
+        {
+            "meaning": "Refund transaction",
+            "value": "20"
+        }
+    ]
+}
