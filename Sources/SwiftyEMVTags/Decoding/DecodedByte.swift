@@ -10,7 +10,7 @@ import Foundation
 public enum EMVTagError: Error {
     case unableToLoadResources(String)
     case unableToDecodeGroup(byte: UInt8, groupName: String)
-    case kernelInfoAlreadyExists(name: String)
+    case kernelInfoAlreadyExists(id: String)
     case tagMappingAlreadyExists(tag: UInt64)
     case byteCountNotEqual
 }

@@ -84,21 +84,21 @@ public final class TagDecoder: AnyTagDecoder {
     }
     
     public func addKernelInfo(newInfo: KernelInfo) throws {
-        guard kernelIds.contains(newInfo.name) == false else {
-            throw EMVTagError.kernelInfoAlreadyExists(name: newInfo.name)
+        guard kernelIds.contains(newInfo.id) == false else {
+            throw EMVTagError.kernelInfoAlreadyExists(id: newInfo.id)
         }
         
-        kernelIds.append(newInfo.name)
-        kernelsInfo[newInfo.name] = newInfo
+        kernelIds.append(newInfo.id)
+        kernelsInfo[newInfo.id] = newInfo
     }
     
-    public func removeKernelInfo(with name: String) {
-        guard let idx = kernelIds.firstIndex(of: name) else {
+    public func removeKernelInfo(with id: String) {
+        guard let idx = kernelIds.firstIndex(of: id) else {
             return
         }
         
         kernelIds.remove(at: idx)
-        kernelsInfo.removeValue(forKey: name)
+        kernelsInfo.removeValue(forKey: id)
     }
     
 }
