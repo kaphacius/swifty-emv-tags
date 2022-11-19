@@ -10,7 +10,44 @@ import Foundation
 
 public protocol AnyTagDecoder {
     
+    var tagMapper: TagMapper { get }
+    var activeKernels: [KernelInfo] { get }
+    
     func decodeBERTLV(_ bertlv: BERTLV) -> EMVTag
+    
+}
+
+extension AnyTagDecoder {
+    
+    public func decodeBERTLV(_ bertlv: BERTLV) -> EMVTag {
+        .init(
+            bertlv: bertlv,
+            decodingResult: decodingResult(for: bertlv),
+            subtags: decodeSubtags(bertlv.subTags)
+        )
+    }
+    
+    private func decodingResult(for bertlv: BERTLV) -> EMVTag.DecodingResult {
+        activeKernels
+            .compactMap { kernel -> EMVTag.DecodingResult? in
+                kernel.decodeTag(
+                    bertlv,
+                    tagMapper: tagMapper
+                )
+                .map(EMVTag.DecodingResult.singleKernel)
+            }.flattenDecodingResults()
+    }
+    
+    private func decodeSubtags(_ subtags: [BERTLV]) -> [EMVTag.DecodedSubtag] {
+        guard subtags.isEmpty == false else { return [] }
+        
+        return subtags.map {
+            .init(
+                result: decodingResult(for: $0),
+                subtags: decodeSubtags($0.subTags)
+            )
+        }
+    }
     
 }
 
@@ -18,8 +55,9 @@ public final class TagDecoder: AnyTagDecoder {
     
     public let tagMapper: TagMapper
     
-    private (set) public var kernelsInfo: [String: KernelInfo]
+    public var activeKernels: [KernelInfo] { kernelsInfo.values.sorted() }
     
+    private (set) public var kernelsInfo: [String: KernelInfo]
     internal (set) public var kernels: [String]
     
     internal init(
@@ -63,35 +101,16 @@ public final class TagDecoder: AnyTagDecoder {
         kernelsInfo.removeValue(forKey: name)
     }
     
-    public func decodeBERTLV(_ bertlv: BERTLV) -> EMVTag {
-        .init(
-            bertlv: bertlv,
-            decodingResult: decodingResult(for: bertlv),
-            subtags: decodeSubtags(bertlv.subTags)
-        )
+}
+
+extension KernelInfo: Comparable, Equatable {
+    
+    public static func == (lhs: KernelInfo, rhs: KernelInfo) -> Bool {
+        lhs.id == rhs.id
     }
     
-    private func decodingResult(for bertlv: BERTLV) -> EMVTag.DecodingResult {
-        kernelsInfo
-            .values
-            .compactMap { kernel -> EMVTag.DecodingResult? in
-                kernel.decodeTag(
-                    bertlv,
-                    tagMapper: tagMapper
-                )
-                    .map(EMVTag.DecodingResult.singleKernel)
-            }.flattenDecodingResults()
-    }
-    
-    private func decodeSubtags(_ subtags: [BERTLV]) -> [EMVTag.DecodedSubtag] {
-        guard subtags.isEmpty == false else { return [] }
-        
-        return subtags.map {
-            .init(
-                result: decodingResult(for: $0),
-                subtags: decodeSubtags($0.subTags)
-            )
-        }
+    public static func < (lhs: KernelInfo, rhs: KernelInfo) -> Bool {
+        lhs.id < rhs.id
     }
     
 }
