@@ -1,7 +1,8 @@
  {
   "category" : "scheme",
   "description" : "Some cards with JCB AIDs and some cards with Visa AIDs",
-  "name" : "kernel1",
+  "name" : "Kernel 1: for some JCB AIDs, some VISA AIDs",
+  "id" : "kernel1",
   "tags" : [
     {
       "info" : {

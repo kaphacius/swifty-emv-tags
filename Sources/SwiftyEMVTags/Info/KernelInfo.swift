@@ -9,7 +9,7 @@ import Foundation
 import SwiftyBERTLV
 
 /// Represents information about kernel and associated tags
-public struct KernelInfo: Decodable {
+public struct KernelInfo: Decodable, Identifiable {
     
     /// Category of the kernel
     public enum Category: String, Decodable {
@@ -19,6 +19,9 @@ public struct KernelInfo: Decodable {
         /// Kernel describing vendor-specifig tags
         case vendor
     }
+    
+    /// The identifier of the kernel
+    public let id: String
     
     /// Name of the kernel
     public let name: String

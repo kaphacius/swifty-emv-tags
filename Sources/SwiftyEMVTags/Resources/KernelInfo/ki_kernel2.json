@@ -1,7 +1,8 @@
 {
   "category" : "scheme",
-  "description" : "MasterCards AIDs",
-  "name" : "kernel2",
+  "description" : "EMVco C-2 Kernel for MasterCard AIDs",
+  "name" : "Kernel 2 for MasterCard AIDs",
+  "id" : "kernel2",
   "tags" : [
     {
       "info" : {

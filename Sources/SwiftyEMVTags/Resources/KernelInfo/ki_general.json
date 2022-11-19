@@ -1,7 +1,8 @@
 {
   "category": "scheme",
-  "description": "general",
-  "name": "general",
+  "description": "A big list of common EMV tags that apply to all kernels",
+  "name": "Common EMV tags",
+  "id": "general",
   "tags": [
     {
       "info": {

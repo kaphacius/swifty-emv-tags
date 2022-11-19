@@ -1,7 +1,8 @@
  {
   "category" : "scheme",
-  "description" : "JCB AIDs",
-  "name" : "kernel5",
+  "description" : "EMVco C-5 Kernel for JCB AIDs",
+  "name" : "Kernel 5 for JCB AIDs",
+  "id" : "kernel5",
   "tags" : [
     {
       "info" : {

@@ -1,7 +1,8 @@
  {
   "category" : "scheme",
-  "description" : "Visa AIDs",
-  "name" : "kernel3",
+  "description" : "EMVco C-3 Kernel for Visa AIDs",
+  "name" : "Kernel 3 for MasterCard AIDs",
+  "id" : "kernel3",
   "tags" : [
     {
       "info" : {
