@@ -1,7 +1,7 @@
  {
   "category" : "scheme",
-  "description" : "EMVco C-4 Kernel for American Express AIDs",
-  "name" : "Kernel 4 for American Express AIDs",
+  "description" : "EMVco C-4 Kernel 4 for American Express AIDs",
+  "name" : "Kernel 4: American Express AIDs",
   "id" : "kernel4",
   "tags" : [
     {

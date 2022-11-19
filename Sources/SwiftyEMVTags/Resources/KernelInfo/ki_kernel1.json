@@ -1,7 +1,7 @@
  {
   "category" : "scheme",
-  "description" : "Some cards with JCB AIDs and some cards with Visa AIDs",
-  "name" : "Kernel 1: for some JCB AIDs, some VISA AIDs",
+  "description" : "EMVco C-1 Kernel 1 Some cards with JCB AIDs and some cards with Visa AIDs",
+  "name" : "Kernel 1: some JCB and some VISA AIDs",
   "id" : "kernel1",
   "tags" : [
     {
