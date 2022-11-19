@@ -21,7 +21,7 @@ extension EMVTag {
     }
     
     public struct DecodedTag {
-        public let kernelName: String
+        public let kernel: String
         public let tagInfo: TagInfo
         public let result: Result<[DecodedByte], Error>
         public let extendedDescription: String?
@@ -69,7 +69,7 @@ extension EMVTag.DecodingResult: Equatable {
 extension EMVTag.DecodedTag: Equatable {
     
     static public func == (lhs: Self, rhs: Self) -> Bool {
-        guard lhs.kernelName == rhs.kernelName && lhs.tagInfo == rhs.tagInfo else {
+        guard lhs.kernel == rhs.kernel && lhs.tagInfo == rhs.tagInfo else {
             return false
         }
         

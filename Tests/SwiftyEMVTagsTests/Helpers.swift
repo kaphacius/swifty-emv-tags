@@ -43,14 +43,14 @@ typealias JSONDictionary = Dictionary<String, Any>
 extension EMVTag.DecodedTag {
 
     static let mockResult: Self = .init(
-        kernelName: "Mock kernel",
+        kernel: "mock",
         tagInfo: .mockInfo,
         result: .success([]),
         extendedDescription: nil
     )
     
     static let mockErrorResult: Self = .init(
-        kernelName: "Mock kernel",
+        kernel: "mock",
         tagInfo: .mockInfo,
         result: .failure(EMVTagError.byteCountNotEqual),
         extendedDescription: nil

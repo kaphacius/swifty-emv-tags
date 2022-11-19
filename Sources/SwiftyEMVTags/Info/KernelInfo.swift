@@ -42,7 +42,7 @@ public struct KernelInfo: Decodable, Identifiable {
         tags.first(where: { $0.info.tag == bertlv.tag })
             .map { tagInfo in
                 .init(
-                    kernelName: name,
+                    kernel: id,
                     tagInfo: tagInfo.info,
                     result: .init(
                         catching: { try decodeBytes(bertlv.value, bytesInfo: tagInfo.bytes) }
