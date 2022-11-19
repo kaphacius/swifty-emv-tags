@@ -58,15 +58,15 @@ public final class TagDecoder: AnyTagDecoder {
     public var activeKernels: [KernelInfo] { kernelsInfo.values.sorted() }
     
     private (set) public var kernelsInfo: [String: KernelInfo]
-    internal (set) public var kernels: [String]
+    internal (set) public var kernelIds: [String]
     
     internal init(
         kernelInfoList: [KernelInfo],
         tagMapper: TagMapper
     ) {
-        self.kernels = kernelInfoList.map(\.name)
+        self.kernelIds = kernelInfoList.map(\.id)
         self.kernelsInfo = .init(
-            uniqueKeysWithValues: kernelInfoList.map { ($0.name, $0) }
+            uniqueKeysWithValues: kernelInfoList.map { ($0.id, $0) }
         )
         self.tagMapper = tagMapper
     }
@@ -84,20 +84,20 @@ public final class TagDecoder: AnyTagDecoder {
     }
     
     public func addKernelInfo(newInfo: KernelInfo) throws {
-        guard kernels.contains(newInfo.name) == false else {
+        guard kernelIds.contains(newInfo.name) == false else {
             throw EMVTagError.kernelInfoAlreadyExists(name: newInfo.name)
         }
         
-        kernels.append(newInfo.name)
+        kernelIds.append(newInfo.name)
         kernelsInfo[newInfo.name] = newInfo
     }
     
     public func removeKernelInfo(with name: String) {
-        guard let idx = kernels.firstIndex(of: name) else {
+        guard let idx = kernelIds.firstIndex(of: name) else {
             return
         }
         
-        kernels.remove(at: idx)
+        kernelIds.remove(at: idx)
         kernelsInfo.removeValue(forKey: name)
     }
     
