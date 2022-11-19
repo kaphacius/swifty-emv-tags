@@ -1,5 +1,7 @@
 {
     "tag" : "9F35",
+    "kernel": "general",
+    "description": "Terminal Type. Indicates the environment of the terminal, its communications capability, and its operational control",
     "values" : [
         {
             "meaning" : "Financial Institution, Attended – Online Only",

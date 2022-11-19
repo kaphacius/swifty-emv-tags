@@ -1,5 +1,7 @@
 {
     "tag": "5F2A",
+    "kernel": "general",
+    "description": "Transaction Currency Code according to ISO 4217",
     "values": [
         {
             "meaning": "ALL, Albanian lek",

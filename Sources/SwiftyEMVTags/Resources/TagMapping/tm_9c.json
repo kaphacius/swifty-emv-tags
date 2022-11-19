@@ -1,5 +1,7 @@
 {
     "tag": "9C",
+    "kernel": "general",
+    "description": "Transaction Type according to ISO 8583:1987",
     "values": [
         {
             "meaning": "Purchase transaction",

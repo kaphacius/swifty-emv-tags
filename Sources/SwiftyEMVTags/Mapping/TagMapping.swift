@@ -17,16 +17,22 @@ public struct TagMapping: Decodable {
     }
     
     public let tag: UInt64
+    public let kernel: String
+    public let description: String
     public let values: Dictionary<String, String>
     
     enum CodingKeys: CodingKey {
         case tag
+        case kernel
+        case description
         case values
     }
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.tag = try .init(from: decoder, radix: 16, codingKey: CodingKeys.tag)
+        self.kernel = try container.decode(String.self, forKey: .kernel)
+        self.description = try container.decode(String.self, forKey: .description)
         let values = try container.decode([Value].self, forKey: .values)
         self.values = .init(
             uniqueKeysWithValues: values.map { ($0.value, $0.meaning) }

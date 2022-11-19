@@ -1,5 +1,7 @@
 {
     "tag": "9F06",
+    "kernel": "general",
+    "description": "Application Identifier (AID) according to ISO/IEC 7816-5",
     "values": [
         {
             "meaning": "Visa Payment System Environment – PSE (1PAY.SYS.DDF01), Visa International",

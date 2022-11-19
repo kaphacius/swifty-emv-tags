@@ -1,5 +1,7 @@
 {
     "tag": "9F39",
+    "kernel": "general",
+    "description": "Point-of-Service (POS) Entry Mode according to ISO 8583:1987",
     "values": [
         {
             "meaning": "Unknown",

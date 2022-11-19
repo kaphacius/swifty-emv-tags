@@ -1,5 +1,7 @@
 {
     "tag": "9f39",
+    "kernel": "mock",
+    "description": "some text",
     "values": [
         {
             "value": "00",

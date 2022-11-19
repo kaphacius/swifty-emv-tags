@@ -1,5 +1,7 @@
 {
     "tag": "9F1A",
+    "kernel": "general",
+    "description": "Terminal Country code according to ISO 3166",
     "values": [
         {
             "meaning": "Afghanistan",
