@@ -12,10 +12,7 @@ import SwiftyEMVTags
 final class KernelInfoTests: XCTestCase {
 
     func testParsing() throws {
-        let url = URL(
-            fileURLWithPath: Bundle.module.path(forResource: "general_kernel_mock", ofType: "json")!
-        )
-        let data = try Data(contentsOf: url)
+        let data = try mockKernelInfoData
         let plainData = try JSONSerialization.jsonObject(with: data) as! JSONDictionary
         let kernelInfo = try JSONDecoder().decode(KernelInfo.self, from: data)
         

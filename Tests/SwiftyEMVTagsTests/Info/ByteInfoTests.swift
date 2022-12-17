@@ -12,7 +12,7 @@ import SwiftyEMVTags
 final class ByteInfoTests: XCTestCase {
 
     func testParsing() throws {
-        let mockTagData = try mockTagData()
+        let mockTagData = try mockTagData
         let tagDecodingInfoDict = try JSONSerialization.jsonObject(with: mockTagData) as! JSONDictionary
         let tagDecodingInfo = try JSONDecoder().decode(TagDecodingInfo.self, from: mockTagData)
         

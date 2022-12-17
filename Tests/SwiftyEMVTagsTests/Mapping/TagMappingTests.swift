@@ -12,7 +12,7 @@ import SwiftyEMVTags
 final class TagMappingTests: XCTestCase {
     
     func testParsing() throws {
-        let mockTagMappingData = try mockTagMappingData()
+        let mockTagMappingData = try mockTagMappingData
         let tagMappingInfoDict = try JSONSerialization.jsonObject(with: mockTagMappingData) as! JSONDictionary
         let sut = try JSONDecoder().decode(TagMapping.self, from: mockTagMappingData)
         let dictTagString: String = try tagMappingInfoDict.value(for: "tag")

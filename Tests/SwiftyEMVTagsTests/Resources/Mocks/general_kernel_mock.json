@@ -120,6 +120,32 @@
             "source": "terminal",
             "tag": "9F34"
         }
+    },
+    {
+        "info": {
+            "description": "Some tag that has a different meaning depending on the context",
+            "format": "binary",
+            "kernel": "general",
+            "maxLength": "3",
+            "minLength": "3",
+            "name": "E1 context tag",
+            "source": "terminal",
+            "tag": "9F34",
+            "context": "E1"
+        }
+    },
+    {
+        "info": {
+            "description": "Some other tag that has a different meaning depending on the context",
+            "format": "binary",
+            "kernel": "general",
+            "maxLength": "3",
+            "minLength": "3",
+            "name": "E5 context tag",
+            "source": "terminal",
+            "tag": "9F34",
+            "context": "E5"
+        }
     }
   ]
 }

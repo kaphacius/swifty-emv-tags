@@ -22,29 +22,36 @@ extension AnyTagDecoder {
     public func decodeBERTLV(_ bertlv: BERTLV) -> EMVTag {
         .init(
             bertlv: bertlv,
-            decodingResult: decodingResult(for: bertlv),
-            subtags: decodeSubtags(bertlv.subTags)
+            decodingResult: decodingResult(for: bertlv, context: nil),
+            subtags: decodeSubtags(bertlv.subTags, context: bertlv.tag)
         )
     }
     
-    private func decodingResult(for bertlv: BERTLV) -> EMVTag.DecodingResult {
+    private func decodingResult(
+        for bertlv: BERTLV,
+        context: UInt64?
+    ) -> EMVTag.DecodingResult {
         activeKernels
             .compactMap { kernel -> EMVTag.DecodingResult? in
                 kernel.decodeTag(
                     bertlv,
-                    tagMapper: tagMapper
+                    tagMapper: tagMapper,
+                    context: context
                 )
                 .map(EMVTag.DecodingResult.singleKernel)
             }.flattenDecodingResults()
     }
     
-    private func decodeSubtags(_ subtags: [BERTLV]) -> [EMVTag.DecodedSubtag] {
+    private func decodeSubtags(
+        _ subtags: [BERTLV],
+        context: UInt64
+    ) -> [EMVTag.DecodedSubtag] {
         guard subtags.isEmpty == false else { return [] }
         
         return subtags.map {
             .init(
-                result: decodingResult(for: $0),
-                subtags: decodeSubtags($0.subTags)
+                result: decodingResult(for: $0, context: context),
+                subtags: decodeSubtags($0.subTags, context: $0.tag)
             )
         }
     }

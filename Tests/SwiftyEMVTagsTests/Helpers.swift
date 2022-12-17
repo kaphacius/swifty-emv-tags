@@ -2,18 +2,31 @@ import XCTest
 @testable import SwiftyEMVTags
 import SwiftyBERTLV
 
-func mockTagData() throws -> Data {
-    let url = URL(
-        fileURLWithPath: Bundle.module.path(forResource: "tag_mock", ofType: "json")!
-    )
-    return try Data(contentsOf: url)
+var mockTagData:  Data {
+    get throws {
+        let url = URL(
+            fileURLWithPath: Bundle.module.path(forResource: "tag_mock", ofType: "json")!
+        )
+        return try Data(contentsOf: url)
+    }
 }
 
-func mockTagMappingData() throws -> Data {
-    let url = URL(
-        fileURLWithPath: Bundle.module.path(forResource: "tag_mapping_mock", ofType: "json")!
-    )
-    return try Data(contentsOf: url)
+var mockTagMappingData: Data {
+    get throws {
+        let url = URL(
+            fileURLWithPath: Bundle.module.path(forResource: "tag_mapping_mock", ofType: "json")!
+        )
+        return try Data(contentsOf: url)
+    }
+}
+
+var mockKernelInfoData: Data {
+    get throws {
+        let url = URL(
+            fileURLWithPath: Bundle.module.path(forResource: "general_kernel_mock", ofType: "json")!
+        )
+        return try Data(contentsOf: url)
+    }
 }
 
 enum TestError: Error {
@@ -41,28 +54,34 @@ extension Dictionary where Key == String, Value == Any {
 typealias JSONDictionary = Dictionary<String, Any>
 
 extension EMVTag.DecodedTag {
-
-    static let mockResult: Self = .init(
-        kernel: "mock",
-        tagInfo: .mockInfo,
-        result: .success([]),
-        extendedDescription: nil
-    )
     
-    static let mockErrorResult: Self = .init(
-        kernel: "mock",
-        tagInfo: .mockInfo,
-        result: .failure(EMVTagError.byteCountNotEqual),
-        extendedDescription: nil
-    )
+    static var mockResult: Self {
+        .init(
+            kernel: "mock",
+            tagInfo: .mockInfo,
+            result: .success([]),
+            extendedDescription: nil
+        )
+    }
+    
+    static var mockErrorResult: Self {
+        .init(
+            kernel: "mock",
+            tagInfo: .mockInfo,
+            result: .failure(EMVTagError.byteCountNotEqual),
+            extendedDescription: nil
+        )
+    }
 
 }
 
 extension TagInfo {
     
-    static let mockInfo: Self = try! JSONDecoder().decode(
-        TagInfo.self, from: mockJson.data(using: .utf8)!
-    )
+    static var mockInfo: Self {
+        try! JSONDecoder().decode(
+            Self.self, from: mockJson.data(using: .utf8)!
+        )
+    }
     
     static let mockJson = """
     {
@@ -76,5 +95,15 @@ extension TagInfo {
         "tag": "9F0A"
     }
     """
+    
+}
+ 
+extension KernelInfo {
+    
+    static var mockGeneralKernelInfo: Self {
+        try! JSONDecoder().decode(
+            Self.self, from: mockKernelInfoData
+        )
+    }
     
 }

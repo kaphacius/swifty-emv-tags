@@ -37,9 +37,10 @@ public struct KernelInfo: Decodable, Identifiable {
     
     internal func decodeTag(
         _ bertlv: BERTLV,
-        tagMapper: AnyTagMapper
+        tagMapper: AnyTagMapper,
+        context: UInt64? = nil
     ) -> EMVTag.DecodedTag? {
-        tags.first(where: { $0.info.tag == bertlv.tag })
+        tags.first(where: { $0.isMatching(tag: bertlv.tag, context: context) })
             .map { tagInfo in
                 .init(
                     kernel: id,
@@ -88,6 +89,10 @@ public struct TagDecodingInfo: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.info = try container.decode(TagInfo.self, forKey: .info)
         self.bytes = try container.decodeIfPresent([ByteInfo].self, forKey: .bytes) ?? []
+    }
+    
+    func isMatching(tag: UInt64, context: UInt64?) -> Bool {
+        self.info.tag == tag && self.info.context == context
     }
     
 }
