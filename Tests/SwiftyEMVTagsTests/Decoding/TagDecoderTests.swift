@@ -64,5 +64,35 @@ final class TagDecoderTests: XCTestCase {
         
         XCTAssertEqual(decodedSubtag.tagInfo.name, "E5 context tag")
     }
+    
+    func testDecodingNonContextTagInContext() throws {
+        let sut = TagDecoder(
+            kernelInfoList: [.mockGeneralKernelInfo],
+            tagMapper: try .defaultMapper()
+        )
+        
+        let hexStringToDecode = "E1069F33032808C8"
+        let parseResult = try BERTLV.parse(hexString: hexStringToDecode)
+        XCTAssertEqual(parseResult.count, 1)
+        let berTLV = try XCTUnwrap(parseResult.first)
+        
+        let result = sut.decodeBERTLV(berTLV)
+        
+        guard case let .constructed(subtags) = result.category else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(result.tag, berTLV)
+        
+        let firstSubtag = try XCTUnwrap(subtags.first)
+        
+        guard case let .singleKernel(decodedSubtag) = firstSubtag.decodingResult else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(decodedSubtag.tagInfo.name, "Terminal Capabilities")
+    }
 
 }

@@ -40,7 +40,7 @@ public struct KernelInfo: Decodable, Identifiable {
         tagMapper: AnyTagMapper,
         context: UInt64? = nil
     ) -> EMVTag.DecodedTag? {
-        tags.first(where: { $0.isMatching(tag: bertlv.tag, context: context) })
+        matchingTag(for: bertlv.tag, context: context)
             .map { tagInfo in
                 .init(
                     kernel: id,
@@ -54,6 +54,17 @@ public struct KernelInfo: Decodable, Identifiable {
                     )
                 )
             }
+    }
+    
+    private func matchingTag(
+        for tag: UInt64,
+        context: UInt64?
+    ) -> TagDecodingInfo? {
+        // Try with context first if present.
+        // If no tags found - try without context.
+        context.flatMap { ctx in
+            tags.first(where: { $0.isMatching(tag: tag, context: ctx) })
+        } ?? tags.first(where: { $0.isMatching(tag: tag, context: nil) })
     }
     
     private func decodeBytes(_ bytes: [UInt8], bytesInfo: [ByteInfo]) throws -> [EMVTag.DecodedByte] {
