@@ -29,6 +29,7 @@ final class TagDecodingInfoTests: XCTestCase {
         try XCTAssertEqual(tagInfo.kernel, infoDict.value(for: "kernel"))
         try XCTAssertEqual(tagInfo.minLength, infoDict.value(for: "minLength"))
         try XCTAssertEqual(tagInfo.maxLength, infoDict.value(for: "maxLength"))
+        try XCTAssertEqual(tagInfo.context.map(\.hexString), infoDict.value(for: "context"))
     }
 
 }

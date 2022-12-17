@@ -30,7 +30,7 @@ public struct TagMapping: Decodable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.tag = try .init(from: decoder, radix: 16, codingKey: CodingKeys.tag)
+        self.tag = try container.decodeIntegerFromString(radix: 16, forKey: .tag)
         self.kernel = try container.decode(String.self, forKey: .kernel)
         self.description = try container.decode(String.self, forKey: .description)
         let values = try container.decode([Value].self, forKey: .values)

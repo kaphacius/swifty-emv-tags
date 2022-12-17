@@ -7,27 +7,43 @@
 
 import Foundation
 
-extension FixedWidthInteger {
+extension KeyedDecodingContainer {
     
-    public init<T>(
-        from decoder: Decoder,
+    func decodeIntegerFromString<T: FixedWidthInteger>(
         radix: Int,
-        codingKey: T
-    ) throws where T: CodingKey {
-        let stringValue = try decoder
-            .container(keyedBy: T.self)
-            .decode(String.self, forKey: codingKey)
+        forKey codingKey: K
+    ) throws -> T {
+        let stringValue = try self.decode(String.self, forKey: codingKey)
         
-        guard let value = Self.init(stringValue, radix: radix) else {
+        guard let value = T(stringValue, radix: radix) else {
             throw DecodingError.dataCorrupted(
                 .init(
-                codingPath: [codingKey],
-                debugDescription: "Unable to convert \(stringValue) to \(Self.self)"
+                    codingPath: [codingKey],
+                    debugDescription: "Unable to convert \(stringValue) to \(Self.self)"
                 )
             )
         }
         
-        self = value
+        return value
+    }
+    
+    func decodeIntegerFromStringIfPresent<T: FixedWidthInteger>(
+        radix: Int, forKey codingKey: K
+    ) throws -> T? {
+        guard let stringValue = try self.decodeIfPresent(String.self, forKey: codingKey) else {
+            return nil
+        }
+        
+        guard let value = T(stringValue, radix: radix) else {
+            throw DecodingError.dataCorrupted(
+                .init(
+                    codingPath: [codingKey],
+                    debugDescription: "Unable to convert \(stringValue) to \(Self.self)"
+                )
+            )
+        }
+        
+        return value
     }
     
 }

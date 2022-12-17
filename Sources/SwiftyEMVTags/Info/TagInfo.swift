@@ -19,6 +19,7 @@ public struct TagInfo: Decodable, Equatable {
         case kernel
         case minLength
         case maxLength
+        case context
     }
     
     /// Tag value
@@ -46,10 +47,13 @@ public struct TagInfo: Decodable, Equatable {
     /// Maximum length of the tag value
     public let maxLength: String
     
+    /// Context of the tag if tag has a different meaning depending on which parent tag contains it
+    public let context: UInt64?
+    
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.tag = try .init(from: decoder, radix: 16, codingKey: CodingKeys.tag)
+        self.tag = try container.decodeIntegerFromString(radix: 16, forKey: .tag)
         self.name = try container.decode(String.self, forKey: .name)
         self.description = try container.decode(String.self, forKey: .description)
         self.source = try container.decode(Source.self, forKey: .source)
@@ -57,6 +61,7 @@ public struct TagInfo: Decodable, Equatable {
         self.kernel = try container.decode(String.self, forKey: .kernel)
         self.minLength = try container.decode(String.self, forKey: .minLength)
         self.maxLength = try container.decode(String.self, forKey: .maxLength)
+        self.context = try container.decodeIntegerFromStringIfPresent(radix: 16, forKey: .context)
     }
     
 }

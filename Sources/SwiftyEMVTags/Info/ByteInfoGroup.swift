@@ -47,7 +47,7 @@ extension ByteInfo {
             public init(from decoder: Decoder) throws {
                 let container = try decoder.container(keyedBy: CodingKeys.self)
                 
-                self.pattern = try .init(from: decoder, radix: 2, codingKey: CodingKeys.pattern)
+                self.pattern = try container.decodeIntegerFromString(radix: 2, forKey: .pattern)
                 self.meaning = try container.decode(String.self, forKey: .meaning)
             }
             
@@ -80,7 +80,7 @@ extension ByteInfo {
                 self.name = try container.decode(String.self, forKey: .name)
             }
             
-            self.pattern = try .init(from: decoder, radix: 2, codingKey: CodingKeys.pattern)
+            self.pattern = try container.decodeIntegerFromString(radix: 2, forKey: .pattern)
         }
         
     }
