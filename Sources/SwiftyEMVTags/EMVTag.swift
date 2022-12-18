@@ -60,6 +60,17 @@ public struct EMVTag: Identifiable, Equatable {
         )
     }
     
+    internal func updatingDecodingResult(
+        with newTag: EMVTag
+    ) -> EMVTag {
+        .init(
+            id: self.id,
+            tag: self.tag,
+            category: category.updatingDecodingResults(with: newTag.category),
+            decodingResult: newTag.decodingResult
+        )
+    }
+    
     private static func constructSubtags(
         _ tlvSubtags: [BERTLV],
         decodedSubtags: [DecodedSubtag]

@@ -14,6 +14,7 @@ public protocol AnyTagDecoder {
     var activeKernels: [KernelInfo] { get }
     
     func decodeBERTLV(_ bertlv: BERTLV) -> EMVTag
+    func updateDecodingResults(for tags: [EMVTag]) -> [EMVTag]
     
 }
 
@@ -25,6 +26,12 @@ extension AnyTagDecoder {
             decodingResult: decodingResult(for: bertlv, context: nil),
             subtags: decodeSubtags(bertlv.subTags, context: bertlv.tag)
         )
+    }
+    
+    public func updateDecodingResults(for tags: [EMVTag]) -> [EMVTag] {
+        tags
+            .map { ($0, self.decodeBERTLV($0.tag)) }
+            .map { $0.0.updatingDecodingResult(with: $0.1) }
     }
     
     private func decodingResult(

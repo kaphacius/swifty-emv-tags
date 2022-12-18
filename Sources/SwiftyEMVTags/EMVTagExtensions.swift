@@ -12,6 +12,24 @@ extension EMVTag {
     public enum Category {
         case plain
         case constructed(subtags: [EMVTag])
+        
+        internal func updatingDecodingResults(
+            with newCategory: Category
+        ) -> Category {
+            switch (self, newCategory) {
+            case (.plain, .plain):
+                return .plain
+            case let (.constructed(subtags), .constructed(newSubtags)):
+                return .constructed(
+                    subtags: zip(subtags, newSubtags)
+                        .map { $0.0.updatingDecodingResult(with: $0.1) }
+                )
+            case (_, _):
+                // This should not happen
+                // TODO: What to do here?
+                return self
+            }
+        }
     }
     
     public enum DecodingResult {
