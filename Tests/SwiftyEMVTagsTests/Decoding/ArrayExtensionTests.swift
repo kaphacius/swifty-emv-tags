@@ -16,7 +16,7 @@ final class ArrayExtensionTests: XCTestCase {
     func testUnknownResult() {
         let results: [EMVTag.DecodingResult] = [.unknown]
         
-        sut = results.flattenDecodingResults()
+        sut = results.flattenDecodingResults(context: nil)
         
         XCTAssertEqual(sut, .unknown)
     }
@@ -28,7 +28,7 @@ final class ArrayExtensionTests: XCTestCase {
             [.singleKernel(.mockErrorResult)]
         ]
         
-        let suts = resultss.map { $0.flattenDecodingResults() }
+        let suts = resultss.map { $0.flattenDecodingResults(context: nil) }
         
         XCTAssertEqual(suts, resultss.compactMap(\.first))
         
@@ -42,7 +42,7 @@ final class ArrayExtensionTests: XCTestCase {
             .unknown
         ]
         
-        let sut = results.flattenDecodingResults()
+        let sut = results.flattenDecodingResults(context: nil)
         
         XCTAssertEqual(sut, .unknown)
     }
@@ -54,7 +54,7 @@ final class ArrayExtensionTests: XCTestCase {
             .singleKernel(.mockErrorResult)
         ]
         
-        let sut = results.flattenDecodingResults()
+        let sut = results.flattenDecodingResults(context: nil)
         
         if case let EMVTag.DecodingResult.multipleKernels(decodedTags) = sut {
             XCTAssertEqual(decodedTags.count, results.count)
@@ -72,7 +72,45 @@ final class ArrayExtensionTests: XCTestCase {
         let results: [EMVTag.DecodingResult] = mockDecodedTags
             .map(EMVTag.DecodingResult.singleKernel)
         
-        let sut = results.flattenDecodingResults()
+        let sut = results.flattenDecodingResults(context: nil)
+        
+        if case let EMVTag.DecodingResult.multipleKernels(decodedTags) = sut {
+            XCTAssertEqual(decodedTags, mockDecodedTags)
+        } else {
+            XCTFail()
+        }
+    }
+    
+    func testContextBound() {
+        let mockDecodedContextBoundTag: EMVTag.DecodedTag = .mockContextBoundResult
+        
+        let mockDecodedTags: [EMVTag.DecodedTag] = [
+            .mockResult,
+            mockDecodedContextBoundTag
+        ]
+        let results: [EMVTag.DecodingResult] = mockDecodedTags
+            .map(EMVTag.DecodingResult.singleKernel)
+        
+        let sut = results.flattenDecodingResults(context: 0xE1)
+        
+        if case let EMVTag.DecodingResult.singleKernel(decodedTag) = sut {
+            XCTAssertEqual(decodedTag, mockDecodedContextBoundTag)
+        } else {
+            XCTFail()
+        }
+    }
+    
+    func testWrongContext() {
+        let mockDecodedContextBoundTag: EMVTag.DecodedTag = .mockContextBoundResult
+        
+        let mockDecodedTags: [EMVTag.DecodedTag] = [
+            .mockResult,
+            mockDecodedContextBoundTag
+        ]
+        let results: [EMVTag.DecodingResult] = mockDecodedTags
+            .map(EMVTag.DecodingResult.singleKernel)
+        
+        let sut = results.flattenDecodingResults(context: 0xE2)
         
         if case let EMVTag.DecodingResult.multipleKernels(decodedTags) = sut {
             XCTAssertEqual(decodedTags, mockDecodedTags)

@@ -46,7 +46,7 @@ extension AnyTagDecoder {
                     context: context
                 )
                 .map(EMVTag.DecodingResult.singleKernel)
-            }.flattenDecodingResults()
+            }.flattenDecodingResults(context: context)
     }
     
     private func decodeSubtags(
@@ -142,7 +142,9 @@ extension KernelInfo {
 
 extension Array where Element == EMVTag.DecodingResult {
     
-    internal func flattenDecodingResults() -> EMVTag.DecodingResult {
+    internal func flattenDecodingResults(
+        context: UInt64?
+    ) -> EMVTag.DecodingResult {
         switch (count, first) {
         case (0, _):
             // If there are no results - tag is unknown
@@ -152,21 +154,41 @@ extension Array where Element == EMVTag.DecodingResult {
             return result
         case (_, _):
             // If there are multiple results, group them
+            // Skip any unknowns
             let flattened: [EMVTag.DecodedTag] = self.reduce([]) { (result, current) in
                 switch current {
-                case .unknown, .multipleKernels:
+                case .unknown:
                     return result
+                case .multipleKernels(let decodedTags):
+                    // Should not be here
+                    return result + decodedTags
                 case .singleKernel(let decodedTag):
                     return result + [decodedTag]
                 }
             }
             
             if flattened.isEmpty {
+                // If no results from any kernel - tag is unknown
                 return .unknown
             } else if flattened.count == 1, let first = flattened.first {
+                // If only one result - one result it is
                 return .singleKernel(first)
             } else {
-                return .multipleKernels(flattened)
+                // If context is present - check if any results match the context
+                if let context {
+                    let contextFiltered = flattened.filter { $0.tagInfo.context == context }
+                    if contextFiltered.isEmpty {
+                        // If no results match the context - return all of the results
+                        return .multipleKernels(flattened)
+                    } else {
+                        // Flatten the remainig results without context
+                        return contextFiltered
+                            .map(EMVTag.DecodingResult.singleKernel)
+                            .flattenDecodingResults(context: nil)
+                    }
+                } else {
+                    return .multipleKernels(flattened)
+                }
             }
         }
     }

@@ -64,6 +64,15 @@ extension EMVTag.DecodedTag {
         )
     }
     
+    static var mockContextBoundResult: Self {
+        .init(
+            kernel: "mock",
+            tagInfo: .mockContextBoundInfo,
+            result: .success([]),
+            extendedDescription: nil
+        )
+    }
+    
     static var mockErrorResult: Self {
         .init(
             kernel: "mock",
@@ -83,6 +92,12 @@ extension TagInfo {
         )
     }
     
+    static var mockContextBoundInfo: Self {
+        try! JSONDecoder().decode(
+            Self.self, from: mockContextBoundJson.data(using: .utf8)!
+        )
+    }
+    
     static let mockJson = """
     {
         "description": "This is a very special tag with all sorts of patters and encodings",
@@ -93,6 +108,20 @@ extension TagInfo {
         "name": "Very special tag",
         "source": "card",
         "tag": "9F0A"
+    }
+    """
+    
+    static let mockContextBoundJson = """
+    {
+        "description": "This is a very special tag and it is context bound",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "3",
+        "minLength": "3",
+        "name": "Very special tag",
+        "source": "card",
+        "tag": "9F0A",
+        "context": "E1"
     }
     """
     
