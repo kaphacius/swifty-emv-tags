@@ -2034,18 +2034,6 @@
     },
     {
       "info": {
-        "description": "",
-        "format": "",
-        "kernel": "general",
-        "maxLength": "",
-        "minLength": "",
-        "name": "Acquirer Identifier",
-        "source": "unknown",
-        "tag": "9F01"
-      }
-    },
-    {
-      "info": {
         "description": "Authorised amount of the transaction. Requested in CDOL1.",
         "format": "n 12",
         "kernel": "general",
