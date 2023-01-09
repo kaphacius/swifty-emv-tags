@@ -74,7 +74,101 @@
         "name" : "Terminal Transaction Qualifiers (TTQ)",
         "source" : "terminal",
         "tag" : "9F66"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Mag-stripe mode supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "type": "RFU"
+            },
+            {
+              "pattern": "00100000",
+              "name": "EMV mode supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "EMV contact chip supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Offline-only reader",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Online PIN supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Signature supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "Offline Data Authentication for Online Authorizations supported.",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Online cryptogram required",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "CVM required",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "(Contact Chip) Offline PIN supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00011111",
+              "type": "RFU"
+            },
+          ]
+        },
+        {
+          "groups": [
+            {
+              "name": "Issuer Update Processing supported",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "Consumer Device CVM supported",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00111111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "11111111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info" : {
