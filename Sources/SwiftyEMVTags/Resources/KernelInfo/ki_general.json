@@ -2747,7 +2747,176 @@
         "name": "Additional Terminal Capabilities (ATC)",
         "source": "terminal",
         "tag": "9F40"
-      }
+      }, 
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Cash",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Goods",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Services",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Cashback",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Inquiry",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Transfer",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Payment",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "Administrative",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "Cash Deposit",
+              "name": "Cash",
+              "type": "bool"
+            },
+            {
+              "pattern": "01111111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Numeric keys",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Alphabetical and special characters keys",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Command keys",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Function keys",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Print, attendant",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Print, cardholder",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Display, attendant",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Display, cardholder",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001100",
+              "type": "RFU"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Code table 10",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "Code table 9",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Code table 8",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Code table 7",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Code table 6",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Code table 5",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Code table 4",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Code table 3",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Code table 2",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "Code table 1",
+              "type": "bool"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
