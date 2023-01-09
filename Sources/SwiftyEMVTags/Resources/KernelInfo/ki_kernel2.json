@@ -54,18 +54,6 @@
     },
     {
       "info" : {
-        "description" : "Identifies and differentiates cards with the same Application PAN",
-        "format" : "n 2",
-        "kernel" : "kernel2",
-        "maxLength" : "1",
-        "minLength" : "1",
-        "name" : "Application Primary Account Number (PAN) Sequence Number (PSN)",
-        "source" : "card",
-        "tag" : "5F34"
-      }
-    },
-    {
-      "info" : {
         "description" : "Identifies the decimal point position from the right of the transaction amount accordin to ISO 4217",
         "format" : "n 1",
         "kernel" : "kernel2",
