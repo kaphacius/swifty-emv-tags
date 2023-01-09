@@ -2796,8 +2796,8 @@
         {
           "groups": [
             {
-              "pattern": "Cash Deposit",
-              "name": "Cash",
+              "pattern": "10000000",
+              "name": "Cash Deposit",
               "type": "bool"
             },
             {
