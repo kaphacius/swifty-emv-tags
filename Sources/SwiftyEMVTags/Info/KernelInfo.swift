@@ -35,8 +35,23 @@ public struct KernelInfo: Decodable, Identifiable {
     /// Tag decoding information
     public let tags: [TagDecodingInfo]
     
+    public init(
+        id: String,
+        name: String,
+        category: Category,
+        description: String,
+        tags: [TagDecodingInfo]
+    ) {
+        self.id = id
+        self.name = name
+        self.category = category
+        self.description = description
+        self.tags = tags
+    }
+    
     internal func decodeTag(
         _ bertlv: BERTLV,
+        
         tagMapper: AnyTagMapper,
         context: UInt64? = nil
     ) -> EMVTag.DecodedTag? {
