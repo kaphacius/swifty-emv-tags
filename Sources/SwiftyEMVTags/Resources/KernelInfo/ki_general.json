@@ -2502,7 +2502,169 @@
         "name": "Terminal Risk Management Data",
         "source": "terminal",
         "tag": "9F1D"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Restart supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Enciphered PIN verified online (Contactless)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Signature (paper) (Contactless)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Enciphered PIN verification performed by ICC (Contactless)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "No CVM required (Contactless)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "CDCVM (Contactless)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Plaintext PIN verification performed by ICC (Contactless)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "Present and Hold supported",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "CVM Limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Enciphered PIN verified online (Contact)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Signature (paper) (Contact)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Enciphered PIN verification performed by ICC (Contact)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "No CVM required (Contact)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "CDCVM (Contact)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Plaintext PIN verification performed by ICC (Contact)",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Mag-stripe mode contactless transactions not supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "EMV mode contactless transactions not supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "CDCVM without CDA supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00011111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "CDCVM bypass requested",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "SCA exempt",
+              "type": "bool"
+            },
+            {
+              "pattern": "00011111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "11111111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "11111111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "11111111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "11111111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
