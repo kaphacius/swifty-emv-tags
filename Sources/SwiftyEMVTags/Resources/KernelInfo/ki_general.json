@@ -2322,7 +2322,179 @@
         "name": "Issuer Action Code - Default",
         "source": "card",
         "tag": "9F0D"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Offline data authentication was not performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "SDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "ICC data missing",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Card appears on terminal exception file",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "DDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "CDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "ICC and terminal have different application versions",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Expired application",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Application not yet effective",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Requested service not allowed for card product",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "New card",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Cardholder verification was not successful",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Unrecognised CVM",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "PIN Try Limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "PIN entry required and PIN pad not present or not working",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "PIN entry required, PIN pad present, but PIN was not entered",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Online PIN entered",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Transaction exceeds floor limit",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Lower consecutive offline limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Upper consecutive offline limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Transaction selected randomly for online processing",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Merchant forced transaction online",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Default TDOL used",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Issuer authentication failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Script processing failed before final GENERATE AC",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Script processing failed after final GENERATE AC",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
@@ -2334,7 +2506,179 @@
         "name": "Issuer Action Code - Denial",
         "source": "card",
         "tag": "9F0E"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Offline data authentication was not performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "SDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "ICC data missing",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Card appears on terminal exception file",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "DDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "CDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "ICC and terminal have different application versions",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Expired application",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Application not yet effective",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Requested service not allowed for card product",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "New card",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Cardholder verification was not successful",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Unrecognised CVM",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "PIN Try Limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "PIN entry required and PIN pad not present or not working",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "PIN entry required, PIN pad present, but PIN was not entered",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Online PIN entered",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Transaction exceeds floor limit",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Lower consecutive offline limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Upper consecutive offline limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Transaction selected randomly for online processing",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Merchant forced transaction online",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Default TDOL used",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Issuer authentication failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Script processing failed before final GENERATE AC",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Script processing failed after final GENERATE AC",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
@@ -2346,7 +2690,179 @@
         "name": "Issuer Action Code - Online",
         "source": "card",
         "tag": "9F0F"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Offline data authentication was not performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "SDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "ICC data missing",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Card appears on terminal exception file",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "DDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "CDA failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "ICC and terminal have different application versions",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Expired application",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Application not yet effective",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Requested service not allowed for card product",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "New card",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Cardholder verification was not successful",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Unrecognised CVM",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "PIN Try Limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "PIN entry required and PIN pad not present or not working",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "PIN entry required, PIN pad present, but PIN was not entered",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Online PIN entered",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Transaction exceeds floor limit",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Lower consecutive offline limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Upper consecutive offline limit exceeded",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Transaction selected randomly for online processing",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Merchant forced transaction online",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Default TDOL used",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Issuer authentication failed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Script processing failed before final GENERATE AC",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Script processing failed after final GENERATE AC",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
