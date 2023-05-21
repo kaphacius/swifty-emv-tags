@@ -794,7 +794,214 @@
                 "name": "Error Indication",
                 "source": "card",
                 "tag": "DF8115"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "pattern": "11111111",
+                            "name": "L1",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "OK"
+                                },
+                                {
+                                    "pattern": "00000001",
+                                    "meaning": "TIME OUT ERROR"
+                                },
+                                {
+                                    "pattern": "00000010",
+                                    "meaning": "TRANSMISSION ERROR"
+                                },
+                                {
+                                    "pattern": "00000011",
+                                    "meaning": "PROTOCOL ERROR"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "groups": [
+                        {
+                            "pattern": "11111111",
+                            "name": "L2",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "OK"
+                                },
+                                {
+                                    "pattern": "00000001",
+                                    "meaning": "CARD DATA MISSING"
+                                },
+                                {
+                                    "pattern": "00000010",
+                                    "meaning": "CAM FAILED"
+                                },
+                                {
+                                    "pattern": "00000011",
+                                    "meaning": "STATUS BYTES"
+                                },
+                                {
+                                    "pattern": "00000100",
+                                    "meaning": "PARSING ERROR"
+                                },
+                                {
+                                    "pattern": "00000101",
+                                    "meaning": "MAX LIMIT EXCEEDED"
+                                },
+                                {
+                                    "pattern": "00000110",
+                                    "meaning": "CARD DATA ERROR"
+                                },
+                                {
+                                    "pattern": "00000111",
+                                    "meaning": "MAGSTRIPE NOT SUPPORTED"
+                                },
+                                {
+                                    "pattern": "00001000",
+                                    "meaning": "NO PPSE"
+                                },
+                                {
+                                    "pattern": "00001001",
+                                    "meaning": "PPSE FAULT"
+                                },
+                                {
+                                    "pattern": "00001010",
+                                    "meaning": "EMPTY CANDIDATE LIST"
+                                },
+                                {
+                                    "pattern": "00001011",
+                                    "meaning": "IDS READ ERROR"
+                                },
+                                {
+                                    "pattern": "00001100",
+                                    "meaning": "IDS WRITE ERROR"
+                                },
+                                {
+                                    "pattern": "00001101",
+                                    "meaning": "IDS DATA ERROR"
+                                },
+                                {
+                                    "pattern": "00001110",
+                                    "meaning": "IDS NO MATCHING AC"
+                                },
+                                {
+                                    "pattern": "00001111",
+                                    "meaning": "TERMINAL DATA ERROR"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "groups": [
+                        {
+                            "pattern": "11111111",
+                            "name": "L3",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "OK"
+                                },
+                                {
+                                    "pattern": "00000001",
+                                    "meaning": "TIME OUT"
+                                },
+                                {
+                                    "pattern": "00000010",
+                                    "meaning": "STOP"
+                                },
+                                {
+                                    "pattern": "00000011",
+                                    "meaning": "AMOUNT NOT PRESENT"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "SW12 Byte 1",
+                    "groups": [
+                        {
+                            "pattern": "11111111",
+                            "name": "SW12 Byte 1",
+                            "type": "hex"
+                        }
+                    ]
+                },
+                {
+                    "name": "SW12 Byte 2",
+                    "groups": [
+                        {
+                            "pattern": "11111111",
+                            "name": "SW12 Byte 2",
+                            "type": "hex"
+                        }
+                    ]
+                },
+                {
+                    "name": "Msg On Error",
+                    "groups": [
+                        {
+                            "pattern": "11111111",
+                            "name": "Message identifier",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00010111",
+                                    "meaning": "CARD READ OK"
+                                },
+                                {
+                                    "pattern": "00100001",
+                                    "meaning": "TRY AGAIN"
+                                },
+                                {
+                                    "pattern": "00000011",
+                                    "meaning": "APPROVED"
+                                },
+                                {
+                                    "pattern": "00011010",
+                                    "meaning": "APPROVED – SIGN"
+                                },
+                                {
+                                    "pattern": "00000111",
+                                    "meaning": "DECLINED"
+                                },
+                                {
+                                    "pattern": "00011100",
+                                    "meaning": "ERROR – OTHER CARD"
+                                },
+                                {
+                                    "pattern": "00011101",
+                                    "meaning": "INSERT CARD"
+                                },
+                                {
+                                    "pattern": "00100000",
+                                    "meaning": "SEE PHONE"
+                                },
+                                {
+                                    "pattern": "00011011",
+                                    "meaning": "AUTHORISING – PLEASE WAIT"
+                                },
+                                {
+                                    "pattern": "00011110",
+                                    "meaning": "CLEAR DISPLAY"
+                                },
+                                {
+                                    "pattern": "11111111",
+                                    "meaning": "N/A"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
