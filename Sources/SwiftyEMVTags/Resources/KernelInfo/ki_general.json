@@ -6,6 +6,18 @@
   "tags": [
     {
       "info": {
+        "description": "Padding byte with no meaning. According to Annex B of EMV 4.3 Book 3: Before, between, or after TLV-coded data objects, '00' bytes without any meaning may occur (for example, due to erased or modified TLV-coded data objects).",
+        "format": "",
+        "kernel": "general",
+        "maxLength": "",
+        "minLength": "",
+        "name": "Padding (no meaning)",
+        "source": "unknown",
+        "tag": "00"
+      }
+    },
+    {
+      "info": {
         "description": "",
         "format": "",
         "kernel": "general",
