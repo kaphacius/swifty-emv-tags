@@ -1754,7 +1754,64 @@
         "name": "Application Interchange Profile (AIP)",
         "source": "card",
         "tag": "82"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "type": "RFU"
+            },
+            {
+              "pattern": "01000000",
+              "name": "SDA supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "DDA supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Cardholder verification is supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Terminal risk management is to be performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Issuer authentication is supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "type": "RFU"
+            },
+            {
+              "pattern": "00000001",
+              "name": "CDA supported",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Reserved for use by the EMV Contactless Specifications",
+              "type": "bool"
+            },
+            {
+              "pattern": "01111111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
@@ -2178,7 +2235,55 @@
         "name": "Transaction Status Information (TSI)",
         "source": "terminal",
         "tag": "9B"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Offline data authentication was performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Cardholder verification was performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Card risk management was performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Issuer authentication was performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Terminal risk management was performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Script processing was performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+           ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "11111111",
+              "type": "RFU"
+            }
+           ]
+        }
+       ]
     },
     {
       "info": {
