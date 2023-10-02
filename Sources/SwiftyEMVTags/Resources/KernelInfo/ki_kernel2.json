@@ -797,6 +797,7 @@
             },
             "bytes": [
                 {
+                    "name": "L1",
                     "groups": [
                         {
                             "pattern": "11111111",
@@ -824,6 +825,7 @@
                     ]
                 },
                 {
+                    "name": "L2",
                     "groups": [
                         {
                             "pattern": "11111111",
@@ -899,6 +901,7 @@
                     ]
                 },
                 {
+                    "name": "L3",
                     "groups": [
                         {
                             "pattern": "11111111",
@@ -1969,10 +1972,6 @@
                                     "meaning": "N/A"
                                 }
                             ]
-                        },
-                        {
-                            "pattern": "00001111",
-                            "type": "RFU"
                         }
                     ]
                 },
@@ -1982,10 +1981,6 @@
                             "pattern": "11111111",
                             "name": "Removal Timeout in units of 100 ms",
                             "type": "hex"
-                        },
-                        {
-                            "pattern": "00001111",
-                            "type": "RFU"
                         }
                     ]
                 }
