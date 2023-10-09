@@ -48,6 +48,27 @@ extension KeyedDecodingContainer {
     
 }
 
+extension SingleValueDecodingContainer {
+    
+    func decodeIntegerFromString<T: FixedWidthInteger>(
+        radix: Int
+    ) throws -> T {
+        let stringValue = try self.decode(String.self)
+        
+        guard let value = T(stringValue, radix: radix) else {
+            throw DecodingError.dataCorrupted(
+                .init(
+                    codingPath: [],
+                    debugDescription: "Unable to convert \(stringValue) to \(Self.self)"
+                )
+            )
+        }
+        
+        return value
+    }
+    
+}
+
 internal func areEqual<T: Swift.Error>(_ lhs: T, _ rhs: T) -> Bool {
     // Swifty check
     guard String(describing: lhs) == String(describing: rhs) else {

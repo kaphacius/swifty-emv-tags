@@ -92,7 +92,9 @@ extension EMVTag.DecodedByte {
                 case .bitmap(let mappings):
                     if let index = mappings
                         .map(\.pattern)
-                        .firstIndex(where: { shiftedBits.matches(pattern: $0) }) {
+                        .firstIndex(where: { pattern in
+                            pattern.matches(shiftedBits: shiftedBits)
+                        }) {
                         self = .bitmap(.init(mappings: mappings, matchIndex: index))
                     } else {
                         return nil
@@ -111,11 +113,36 @@ extension EMVTag.DecodedByte {
             }
             
             public struct SingleMapping: Equatable {
-                public let pattern: UInt8
+                
+                public enum Pattern: Equatable {
+                    case concrete(pattern: UInt8)
+                    case allOtherValues
+                    
+                    init(pattern: ByteInfo.Group.Mapping.Pattern) {
+                        switch pattern {
+                        case .concrete(let pattern):
+                            self = .concrete(pattern: pattern)
+                        case .allOtherValues:
+                            self = .allOtherValues
+                        }
+                    }
+                    
+                    var toInfoPattern: ByteInfo.Group.Mapping.Pattern {
+                        switch self {
+                        case .concrete(let pattern):
+                            return .concrete(pattern: pattern)
+                        case .allOtherValues:
+                            return .allOtherValues
+                        }
+                    }
+                    
+                }
+                
+                public let pattern: Pattern
                 public let meaning: String
                 
                 fileprivate init(mapping: ByteInfo.Group.Mapping) {
-                    self.pattern = mapping.pattern
+                    self.pattern = .init(pattern: mapping.pattern)
                     self.meaning = mapping.meaning
                 }
             }

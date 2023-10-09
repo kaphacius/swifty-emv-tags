@@ -61,7 +61,7 @@ final class ByteInfoTests: XCTestCase {
         try XCTAssertEqual(mapping.meaning, dict.value(for: "meaning"))
         try XCTAssertEqual(
             mapping.pattern,
-            UInt8(dict.value(of: String.self, for: "pattern"), radix: 2)!
+            .init(string: dict.value(of: String.self, for: "pattern"))
         )
     }
 

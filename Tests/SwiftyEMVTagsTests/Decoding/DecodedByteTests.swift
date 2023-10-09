@@ -20,8 +20,11 @@ final class DecodedByteTests: XCTestCase {
         let mockBytes: [UInt8] = [
             0b10001001,
             0b01000000,
-            0b10101000
+            0b10101000,
+            0b00101100
         ]
+        
+        XCTAssertEqual(mockBytes.count, bytesInfo.count)
         
         try zip(mockBytes, bytesInfo)
             .map { try (EMVTag.DecodedByte(byte: $0.0, info: $0.1), $0.1) }
@@ -51,11 +54,11 @@ final class DecodedByteTests: XCTestCase {
         case (.hex(let hexValue), .hex):
             XCTAssertEqual(sut.pattern, hexValue)
         case (.bitmap(let mappingResult), .bitmap(let infoMappings)):
-            if let matchIndex = infoMappings.firstIndex(where: { $0.pattern == sut.pattern }) {
+            if let matchIndex = infoMappings.firstIndex(where: { $0.pattern.matches(shiftedBits: sut.pattern) }) {
                 XCTAssertEqual(mappingResult.matchIndex, matchIndex)
                 zip(mappingResult.mappings, infoMappings)
                     .forEach { (decodedMapping, infoMapping) in
-                        XCTAssertEqual(decodedMapping.pattern, infoMapping.pattern)
+                        XCTAssertEqual(decodedMapping.pattern.toInfoPattern, infoMapping.pattern)
                         XCTAssertEqual(decodedMapping.meaning, infoMapping.meaning)
                     }
             } else {

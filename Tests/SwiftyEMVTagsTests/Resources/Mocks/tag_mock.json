@@ -1,138 +1,145 @@
 {
-  "info": {
-    "description": "This is a very special tag with all sorts of patters and encodings",
-    "format": "binary",
-    "kernel": "general",
-    "maxLength": "3",
-    "minLength": "3",
-    "name": "Very special tag",
-    "source": "card",
-    "tag": "9F0A",
-    "context": "E1"
-  },
-  "bytes": [
+    "info":
     {
-      "groups": [
-        {
-          "pattern": "10000000",
-          "name": "First bool group",
-          "type": "bool"
-        },
-        {
-          "pattern": "01000000",
-          "name": "Second bool group",
-          "type": "bool"
-        },
-        {
-          "pattern": "00110000",
-          "type": "RFU"
-        },
-        {
-          "pattern": "00001100",
-          "name": "some hex value",
-          "type": "hex"
-        },
-        {
-          "pattern": "00000011",
-          "name": "some hex value",
-          "type": "hex"
-        }
-      ]
+        "description": "This is a very special tag with all sorts of patters and encodings",
+        "format": "binary",
+        "kernel": "general",
+        "maxLength": "4",
+        "minLength": "4",
+        "name": "Very special tag",
+        "source": "card",
+        "tag": "9F0A",
+        "context": "E1"
     },
-    {
-      "name": "Second byte",
-      "groups": [
+    "bytes":
+    [
         {
-          "pattern": "11000000",
-          "name": "Application Cryptogram Type Returned in First GENERATE AC",
-          "type": "bitmap",
-          "mappings": [
-            {
-              "pattern": "00",
-              "meaning": "AAC"
-            },
-            {
-              "pattern": "01",
-              "meaning": "TC"
-            },
-            {
-              "pattern": "10",
-              "meaning": "ARQC"
-            },
-            {
-              "pattern": "11",
-              "meaning": "RFU"
-            }
-          ]
+            "groups":
+            [
+                {
+                    "pattern": "10000000",
+                    "name": "First bool group",
+                    "type": "bool"
+                },
+                {
+                    "pattern": "01000000",
+                    "name": "Second bool group",
+                    "type": "bool"
+                },
+                {
+                    "pattern": "00110000",
+                    "type": "RFU"
+                },
+                {
+                    "pattern": "00001100",
+                    "name": "some hex value",
+                    "type": "hex"
+                },
+                {
+                    "pattern": "00000011",
+                    "name": "some hex value",
+                    "type": "hex"
+                }
+            ]
         },
         {
-          "pattern": "00111111",
-          "type": "RFU"
+            "name": "Second byte",
+            "groups":
+            [
+                {
+                    "pattern": "11000000",
+                    "name": "Application Cryptogram Type Returned in First GENERATE AC",
+                    "type": "bitmap",
+                    "mappings":
+                    [
+                        {
+                            "pattern": "00",
+                            "meaning": "AAC"
+                        },
+                        {
+                            "pattern": "01",
+                            "meaning": "TC"
+                        },
+                        {
+                            "pattern": "10",
+                            "meaning": "ARQC"
+                        },
+                        {
+                            "pattern": "11",
+                            "meaning": "RFU"
+                        }
+                    ]
+                },
+                {
+                    "pattern": "00111111",
+                    "type": "RFU"
+                }
+            ]
+        },
+        {
+            "name": "Byte three",
+            "groups":
+            [
+                {
+                    "pattern": "11110000",
+                    "name": "Low Order Nibble of PIN Try Counter",
+                    "type": "hex"
+                },
+                {
+                    "pattern": "00001000",
+                    "name": "Offline PIN Verification Performed",
+                    "type": "bool"
+                },
+                {
+                    "pattern": "00000100",
+                    "name": "Offline PIN Verification Performed and PIN Not Successfully Verified",
+                    "type": "bool"
+                },
+                {
+                    "pattern": "00000010",
+                    "name": "PIN Try Limit Exceeded",
+                    "type": "bool"
+                },
+                {
+                    "pattern": "00000001",
+                    "name": "Last Online Transaction Not Completed",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "Byte four",
+            "groups":
+            [
+                {
+                    "pattern": "11110000",
+                    "name": "Some group with all other values RFU",
+                    "type": "bitmap",
+                    "mappings":
+                    [
+                        {
+                            "pattern": "0000",
+                            "meaning": "First"
+                        },
+                        {
+                            "pattern": "1000",
+                            "meaning": "Second"
+                        },
+                        {
+                            "pattern": "1100",
+                            "meaning": "Third"
+                        },
+                        {
+                            "pattern": "xxxxxxxx",
+                            "meaning": "RFU"
+                        }
+                    ]
+                },
+                {
+                    "pattern": "00001111",
+                    "type": "RFU"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "CVM Capability",
-      "groups": [
-        {
-          "name": "SDA",
-          "pattern": "10000000",
-          "type": "bool"
-        },
-        {
-          "name": "DDA",
-          "pattern": "01000000",
-          "type": "bool"
-        },
-        {
-          "name": "Card capture",
-          "pattern": "00100000",
-          "type": "bool"
-        },
-        {
-          "pattern": "00010000",
-          "type": "RFU"
-        },
-        {
-          "name": "CDA",
-          "pattern": "00001000",
-          "type": "bool"
-        },
-        {
-          "pattern": "00000111",
-          "type": "RFU"
-        }
-      ]
-    },
-    {
-      "name": "Byte three",
-      "groups": [
-        {
-          "pattern": "11110000",
-          "name": "Low Order Nibble of PIN Try Counter",
-          "type": "hex"
-        },
-        {
-          "pattern": "00001000",
-          "name": "Offline PIN Verification Performed",
-          "type": "bool"
-        },
-        {
-          "pattern": "00000100",
-          "name": "Offline PIN Verification Performed and PIN Not Successfully Verified",
-          "type": "bool"
-        },
-        {
-          "pattern": "00000010",
-          "name": "PIN Try Limit Exceeded",
-          "type": "bool"
-        },
-        {
-          "pattern": "00000001",
-          "name": "Last Online Transaction Not Completed",
-          "type": "bool"
-        }
-      ]
-    }
-  ]
+    ]
 }

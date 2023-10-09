@@ -32,9 +32,82 @@ extension ByteInfo {
         /// Describes mapping of an individual meaning within a group
         public struct Mapping: Decodable {
             
+            public enum Pattern: Decodable, Equatable {
+                
+                static func isAllOtherValues(pattern: String) -> Bool {
+                    if let regex = try? NSRegularExpression(pattern: "^[x]+$"),
+                       regex.firstMatch(
+                        in: pattern,
+                        range: NSRange(location: 0, length: pattern.lengthOfBytes(using: .utf8))
+                       ) != nil {
+                        return true
+                    } else {
+                        return false
+                    }
+                }
+                
+                /// Lowest bits represent the actual value
+                /// The number of lowest bits is ``ByteInfo/Group/pattern`` set bits
+                case concrete(pattern: UInt8)
+                
+                /// Catch-all for all other values
+                case allOtherValues
+                
+                public init(from decoder: Decoder) throws {
+                    let container = try decoder.singleValueContainer()
+                    if let pattern: UInt8 = try? container.decodeIntegerFromString(radix: 2) {
+                        self = .concrete(pattern: pattern)
+                    } else if let stringPattern = try? container.decode(String.self) {
+                        if Self.isAllOtherValues(pattern: stringPattern) {
+                            self = .allOtherValues
+                        } else {
+                            throw DecodingError.dataCorrupted(
+                                .init(
+                                    codingPath: [],
+                                    debugDescription: "Unable to extract info pattern from \(stringPattern)"
+                                )
+                            )
+                        }
+                    } else {
+                        throw DecodingError.dataCorrupted(
+                            .init(
+                                codingPath: [],
+                                debugDescription: "Unable to extract info pattern"
+                            )
+                        )
+                    }
+                }
+                
+                internal init(string: String) throws {
+                    if let pattern: UInt8 = .init(string, radix: 2) {
+                        self = .concrete(pattern: pattern)
+                    } else if Self.isAllOtherValues(pattern: string) {
+                        self = .allOtherValues
+                    } else {
+                        throw DecodingError.dataCorrupted(
+                            .init(
+                                codingPath: [],
+                                debugDescription: "Unable to extract info pattern from \(string)"
+                            )
+                        )
+                    }
+                }
+                
+                
+                public func matches(shiftedBits: UInt8) -> Bool {
+                    switch self {
+                    case .concrete(let pattern):
+                        return shiftedBits.matches(pattern: pattern)
+                    case .allOtherValues:
+                        return true
+                    }
+                }
+                
+            }
+            
             /// Lowest bits represent the actual value
             /// The number of lowest bits is ``ByteInfo/Group/pattern`` set bits
-            public let pattern: UInt8
+            public let pattern: Pattern
             
             /// Meaning of this specific mapping variant
             public let meaning: String
@@ -47,7 +120,7 @@ extension ByteInfo {
             public init(from decoder: Decoder) throws {
                 let container = try decoder.container(keyedBy: CodingKeys.self)
                 
-                self.pattern = try container.decodeIntegerFromString(radix: 2, forKey: .pattern)
+                self.pattern = try container.decode(Pattern.self, forKey: .pattern)
                 self.meaning = try container.decode(String.self, forKey: .meaning)
             }
             

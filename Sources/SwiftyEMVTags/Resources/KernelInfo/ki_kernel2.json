@@ -819,6 +819,10 @@
                                 {
                                     "pattern": "00000011",
                                     "meaning": "PROTOCOL ERROR"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         }
@@ -895,6 +899,10 @@
                                 {
                                     "pattern": "00001111",
                                     "meaning": "TERMINAL DATA ERROR"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         }
@@ -923,6 +931,10 @@
                                 {
                                     "pattern": "00000011",
                                     "meaning": "AMOUNT NOT PRESENT"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         }
@@ -999,6 +1011,10 @@
                                 {
                                     "pattern": "11111111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         }
@@ -1800,6 +1816,10 @@
                                 {
                                     "pattern": "1111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         },
@@ -1835,6 +1855,10 @@
                                 {
                                     "pattern": "1111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         },
@@ -1854,6 +1878,10 @@
                                 {
                                     "pattern": "1111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         },
@@ -1889,6 +1917,10 @@
                                 {
                                     "pattern": "1111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxx",
+                                    "meaning": "Other values: RFU"
                                 }
                             ]
                         },
@@ -1970,6 +2002,10 @@
                                 {
                                     "pattern": "11111111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "Other values: Hold time in units of 100 ms"
                                 }
                             ]
                         }
