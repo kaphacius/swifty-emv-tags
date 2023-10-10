@@ -95,7 +95,7 @@ extension EMVTag.DecodedByte {
                         .firstIndex(where: { pattern in
                             pattern.matches(shiftedBits: shiftedBits)
                         }) {
-                        self = .bitmap(.init(mappings: mappings, matchIndex: index))
+                        self = .bitmap(.init(mappings: mappings, shiftedBits: shiftedBits, matchIndex: index))
                     } else {
                         return nil
                     }
@@ -107,8 +107,12 @@ extension EMVTag.DecodedByte {
             public let mappings: [SingleMapping]
             public let matchIndex: Int
             
-            fileprivate init(mappings: [ByteInfo.Group.Mapping], matchIndex: Int) {
-                self.mappings = mappings.map(SingleMapping.init(mapping:))
+            fileprivate init(
+                mappings: [ByteInfo.Group.Mapping],
+                shiftedBits: UInt8,
+                matchIndex: Int
+            ) {
+                self.mappings = mappings.map { SingleMapping(mapping: $0, shiftedValue: shiftedBits) }
                 self.matchIndex = matchIndex
             }
             
@@ -116,14 +120,14 @@ extension EMVTag.DecodedByte {
                 
                 public enum Pattern: Equatable {
                     case concrete(pattern: UInt8)
-                    case allOtherValues
+                    case allOtherValues(value: UInt8)
                     
-                    init(pattern: ByteInfo.Group.Mapping.Pattern) {
+                    init(pattern: ByteInfo.Group.Mapping.Pattern, shiftedValue: UInt8) {
                         switch pattern {
                         case .concrete(let pattern):
                             self = .concrete(pattern: pattern)
                         case .allOtherValues:
-                            self = .allOtherValues
+                            self = .allOtherValues(value: shiftedValue)
                         }
                     }
                     
@@ -141,8 +145,8 @@ extension EMVTag.DecodedByte {
                 public let pattern: Pattern
                 public let meaning: String
                 
-                fileprivate init(mapping: ByteInfo.Group.Mapping) {
-                    self.pattern = .init(pattern: mapping.pattern)
+                fileprivate init(mapping: ByteInfo.Group.Mapping, shiftedValue: UInt8) {
+                    self.pattern = .init(pattern: mapping.pattern, shiftedValue: shiftedValue)
                     self.meaning = mapping.meaning
                 }
             }

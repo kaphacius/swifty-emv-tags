@@ -58,7 +58,15 @@ final class DecodedByteTests: XCTestCase {
                 XCTAssertEqual(mappingResult.matchIndex, matchIndex)
                 zip(mappingResult.mappings, infoMappings)
                     .forEach { (decodedMapping, infoMapping) in
-                        XCTAssertEqual(decodedMapping.pattern.toInfoPattern, infoMapping.pattern)
+                        switch (decodedMapping.pattern, infoMapping.pattern) {
+                        case (.concrete(let lhs), .concrete(let rhs)):
+                            XCTAssertEqual(lhs, rhs)
+                        case (.allOtherValues(let lhs), .allOtherValues):
+                            XCTAssertEqual(lhs, sut.pattern)
+                        default:
+                            XCTFail("Mismatched mapping")
+                        }
+                        
                         XCTAssertEqual(decodedMapping.meaning, infoMapping.meaning)
                     }
             } else {
