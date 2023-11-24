@@ -1906,7 +1906,8 @@
         "minLength": "var. up to 252",
         "name": "Card Risk Management Data Object List 1 (CDOL1)",
         "source": "card",
-        "tag": "8C"
+        "tag": "8C",
+        "isDOL": true
       }
     },
     {
@@ -1918,7 +1919,8 @@
         "minLength": "var. up to 252",
         "name": "Card Risk Management Data Object List 2 (CDOL2)",
         "source": "card",
-        "tag": "8D"
+        "tag": "8D",
+        "isDOL": true
       }
     },
     {
@@ -2186,7 +2188,8 @@
         "minLength": "0",
         "name": "Transaction Certificate Data Object List (TDOL)",
         "source": "card",
-        "tag": "97"
+        "tag": "97",
+        "isDOL": true
       }
     },
     {
@@ -3641,7 +3644,8 @@
         "minLength": "var.",
         "name": "Processing Options Data Object List (PDOL)",
         "source": "card",
-        "tag": "9F38"
+        "tag": "9F38",
+        "isDOL": true
       }
     },
     {
@@ -3990,7 +3994,8 @@
         "minLength": "0",
         "name": "Dynamic Data Authentication Data Object List (DDOL)",
         "source": "card",
-        "tag": "9F49"
+        "tag": "9F49",
+        "isDOL": true
       }
     },
     {

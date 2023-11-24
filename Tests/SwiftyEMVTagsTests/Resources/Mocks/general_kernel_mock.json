@@ -118,7 +118,8 @@
             "minLength": "3",
             "name": "Terminal Capabilities",
             "source": "terminal",
-            "tag": "9F34"
+            "tag": "9F34",
+            "isDOL": true
         }
     },
     {
@@ -145,6 +146,18 @@
             "source": "terminal",
             "tag": "9F34",
             "context": "E5"
+        }
+    },
+    {
+        "info": {
+            "description": "Some other tag",
+            "format": "binary",
+            "kernel": "general",
+            "maxLength": "3",
+            "minLength": "3",
+            "name": "Some tag",
+            "source": "terminal",
+            "tag": "9F38"
         }
     }
   ]

@@ -94,5 +94,35 @@ final class TagDecoderTests: XCTestCase {
         
         XCTAssertEqual(decodedSubtag.tagInfo.name, "Terminal Capabilities")
     }
+    
+    func testDecodingDOLTag() throws {
+        let sut = TagDecoder(
+            kernelInfoList: [.mockGeneralKernelInfo],
+            tagMapper: try .defaultMapper()
+        )
+        
+        let hexStringToDecode = "9F34069F33029F3806"
+        let parseResult = try BERTLV.parse(hexString: hexStringToDecode)
+        XCTAssertEqual(parseResult.count, 1)
+        let berTLV = try XCTUnwrap(parseResult.first)
+        let result = sut.decodeBERTLV(berTLV)
+        
+        guard case let .singleKernel(result) = result.decodingResult else {
+            XCTFail()
+            return
+        }
+        
+        guard case let .dol(dol) = result.result else {
+            XCTFail()
+            return
+        }
+        
+        let expectedDecodedDOL: DecodedDOL = [
+            .init(tag: 0x9f33, expectedLength: 02, name: "Terminal Capabilities"),
+            .init(tag: 0x9f38, expectedLength: 06, name: "Some tag")
+        ]
+        
+        XCTAssertEqual(dol, expectedDecodedDOL)
+    }
 
 }

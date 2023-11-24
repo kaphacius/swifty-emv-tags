@@ -20,6 +20,7 @@ public struct TagInfo: Decodable, Equatable {
         case minLength
         case maxLength
         case context
+        case isDOL
     }
     
     /// Tag value
@@ -50,6 +51,9 @@ public struct TagInfo: Decodable, Equatable {
     /// Context of the tag if tag has a different meaning depending on which parent tag contains it
     public let context: UInt64?
     
+    /// Indicates whether given tag is a DOL (Data Object List)
+    public let isDOL: Bool
+    
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -62,6 +66,7 @@ public struct TagInfo: Decodable, Equatable {
         self.minLength = try container.decode(String.self, forKey: .minLength)
         self.maxLength = try container.decode(String.self, forKey: .maxLength)
         self.context = try container.decodeIntegerFromStringIfPresent(radix: 16, forKey: .context)
+        self.isDOL = try container.decodeIfPresent(Bool.self, forKey: .isDOL) ?? false
     }
     
 }

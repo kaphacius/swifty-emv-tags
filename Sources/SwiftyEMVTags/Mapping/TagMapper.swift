@@ -12,7 +12,7 @@ public protocol AnyTagMapper {
     func extentedDescription(
         for tagInfo: TagInfo,
         value: [UInt8]
-    ) -> String?
+    ) -> EMVTag.DecodedTag.DecodingResult?
     
 }
 
@@ -57,15 +57,25 @@ public final class TagMapper: AnyTagMapper {
     public func extentedDescription(
         for tagInfo: TagInfo,
         value: [UInt8]
-    ) -> String? {
+    ) -> EMVTag.DecodedTag.DecodingResult? {
         // If format starts with 'a' - it is ascii encoded string
         if tagInfo.format.hasPrefix("a") {
-            return String(bytes: value, encoding: .ascii)
-        } else if let mapping = mappings[tagInfo.tag] {
-            return mapping.values[value.map(\.hexString).joined()]
-        } else {
-            return nil
+            if let asciiValue = String(bytes: value, encoding: .ascii) {
+                return .asciiValue(asciiValue)
+            } else {
+                return .error("Unable to convert to ascii value")
+            }
         }
+        
+        if let mapping = mappings[tagInfo.tag] {
+            if let mappingValue = mapping.values[value.map(\.hexString).joined()] {
+                return .mapping(mappingValue)
+            } else {
+                return .error("Unable to map value")
+            }
+        }
+        
+        return nil
     }
     
 }

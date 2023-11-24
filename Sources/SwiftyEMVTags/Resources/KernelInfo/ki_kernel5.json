@@ -49,7 +49,8 @@
         "minLength" : "var. up to 252",
         "name" : "Magstripe Data Object List (MDOL)",
         "source" : "card",
-        "tag" : "9F5C"
+        "tag" : "9F5C",
+        "isDOL": true
       }
     },
     {

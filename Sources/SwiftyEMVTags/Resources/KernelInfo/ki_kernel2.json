@@ -97,7 +97,8 @@
                 "minLength": "var.",
                 "name": "DRDOL",
                 "source": "card",
-                "tag": "9F51"
+                "tag": "9F51",
+                "isDOL": true
             }
         },
         {
@@ -277,7 +278,8 @@
                 "minLength": "var.",
                 "name": "UDOL",
                 "source": "card",
-                "tag": "9F69"
+                "tag": "9F69",
+                "isDOL": true
             }
         },
         {
@@ -1079,7 +1081,8 @@
                 "minLength": "3",
                 "name": "Default UDOL",
                 "source": "card",
-                "tag": "DF811A"
+                "tag": "DF811A",
+                "isDOL": true
             }
         },
         {

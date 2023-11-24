@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import SwiftyBERTLV
 
 extension EMVTag {
     
     public enum Category {
+        
+        /// Plan tag with value
         case plain
+        
+        /// Constructed tag, containing a TLV list of subtags
         case constructed(subtags: [EMVTag])
         
         internal func updatingDecodingResults(
@@ -39,10 +44,30 @@ extension EMVTag {
     }
     
     public struct DecodedTag {
+        
+        public enum DecodingResult: Equatable {
+            /// Tag can be decoded byte by byte
+            case bytes([DecodedByte])
+            
+            /// Tag has mappings for specific values
+            case mapping(String)
+            
+            /// Tag value is an ascii string
+            case asciiValue(String)
+            
+            /// Tag value is a Data Object List
+            case dol(DecodedDOL)
+            
+            /// Error decoding tag
+            case error(String)
+            
+            /// Tag has no decoding info
+            case noDecodingInfo
+        }
+        
         public let kernel: String
         public let tagInfo: TagInfo
-        public let result: Result<[DecodedByte], Error>
-        public let extendedDescription: String?
+        public let result: DecodingResult
     }
     
     public struct DecodedSubtag {
@@ -60,7 +85,7 @@ extension EMVTag.Category: Equatable {
             return true
         case (.constructed(let llhs), .constructed(let rrhs)):
             return llhs == rrhs
-        default:
+        case (.plain, .constructed), (.constructed, .plain):
             return false
         }
     }
@@ -92,11 +117,19 @@ extension EMVTag.DecodedTag: Equatable {
         }
         
         switch (lhs.result, rhs.result) {
-        case (.success(let llhs), .success(let rrhs)):
+        case let (.bytes(llhs), .bytes(rrhs)):
             return llhs == rrhs
-        case (.failure(let llhs), .failure(let rrhs)):
-            return areEqual(llhs, rrhs)
-        default:
+        case let (.mapping(llhs), .mapping(rrhs)):
+            return llhs == rrhs
+        case let (.asciiValue(llhs), .asciiValue(rrhs)):
+            return llhs == rrhs
+        case let (.dol(llhs), .dol(rrhs)):
+            return llhs == rrhs
+        case let (.error(llhs), .error(rrhs)):
+            return llhs == rrhs
+        case (.noDecodingInfo, .noDecodingInfo):
+            return true
+        case (_, _):
             return false
         }
     }

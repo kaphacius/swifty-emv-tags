@@ -51,7 +51,6 @@ public struct KernelInfo: Decodable, Identifiable {
     
     internal func decodeTag(
         _ bertlv: BERTLV,
-        
         tagMapper: AnyTagMapper,
         context: UInt64? = nil
     ) -> EMVTag.DecodedTag? {
@@ -60,15 +59,53 @@ public struct KernelInfo: Decodable, Identifiable {
                 .init(
                     kernel: id,
                     tagInfo: tagInfo.info,
-                    result: .init(
-                        catching: { try decodeBytes(bertlv.value, bytesInfo: tagInfo.bytes) }
-                    ),
-                    extendedDescription: tagMapper.extentedDescription(
-                        for: tagInfo.info,
-                        value: bertlv.value
+                    result: decodingResult(
+                        info: tagInfo,
+                        tlv: bertlv,
+                        tagMapper: tagMapper,
+                        context: context
                     )
                 )
             }
+    }
+    
+    internal func decodeDOL(
+        _ dol: DOL
+    ) -> DecodedDOL {
+        dol.map { dataObject in
+            let name = matchingTag(for: dataObject.tag, context: nil)
+                .map(\.info.name) ?? "Unknown tag"
+            return DecodedDataObject(
+                tag: dataObject.tag,
+                expectedLength: dataObject.length,
+                name: name
+            )
+        }
+    }
+    
+    private func decodingResult(
+        info: TagDecodingInfo,
+        tlv: BERTLV,
+        tagMapper: AnyTagMapper,
+        context: UInt64? = nil
+    ) -> EMVTag.DecodedTag.DecodingResult {
+        if let result = decodeBytes(tlv.value, bytesInfo: info.bytes) {
+            return result
+        } else if let extendedDescription = tagMapper.extentedDescription(
+            for: info.info,
+            value: tlv.value
+        ) {
+            return extendedDescription
+        } else if info.info.isDOL {
+            do {
+                let dol = try DataObject.parse(bytes: tlv.value)
+                return .dol(decodeDOL(dol))
+            } catch {
+                return .error("Failure parsing DOL")
+            }
+        } else {
+            return .noDecodingInfo
+        }
     }
     
     private func matchingTag(
@@ -82,17 +119,22 @@ public struct KernelInfo: Decodable, Identifiable {
         } ?? tags.first(where: { $0.isMatching(tag: tag, context: nil) })
     }
     
-    private func decodeBytes(_ bytes: [UInt8], bytesInfo: [ByteInfo]) throws -> [EMVTag.DecodedByte] {
+    private func decodeBytes(_ bytes: [UInt8], bytesInfo: [ByteInfo]) -> EMVTag.DecodedTag.DecodingResult? {
         guard bytesInfo.isEmpty == false else {
-            return []
+            return nil
         }
         
         guard bytes.count == bytesInfo.count else {
-            throw EMVTagError.byteCountNotEqual
+            return .error("TLV byte count does not match the count defined in the kernel info")
         }
         
-        return try zip(bytes, bytesInfo)
-            .map(EMVTag.DecodedByte.init)
+        do {
+            let bytes = try zip(bytes, bytesInfo)
+                .map(EMVTag.DecodedByte.init)
+            return .bytes(bytes)
+        } catch {
+            return .error(String(describing: error))
+        }
     }
     
 }

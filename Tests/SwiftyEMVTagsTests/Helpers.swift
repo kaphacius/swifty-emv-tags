@@ -59,8 +59,7 @@ extension EMVTag.DecodedTag {
         .init(
             kernel: "mock",
             tagInfo: .mockInfo,
-            result: .success([]),
-            extendedDescription: nil
+            result: .noDecodingInfo
         )
     }
     
@@ -68,8 +67,7 @@ extension EMVTag.DecodedTag {
         .init(
             kernel: "mock",
             tagInfo: .mockContextBoundInfo,
-            result: .success([]),
-            extendedDescription: nil
+            result: .noDecodingInfo
         )
     }
     
@@ -77,8 +75,7 @@ extension EMVTag.DecodedTag {
         .init(
             kernel: "mock",
             tagInfo: .mockInfo,
-            result: .failure(EMVTagError.byteCountNotEqual),
-            extendedDescription: nil
+            result: .error("Foo")
         )
     }
 

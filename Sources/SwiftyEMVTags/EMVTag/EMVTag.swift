@@ -8,15 +8,29 @@
 import SwiftyBERTLV
 import Foundation
 
+/// Represents parsed and decoded BERTLV
 public struct EMVTag: Identifiable, Equatable {
 
+    /// Used
     public typealias ID = UUID
     
+    /// Identifier of the this instance
     public let id: ID
+    
+    /// BERTLV representation of the tag
     public let tag: BERTLV
+    
+    /// Tag category
     public let category: Category
+    
+    /// Tag decoding result
     public let decodingResult: DecodingResult
     
+    /// Initializes the tag structure
+    /// - Parameters:
+    ///   - bertlv: BERTLV representation
+    ///   - decodingResult: tag decoding result
+    ///   - subtags: subtags if the tag is constructed
     public init(
         bertlv: BERTLV,
         decodingResult: DecodingResult,
@@ -51,6 +65,9 @@ public struct EMVTag: Identifiable, Equatable {
         self.decodingResult = decodingResult
     }
     
+    /// Creates a tag instance for an uknown tag
+    /// - Parameter bertlv: BERTLV
+    /// - Returns: an instance of an unknown tag
     public static func unknownTag(bertlv: BERTLV) -> EMVTag {
         .init(
             id: .init(),

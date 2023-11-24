@@ -34,7 +34,12 @@ final class TagMapperTests: XCTestCase {
             return
         }
         let extendedDescription = sut.extentedDescription(for: info.tagInfo, value: tlv.value)
-        XCTAssertEqual(extendedDescription, "MCENGBRGBP")
+        guard case let .asciiValue(asciiValue) = extendedDescription else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(asciiValue, "MCENGBRGBP")
     }
     
     func testMapsTag() throws {
@@ -50,8 +55,13 @@ final class TagMapperTests: XCTestCase {
             return
         }
         let extendedDescription = sut.extentedDescription(for: info.tagInfo, value: tlv.value)
+        guard case let .mapping(asciiValue) = extendedDescription else {
+            XCTFail()
+            return
+        }
+        
         XCTAssertEqual(
-            extendedDescription,
+            asciiValue,
             "MasterCard Credit/Debit (Global), Mastercard International"
         )
     }
