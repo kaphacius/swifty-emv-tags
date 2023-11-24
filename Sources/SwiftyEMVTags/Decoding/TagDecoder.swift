@@ -24,7 +24,7 @@ extension AnyTagDecoder {
         .init(
             bertlv: bertlv,
             decodingResult: decodingResult(for: bertlv, context: nil),
-            subtags: decodeSubtags(bertlv.subTags, context: bertlv.tag)
+            subtags: decodeSubtags(bertlv.subtags, context: bertlv.tag)
         )
     }
     
@@ -58,7 +58,7 @@ extension AnyTagDecoder {
         return subtags.map {
             .init(
                 result: decodingResult(for: $0, context: context),
-                subtags: decodeSubtags($0.subTags, context: $0.tag)
+                subtags: decodeSubtags($0.subtags, context: $0.tag)
             )
         }
     }
@@ -139,6 +139,16 @@ extension KernelInfo {
     
 }
 
+extension BERTLV {
+    
+    fileprivate var subtags: [BERTLV] {
+        switch category {
+        case .plain: return []
+        case .constructed(let subtags): return subtags
+        }
+    }
+    
+}
 
 extension Array where Element == EMVTag.DecodingResult {
     

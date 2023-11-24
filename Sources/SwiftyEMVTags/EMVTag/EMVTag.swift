@@ -39,15 +39,16 @@ public struct EMVTag: Identifiable, Equatable {
         self.tag = bertlv
         self.decodingResult = decodingResult
         
-        if bertlv.isConstructed {
+        switch bertlv.category {
+        case .plain:
+            self.category = .plain
+        case .constructed(let bertlvSubtags):
             self.category = .constructed(
                 subtags: Self.constructSubtags(
-                    bertlv.subTags,
+                    bertlvSubtags,
                     decodedSubtags: subtags
                 )
             )
-        } else {
-            self.category = .plain
         }
         
         self.id = .init()
