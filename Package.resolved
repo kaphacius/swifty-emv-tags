@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "SwiftyBERTLV",
-        "repositoryURL": "https://github.com/kaphacius/swifty-ber-tlv",
-        "state": {
-          "branch": null,
-          "revision": "d65f4ec88c73d2376bdda74209d690fca8671704",
-          "version": "0.4.7"
-        }
+  "pins" : [
+    {
+      "identity" : "swifty-ber-tlv",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kaphacius/swifty-ber-tlv",
+      "state" : {
+        "revision" : "9dabeb4341ac88f1e525fd156fe8bffd52451abe",
+        "version" : "0.4.8"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
