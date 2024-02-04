@@ -1058,7 +1058,42 @@
                 "name": "CVM Capability - CVM Required",
                 "source": "card",
                 "tag": "DF8118"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "pattern": "10000000",
+                            "name": "Plaintext PIN for ICC verification",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "01000000",
+                            "name": "Enciphered PIN for online verification",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00100000",
+                            "name": "Signature (paper)",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00010000",
+                            "name": "Enciphered PIN for offline verification",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00001000",
+                            "name": "No CVM required",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
