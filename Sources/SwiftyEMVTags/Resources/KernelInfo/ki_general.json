@@ -3597,7 +3597,208 @@
         "name": "Cardholder Verification Method (CVM) Results",
         "source": "terminal",
         "tag": "9F34"
-      }
+      },
+      "bytes": [
+        {
+          "name": "CVM Performed",
+          "groups": [
+            {
+              "pattern": "10000000",
+              "type": "RFU"
+            },
+            {
+              "name": "Action in case CVM was unsuccessful",
+              "pattern": "01000000",
+              "type": "bitmap",
+              "mappings": [
+                  {
+                      "pattern": "0",
+                      "meaning": "Fail cardholder verification if this CVM is unsuccessful"
+                  },
+                  {
+                      "pattern": "1",
+                      "meaning": "Apply succeeding CV Rule if this CVM is unsuccessful"
+                  }
+              ]
+            },
+            {
+              "name": "CVM",
+              "pattern": "00111111",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "000000",
+                  "meaning": "Fail CVM processing"
+                },
+                {
+                  "pattern": "000001",
+                  "meaning": "Plaintext PIN verification performed by ICC"
+                },
+                {
+                  "pattern": "000010",
+                  "meaning": "Enciphered PIN verified online"
+                },
+                {
+                  "pattern": "000011",
+                  "meaning": "Plaintext PIN verification performed by ICC and signature"
+                },
+                {
+                  "pattern": "000100",
+                  "meaning": "Enciphered PIN verification performed by ICC"
+                },
+                {
+                  "pattern": "000101",
+                  "meaning": "Enciphered PIN verification performed by ICC and signature"
+                },
+                {
+                  "pattern": "000110",
+                  "meaning": "Facial biometric verified offline (by ICC)"
+                },
+                {
+                  "pattern": "000111",
+                  "meaning": "Facial biometric verified online"
+                },
+                {
+                  "pattern": "001000",
+                  "meaning": "Finger biometric verified offline (by ICC)"
+                },
+                {
+                  "pattern": "001001",
+                  "meaning": "Finger biometric verified online"
+                },
+                {
+                  "pattern": "001010",
+                  "meaning": "Palm biometric verified offline (by ICC)"
+                },
+                {
+                  "pattern": "001011",
+                  "meaning": "Palm biometric verified online"
+                },
+                {
+                  "pattern": "001100",
+                  "meaning": "Iris biometric verified offline (by ICC)"
+                },
+                {
+                  "pattern": "001101",
+                  "meaning": "Iris biometric verified online"
+                },
+                {
+                  "pattern": "001110",
+                  "meaning": "Voice biometric verified offline (by ICC)"
+                },
+                {
+                  "pattern": "001111",
+                  "meaning": "Voice biometric verified online"
+                },
+                {
+                  "pattern": "01xxxx",
+                  "meaning": "Values in the range 010000-011101 reserved for future use by this specification"
+                },
+                {
+                  "pattern": "011110",
+                  "meaning": "Signature"
+                },
+                {
+                  "pattern": "011111",
+                  "meaning": "No CVM required"
+                },
+                {
+                  "pattern": "10xxxx",
+                  "meaning": "Values in the range 100000-101111 reserved for use by the individual payment systems"
+                },
+                {
+                  "pattern": "11xxxx",
+                  "meaning": "Values in the range 110000-111110 reserved for use by the issuer"
+                },
+                {
+                  "pattern": "111111",
+                  "meaning": "This value is not available for use"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CVM Condition",
+          "groups": [
+            {
+              "name": "CVM Condition",
+              "type": "bitmap",
+              "pattern": "11111111",
+              "mappings": [
+                {
+                  "pattern": "00000000",
+                  "meaning": "Always"
+                },
+                {
+                  "pattern": "00000001",
+                  "meaning": "If unattended cash"
+                },
+                {
+                  "pattern": "00000010",
+                  "meaning": "If not unattended cash and not manual cash and not purchase with cashback"
+                },
+                {
+                  "pattern": "00000011",
+                  "meaning": "If terminal supports the CVM 25"
+                },
+                {
+                  "pattern": "00000100",
+                  "meaning": "If manual cash"
+                },
+                {
+                  "pattern": "00000101",
+                  "meaning": "If purchase with cashback"
+                },
+                {
+                  "pattern": "00000110",
+                  "meaning": "If transaction is in the application currency 26 and is under X value (see section 10.5 for a discussion of \"X\")"
+                },
+                {
+                  "pattern": "00000111",
+                  "meaning": "If transaction is in the application currency and is over X value"
+                },
+                {
+                  "pattern": "00001000",
+                  "meaning": "If transaction is in the application currency and is under Y value (see section 10.5 for a discussion of \"Y\")"
+                },
+                {
+                  "pattern": "00001001",
+                  "meaning": "If transaction is in the application currency and is over Y value"
+                },
+                {
+                  "pattern": "xxxxxxxx",
+                  "meaning": "'0A' - 7F' RFU, '80' - 'FF' - Reserved for use by individual payment systems"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CVM Result",
+          "groups": [
+            {
+              "name": "CVM Result",
+              "pattern": "11111111",
+              "type": "bitmap",
+              "mappings": [
+                  {
+                    "pattern": "00000000",
+                    "meaning": "Unknown"
+                  },
+                  {
+                    "pattern": "00000001",
+                    "meaning": "Failed"
+                  },
+                  {
+                    "pattern": "00000010",
+                    "meaning": "Successful"
+                  }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {

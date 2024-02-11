@@ -35,7 +35,7 @@ extension ByteInfo {
             public enum Pattern: Decodable, Equatable {
                 
                 static func isAllOtherValues(pattern: String) -> Bool {
-                    if let regex = try? NSRegularExpression(pattern: "^[x]+$"),
+                    if let regex = try? NSRegularExpression(pattern: "^[01]*[x]+$"),
                        regex.firstMatch(
                         in: pattern,
                         range: NSRange(location: 0, length: pattern.lengthOfBytes(using: .utf8))
