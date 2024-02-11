@@ -2394,7 +2394,71 @@
         "name": "Application Usage Control (AUC)",
         "source": "card",
         "tag": "9F07"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Valid for domestic cash transactions",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Valid for international cash transactions",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Valid for domestic goods",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Valid for international goods",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Valid for domestic services",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Valid for international services",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Valid at ATMs",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "Valid at terminals other than ATMs",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Domestic cashback allowed",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "International cashback allowed",
+              "type": "bool"
+            },
+            {
+              "pattern": "00111111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
