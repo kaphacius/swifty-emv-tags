@@ -192,7 +192,70 @@
         "name" : "Card Transaction Qualifiers (CTQ)",
         "source" : "card",
         "tag" : "9F6C"
-      }
+      }, 
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Online PIN Required",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Signature Required",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": " Go Online if Offline Data Authentication Fails and Reader is online capable",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "Switch Interface if Offline Data Authentication fails and Reader supports contact chip.",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "name": "Go Online if Application Expired",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Switch Interface for Cash Transactions",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "Switch Interface for Cashback Transactions",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Consumer Device CVM Performed",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Card supports Issuer Update Processing at the POS",
+              "type": "bool"
+            },
+            {
+              "pattern": "00111111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info" : {
