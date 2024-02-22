@@ -1046,7 +1046,32 @@
                 "name": "Card Data Input Capability",
                 "source": "card",
                 "tag": "DF8117"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "pattern": "10000000",
+                            "name": "Manual key entry",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "01000000",
+                            "name": "Magnetic stripe",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00100000",
+                            "name": "IC with contacts",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00011111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
