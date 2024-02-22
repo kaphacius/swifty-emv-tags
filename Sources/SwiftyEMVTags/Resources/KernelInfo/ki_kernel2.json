@@ -1165,7 +1165,47 @@
                 "name": "Kernel Configuration",
                 "source": "unknown",
                 "tag": "DF811B"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "pattern": "10000000",
+                            "name": "Mag-stripe mode contactless transactions not supported",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "01000000",
+                            "name": "EMV mode contactless transactions not supported",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00100000",
+                            "name": "On device cardholder verification supported",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00010000",
+                            "name": "Relay resistance protocol supported",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00001000",
+                            "name": "Reserved for Payment system",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000100",
+                            "name": "Read all records even when no CDA",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000011",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
