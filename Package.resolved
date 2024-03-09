@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kaphacius/swifty-ber-tlv",
       "state" : {
-        "revision" : "9dabeb4341ac88f1e525fd156fe8bffd52451abe",
-        "version" : "0.4.8"
+        "revision" : "8de843a2d406e0c30a1e40831b5e386e3ac79b5b",
+        "version" : "0.4.9"
       }
     }
   ],

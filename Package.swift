@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -17,7 +17,7 @@ let package = Package(
         .package(
             name: "SwiftyBERTLV",
             url: "https://github.com/kaphacius/swifty-ber-tlv",
-            from: .init(stringLiteral: "0.4.8")
+            from: .init(stringLiteral: "0.4.9")
         )
     ],
     targets: [
