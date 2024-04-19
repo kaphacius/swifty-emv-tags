@@ -35,10 +35,55 @@
         "kernel" : "kernel4",
         "maxLength" : "1",
         "minLength" : "1",
-        "name" : "Kernel 4 Reader Capabilities",
+        "name" : "Contactless Reader Capabilities",
         "source" : "terminal",
         "tag" : "9F6D"
-      }
+      },
+      "bytes": [
+          {
+              "groups": [
+                  {
+                      "pattern": "11111111",
+                      "name": "Contactless Reader Capabilities",
+                      "type": "bitmap",
+                      "mappings": [
+                          {
+                              "pattern": "00000000",
+                              "meaning": "Deprecated"
+                          },
+                          {
+                              "pattern": "00001000",
+                              "meaning": "Not Available for Use"
+                          },
+                          {
+                              "pattern": "01000000",
+                              "meaning": "Contactless: Mag-Stripe – CVM Not Required (C-4 Version ≥ 2.2)"
+                          },
+                          {
+                              "pattern": "01001000",
+                              "meaning": "Contactless: Mag-Stripe – CVM Required (C-4 Version ≥ 2.2)"
+                          },
+                          {
+                              "pattern": "10000000",
+                              "meaning": "Deprecated – Contactless: EMV and Mag-Stripe (C-4 Version 2.1)"
+                          },
+                          {
+                              "pattern": "10001000",
+                              "meaning": "Not Available for Use"
+                          },
+                          {
+                              "pattern": "11000000",
+                              "meaning": "Contactless: EMV and Mag-Stripe - CVM Not Required (C-4 Version ≥ 2.2)"
+                          },
+                          {
+                              "pattern": "11001000",
+                              "meaning": "Contactless: EMV and Mag-Stripe - CVM Required (C-4 Version ≥ 2.2)"
+                          },
+                      ]
+                  }
+              ]
+          }
+      ]
     },
     {
       "info" : {

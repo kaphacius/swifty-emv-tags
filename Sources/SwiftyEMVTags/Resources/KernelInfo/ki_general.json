@@ -4469,18 +4469,6 @@
     },
     {
       "info": {
-        "description": "",
-        "format": "binary",
-        "kernel": "general",
-        "maxLength": "var.",
-        "minLength": "var.",
-        "name": "VLP Reset Threshold",
-        "source": "card",
-        "tag": "9F6D"
-      }
-    },
-    {
-      "info": {
         "description": "The Third Party Data contains various information, possibly including information from a third party. If present in the Card, the Third Party Data must be returned in a file read using the READ RECORD command or in the File Control Information Template. 'Device Type' is present when the most significant bit of byte 1 of 'Unique Identifier' is set to 0b. In this case, the maximum length of 'Proprietary Data' is 26 bytes. Otherwise it is 28 bytes.",
         "format": "binary",
         "kernel": "general",
