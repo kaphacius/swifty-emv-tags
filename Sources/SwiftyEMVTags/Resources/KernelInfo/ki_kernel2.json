@@ -320,18 +320,6 @@
         },
         {
             "info": {
-                "description": "Indicates the form factor of the consumer payment device and the type of contactless interface over which the transaction was conducted. This information is made available to the issuer host.",
-                "format": "binary 32",
-                "kernel": "kernel2",
-                "maxLength": "4",
-                "minLength": "4",
-                "name": "Form Factor Indicator (qVSDC)",
-                "source": "unknown",
-                "tag": "9F6E"
-            }
-        },
-        {
-            "info": {
                 "description": "Contains the Card indication, obtained in the response to the GET PROCESSING OPTIONS command, about the status of the slot containing data associated to the DS Requested Operator ID.",
                 "format": "binary",
                 "kernel": "kernel2",

@@ -86,6 +86,150 @@
       ]
     },
     {
+        "info" : {
+            "description" : "Proprietary Data Element for managing Contactless transactions and includes Contactless terminal capabilities (static) and contactless Mobile transaction (dynamic data) around CVM.",
+            "format" : "binary",
+            "kernel" : "kernel4",
+            "maxLength" : "4",
+            "minLength" : "4",
+            "name" : "Enhanced Contactless Reader Capabilities",
+            "source" : "terminal",
+            "tag" : "9F6E"
+        },
+        "bytes": [
+            {
+                "groups": [
+                    {
+                        "pattern": "10000000",
+                        "name": "Contact mode supported",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "01000000",
+                        "name": "Contactless Mag-Stripe Mode supported",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00100000",
+                        "name": "Contactless EMV full online mode not supported (full online mode is a legacy feature and is no longer supported)",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00010000",
+                        "name": "Contactless EMV partial online mode supported",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00001000",
+                        "name": "Contactless Mobile Supported",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00000100",
+                        "name": "Try Another Interface after a decline",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00000010",
+                        "type": "RFU"
+                    },
+                    {
+                        "pattern": "00000001",
+                        "type": "RFU"
+                    }
+                ]
+            },
+            {
+                "groups": [
+                    {
+                        "pattern": "10000000",
+                        "name": "Mobile CVM supported",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "01000000",
+                        "name": "Online PIN supported",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00100000",
+                        "name": "Signature",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00001111",
+                        "type": "RFU"
+                    }
+                ]
+            },
+            {
+                "groups": [
+                    {
+                        "pattern": "10000000",
+                        "name": "Reader is offline only",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "01000000",
+                        "name": "CVM Required",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00111111",
+                        "type": "RFU"
+                    }
+                ]
+            },
+            {
+                "groups": [
+                    {
+                        "pattern": "10000000",
+                        "name": "Terminal exempt from No CVM checks",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "01000000",
+                        "name": "Delayed Authorisation Terminal",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00100000",
+                        "name": "Transit Terminal",
+                        "type": "bool"
+                    },
+                    {
+                        "pattern": "00011000",
+                        "type": "RFU"
+                    },
+                    {
+                      "pattern": "00000111",
+                      "name": "C-4 Kernel Version",
+                      "type": "bitmap",
+                      "mappings": [
+                          {
+                              "pattern": "00000001",
+                              "meaning": "2.2 - 2.3"
+                          },
+                          {
+                              "pattern": "00000010",
+                              "meaning": "2.4 - 2.6"
+                          },
+                          {
+                              "pattern": "00000011",
+                              "meaning": "2.7"
+                          },
+                          {
+                              "pattern": "000001xx",
+                              "meaning": "RFU - other values"
+                          }
+                      ]
+                  }
+
+                ]
+            }
+        ]
+    },
+    {
       "info" : {
         "description" : "Data element indicating other interfaces supported by the device.",
         "format" : "binary 16",
