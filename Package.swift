@@ -17,7 +17,7 @@ let package = Package(
         .package(
             name: "SwiftyBERTLV",
             url: "https://github.com/kaphacius/swifty-ber-tlv",
-            from: .init(stringLiteral: "0.4.9")
+            from: .init(stringLiteral: "0.4.10")
         )
     ],
     targets: [
