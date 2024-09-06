@@ -3755,16 +3755,16 @@
                   "meaning": "Voice biometric verified online"
                 },
                 {
-                  "pattern": "01xxxx",
-                  "meaning": "Values in the range 010000-011101 reserved for future use by this specification"
-                },
-                {
                   "pattern": "011110",
                   "meaning": "Signature"
                 },
                 {
                   "pattern": "011111",
                   "meaning": "No CVM required"
+                },
+                {
+                  "pattern": "01xxxx",
+                  "meaning": "Values in the range 010000-011101 reserved for future use by this specification"
                 },
                 {
                   "pattern": "10xxxx",
@@ -3804,7 +3804,7 @@
                 },
                 {
                   "pattern": "00000011",
-                  "meaning": "If terminal supports the CVM 25"
+                  "meaning": "If terminal supports the CVM"
                 },
                 {
                   "pattern": "00000100",
