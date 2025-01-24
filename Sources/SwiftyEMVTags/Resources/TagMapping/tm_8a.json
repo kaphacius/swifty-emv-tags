@@ -1,0 +1,451 @@
+{
+  "tag": "8A",
+  "kernel": "general",
+  "description": "Authorization response code",
+  "values": [
+    {
+      "meaning": "00: Approve - Transaction Approved",
+      "value": "3030"
+    },
+    {
+      "meaning": "01: Decline - Refer to Card Issuer",
+      "value": "3031"
+    },
+    {
+      "meaning": "02: Decline - Refer to Card Issuer, Special Conditions",
+      "value": "3032"
+    },
+    {
+      "meaning": "03: Decline - Invalid Merchant ID",
+      "value": "3033"
+    },
+    {
+      "meaning": "04: Decline - Pick Up Card",
+      "value": "3034"
+    },
+    {
+      "meaning": "05: Decline - Generic Authorization Decline",
+      "value": "3035"
+    },
+    {
+      "meaning": "06: Decline - Error",
+      "value": "3036"
+    },
+    {
+      "meaning": "07: Decline - Pick Up Card, Special Conditions",
+      "value": "3037"
+    },
+    {
+      "meaning": "08: Approve - Honor With Identification",
+      "value": "3038"
+    },
+    {
+      "meaning": "09: Approve - Approved - Special Conditions",
+      "value": "3039"
+    },
+    {
+      "meaning": "10: Approve - Approved For Partial Amount",
+      "value": "3130"
+    },
+    {
+      "meaning": "11: Approve - VIP Approval",
+      "value": "3131"
+    },
+    {
+      "meaning": "12: Decline - Invalid Transaction",
+      "value": "3132"
+    },
+    {
+      "meaning": "13: Decline - Invalid Amount",
+      "value": "3133"
+    },
+    {
+      "meaning": "14: Decline - Invalid Account Number",
+      "value": "3134"
+    },
+    {
+      "meaning": "15: Decline - No Such Issuer",
+      "value": "3135"
+    },
+    {
+      "meaning": "17: Decline - Customer Cancellation",
+      "value": "3137"
+    },
+    {
+      "meaning": "19: Decline - Re-try Transaction",
+      "value": "3139"
+    },
+    {
+      "meaning": "20: Approve - Approved with Overdraft",
+      "value": "3230"
+    },
+    {
+      "meaning": "21: Decline - Reversal Unsuccessful",
+      "value": "3231"
+    },
+    {
+      "meaning": "25: Decline - Unable to locate record on file",
+      "value": "3235"
+    },
+    {
+      "meaning": "27: Decline - File update field edit error",
+      "value": "3237"
+    },
+    {
+      "meaning": "28: Decline - Update file temporarily unavailable",
+      "value": "3238"
+    },
+    {
+      "meaning": "30: Decline - Message Format Error",
+      "value": "3330"
+    },
+    {
+      "meaning": "32: Decline - Partial Reversal",
+      "value": "3332"
+    },
+    {
+      "meaning": "33: Decline - Pick Up Card - Expired",
+      "value": "3333"
+    },
+    {
+      "meaning": "38: Decline - Allowable Number of PIN Tries Exceeded",
+      "value": "3338"
+    },
+    {
+      "meaning": "39: Decline - No Credit Account",
+      "value": "3339"
+    },
+    {
+      "meaning": "40: Decline - Requested Function Not Supported",
+      "value": "3430"
+    },
+    {
+      "meaning": "41: Decline - Pick Up Card - Lost",
+      "value": "3431"
+    },
+    {
+      "meaning": "43: Decline - Pick Up Card - Stolen",
+      "value": "3433"
+    },
+    {
+      "meaning": "46: Decline - Closed Account",
+      "value": "3436"
+    },
+    {
+      "meaning": "47: Decline - Remote Function Unknown",
+      "value": "3437"
+    },
+    {
+      "meaning": "51: Decline - Insufficient Funds",
+      "value": "3531"
+    },
+    {
+      "meaning": "52: Decline - No Checking Account",
+      "value": "3532"
+    },
+    {
+      "meaning": "53: Decline - No Savings Account",
+      "value": "3533"
+    },
+    {
+      "meaning": "54: Decline - Expired Card",
+      "value": "3534"
+    },
+    {
+      "meaning": "55: Decline - Incorrect PIN",
+      "value": "3535"
+    },
+    {
+      "meaning": "56: Decline - Cannot Process",
+      "value": "3536"
+    },
+    {
+      "meaning": "57: Decline - Transaction not Permitted to Cardholder",
+      "value": "3537"
+    },
+    {
+      "meaning": "58: Decline - Transaction not Permitted to Terminal/Acquirer",
+      "value": "3538"
+    },
+    {
+      "meaning": "59: Decline - Suspected Fraud",
+      "value": "3539"
+    },
+    {
+      "meaning": "61: Decline - Exceeds Withdrawal Limit",
+      "value": "3631"
+    },
+    {
+      "meaning": "62: Decline - Restricted Card",
+      "value": "3632"
+    },
+    {
+      "meaning": "63: Decline - Security Violation / Invalid AMEX CID",
+      "value": "3633"
+    },
+    {
+      "meaning": "65: Decline - Exceeds Withdrawal Frequency Limit",
+      "value": "3635"
+    },
+    {
+      "meaning": "67: Decline - Pick Up Card",
+      "value": "3637"
+    },
+    {
+      "meaning": "68: Decline - Response Received Late",
+      "value": "3638"
+    },
+    {
+      "meaning": "69: Decline - Bad Close (Gift Card)",
+      "value": "3639"
+    },
+    {
+      "meaning": "70: Decline - Invalid Transaction, Contact Issuer / Card Already Active (Gift Card)",
+      "value": "3730"
+    },
+    {
+      "meaning": "71: Decline - Card Not Active (Gift Card)",
+      "value": "3731"
+    },
+    {
+      "meaning": "72: Decline - Card Already Closed (Gift Card)",
+      "value": "3732"
+    },
+    {
+      "meaning": "73: Decline - Over Max Balance (Gift Card)",
+      "value": "3733"
+    },
+    {
+      "meaning": "74: Decline - Invalid Activate (Gift Card)",
+      "value": "3734"
+    },
+    {
+      "meaning": "75: Decline - Allowable Number of PIN Tries Exceeded",
+      "value": "3735"
+    },
+    {
+      "meaning": "76: Decline - Late Reversal",
+      "value": "3736"
+    },
+    {
+      "meaning": "77: Decline - Reversal Does Not Match Original Transaction",
+      "value": "3737"
+    },
+    {
+      "meaning": "78: Decline - No 'To' Account Specified",
+      "value": "3738"
+    },
+    {
+      "meaning": "79: Decline - No 'From' Account Specified",
+      "value": "3739"
+    },
+    {
+      "meaning": "80: Decline - Processor Link Out of Service",
+      "value": "3830"
+    },
+    {
+      "meaning": "81: Decline - PIN Key Synchronization Error",
+      "value": "3831"
+    },
+    {
+      "meaning": "82: Decline - Invalid CVV",
+      "value": "3832"
+    },
+    {
+      "meaning": "83: Decline - Unable to Verify PIN",
+      "value": "3833"
+    },
+    {
+      "meaning": "85: Approve - No Reason to Decline on Verification Request",
+      "value": "3835"
+    },
+    {
+      "meaning": "86: Decline - Cannot Verify PIN",
+      "value": "3836"
+    },
+    {
+      "meaning": "87: Approve - Purchase Amount Approved, Not Cash",
+      "value": "3837"
+    },
+    {
+      "meaning": "88: Decline - Card Record Not Available",
+      "value": "3838"
+    },
+    {
+      "meaning": "89: Decline - Invalid Authorization Code",
+      "value": "3839"
+    },
+    {
+      "meaning": "91: Decline - Issuer or Switch Inoperative",
+      "value": "3931"
+    },
+    {
+      "meaning": "92: Decline - Unable to Route Transaction",
+      "value": "3932"
+    },
+    {
+      "meaning": "93: Decline - Illegal Transaction",
+      "value": "3933"
+    },
+    {
+      "meaning": "94: Decline - Duplicate Transaction",
+      "value": "3934"
+    },
+    {
+      "meaning": "95: Decline - Reconciliation Error",
+      "value": "3935"
+    },
+    {
+      "meaning": "96: Decline - System Error",
+      "value": "3936"
+    },
+    {
+      "meaning": "97: Approval - American Express Rewards Approval",
+      "value": "3937"
+    },
+    {
+      "meaning": "98: Decline - Duplicate Transaction",
+      "value": "3938"
+    },
+    {
+      "meaning": "99: Decline - Preferred Debit Routing Denial -> Credit transaction can be performed as debit (credit)",
+      "value": "3939"
+    },
+    {
+      "meaning": "D1: Decline - Currency Conversion Complete, No Auth Performed (1st Pass)",
+      "value": "4431"
+    },
+    {
+      "meaning": "E1: Decline - P2PE Decryption Request Invalid",
+      "value": "4531"
+    },
+    {
+      "meaning": "E2: Decline - P2PE Decryption Services Unavailable",
+      "value": "4532"
+    },
+    {
+      "meaning": "E3: Decline - P2PE Decryption Failure",
+      "value": "4533"
+    },
+    {
+      "meaning": "E4: Decline - P2PE Decryption Message Malformed",
+      "value": "4534"
+    },
+    {
+      "meaning": "E6: Decline - Possible P2PE Decryption Failure",
+      "value": "4536"
+    },
+    {
+      "meaning": "E9: Decline - P2PE Encryption Required",
+      "value": "4539"
+    },
+    {
+      "meaning": "FS: Decline - Transaction declined by FraudSight",
+      "value": "4653"
+    },
+    {
+      "meaning": "N7: Decline - CVV2 Value Mismatch",
+      "value": "4E37"
+    },
+    {
+      "meaning": "M1: Decline - Multi-Currency DCC Fail",
+      "value": "4D31"
+    },
+    {
+      "meaning": "M2: Decline - Multi-Currency Invert Fail",
+      "value": "4D32"
+    },
+    {
+      "meaning": "N0: Decline - Issuer or Switch Inoperative (Visa)",
+      "value": "4E30"
+    },
+    {
+      "meaning": "RG: Approve - P2PE Successful Registration Event",
+      "value": "5247"
+    },
+    {
+      "meaning": "R0: Decline - Stop Payment Order",
+      "value": "5230"
+    },
+    {
+      "meaning": "R1: Decline - Revocation of Auth Order",
+      "value": "5231"
+    },
+    {
+      "meaning": "R3: Decline - Revocation of All Auth Orders",
+      "value": "5233"
+    },
+    {
+      "meaning": "T1: Decline - Invalid 3-D Secure Password",
+      "value": "5431"
+    },
+    {
+      "meaning": "T2: Decline - Invalid Social Security Number",
+      "value": "5432"
+    },
+    {
+      "meaning": "T3: Decline - Invalid Mother's Maiden Name",
+      "value": "5433"
+    },
+    {
+      "meaning": "T4: Decline - Enrollment Inquiry Declined",
+      "value": "5434"
+    },
+    {
+      "meaning": "T5: Decline - Social Security Number Not Available",
+      "value": "5435"
+    },
+    {
+      "meaning": "T6: Decline - Mother's Maiden Name Not Available",
+      "value": "5436"
+    },
+    {
+      "meaning": "T7: Decline - PIN Already Exists on Database",
+      "value": "5437"
+    },
+    {
+      "meaning": "V1: Decline - Velocity - Excessive Count",
+      "value": "5631"
+    },
+    {
+      "meaning": "V2: Decline - Velocity - Excessive Amount",
+      "value": "5632"
+    },
+    {
+      "meaning": "V3: Decline - Velocity - Excessive Count/Amount",
+      "value": "5633"
+    },
+    {
+      "meaning": "V4: Decline - Velocity - Negative File Exception",
+      "value": "5634"
+    },
+    {
+      "meaning": "V5: Decline - Velocity - Fraud Exception",
+      "value": "5635"
+    },
+    {
+      "meaning": "V6: Decline - Velocity - ZIP Match Failure",
+      "value": "5636"
+    },
+    {
+      "meaning": "W1: Decline - More Prompts Required",
+      "value": "5731"
+    },
+    {
+      "meaning": "XE: Decline - Card Escheated (Gift Card)",
+      "value": "5845"
+    },
+    {
+      "meaning": "XD: Decline - Merchant Depleted (Gift Card)",
+      "value": "5844"
+    },
+    {
+      "meaning": "XB: Decline - Deconverted BIN (Gift Card)",
+      "value": "5842"
+    },
+    {
+      "meaning": "Q1: Decline - Chip Failure",
+      "value": "5131"
+    }
+  ]
+}
