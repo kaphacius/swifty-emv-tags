@@ -55,15 +55,37 @@ final class TagMapperTests: XCTestCase {
             return
         }
         let extendedDescription = sut.extentedDescription(for: info.tagInfo, value: tlv.value)
-        guard case let .mapping(asciiValue) = extendedDescription else {
+        guard case let .mapping(stringValue) = extendedDescription else {
             XCTFail()
             return
         }
         
         XCTAssertEqual(
-            asciiValue,
+            stringValue,
             "MasterCard Credit/Debit (Global), Mastercard International"
         )
+    }
+    
+    func testMapsAsciiTag() throws {
+        let decoder = try TagDecoder.defaultDecoder()
+        let parsed = try BERTLV.parse(
+            bytes: [0x8A, 0x02, 0x30, 0x30]
+        )
+        let tlv = try XCTUnwrap(parsed.first)
+        let sut = try TagMapper.defaultMapper()
+        let emvtag = decoder.decodeBERTLV(tlv)
+        guard case let .singleKernel(info) = emvtag.decodingResult else {
+            XCTFail()
+            return
+        }
+        let extendedDescription = sut.extentedDescription(for: info.tagInfo, value: tlv.value)
+        
+        guard case let .mapping(asciiValue) = extendedDescription else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(asciiValue, "00: Approve - Transaction Approved")
     }
     
 }

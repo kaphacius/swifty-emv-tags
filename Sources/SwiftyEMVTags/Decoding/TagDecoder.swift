@@ -71,8 +71,8 @@ public final class TagDecoder: AnyTagDecoder {
     
     public var activeKernels: [KernelInfo] { kernelsInfo.values.sorted() }
     
-    private (set) public var kernelsInfo: [String: KernelInfo]
-    internal (set) public var kernelIds: [String]
+    private(set) public var kernelsInfo: [String: KernelInfo]
+    internal(set) public var kernelIds: [String]
     
     internal init(
         kernelInfoList: [KernelInfo],

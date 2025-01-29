@@ -18,8 +18,8 @@ public protocol AnyTagMapper {
 
 public final class TagMapper: AnyTagMapper {
     
-    private (set) public var mappings: Dictionary<UInt64, TagMapping> = [:]
-    private (set) public var mappedTags: [String] = []
+    private(set) public var mappings: Dictionary<UInt64, TagMapping> = [:]
+    private(set) public var mappedTags: [String] = []
     
     public static func defaultMapper() throws -> TagMapper {
         let decoder = JSONDecoder()
@@ -58,24 +58,24 @@ public final class TagMapper: AnyTagMapper {
         for tagInfo: TagInfo,
         value: [UInt8]
     ) -> EMVTag.DecodedTag.DecodingResult? {
-        // If format starts with 'a' - it is ascii encoded string
-        if tagInfo.format.hasPrefix("a") {
-            if let asciiValue = String(bytes: value, encoding: .ascii) {
-                return .asciiValue(asciiValue)
-            } else {
-                return .error("Unable to convert to ascii value")
-            }
-        }
+        let mapping = mappings[tagInfo.tag]
+        let mappingValue = mapping
+            .flatMap { $0.values[value.hexString] }
+        let isAscii = tagInfo.format.hasPrefix("a")
+        let asciiValue = String(bytes: value, encoding: .ascii)
         
-        if let mapping = mappings[tagInfo.tag] {
-            if let mappingValue = mapping.values[value.map(\.hexString).joined()] {
-                return .mapping(mappingValue)
-            } else {
-                return .error("Unable to map value")
-            }
+        switch (mapping, mappingValue, isAscii, asciiValue) {
+        case (.some, .some(let value), _, _):
+            return .mapping(value)
+        case (_, _, true, .some(let value)):
+            return .asciiValue(value)
+        case (.some, .none, _, _):
+            return .error("Unable to map value \(value.hexString) for tag \(tagInfo.tag.hexString)")
+        case (_, _, true, .none):
+            return .error("Unable to conver value \(value.hexString) to ascii string")
+        case (_, _, _, _):
+            return nil
         }
-        
-        return nil
     }
     
 }
