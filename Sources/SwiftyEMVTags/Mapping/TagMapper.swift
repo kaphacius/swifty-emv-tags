@@ -62,7 +62,9 @@ public final class TagMapper: AnyTagMapper {
         let mappingValue = mapping
             .flatMap { $0.values[value.hexString] }
         let isAscii = tagInfo.format.hasPrefix("a")
-        let asciiValue = String(bytes: value, encoding: .ascii)
+        
+        // Support for cases when tags contain characters from extended ascii range
+        let asciiValue = String(bytes: value, encoding: .ascii) ?? String(bytes: value, encoding: .isoLatin1)
         
         switch (mapping, mappingValue, isAscii, asciiValue) {
         case (.some, .some(let value), _, _):
