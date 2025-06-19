@@ -30,15 +30,81 @@
     },
     {
       "info" : {
-        "description" : "Defines the reader CVM requirement and capabilities, as well as other reader capabilities (online capability, contact EMV capability) for the Transaction",
+        "description" : "Static: Defines the Cardholder Verification Methods and other reader capabilities (online capability, contact EMV capability) for the Combination.\n Dynamic: Defines the reader CVM requirement and capabilities, as well as other reader capabilities (online capability, contact EMV capability) for the Transaction.",
         "format" : "binary",
         "kernel" : "kernel5",
         "maxLength" : "3",
         "minLength" : "3",
-        "name" : "Terminal Interchange Profile (dynamic)",
+        "name" : "Terminal Interchange Profile (static/dynamic)",
         "source" : "unknown",
         "tag" : "9F53"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "CVM required by reader (static)",
+              "type": "bool"
+            },
+            {
+              "pattern": "01000000",
+              "name": "Signature supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00100000",
+              "name": "Online PIN supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00010000",
+              "name": "On-Device CVM supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00001000",
+              "type": "RFU"
+            },
+            {
+              "pattern": "00000100",
+              "name": "Reader is a Transit Reader",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000010",
+              "name": "EMV contact chip supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000001",
+              "name": "(Contact Chip) Offline PIN supported",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "pattern": "10000000",
+              "name": "Issuer Update supported",
+              "type": "bool"
+            },
+            {
+              "pattern": "01111111",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+            "pattern": "11111111",
+            "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info" : {
