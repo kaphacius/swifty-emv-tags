@@ -78,7 +78,7 @@
                           {
                               "pattern": "11001000",
                               "meaning": "Contactless: EMV and Mag-Stripe - CVM Required (C-4 Version ≥ 2.2)"
-                          },
+                          }
                       ]
                   }
               ]
