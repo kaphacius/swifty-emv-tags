@@ -3472,7 +3472,75 @@
         "name": "Cryptogram Information Data (CID)",
         "source": "card",
         "tag": "9F27"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "name": "Cryptogram Type",
+              "pattern": "11000000",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "00000000",
+                  "meaning": "AAC (Application Authentication Cryptogram) — declined offline"
+                },
+                {
+                  "pattern": "01000000",
+                  "meaning": "TC (Transaction Certificate) — approved offline"
+                },
+                {
+                  "pattern": "10000000",
+                  "meaning": "ARQC (Authorization Request Cryptogram) — go online"
+                },
+                {
+                  "pattern": "11000000",
+                  "meaning": "RFU"
+                }
+              ]
+            },
+            {
+              "name": "Advice Message",
+              "pattern": "00111000",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "00000000",
+                  "meaning": "No advice required"
+                },
+                {
+                  "pattern": "00001000",
+                  "meaning": "Advice required — no advice code"
+                },
+                {
+                  "pattern": "00010000",
+                  "meaning": "Advice required — reason: 01 (unspecified)"
+                },
+                {
+                  "pattern": "00011000",
+                  "meaning": "Advice required — reason: 02 (card out of date)"
+                },
+                {
+                  "pattern": "00100000",
+                  "meaning": "Advice required — reason: 03 (unauthorized card)"
+                },
+                {
+                  "pattern": "00101000",
+                  "meaning": "Advice required — reason: 04 (cardholder not enrolled in service)"
+                },
+                {
+                  "pattern": "00110000",
+                  "meaning": "Advice required — reason: 05 (unattended acceptance device)"
+                }
+              ]
+            },
+            {
+              "pattern": "00000111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
