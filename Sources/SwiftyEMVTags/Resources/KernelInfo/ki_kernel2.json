@@ -147,7 +147,134 @@
                 "name": "Application Capabilities Information (ACI)",
                 "source": "card",
                 "tag": "9F5D"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "ACI Version Number",
+                            "pattern": "11110000",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "VERSION 0"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Data Storage Version Number",
+                            "pattern": "00001111",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "DATA STORAGE NOT SUPPORTED"
+                                },
+                                {
+                                    "pattern": "00000001",
+                                    "meaning": "VERSION 1"
+                                },
+                                {
+                                    "pattern": "00000010",
+                                    "meaning": "VERSION 2"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "groups": [
+                        {
+                            "pattern": "11111000",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "Support for field off detection",
+                            "pattern": "00000100",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000010",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "CDA Indicator",
+                            "pattern": "00000001",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "CDA SUPPORTED AS IN EMV"
+                                },
+                                {
+                                    "pattern": "00000001",
+                                    "meaning": "CDA SUPPORTED OVER TC, ARQC AND AAC"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "groups": [
+                        {
+                            "name": "SDS Scheme Indicator",
+                            "pattern": "11111111",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "Undefined SDS configuration"
+                                },
+                                {
+                                    "pattern": "00000001",
+                                    "meaning": "All 10 tags 32 bytes"
+                                },
+                                {
+                                    "pattern": "00000010",
+                                    "meaning": "All 10 tags 48 bytes"
+                                },
+                                {
+                                    "pattern": "00000011",
+                                    "meaning": "All 10 tags 64 bytes"
+                                },
+                                {
+                                    "pattern": "00000100",
+                                    "meaning": "All 10 tags 96 bytes"
+                                },
+                                {
+                                    "pattern": "00000101",
+                                    "meaning": "All 10 tags 128 bytes"
+                                },
+                                {
+                                    "pattern": "00000110",
+                                    "meaning": "All 10 tags 160 bytes"
+                                },
+                                {
+                                    "pattern": "00000111",
+                                    "meaning": "All 10 tags 192 bytes"
+                                },
+                                {
+                                    "pattern": "00001000",
+                                    "meaning": "All SDS tags 32 bytes except '9F78' which is 64 bytes"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
