@@ -1859,7 +1859,93 @@
         "name": "Application Priority Indicator",
         "source": "card",
         "tag": "87"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "name": "Application cannot be selected without confirmation by the cardholder",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "pattern": "01110000",
+              "type": "RFU"
+            },
+            {
+              "name": "Priority",
+              "pattern": "00001111",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "00000000",
+                  "meaning": "No priority assigned"
+                },
+                {
+                  "pattern": "00000001",
+                  "meaning": "Priority 1 (highest)"
+                },
+                {
+                  "pattern": "00000010",
+                  "meaning": "Priority 2"
+                },
+                {
+                  "pattern": "00000011",
+                  "meaning": "Priority 3"
+                },
+                {
+                  "pattern": "00000100",
+                  "meaning": "Priority 4"
+                },
+                {
+                  "pattern": "00000101",
+                  "meaning": "Priority 5"
+                },
+                {
+                  "pattern": "00000110",
+                  "meaning": "Priority 6"
+                },
+                {
+                  "pattern": "00000111",
+                  "meaning": "Priority 7"
+                },
+                {
+                  "pattern": "00001000",
+                  "meaning": "Priority 8"
+                },
+                {
+                  "pattern": "00001001",
+                  "meaning": "Priority 9"
+                },
+                {
+                  "pattern": "00001010",
+                  "meaning": "Priority 10"
+                },
+                {
+                  "pattern": "00001011",
+                  "meaning": "Priority 11"
+                },
+                {
+                  "pattern": "00001100",
+                  "meaning": "Priority 12"
+                },
+                {
+                  "pattern": "00001101",
+                  "meaning": "Priority 13"
+                },
+                {
+                  "pattern": "00001110",
+                  "meaning": "Priority 14"
+                },
+                {
+                  "pattern": "00001111",
+                  "meaning": "Priority 15 (lowest)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {
