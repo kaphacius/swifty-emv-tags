@@ -611,7 +611,27 @@
                 "name": "Mobile Support Indicator",
                 "source": "card",
                 "tag": "9F7E"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "pattern": "11111100",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "OD-CVM Required",
+                            "pattern": "00000010",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Mobile supported",
+                            "pattern": "00000001",
+                            "type": "bool"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
