@@ -1413,7 +1413,41 @@
                 "name": "Security Capability",
                 "source": "unknown",
                 "tag": "DF811F"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "SDA",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "DDA",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Card capture",
+                            "pattern": "00100000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00010000",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "CDA",
+                            "pattern": "00001000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
