@@ -198,7 +198,7 @@
     },
     {
       "info": {
-        "description": "Contains the data elements of track 2 according to ISO/IEC 7813, excluding start sentinel, end sentinel, and Longitudinal Redundancy Check (LRC), as follows:Primary Account NumberField Separator (Hex 'D')Expiration Date (YYMM)Service CodeDiscretionary Data (defined by individual payment systems)Pad with one Hex 'F' if needed to ensure whole bytes",
+        "description": "Contains the data elements of track 2 according to ISO/IEC 7813, excluding start sentinel, end sentinel, and Longitudinal Redundancy Check (LRC), as follows: Primary Account Number, Field Separator (Hex 'D'), Expiration Date (YYMM), Service Code, Discretionary Data (defined by individual payment systems), padded with one Hex 'F' if needed to ensure whole bytes. For Kernel 4, Track 2 Equivalent Data may not be an exact image of magnetic stripe Track 2.",
         "format": "binary",
         "kernel": "general",
         "maxLength": "19",
@@ -234,7 +234,7 @@
     },
     {
       "info": {
-        "description": "Valid cardholder account number",
+        "description": "Valid cardholder account number. For Kernel 4, the Primary Account Number must be maintained as the same value for both the mag-stripe mode and the EMV mode.",
         "format": "cn variable up to 19",
         "kernel": "general",
         "maxLength": "var. up to 10",
@@ -318,7 +318,7 @@
     },
     {
       "info": {
-        "description": "Date after which the card application expires.",
+        "description": "Date after which the card application expires. The date is expressed in the YYMMDD format. For MasterCard applications, if the value of YY ranges from '00' to '49' the date reads 20YYMMDD; if '50' to '99' the date reads 19YYMMDD. For transactions where Offline Data Authentication is not performed, the Application Expiration Date does not need to be returned.",
         "format": "n 6 (YYMMDD)",
         "kernel": "general",
         "maxLength": "3",
@@ -330,7 +330,7 @@
     },
     {
       "info": {
-        "description": "Date from which the application may be used. The date is expressed in the YYMMDD format.",
+        "description": "Date from which the application may be used. The date is expressed in the YYMMDD format. For MasterCard applications, if the value of YY ranges from '00' to '49' the date reads 20YYMMDD; if '50' to '99' the date reads 19YYMMDD.",
         "format": "n 6 (YYMMDD)",
         "kernel": "general",
         "maxLength": "3",
@@ -426,7 +426,7 @@
     },
     {
       "info": {
-        "description": "1-4 languages stored in order of preference, each represented by 2 lower case alphabetical characters according to ISO 639-1.",
+        "description": "1-4 languages stored in order of preference, each represented by 2 alphabetical characters according to ISO 639. EMVCo strongly recommends that cards be personalised with this data element coded in lowercase, but terminals should accept it whether coded in upper or lower case.",
         "format": "an 2",
         "kernel": "general",
         "maxLength": "8",

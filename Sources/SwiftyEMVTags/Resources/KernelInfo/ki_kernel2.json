@@ -6,54 +6,6 @@
     "tags": [
         {
             "info": {
-                "description": "Contains the data objects of the track 2, in accordance with [ISO/IEC 7813], excluding start sentinel, end sentinel, and LRC.",
-                "format": "binary",
-                "kernel": "kernel2",
-                "maxLength": "19",
-                "minLength": "0",
-                "name": "Track 2 Equivalent Data",
-                "source": "card",
-                "tag": "57"
-            }
-        },
-        {
-            "info": {
-                "description": "Date after which application expires. The date is expressed in the YYMMDD format. For MasterCard applications, if the value of YY ranges from '00' to '49' the date reads 20YYMMDD. If the value of YY ranges from '50' to '99' the date reads 19YYMMDD.",
-                "format": "n 6 (YYMMDD)",
-                "kernel": "kernel2",
-                "maxLength": "3",
-                "minLength": "3",
-                "name": "Application Expiration Date",
-                "source": "card",
-                "tag": "5F24"
-            }
-        },
-        {
-            "info": {
-                "description": "Date from which the application may be used. The date is expressed in the YYMMDD format. For MasterCard branded applications if the value of YY ranges from '00' to '49' the date reads 20YYMMDD. If the value of YY ranges from '50' to '99', the date reads 19YYMMDD.",
-                "format": "n 6 (YYMMDD)",
-                "kernel": "kernel2",
-                "maxLength": "3",
-                "minLength": "3",
-                "name": "Application Effective Date",
-                "source": "card",
-                "tag": "5F25"
-            }
-        },
-        {
-            "info": {
-                "description": "1-4 languages stored in order of preference, each represented by 2 alphabetical characters according to ISO 639 Note: EMVCo strongly recommends that cards be personalised with data element '5F2D' coded in lowercase, but that terminals accept the data element whether it is coded in upper or lower case.",
-                "format": "an 2",
-                "kernel": "kernel2",
-                "maxLength": "8",
-                "minLength": "2",
-                "name": "Language Preference",
-                "source": "card",
-                "tag": "5F2D"
-            }
-        },
-        {
-            "info": {
                 "description": "Identifies the decimal point position from the right of the transaction amount accordin to ISO 4217",
                 "format": "n 1",
                 "kernel": "kernel2",

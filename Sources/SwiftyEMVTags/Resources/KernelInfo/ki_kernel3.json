@@ -18,18 +18,6 @@
     },
     {
       "info" : {
-        "description" : "Date after which the card application expires. For transactions where Offline Data Authentication is performed, the Application Expiration Date is returned. For transactions where Offline Data Authentication is not performed, the Application Expiration Date does not need to be returned.",
-        "format" : "n 6 (YYMMDD)",
-        "kernel" : "kernel3",
-        "maxLength" : "3",
-        "minLength" : "3",
-        "name" : "Application Expiration Date",
-        "source" : "card",
-        "tag" : "5F24"
-      }
-    },
-    {
-      "info" : {
         "description" : "Portion of the Issuer Public Key Modulus which does not fit into the Issuer PK Certificate.",
         "format" : "binary",
         "kernel" : "kernel3",
