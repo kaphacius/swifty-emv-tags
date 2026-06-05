@@ -763,7 +763,27 @@
                 "name": "DS Summary Status",
                 "source": "card",
                 "tag": "DF810B"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Successful Read",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Successful Write",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00111111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
