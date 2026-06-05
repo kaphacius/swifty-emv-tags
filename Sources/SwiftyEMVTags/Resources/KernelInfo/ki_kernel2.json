@@ -727,7 +727,40 @@
                 "name": "DS AC Type",
                 "source": "card",
                 "tag": "DF8108"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "AC Type",
+                            "pattern": "11000000",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "AAC"
+                                },
+                                {
+                                    "pattern": "01000000",
+                                    "meaning": "TC"
+                                },
+                                {
+                                    "pattern": "10000000",
+                                    "meaning": "ARQC"
+                                },
+                                {
+                                    "pattern": "11000000",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        },
+                        {
+                            "pattern": "00111111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
