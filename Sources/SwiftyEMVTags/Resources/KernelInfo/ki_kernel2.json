@@ -871,7 +871,49 @@
                 "name": "Reference Control Parameter",
                 "source": "unknown",
                 "tag": "DF8114"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "AC Type",
+                            "pattern": "11000000",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "AAC"
+                                },
+                                {
+                                    "pattern": "01000000",
+                                    "meaning": "TC"
+                                },
+                                {
+                                    "pattern": "10000000",
+                                    "meaning": "ARQC"
+                                },
+                                {
+                                    "pattern": "11000000",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        },
+                        {
+                            "pattern": "00100000",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "CDA signature requested",
+                            "pattern": "00010000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00001111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
