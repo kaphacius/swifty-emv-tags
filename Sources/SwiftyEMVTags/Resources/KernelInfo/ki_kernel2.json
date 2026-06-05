@@ -407,7 +407,42 @@
                 "name": "DS Slot Management Control",
                 "source": "card",
                 "tag": "9F6F"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Permanent slot type",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Volatile slot type",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Low volatility",
+                            "pattern": "00100000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Locked slot",
+                            "pattern": "00010000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00001110",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "Deactivated slot",
+                            "pattern": "00000001",
+                            "type": "bool"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
