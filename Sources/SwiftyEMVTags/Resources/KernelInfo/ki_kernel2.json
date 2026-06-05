@@ -891,7 +891,22 @@
                 "name": "Post-Gen AC Put Data Status",
                 "source": "unknown",
                 "tag": "DF810E"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Completed",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "01111111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
@@ -903,7 +918,22 @@
                 "name": "Pre-Gen AC Put Data Status",
                 "source": "unknown",
                 "tag": "DF810F"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Completed",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "01111111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
