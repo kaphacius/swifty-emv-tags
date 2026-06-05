@@ -784,7 +784,46 @@
                 "name": "DS ODS Info For Reader",
                 "source": "card",
                 "tag": "DF810A"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Usable for TC",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Usable for ARQC",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Usable for AAC",
+                            "pattern": "00100000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00011000",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "Stop if no DS ODS Term",
+                            "pattern": "00000100",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Stop if write failed",
+                            "pattern": "00000010",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000001",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
