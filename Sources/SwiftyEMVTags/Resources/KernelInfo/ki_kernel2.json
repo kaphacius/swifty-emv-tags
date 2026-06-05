@@ -250,7 +250,27 @@
                 "name": "DS Slot Availability",
                 "source": "card",
                 "tag": "9F5F"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Permanent slot type",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Volatile slot type",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00111111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
