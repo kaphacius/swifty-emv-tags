@@ -1415,7 +1415,44 @@
                 "name": "Mag-stripe CVM Capability - CVM Required",
                 "source": "unknown",
                 "tag": "DF811E"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "CVM",
+                            "pattern": "11110000",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "NO CVM"
+                                },
+                                {
+                                    "pattern": "00010000",
+                                    "meaning": "OBTAIN SIGNATURE"
+                                },
+                                {
+                                    "pattern": "00100000",
+                                    "meaning": "ONLINE PIN"
+                                },
+                                {
+                                    "pattern": "11110000",
+                                    "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        },
+                        {
+                            "pattern": "00001111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
@@ -2397,7 +2434,44 @@
                 "name": "Mag-stripe CVM Capability - No CVM Required",
                 "source": "card",
                 "tag": "DF812C"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "CVM",
+                            "pattern": "11110000",
+                            "type": "bitmap",
+                            "mappings": [
+                                {
+                                    "pattern": "00000000",
+                                    "meaning": "NO CVM"
+                                },
+                                {
+                                    "pattern": "00010000",
+                                    "meaning": "OBTAIN SIGNATURE"
+                                },
+                                {
+                                    "pattern": "00100000",
+                                    "meaning": "ONLINE PIN"
+                                },
+                                {
+                                    "pattern": "11110000",
+                                    "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxxxxxx",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        },
+                        {
+                            "pattern": "00001111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
