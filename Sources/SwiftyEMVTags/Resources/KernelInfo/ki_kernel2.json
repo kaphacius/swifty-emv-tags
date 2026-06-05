@@ -2085,7 +2085,27 @@
                 "name": "IDS Status",
                 "source": "unknown",
                 "tag": "DF8128"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Read",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Write",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00111111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
