@@ -215,19 +215,164 @@
         "name" : "Card Interface Capabilities",
         "source" : "card",
         "tag" : "9F70"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "name": "Keyed Data Entry Supported (Embossed or Printed PAN)",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "Physical Magnetic Stripe Supported",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "name": "Contact EMV Interface Supported",
+              "pattern": "00100000",
+              "type": "bool"
+            },
+            {
+              "name": "Contactless EMV Interface Supported",
+              "pattern": "00010000",
+              "type": "bool"
+            },
+            {
+              "name": "Mobile Interface Supported",
+              "pattern": "00001000",
+              "type": "bool"
+            },
+            {
+              "name": "Magstripe Mode Not Supported",
+              "pattern": "00000100",
+              "type": "bool"
+            },
+            {
+              "pattern": "00000011",
+              "type": "RFU"
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "name": "Delayed authorisation usage information present",
+              "pattern": "10000000",
+              "type": "bool"
+            },
+            {
+              "name": "Valid at domestic terminals performing contactless delayed authorisation",
+              "pattern": "01000000",
+              "type": "bool"
+            },
+            {
+              "name": "Valid at international terminals performing contactless delayed authorisation",
+              "pattern": "00100000",
+              "type": "bool"
+            },
+            {
+              "pattern": "00011111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info" : {
         "description" : "Proprietary data element returned from the Card in the GET PROCESSING OPTIONS response, indicating the status of Mobile CVM entry.",
-        "format" : "binary 32",
+        "format" : "binary 24",
         "kernel" : "kernel4",
-        "maxLength" : "4",
-        "minLength" : "4",
+        "maxLength" : "3",
+        "minLength" : "3",
         "name" : "Mobile CVM Results",
         "source" : "card",
         "tag" : "9F71"
-      }
+      },
+      "bytes": [
+        {
+          "name": "CVM Performed",
+          "groups": [
+            {
+              "name": "CVM Performed",
+              "pattern": "11111111",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "00000001",
+                  "meaning": "Mobile CVM Performed"
+                },
+                {
+                  "pattern": "00111111",
+                  "meaning": "No CVM Performed"
+                },
+                {
+                  "pattern": "xxxxxxxx",
+                  "meaning": "RFU"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CVM Condition",
+          "groups": [
+            {
+              "name": "CVM Condition",
+              "pattern": "11111111",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "00000000",
+                  "meaning": "Mobile CVM not Required"
+                },
+                {
+                  "pattern": "00000011",
+                  "meaning": "Terminal Required CVM"
+                },
+                {
+                  "pattern": "xxxxxxxx",
+                  "meaning": "RFU"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CVM Result",
+          "groups": [
+            {
+              "name": "CVM Result",
+              "pattern": "11111111",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "00000000",
+                  "meaning": "Unknown (Mobile CVM not performed)"
+                },
+                {
+                  "pattern": "00000001",
+                  "meaning": "Mobile CVM Failed"
+                },
+                {
+                  "pattern": "00000010",
+                  "meaning": "Mobile CVM Successful"
+                },
+                {
+                  "pattern": "00000011",
+                  "meaning": "Mobile CVM Blocked"
+                },
+                {
+                  "pattern": "xxxxxxxx",
+                  "meaning": "RFU"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
