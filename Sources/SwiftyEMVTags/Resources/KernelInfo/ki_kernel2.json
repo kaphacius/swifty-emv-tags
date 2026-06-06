@@ -686,7 +686,41 @@
                 "name": "DS ODS Info",
                 "source": "card",
                 "tag": "DF62"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Permanent slot type",
+                            "pattern": "10000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Volatile slot type",
+                            "pattern": "01000000",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "Low volatility",
+                            "pattern": "00100000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00010000",
+                            "type": "RFU"
+                        },
+                        {
+                            "name": "Decline payment transaction in case of data storage error",
+                            "pattern": "00001000",
+                            "type": "bool"
+                        },
+                        {
+                            "pattern": "00000111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
