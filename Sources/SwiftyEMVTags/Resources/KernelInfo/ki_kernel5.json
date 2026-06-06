@@ -63,7 +63,26 @@
         "name" : "Terminal Compatibility Indicator",
         "source" : "unknown",
         "tag" : "9F52"
-      }
+      },
+      "bytes" : [
+        {
+          "groups" : [
+            {
+              "pattern" : "11111100",
+              "type" : "RFU"
+            },
+            {
+              "name" : "EMV Mode Supported",
+              "pattern" : "00000010",
+              "type" : "bool"
+            },
+            {
+              "pattern" : "00000001",
+              "type" : "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info" : {
@@ -178,7 +197,40 @@
         "name" : "Issuer Update Parameter",
         "source" : "card",
         "tag" : "9F60"
-      }
+      },
+      "bytes" : [
+        {
+          "groups" : [
+            {
+              "pattern" : "11111100",
+              "type" : "RFU"
+            },
+            {
+              "name" : "Issuer Update",
+              "pattern" : "00000011",
+              "type" : "bitmap",
+              "mappings" : [
+                {
+                  "pattern" : "00",
+                  "meaning" : "Issuer Update is not expected, card can be removed"
+                },
+                {
+                  "pattern" : "01",
+                  "meaning" : "Issuer Update is expected, card shall be kept in RF field during authorisation process"
+                },
+                {
+                  "pattern" : "10",
+                  "meaning" : "Issuer Update is expected, card shall be presented again if necessary after authorisation process"
+                },
+                {
+                  "pattern" : "11",
+                  "meaning" : "RFU"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
