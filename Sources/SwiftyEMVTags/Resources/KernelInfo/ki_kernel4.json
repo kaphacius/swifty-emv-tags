@@ -183,19 +183,19 @@
                       "type": "bitmap",
                       "mappings": [
                           {
-                              "pattern": "00000001",
+                              "pattern": "001",
                               "meaning": "2.2 - 2.3"
                           },
                           {
-                              "pattern": "00000010",
+                              "pattern": "010",
                               "meaning": "2.4 - 2.6"
                           },
                           {
-                              "pattern": "00000011",
+                              "pattern": "011",
                               "meaning": "2.7"
                           },
                           {
-                              "pattern": "000001xx",
+                              "pattern": "1xx",
                               "meaning": "RFU - other values"
                           }
                       ]

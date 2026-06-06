@@ -14,7 +14,44 @@
         "name" : "Cardholder Verification Status",
         "source" : "card",
         "tag" : "9F50"
-      }
+      },
+      "bytes" : [
+        {
+          "groups" : [
+            {
+              "name" : "CVM Type",
+              "pattern" : "11110000",
+              "type" : "bitmap",
+              "mappings" : [
+                {
+                  "pattern" : "0000",
+                  "meaning" : "No CVM"
+                },
+                {
+                  "pattern" : "0001",
+                  "meaning" : "Obtain Signature"
+                },
+                {
+                  "pattern" : "0010",
+                  "meaning" : "Online PIN"
+                },
+                {
+                  "pattern" : "0011",
+                  "meaning" : "On-Device CVM Selected"
+                },
+                {
+                  "pattern" : "xxxx",
+                  "meaning" : "Not Applicable (no CVM preference)"
+                }
+              ]
+            },
+            {
+              "pattern" : "00001111",
+              "type" : "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info" : {

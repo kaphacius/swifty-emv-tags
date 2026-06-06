@@ -109,11 +109,11 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "0000",
                                     "meaning": "VERSION 0"
                                 },
                                 {
-                                    "pattern": "xxxxxxxx",
+                                    "pattern": "xxxx",
                                     "meaning": "RFU"
                                 }
                             ]
@@ -124,19 +124,19 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "0000",
                                     "meaning": "DATA STORAGE NOT SUPPORTED"
                                 },
                                 {
-                                    "pattern": "00000001",
+                                    "pattern": "0001",
                                     "meaning": "VERSION 1"
                                 },
                                 {
-                                    "pattern": "00000010",
+                                    "pattern": "0010",
                                     "meaning": "VERSION 2"
                                 },
                                 {
-                                    "pattern": "xxxxxxxx",
+                                    "pattern": "xxxx",
                                     "meaning": "RFU"
                                 }
                             ]
@@ -164,11 +164,11 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "0",
                                     "meaning": "CDA SUPPORTED AS IN EMV"
                                 },
                                 {
-                                    "pattern": "00000001",
+                                    "pattern": "1",
                                     "meaning": "CDA SUPPORTED OVER TC, ARQC AND AAC"
                                 }
                             ]
@@ -792,19 +792,19 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "00",
                                     "meaning": "AAC"
                                 },
                                 {
-                                    "pattern": "01000000",
+                                    "pattern": "01",
                                     "meaning": "TC"
                                 },
                                 {
-                                    "pattern": "10000000",
+                                    "pattern": "10",
                                     "meaning": "ARQC"
                                 },
                                 {
-                                    "pattern": "11000000",
+                                    "pattern": "11",
                                     "meaning": "RFU"
                                 }
                             ]
@@ -1058,19 +1058,19 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "00",
                                     "meaning": "AAC"
                                 },
                                 {
-                                    "pattern": "01000000",
+                                    "pattern": "01",
                                     "meaning": "TC"
                                 },
                                 {
-                                    "pattern": "10000000",
+                                    "pattern": "10",
                                     "meaning": "ARQC"
                                 },
                                 {
-                                    "pattern": "11000000",
+                                    "pattern": "11",
                                     "meaning": "RFU"
                                 }
                             ]
@@ -1582,23 +1582,23 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "0000",
                                     "meaning": "NO CVM"
                                 },
                                 {
-                                    "pattern": "00010000",
+                                    "pattern": "0001",
                                     "meaning": "OBTAIN SIGNATURE"
                                 },
                                 {
-                                    "pattern": "00100000",
+                                    "pattern": "0010",
                                     "meaning": "ONLINE PIN"
                                 },
                                 {
-                                    "pattern": "11110000",
+                                    "pattern": "1111",
                                     "meaning": "N/A"
                                 },
                                 {
-                                    "pattern": "xxxxxxxx",
+                                    "pattern": "xxxx",
                                     "meaning": "RFU"
                                 }
                             ]
@@ -2601,23 +2601,23 @@
                             "type": "bitmap",
                             "mappings": [
                                 {
-                                    "pattern": "00000000",
+                                    "pattern": "0000",
                                     "meaning": "NO CVM"
                                 },
                                 {
-                                    "pattern": "00010000",
+                                    "pattern": "0001",
                                     "meaning": "OBTAIN SIGNATURE"
                                 },
                                 {
-                                    "pattern": "00100000",
+                                    "pattern": "0010",
                                     "meaning": "ONLINE PIN"
                                 },
                                 {
-                                    "pattern": "11110000",
+                                    "pattern": "1111",
                                     "meaning": "N/A"
                                 },
                                 {
-                                    "pattern": "xxxxxxxx",
+                                    "pattern": "xxxx",
                                     "meaning": "RFU"
                                 }
                             ]
