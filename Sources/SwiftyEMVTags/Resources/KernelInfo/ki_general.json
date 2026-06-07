@@ -470,7 +470,122 @@
         "name": "Service Code",
         "source": "card",
         "tag": "5F30"
-      }
+      },
+      "bytes": [
+        {
+          "groups": [
+            {
+              "name": "Interchange",
+              "pattern": "11110000",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "0001",
+                  "meaning": "International"
+                },
+                {
+                  "pattern": "0010",
+                  "meaning": "International, Integrated Circuit Card"
+                },
+                {
+                  "pattern": "0101",
+                  "meaning": "National"
+                },
+                {
+                  "pattern": "0110",
+                  "meaning": "National, Integrated Circuit Card"
+                },
+                {
+                  "pattern": "0111",
+                  "meaning": "Private"
+                },
+                {
+                  "pattern": "1001",
+                  "meaning": "Test"
+                },
+                {
+                  "pattern": "xxxx",
+                  "meaning": "RFU"
+                }
+              ]
+            },
+            {
+              "name": "Authorization Processing",
+              "pattern": "00001111",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "0000",
+                  "meaning": "Normal"
+                },
+                {
+                  "pattern": "0010",
+                  "meaning": "By Issuer via Online"
+                },
+                {
+                  "pattern": "0100",
+                  "meaning": "By Issuer via Online unless explicit bilateral agreement applies"
+                },
+                {
+                  "pattern": "xxxx",
+                  "meaning": "RFU"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groups": [
+            {
+              "name": "Allowed Services and PIN Requirements",
+              "pattern": "11110000",
+              "type": "bitmap",
+              "mappings": [
+                {
+                  "pattern": "0000",
+                  "meaning": "No restrictions, PIN Required"
+                },
+                {
+                  "pattern": "0001",
+                  "meaning": "No restrictions"
+                },
+                {
+                  "pattern": "0010",
+                  "meaning": "Goods and services only"
+                },
+                {
+                  "pattern": "0011",
+                  "meaning": "ATM only, PIN Required"
+                },
+                {
+                  "pattern": "0100",
+                  "meaning": "Cash only"
+                },
+                {
+                  "pattern": "0101",
+                  "meaning": "Goods and services only, PIN Required"
+                },
+                {
+                  "pattern": "0110",
+                  "meaning": "No restrictions, Prompt for PIN if PED present"
+                },
+                {
+                  "pattern": "0111",
+                  "meaning": "Goods and services only, Prompt for PIN if PED present"
+                },
+                {
+                  "pattern": "xxxx",
+                  "meaning": "RFU"
+                }
+              ]
+            },
+            {
+              "pattern": "00001111",
+              "type": "RFU"
+            }
+          ]
+        }
+      ]
     },
     {
       "info": {

@@ -43,7 +43,7 @@ public struct TagMapping: Decodable {
 
 extension TagMapping {
     
-    internal static let defaultMappingCount = 9
+    internal static let defaultMappingCount = 10
     
     internal static func defaultURLs() throws -> [URL] {
         try defaultJSONResources(.tagMapping)
