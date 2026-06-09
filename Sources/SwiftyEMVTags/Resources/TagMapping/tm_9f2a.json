@@ -1,0 +1,31 @@
+{
+    "tag": "9F2A",
+    "kernel": "general",
+    "description": "Indicates the card's preference for the kernel on which the contactless application can be processed.",
+    "values": [
+        {
+            "value": "02",
+            "meaning": "Kernel 2 — MasterCard AIDs"
+        },
+        {
+            "value": "03",
+            "meaning": "Kernel 3 — Visa AIDs"
+        },
+        {
+            "value": "04",
+            "meaning": "Kernel 4 — American Express AIDs"
+        },
+        {
+            "value": "05",
+            "meaning": "Kernel 5 — JCB AIDs"
+        },
+        {
+            "value": "06",
+            "meaning": "Kernel 6 — Discover AIDs"
+        },
+        {
+            "value": "07",
+            "meaning": "Kernel 7 — UnionPay AIDs"
+        }
+    ]
+}
