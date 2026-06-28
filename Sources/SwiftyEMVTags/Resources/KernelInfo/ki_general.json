@@ -1990,7 +1990,7 @@
             {
               "name": "Priority",
               "pattern": "00001111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "0000",
@@ -3680,7 +3680,7 @@
             {
               "name": "Cryptogram Type",
               "pattern": "11000000",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "00",
@@ -3703,7 +3703,7 @@
             {
               "name": "Advice Message",
               "pattern": "00111000",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "000",

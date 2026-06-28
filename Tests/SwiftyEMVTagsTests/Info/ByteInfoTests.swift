@@ -48,7 +48,7 @@ final class ByteInfoTests: XCTestCase {
         switch group.type {
         case .RFU:
             XCTAssertNil(dict["name"])
-        case .bitmap(let mappings):
+        case .bitmap(let mappings), .enumeration(let mappings):
             try zip(mappings, dict.value(of: [JSONDictionary].self, for: "mappings")).forEach {
                 try assertMapping($0.0, dict: $0.1)
             }

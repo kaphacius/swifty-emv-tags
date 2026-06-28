@@ -77,10 +77,11 @@ extension EMVTag.DecodedByte {
         
         public enum GroupType: Equatable {
             case bitmap(MappingResult)
+            case enumeration(MappingResult)
             case hex(UInt8)
             case bool(Bool)
             case RFU
-            
+
             init?(group: ByteInfo.Group, shiftedBits: UInt8) {
                 switch group.type {
                 case .bool:
@@ -92,10 +93,16 @@ extension EMVTag.DecodedByte {
                 case .bitmap(let mappings):
                     if let index = mappings
                         .map(\.pattern)
-                        .firstIndex(where: { pattern in
-                            pattern.matches(shiftedBits: shiftedBits)
-                        }) {
+                        .firstIndex(where: { $0.matches(shiftedBits: shiftedBits) }) {
                         self = .bitmap(.init(mappings: mappings, shiftedBits: shiftedBits, matchIndex: index))
+                    } else {
+                        return nil
+                    }
+                case .enumeration(let mappings):
+                    if let index = mappings
+                        .map(\.pattern)
+                        .firstIndex(where: { $0.matches(shiftedBits: shiftedBits) }) {
+                        self = .enumeration(.init(mappings: mappings, shiftedBits: shiftedBits, matchIndex: index))
                     } else {
                         return nil
                     }

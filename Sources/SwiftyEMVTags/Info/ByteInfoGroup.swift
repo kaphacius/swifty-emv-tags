@@ -14,17 +14,20 @@ extension ByteInfo {
         
         /// Encoding rule
         public enum MappingType: Decodable {
-            
+
             /// Group is mapped across multiple bits
             /// Actual mapping is described within ``ByteInfo/Group/Mapping`` struct
             case bitmap([Mapping])
-            
+
+            /// Group represents a discrete named value (non-bit-flag enumeration)
+            case enumeration([Mapping])
+
             /// Group represens a hex value
             case hex
-            
+
             /// Group represents a boolean value
             case bool
-            
+
             /// Group is RFU
             case RFU
         }
@@ -149,7 +152,7 @@ extension ByteInfo {
             switch type {
             case .RFU:
                 self.name = MappingType.RawType.RFU.rawValue
-            case .bool, .hex, .bitmap:
+            case .bool, .hex, .bitmap, .enumeration:
                 self.name = try container.decode(String.self, forKey: .name)
             }
             
@@ -173,6 +176,8 @@ extension ByteInfo.Group.MappingType {
         switch try container.decode(RawType.self, forKey: .type) {
         case .bitmap:
             self = .bitmap(try container.decode([ByteInfo.Group.Mapping].self, forKey: .mappings))
+        case .enumeration:
+            self = .enumeration(try container.decode([ByteInfo.Group.Mapping].self, forKey: .mappings))
         case .hex:
             self = .hex
         case .bool:
@@ -187,12 +192,14 @@ extension ByteInfo.Group.MappingType {
         case .bool: return RawType.bool.rawValue
         case .hex: return RawType.hex.rawValue
         case .bitmap: return RawType.bitmap.rawValue
+        case .enumeration: return RawType.enumeration.rawValue
         case .RFU: return RawType.RFU.rawValue
         }
     }
-    
+
     internal enum RawType: String, Decodable {
         case bitmap
+        case enumeration = "enum"
         case hex
         case bool
         case RFU

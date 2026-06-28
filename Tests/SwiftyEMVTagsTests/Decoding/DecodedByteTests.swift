@@ -53,7 +53,8 @@ final class DecodedByteTests: XCTestCase {
             XCTAssertTrue((sut.pattern == 1) == isSet)
         case (.hex(let hexValue), .hex):
             XCTAssertEqual(sut.pattern, hexValue)
-        case (.bitmap(let mappingResult), .bitmap(let infoMappings)):
+        case (.bitmap(let mappingResult), .bitmap(let infoMappings)),
+             (.enumeration(let mappingResult), .enumeration(let infoMappings)):
             if let matchIndex = infoMappings.firstIndex(where: { $0.pattern.matches(shiftedBits: sut.pattern) }) {
                 XCTAssertEqual(mappingResult.matchIndex, matchIndex)
                 zip(mappingResult.mappings, infoMappings)
@@ -66,11 +67,11 @@ final class DecodedByteTests: XCTestCase {
                         default:
                             XCTFail("Mismatched mapping")
                         }
-                        
+
                         XCTAssertEqual(decodedMapping.meaning, infoMapping.meaning)
                     }
             } else {
-                XCTFail("Unable to match bitmap patterns")
+                XCTFail("Unable to match bitmap/enumeration patterns")
             }
         default:
             XCTFail("Group types don't match")
