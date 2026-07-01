@@ -106,7 +106,7 @@
                         {
                             "name": "ACI Version Number",
                             "pattern": "11110000",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0000",
@@ -121,7 +121,7 @@
                         {
                             "name": "Data Storage Version Number",
                             "pattern": "00001111",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0000",
@@ -161,7 +161,7 @@
                         {
                             "name": "CDA Indicator",
                             "pattern": "00000001",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0",
@@ -180,7 +180,7 @@
                         {
                             "name": "SDS Scheme Indicator",
                             "pattern": "11111111",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00000000",
@@ -823,7 +823,7 @@
                         {
                             "name": "AC Type",
                             "pattern": "11000000",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00",
@@ -1089,7 +1089,7 @@
                         {
                             "name": "AC Type",
                             "pattern": "11000000",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00",
@@ -1144,7 +1144,7 @@
                         {
                             "pattern": "11111111",
                             "name": "L1",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00000000",
@@ -1176,7 +1176,7 @@
                         {
                             "pattern": "11111111",
                             "name": "L2",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00000000",
@@ -1256,7 +1256,7 @@
                         {
                             "pattern": "11111111",
                             "name": "L3",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00000000",
@@ -1308,7 +1308,7 @@
                         {
                             "pattern": "11111111",
                             "name": "Message identifier",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "00010111",
@@ -1613,7 +1613,7 @@
                         {
                             "name": "CVM",
                             "pattern": "11110000",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0000",
@@ -2352,7 +2352,7 @@
                         {
                             "pattern": "11110000",
                             "name": "Status",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0001",
@@ -2403,7 +2403,7 @@
                         {
                             "pattern": "11110000",
                             "name": "Start",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0000",
@@ -2465,7 +2465,7 @@
                         {
                             "pattern": "11110000",
                             "name": "CVM",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0000",
@@ -2552,6 +2552,10 @@
                                 {
                                     "pattern": "1111",
                                     "meaning": "N/A"
+                                },
+                                {
+                                    "pattern": "xxxx",
+                                    "meaning": "RFU"
                                 }
                             ]
                         },
@@ -2632,7 +2636,7 @@
                         {
                             "name": "CVM",
                             "pattern": "11110000",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0000",
