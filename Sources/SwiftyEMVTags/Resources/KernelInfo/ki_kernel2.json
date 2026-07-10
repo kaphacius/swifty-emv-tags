@@ -26,7 +26,44 @@
                 "name": "Account Type",
                 "source": "terminal",
                 "tag": "5F57"
-            }
+            },
+            "bytes": [
+                {
+                    "groups": [
+                        {
+                            "name": "Account Type",
+                            "pattern": "11110000",
+                            "type": "enum",
+                            "mappings": [
+                                {
+                                    "pattern": "0000",
+                                    "meaning": "Default – unspecified"
+                                },
+                                {
+                                    "pattern": "0001",
+                                    "meaning": "Savings"
+                                },
+                                {
+                                    "pattern": "0010",
+                                    "meaning": "Cheque/debit"
+                                },
+                                {
+                                    "pattern": "0011",
+                                    "meaning": "Credit"
+                                },
+                                {
+                                    "pattern": "xxxx",
+                                    "meaning": "RFU"
+                                }
+                            ]
+                        },
+                        {
+                            "pattern": "00001111",
+                            "type": "RFU"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "info": {
@@ -2442,7 +2479,7 @@
                         {
                             "pattern": "11110000",
                             "name": "Online Response Data",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "1111",
@@ -2524,7 +2561,7 @@
                         {
                             "pattern": "00001000",
                             "name": "Receipt",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "0",
@@ -2547,7 +2584,7 @@
                         {
                             "pattern": "11110000",
                             "name": "Alternate Interface Preference",
-                            "type": "bitmap",
+                            "type": "enum",
                             "mappings": [
                                 {
                                     "pattern": "1111",

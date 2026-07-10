@@ -477,7 +477,7 @@
             {
               "name": "Interchange",
               "pattern": "11110000",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "0001",
@@ -512,7 +512,7 @@
             {
               "name": "Authorization Processing",
               "pattern": "00001111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "0000",
@@ -539,7 +539,7 @@
             {
               "name": "Allowed Services and PIN Requirements",
               "pattern": "11110000",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "0000",
@@ -3942,7 +3942,7 @@
             {
               "name": "Action in case CVM was unsuccessful",
               "pattern": "01000000",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                   {
                       "pattern": "0",
