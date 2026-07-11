@@ -21,7 +21,7 @@
             {
               "name" : "CVM Type",
               "pattern" : "11110000",
-              "type" : "bitmap",
+              "type" : "enum",
               "mappings" : [
                 {
                   "pattern" : "0000",
@@ -208,7 +208,7 @@
             {
               "name" : "Issuer Update",
               "pattern" : "00000011",
-              "type" : "bitmap",
+              "type" : "enum",
               "mappings" : [
                 {
                   "pattern" : "00",

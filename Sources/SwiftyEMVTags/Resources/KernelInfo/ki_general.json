@@ -3957,7 +3957,7 @@
             {
               "name": "CVM",
               "pattern": "00111111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "000000",
@@ -4056,7 +4056,7 @@
           "groups": [
             {
               "name": "CVM Condition",
-              "type": "bitmap",
+              "type": "enum",
               "pattern": "11111111",
               "mappings": [
                 {
@@ -4113,7 +4113,7 @@
             {
               "name": "CVM Result",
               "pattern": "11111111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                   {
                     "pattern": "00000000",
@@ -4126,6 +4126,11 @@
                   {
                     "pattern": "00000010",
                     "meaning": "Successful"
+                  }
+                  ,
+                  {
+                      "pattern": "xxxxxxxx",
+                      "meaning": "RFU"
                   }
               ]
             }

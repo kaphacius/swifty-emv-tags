@@ -21,7 +21,7 @@
                   {
                       "pattern": "11111111",
                       "name": "Contactless Reader Capabilities",
-                      "type": "bitmap",
+                      "type": "enum",
                       "mappings": [
                           {
                               "pattern": "00000000",
@@ -54,6 +54,11 @@
                           {
                               "pattern": "11001000",
                               "meaning": "Contactless: EMV and Mag-Stripe - CVM Required (C-4 Version ≥ 2.2)"
+                          }
+                          ,
+                          {
+                              "pattern": "xxxxxxxx",
+                              "meaning": "RFU"
                           }
                       ]
                   }
@@ -180,7 +185,7 @@
                     {
                       "pattern": "00000111",
                       "name": "C-4 Kernel Version",
-                      "type": "bitmap",
+                      "type": "enum",
                       "mappings": [
                           {
                               "pattern": "001",
@@ -298,7 +303,7 @@
             {
               "name": "CVM Performed",
               "pattern": "11111111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "00000001",
@@ -322,7 +327,7 @@
             {
               "name": "CVM Condition",
               "pattern": "11111111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "00000000",
@@ -346,7 +351,7 @@
             {
               "name": "CVM Result",
               "pattern": "11111111",
-              "type": "bitmap",
+              "type": "enum",
               "mappings": [
                 {
                   "pattern": "00000000",
