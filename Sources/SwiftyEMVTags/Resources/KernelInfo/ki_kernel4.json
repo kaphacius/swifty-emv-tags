@@ -138,6 +138,11 @@
                         "type": "bool"
                     },
                     {
+                        "pattern": "00010000",
+                        "name": "Plaintext Offline PIN",
+                        "type": "bool"
+                    },
+                    {
                         "pattern": "00001111",
                         "type": "RFU"
                     }
