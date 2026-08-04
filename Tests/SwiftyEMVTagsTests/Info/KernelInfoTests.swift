@@ -15,10 +15,25 @@ final class KernelInfoTests: XCTestCase {
         let data = try mockKernelInfoData
         let plainData = try JSONSerialization.jsonObject(with: data) as! JSONDictionary
         let kernelInfo = try JSONDecoder().decode(KernelInfo.self, from: data)
-        
+
         XCTAssertEqual(kernelInfo.name, try plainData.value(for: "name"))
         XCTAssertEqual(kernelInfo.description, try plainData.value(for: "description"))
         XCTAssertEqual(kernelInfo.tags.count, try plainData.value(of: [Any].self, for: "tags").count)
+    }
+
+    func testParsingWithoutTriggerTagsDefaultsToEmpty() throws {
+        // Old-format kernel JSON with no triggerTags/exclusiveWith should still decode.
+        let kernelInfo = try JSONDecoder().decode(KernelInfo.self, from: try mockKernelInfoData)
+
+        XCTAssertEqual(kernelInfo.triggerTags, [])
+        XCTAssertEqual(kernelInfo.exclusiveWith, [])
+    }
+
+    func testParsingTriggerTagsAndExclusiveWith() throws {
+        let kernelInfo = try JSONDecoder().decode(KernelInfo.self, from: try mockKernelInfoWithTriggersData)
+
+        XCTAssertEqual(kernelInfo.triggerTags, [0x9F06, 0xDF01])
+        XCTAssertEqual(kernelInfo.exclusiveWith, ["custom-visa-variant-2"])
     }
     
     func testDefaultInfo() throws {

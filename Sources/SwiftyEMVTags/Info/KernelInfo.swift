@@ -10,43 +10,77 @@ import SwiftyBERTLV
 
 /// Represents information about kernel and associated tags
 public struct KernelInfo: Decodable, Identifiable {
-    
+
     /// Category of the kernel
     public enum Category: String, Decodable {
         /// Kernel describing scheme-specific tags
         case scheme
-        
+
         /// Kernel describing vendor-specifig tags
         case vendor
     }
-    
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case category
+        case description
+        case tags
+        case triggerTags
+        case exclusiveWith
+    }
+
     /// The identifier of the kernel
     public let id: String
-    
+
     /// Name of the kernel
     public let name: String
-    
+
     /// Category of the kernel
     public let category: Category
-    
+
     /// Description of the kernel
     public let description: String
-    
+
     /// Tag decoding information
     public let tags: [TagDecodingInfo]
-    
+
+    /// Tags whose presence in a parsed tag set signals that this kernel is relevant.
+    /// Only meaningful for custom kernels - built-in kernel detection does not use this.
+    public let triggerTags: [UInt64]
+
+    /// Ids of other kernels this kernel should never be simultaneously active with.
+    /// Only meaningful for custom kernels; treated as symmetric regardless of which
+    /// side declares it.
+    public let exclusiveWith: [String]
+
     public init(
         id: String,
         name: String,
         category: Category,
         description: String,
-        tags: [TagDecodingInfo]
+        tags: [TagDecodingInfo],
+        triggerTags: [UInt64] = [],
+        exclusiveWith: [String] = []
     ) {
         self.id = id
         self.name = name
         self.category = category
         self.description = description
         self.tags = tags
+        self.triggerTags = triggerTags
+        self.exclusiveWith = exclusiveWith
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.category = try container.decode(Category.self, forKey: .category)
+        self.description = try container.decode(String.self, forKey: .description)
+        self.tags = try container.decode([TagDecodingInfo].self, forKey: .tags)
+        self.triggerTags = try container.decodeIntegerArrayFromStringIfPresent(radix: 16, forKey: .triggerTags) ?? []
+        self.exclusiveWith = try container.decodeIfPresent([String].self, forKey: .exclusiveWith) ?? []
     }
     
     internal func decodeTag(

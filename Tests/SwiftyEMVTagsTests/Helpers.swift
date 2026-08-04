@@ -29,6 +29,15 @@ var mockKernelInfoData: Data {
     }
 }
 
+var mockKernelInfoWithTriggersData: Data {
+    get throws {
+        let url = URL(
+            fileURLWithPath: Bundle.module.path(forResource: "custom_kernel_with_triggers_mock", ofType: "json")!
+        )
+        return try Data(contentsOf: url)
+    }
+}
+
 enum TestError: Error {
     
     case unableToFindValue(type: String, key: String)

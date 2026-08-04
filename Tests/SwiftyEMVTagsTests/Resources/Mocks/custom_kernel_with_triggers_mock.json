@@ -1,0 +1,22 @@
+{
+  "name": "Custom Visa Variant",
+  "category": "vendor",
+  "description": "A custom kernel that should only activate for specific trigger tags",
+  "id": "custom-visa-variant",
+  "triggerTags": ["9F06", "DF01"],
+  "exclusiveWith": ["custom-visa-variant-2"],
+  "tags": [
+    {
+      "info": {
+        "description": "Custom description of the AID tag",
+        "format": "binary",
+        "kernel": "custom-visa-variant",
+        "maxLength": "16",
+        "minLength": "5",
+        "name": "Application Identifier",
+        "source": "card",
+        "tag": "9F06"
+      }
+    }
+  ]
+}

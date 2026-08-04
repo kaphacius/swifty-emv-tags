@@ -33,7 +33,7 @@ extension KeyedDecodingContainer {
         guard let stringValue = try self.decodeIfPresent(String.self, forKey: codingKey) else {
             return nil
         }
-        
+
         guard let value = T(stringValue, radix: radix) else {
             throw DecodingError.dataCorrupted(
                 .init(
@@ -42,10 +42,31 @@ extension KeyedDecodingContainer {
                 )
             )
         }
-        
+
         return value
     }
-    
+
+    func decodeIntegerArrayFromStringIfPresent<T: FixedWidthInteger>(
+        radix: Int, forKey codingKey: K
+    ) throws -> [T]? {
+        guard let stringValues = try self.decodeIfPresent([String].self, forKey: codingKey) else {
+            return nil
+        }
+
+        return try stringValues.map { stringValue in
+            guard let value = T(stringValue, radix: radix) else {
+                throw DecodingError.dataCorrupted(
+                    .init(
+                        codingPath: [codingKey],
+                        debugDescription: "Unable to convert \(stringValue) to \(Self.self)"
+                    )
+                )
+            }
+
+            return value
+        }
+    }
+
 }
 
 extension SingleValueDecodingContainer {
